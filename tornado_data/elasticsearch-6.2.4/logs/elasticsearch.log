@@ -31,3 +31,57 @@
 [2019-01-21T10:36:43,625][WARN ][o.e.c.r.a.DiskThresholdMonitor] [o7tK3Zt] high disk watermark [90%] exceeded on [o7tK3ZtkSc-fyUdTrXGFpA][o7tK3Zt][/Users/walid.daboubi/LEA/ACTIVE_LEARNING_FRAMEWORK/aLearn_with_authentication_optimization_4/tornado_data/elasticsearch-6.2.4/data/nodes/0] free: 39.8gb[8.5%], shards will be relocated away from this node
 [2019-01-21T10:37:13,643][WARN ][o.e.c.r.a.DiskThresholdMonitor] [o7tK3Zt] high disk watermark [90%] exceeded on [o7tK3ZtkSc-fyUdTrXGFpA][o7tK3Zt][/Users/walid.daboubi/LEA/ACTIVE_LEARNING_FRAMEWORK/aLearn_with_authentication_optimization_4/tornado_data/elasticsearch-6.2.4/data/nodes/0] free: 39.8gb[8.5%], shards will be relocated away from this node
 [2019-01-21T10:37:13,643][INFO ][o.e.c.r.a.DiskThresholdMonitor] [o7tK3Zt] rerouting shards: [high disk watermark exceeded on one or more nodes]
+[2019-01-21T21:35:38,057][ERROR][o.e.b.Bootstrap          ] Exception
+java.lang.IllegalStateException: plugins directory [/Users/walid.daboubi/LEA/ACTIVE_LEARNING_FRAMEWORK/tornado-active-learning_3/tornado_data/elasticsearch-6.2.4/plugins] not found
+	at org.elasticsearch.bootstrap.Spawner.spawnNativePluginControllers(Spawner.java:67) ~[elasticsearch-6.2.4.jar:6.2.4]
+	at org.elasticsearch.bootstrap.Bootstrap.setup(Bootstrap.java:167) ~[elasticsearch-6.2.4.jar:6.2.4]
+	at org.elasticsearch.bootstrap.Bootstrap.init(Bootstrap.java:323) [elasticsearch-6.2.4.jar:6.2.4]
+	at org.elasticsearch.bootstrap.Elasticsearch.init(Elasticsearch.java:121) [elasticsearch-6.2.4.jar:6.2.4]
+	at org.elasticsearch.bootstrap.Elasticsearch.execute(Elasticsearch.java:112) [elasticsearch-6.2.4.jar:6.2.4]
+	at org.elasticsearch.cli.EnvironmentAwareCommand.execute(EnvironmentAwareCommand.java:86) [elasticsearch-6.2.4.jar:6.2.4]
+	at org.elasticsearch.cli.Command.mainWithoutErrorHandling(Command.java:124) [elasticsearch-cli-6.2.4.jar:6.2.4]
+	at org.elasticsearch.cli.Command.main(Command.java:90) [elasticsearch-cli-6.2.4.jar:6.2.4]
+	at org.elasticsearch.bootstrap.Elasticsearch.main(Elasticsearch.java:92) [elasticsearch-6.2.4.jar:6.2.4]
+	at org.elasticsearch.bootstrap.Elasticsearch.main(Elasticsearch.java:85) [elasticsearch-6.2.4.jar:6.2.4]
+[2019-01-21T21:35:38,068][WARN ][o.e.b.ElasticsearchUncaughtExceptionHandler] [] uncaught exception in thread [main]
+org.elasticsearch.bootstrap.StartupException: java.lang.IllegalStateException: plugins directory [/Users/walid.daboubi/LEA/ACTIVE_LEARNING_FRAMEWORK/tornado-active-learning_3/tornado_data/elasticsearch-6.2.4/plugins] not found
+	at org.elasticsearch.bootstrap.Elasticsearch.init(Elasticsearch.java:125) ~[elasticsearch-6.2.4.jar:6.2.4]
+	at org.elasticsearch.bootstrap.Elasticsearch.execute(Elasticsearch.java:112) ~[elasticsearch-6.2.4.jar:6.2.4]
+	at org.elasticsearch.cli.EnvironmentAwareCommand.execute(EnvironmentAwareCommand.java:86) ~[elasticsearch-6.2.4.jar:6.2.4]
+	at org.elasticsearch.cli.Command.mainWithoutErrorHandling(Command.java:124) ~[elasticsearch-cli-6.2.4.jar:6.2.4]
+	at org.elasticsearch.cli.Command.main(Command.java:90) ~[elasticsearch-cli-6.2.4.jar:6.2.4]
+	at org.elasticsearch.bootstrap.Elasticsearch.main(Elasticsearch.java:92) ~[elasticsearch-6.2.4.jar:6.2.4]
+	at org.elasticsearch.bootstrap.Elasticsearch.main(Elasticsearch.java:85) ~[elasticsearch-6.2.4.jar:6.2.4]
+Caused by: java.lang.IllegalStateException: plugins directory [/Users/walid.daboubi/LEA/ACTIVE_LEARNING_FRAMEWORK/tornado-active-learning_3/tornado_data/elasticsearch-6.2.4/plugins] not found
+	at org.elasticsearch.bootstrap.Spawner.spawnNativePluginControllers(Spawner.java:67) ~[elasticsearch-6.2.4.jar:6.2.4]
+	at org.elasticsearch.bootstrap.Bootstrap.setup(Bootstrap.java:167) ~[elasticsearch-6.2.4.jar:6.2.4]
+	at org.elasticsearch.bootstrap.Bootstrap.init(Bootstrap.java:323) ~[elasticsearch-6.2.4.jar:6.2.4]
+	at org.elasticsearch.bootstrap.Elasticsearch.init(Elasticsearch.java:121) ~[elasticsearch-6.2.4.jar:6.2.4]
+	... 6 more
+[2019-01-21T21:36:12,692][ERROR][o.e.b.Bootstrap          ] Exception
+java.lang.IllegalStateException: plugins directory [/Users/walid.daboubi/LEA/ACTIVE_LEARNING_FRAMEWORK/tornado-active-learning_3/tornado_data/elasticsearch-6.2.4/plugins] not found
+	at org.elasticsearch.bootstrap.Spawner.spawnNativePluginControllers(Spawner.java:67) ~[elasticsearch-6.2.4.jar:6.2.4]
+	at org.elasticsearch.bootstrap.Bootstrap.setup(Bootstrap.java:167) ~[elasticsearch-6.2.4.jar:6.2.4]
+	at org.elasticsearch.bootstrap.Bootstrap.init(Bootstrap.java:323) [elasticsearch-6.2.4.jar:6.2.4]
+	at org.elasticsearch.bootstrap.Elasticsearch.init(Elasticsearch.java:121) [elasticsearch-6.2.4.jar:6.2.4]
+	at org.elasticsearch.bootstrap.Elasticsearch.execute(Elasticsearch.java:112) [elasticsearch-6.2.4.jar:6.2.4]
+	at org.elasticsearch.cli.EnvironmentAwareCommand.execute(EnvironmentAwareCommand.java:86) [elasticsearch-6.2.4.jar:6.2.4]
+	at org.elasticsearch.cli.Command.mainWithoutErrorHandling(Command.java:124) [elasticsearch-cli-6.2.4.jar:6.2.4]
+	at org.elasticsearch.cli.Command.main(Command.java:90) [elasticsearch-cli-6.2.4.jar:6.2.4]
+	at org.elasticsearch.bootstrap.Elasticsearch.main(Elasticsearch.java:92) [elasticsearch-6.2.4.jar:6.2.4]
+	at org.elasticsearch.bootstrap.Elasticsearch.main(Elasticsearch.java:85) [elasticsearch-6.2.4.jar:6.2.4]
+[2019-01-21T21:36:12,698][WARN ][o.e.b.ElasticsearchUncaughtExceptionHandler] [] uncaught exception in thread [main]
+org.elasticsearch.bootstrap.StartupException: java.lang.IllegalStateException: plugins directory [/Users/walid.daboubi/LEA/ACTIVE_LEARNING_FRAMEWORK/tornado-active-learning_3/tornado_data/elasticsearch-6.2.4/plugins] not found
+	at org.elasticsearch.bootstrap.Elasticsearch.init(Elasticsearch.java:125) ~[elasticsearch-6.2.4.jar:6.2.4]
+	at org.elasticsearch.bootstrap.Elasticsearch.execute(Elasticsearch.java:112) ~[elasticsearch-6.2.4.jar:6.2.4]
+	at org.elasticsearch.cli.EnvironmentAwareCommand.execute(EnvironmentAwareCommand.java:86) ~[elasticsearch-6.2.4.jar:6.2.4]
+	at org.elasticsearch.cli.Command.mainWithoutErrorHandling(Command.java:124) ~[elasticsearch-cli-6.2.4.jar:6.2.4]
+	at org.elasticsearch.cli.Command.main(Command.java:90) ~[elasticsearch-cli-6.2.4.jar:6.2.4]
+	at org.elasticsearch.bootstrap.Elasticsearch.main(Elasticsearch.java:92) ~[elasticsearch-6.2.4.jar:6.2.4]
+	at org.elasticsearch.bootstrap.Elasticsearch.main(Elasticsearch.java:85) ~[elasticsearch-6.2.4.jar:6.2.4]
+Caused by: java.lang.IllegalStateException: plugins directory [/Users/walid.daboubi/LEA/ACTIVE_LEARNING_FRAMEWORK/tornado-active-learning_3/tornado_data/elasticsearch-6.2.4/plugins] not found
+	at org.elasticsearch.bootstrap.Spawner.spawnNativePluginControllers(Spawner.java:67) ~[elasticsearch-6.2.4.jar:6.2.4]
+	at org.elasticsearch.bootstrap.Bootstrap.setup(Bootstrap.java:167) ~[elasticsearch-6.2.4.jar:6.2.4]
+	at org.elasticsearch.bootstrap.Bootstrap.init(Bootstrap.java:323) ~[elasticsearch-6.2.4.jar:6.2.4]
+	at org.elasticsearch.bootstrap.Elasticsearch.init(Elasticsearch.java:121) ~[elasticsearch-6.2.4.jar:6.2.4]
+	... 6 more
