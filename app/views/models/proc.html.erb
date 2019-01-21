@@ -1,0 +1,38 @@
+
+<div onload="alert(1);document.getElementById('ff').submit();">
+
+</div>
+
+
+
+
+
+<br>
+<br>
+<%d={}%>
+<%= form_tag('/models/create', :method => 'post', :id => 'ff') do %>
+<% features = params[:features]%>
+<% features.each do |feature| %>
+  <% if feature != 'es_id' and feature != 'data_label' and feature != 'auto_label' and feature != 'auto_proba' and !feature.include?"human_label"%>
+
+    <br>
+  <% end %>
+<% end %>
+<br>
+<%= hidden_field_tag 'id', params[:id] %>
+<%= hidden_field_tag 'features', params[:features] %>
+
+
+<% end %>
+
+<center>
+<span style="font-size:12px"> Your model is being trained..</span>
+<br>
+<img src="https://loading.io/assets/img/hourglass.svg">
+</center>
+
+<script>
+window.onload = function() {
+ document.getElementById('ff').submit();
+}
+</script>

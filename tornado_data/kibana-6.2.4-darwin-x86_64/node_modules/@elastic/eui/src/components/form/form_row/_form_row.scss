@@ -1,0 +1,25 @@
+/**
+ * 1. Coerce inline form elements to behave as block-level elements.
+ * 2. For inline forms, we need to add padding if the label doesn't exist.
+ */
+.euiFormRow {
+  display: flex; /* 1 */
+  flex-direction: column; /* 1 */
+  max-width: $euiFormMaxWidth;
+
+  + * {
+    margin-top: $euiSizeL;
+  }
+
+  &.euiFormRow--fullWidth {
+    max-width: 100%;
+  }
+
+  &.euiFormRow--hasEmptyLabelSpace {
+    padding-top: $euiFontSizeXS + $euiSizeS; /* 2 */
+  }
+
+  .euiFormRow__text + .euiFormRow__text {
+    padding-top: 0;
+  }
+}

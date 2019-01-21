@@ -1,0 +1,36 @@
+
+
+<br>
+<div style="width:96%;margin-left:2%;text-align:left">
+
+<a href = '/datas' ><button class="button">My datasets</button></a>
+<a href = '/datas/new' ><button class="button">Add dataset</button></a>
+</div>
+<br>
+
+<% @user_datasets = Dataset.where(:user_id => current_user.id)%>
+
+
+<% if @user_datasets.count >0 %>
+<table border=1>
+  <tr style="background-color:#e2e6e9">
+    <td width="15%"><b>Title</b></td>
+    <td width="15%"><b>Inputs #</td>
+    <td width="15%"><b>Creation date</td>
+    <td width="40%"><b>Description</td>
+    <td width="15%"><b>owner</b></td>
+  </tr>
+  <% @user_datasets.all.each do |ds| %>
+  <tr>
+    <td><a href = "/datas/<%= ds.id.to_s %>" ><%= ds.name %></a></td>
+    <td><%= ds.inputs_count %></td>
+    <td><%= ds.created_at.to_s.split(' ')[0] %></td>
+    <td><%= ds.description %></td>
+    <td><%= User.find(ds.id).email unless ( ds.id == nil or User.exists?(ds.id) == false ) %></td>
+  </tr>
+  <% end %>
+</table>
+
+<% else %>
+<center><i>You haven't yet added any dataset</i></center>
+<% end %>

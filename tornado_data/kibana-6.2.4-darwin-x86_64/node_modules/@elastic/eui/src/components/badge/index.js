@@ -1,0 +1,3 @@
+export {
+  EuiBadge,
+} from './badge';

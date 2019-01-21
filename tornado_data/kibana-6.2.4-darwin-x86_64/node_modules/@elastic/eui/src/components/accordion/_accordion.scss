@@ -1,0 +1,33 @@
+.euiAccordion__button {
+  text-align: left;
+  width: 100%;
+
+  &:hover, &:focus {
+    text-decoration: underline;
+    cursor: pointer;
+  }
+
+  &:focus {
+    background-color: $euiFocusBackgroundColor;
+  }
+}
+
+.euiAccordion__childWrapper {
+  visibility: hidden;
+  height: 0;
+  opacity: 0;
+  overflow-y: hidden;
+  transform: translatez(0);
+  transition:
+    height $euiAnimSpeedNormal $euiAnimSlightResistance,
+    opacity $euiAnimSpeedNormal $euiAnimSlightResistance
+  ;
+}
+
+.euiAccordion.euiAccordion-isOpen {
+  .euiAccordion__childWrapper {
+    visibility: visible;
+    opacity: 1;
+    height: auto;
+  }
+}

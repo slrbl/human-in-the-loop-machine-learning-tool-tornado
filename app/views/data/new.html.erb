@@ -1,0 +1,39 @@
+
+
+
+<br>
+<div style="width:96%;margin-left:2%;text-align:left">
+
+<a href = '/datas' ><button class="button">My datasets</button></a>
+<a href = '/datas/new' ><button class="button">Add dataset</button></a>
+</div>
+<br>
+
+<div style="background-color:#e2e6e9;border-style: solid;border-width: 1px;border-color:#d4d9de;font-size:12px;padding:20px;border-radius:5px;width:30%;margin-left:35%">
+<h3>New Dataset</h3>
+
+
+<%= form_for @dataset, url: {action: "create"},multipart: true, html: {class: "nifty_form",enctype:"multipart/form-data"} do |f| %>
+
+<table>
+  <tr>
+    <td>Title</td><td><%= f.text_field :name, :size => "50px"%></td>
+  </tr>
+  <tr>
+    <td>Description</td><td><%= f.text_area :description, :size => "48x4" %></td>
+  </tr>
+  <tr>
+    <td>Source</td><td><%= file_field_tag 'file' %></td>
+  </tr>
+  <tr>
+    <td></td><td align="right"><%= f.submit "Create" %></td>
+  </tr>
+</table>
+
+
+
+
+
+<% end %>
+
+</div>

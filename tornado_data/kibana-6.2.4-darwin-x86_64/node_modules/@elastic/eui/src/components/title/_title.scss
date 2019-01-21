@@ -1,0 +1,12 @@
+.euiTitle {
+  @include euiTitle;
+  @include euiFontSizeL;
+}
+
+.euiTitle--small {
+  @include euiFontSizeM;
+}
+
+.euiTitle--large {
+  @include euiFontSizeXL;
+}

@@ -1,0 +1,53 @@
+.euiButtonIcon {
+  @include euiButton;
+
+  border-color: transparent;
+  background-color: transparent;
+  box-shadow: none;
+  height: $euiSizeL;
+  width: $euiSizeL;
+  line-height: $euiSizeL;
+  border-radius: $euiBorderRadius;
+
+  // Account for border.
+  .euiButtonIcon__icon {
+    transform: translateY(-2px);
+  }
+
+  &:disabled {
+    color: $euiButtonColorDisabled;
+    pointer-events: none;
+
+    &:hover, &:focus {
+      background-color: $euiColorEmptyShade;
+      text-decoration: none;
+    }
+  }
+}
+
+// Modifier naming and colors.
+$buttonTypes: (
+  primary: $euiColorPrimary,
+  danger: $euiColorDanger,
+  disabled: tintOrShade($euiTextColor, 70%, 80%),
+  ghost: $euiColorGhost,
+  text: $euiTextColor,
+);
+
+// Create button modifiders based upon the map.
+@each $name, $color in $buttonTypes {
+  .euiButtonIcon--#{$name} {
+    color: $color;
+
+    &:focus {
+      background-color: transparentize($color, .9);
+    }
+
+    &:hover, &:focus {
+
+      @if ($name == 'disabled') {
+        cursor: not-allowed;
+      }
+    }
+  }
+}

@@ -1,0 +1,64 @@
+{
+  "name": "micro",
+  "version": "9.1.0",
+  "description": "Asynchronous HTTP microservices",
+  "main": "./lib/index.js",
+  "files": [
+    "bin",
+    "lib"
+  ],
+  "scripts": {
+    "precommit": "lint-staged",
+    "lint": "xo",
+    "test": "npm run lint && NODE_ENV=test nyc ava"
+  },
+  "xo": {
+    "ignores": [
+      "examples/**/*"
+    ],
+    "extends": "prettier",
+    "rules": {
+      "unicorn/no-process-exit": 0
+    }
+  },
+  "lint-staged": {
+    "*.js": [
+      "npm run lint",
+      "prettier --single-quote --no-semi --write",
+      "git add"
+    ]
+  },
+  "bin": {
+    "micro": "./bin/micro.js"
+  },
+  "repository": "zeit/micro",
+  "keywords": [
+    "micro",
+    "service",
+    "microservice",
+    "serverless",
+    "API"
+  ],
+  "license": "MIT",
+  "devDependencies": {
+    "ava": "0.23.0",
+    "coveralls": "3.0.0",
+    "eslint-config-prettier": "2.7.0",
+    "husky": "0.14.3",
+    "lint-staged": "4.3.0",
+    "nyc": "11.3.0",
+    "prettier": "1.7.4",
+    "request": "2.83.0",
+    "request-promise": "4.2.2",
+    "resumer": "0.0.0",
+    "test-listen": "1.0.2",
+    "then-sleep": "1.0.1",
+    "xo": "0.18.2"
+  },
+  "dependencies": {
+    "content-type": "1.0.4",
+    "is-stream": "1.1.0",
+    "mri": "1.1.0",
+    "raw-body": "2.3.2"
+  }
+}

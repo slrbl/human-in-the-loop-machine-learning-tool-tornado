@@ -1,0 +1,110 @@
+
+
+<% human_label_key = @dataset.es_id+'_human_label' %>
+
+
+
+<div class = "desc">
+  <table width="100%">
+    <tr>
+
+      <td width="50%">
+        <b>ID: </b><%= @dataset.es_id %>
+        <br>
+        <b>Owner: </b><%= User.find(@dataset.user_id).email %>
+        <br>
+        <b>Inputs count: </b><%= @dataset.inputs_count %>
+        <br>
+        <b>Description: </b>
+        <br>
+        <%= @dataset.description %>
+      </td>
+
+      <td style="text-align:right">
+        <span style="font-size:20px"><%= @dataset.name %></span>
+      </td>
+    </tr>
+  </table>
+</div>
+
+<br>
+
+
+<% attributes = [] %>
+
+
+
+<% @data['hits']['hits'][0]['_source'].each do |attribute| %>
+<% attributes << attribute[0] %>
+<% end %>
+
+<%= form_tag("/update_docs", method: "post") do -%>
+<table>
+  <tr>
+    <td>
+<div style="width:96%;margin-left:2%;text-align:left">
+  <a href = '/datas' ><button class="button">My datasets</button></a>
+  <a href = '/datas/new' ><button class="button">Add dataset</button></a>
+  </div>
+</td>
+<td>
+  <div style="width:96%;margin-left:2%;text-align:right">
+
+<a href = '/datas/threshold/<%= @dataset.id %>' ><button class="button">Label seed</button></a>
+<a href = '/models/new/<%= @dataset.id %>' ><button class="button">Train</button></a>
+ <%= submit_tag("Update") %>
+
+</div>
+</td>
+</tr>
+</table>
+
+<br>
+
+<table border=1>
+  <tr style="background-color:#e2e6e9">
+    <td>Human label</td>
+
+    <% attributes.each do |attribute| %>
+    <% if attribute != 'es_id'%>
+    <td>
+      <% if attribute == human_label_key %>
+      Human label
+      <% else %>
+      <%= attribute  %>
+      <% end %>
+    </td>
+    <% end %>
+    <% end %>
+  </tr>
+
+
+<%@c=0%>
+<% @data['hits']['hits'].each do |data_unit| %>
+  <%if data_unit['_source']['auto_proba']==nil or (data_unit['_source']['auto_proba']!=nil and data_unit['_source']['auto_proba'].to_f.round(4)*100<params[:threshold].to_f)%>
+    <% @c += 1 %>
+    <tr>
+      <td>
+        <center><%= text_field_tag 'doc_'+data_unit['_id'], data_unit['_source']['human'] %></center>
+      </td>
+      <% attributes.each do |attribute| %>
+        <% if attribute != 'es_id'%>
+          <td >
+            <% if human_label_key == attribute and data_unit['_source'][attribute]=='empty'%>
+            -
+            <%else%>
+              <%= data_unit['_source'][attribute] %>
+            <%end%>
+          </td>
+      <% end %>
+  <% end %>
+
+  </tr>
+  <% end %>
+  <% end %>
+<%= hidden_field_tag 'data_id', @dataset.id %>
+</table>
+<% end -%>
+<!--
+<%= @c%>
+-->

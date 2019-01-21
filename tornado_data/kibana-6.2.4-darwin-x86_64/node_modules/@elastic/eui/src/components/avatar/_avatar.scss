@@ -1,0 +1,39 @@
+.euiAvatar {
+  @include innerBorder('dark', 50%);
+
+  border-radius: 50%;
+  display: inline-block;
+  background-size: cover;
+  color: $euiColorGhost;
+  text-align: center;
+  text-shadow: 1px 1px rgba(0,0,0,.2);
+  vertical-align: middle;
+}
+
+.euiAvatar--s {
+  width: $euiSizeL;
+  height: $euiSizeL;
+  line-height: $euiSizeL;
+  font-size: $euiSizeM;
+}
+
+.euiAvatar--m {
+  width: $euiSizeXL;
+  height: $euiSizeXL;
+  line-height: $euiSizeXL;
+  font-size: $euiSize;
+}
+
+.euiAvatar--l {
+  width: $euiSizeXXL;
+  height: $euiSizeXXL;
+  line-height: $euiSizeXXL;
+  font-size: $euiSizeL;
+}
+
+.euiAvatar--xl {
+  width: $euiSize * 4;
+  height: $euiSize * 4;
+  line-height: $euiSize * 4;
+  font-size: $euiSizeXL;
+}

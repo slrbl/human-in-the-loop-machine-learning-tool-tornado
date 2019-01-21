@@ -1,0 +1,84 @@
+
+<div class = "desc">
+  <table width="100%">
+    <tr>
+      <td width="50%">
+        <b>ID: </b><%= @dataset.es_id %>
+        <br>
+        <b>Owner: </b><%= User.find(@dataset.user_id).email %>
+        <br>
+        <b>Inputs count: </b><%= @dataset.inputs_count %>
+        <br>
+        <b>Seed size: </b><%= @dataset.human_labels_count %>
+        <br>
+        <b>Description: </b>
+        <br>
+        <%= @dataset.description %>
+      </td>
+      <td style="text-align:right">
+        <span style="font-size:20px"><%= @dataset.name %></span>
+      </td>
+    </tr>
+  </table>
+</div>
+<br>
+<%= render "navigation" %>
+<br>
+
+<% attributes = [] %>
+<% @data['hits']['hits'][0]['_source'].each do |attribute| %>
+  <% attributes << attribute[0] %>
+<% end %>
+
+<% @c=0%>
+<% @g=0%>
+<% @u=1%>
+<table width ="100%" border = 1>
+
+    <tr style="background-color:#e2e6e9">
+    <% attributes.each do |attribute| %>
+    <% if attribute != 'es_id'%>
+    <% if attribute == @human_label_key%>
+    <td><%= 'Human label'  %></td>
+    <% else %>
+      <td><%= attribute  %></td>
+      <% end %>
+    <% end %>
+    <% end %>
+  </tr>
+  <% @data['hits']['hits'].each do |data_unit| %>
+  <% if data_unit['_source'][@human_label_key] != 'empty' %>
+  <% @u+=1%>
+  <% end %>
+  <% @c+=1%>
+<tr>
+  <% attributes.each do |attribute| %>
+    <% if attribute != 'es_id'%>
+  <% if data_unit['_source']['Class/ASD Traits '] == 'Yes'%>
+  <% @t = 1%>
+  <% else %>
+    <% @t = 0%>
+<% end %>
+
+<% @condition = (attribute == 'auto_label' and ( (data_unit['_source'][attribute] == 'kid' and data_unit['_source']['age'].to_i <10) or (data_unit['_source'][attribute] == 'adult' and data_unit['_source']['age'].to_i >= 10))) %>
+<% @condition = (attribute == 'auto_label' and ( (data_unit['_source'][attribute].to_s == data_unit['_source']['Class/ASD Traits ']))) %>
+
+    <% if  @condition %>
+    <% @g+=1%>
+    <td ><div style="background-color:lime"><%= data_unit['_source'][attribute] unless (attribute==@human_label_key and data_unit['_source'][attribute]=='empty') %></div></td>
+    <% else %>
+    <td><%= data_unit['_source'][attribute] unless (attribute== @human_label_key and data_unit['_source'][attribute]=='empty') %> </td>
+    <% end %>
+  <% end %>
+  <% end %>
+</tr>
+  <% end %>
+</table>
+<!--
+<%=@c%>
+<br>
+<%=@g%>
+-->
+<br>
+<% @dataset.update(:human_labels_count => @u) %>
+<% File.open('./public/dataset.csv', 'w') { |file| file.write("your text") } %>

@@ -1,0 +1,17 @@
+@import '../link/mixins';
+
+.euiHeaderLogo {
+  @include euiLink;
+
+  position: relative;
+  height: $euiHeaderChildSize;
+  padding: $euiSize $euiSizeL;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+  .euiHeaderLogo__icon {
+    height: $euiSizeXL;
+    width: $euiSizeL;
+    opacity: 1;
+  }

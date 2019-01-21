@@ -1,0 +1,72 @@
+{
+  "name": "parse-entities",
+  "version": "1.1.1",
+  "description": "Parse HTML character references: fast, spec-compliant, positional information",
+  "license": "MIT",
+  "keywords": [
+    "parse",
+    "html",
+    "character",
+    "reference",
+    "entity",
+    "entities"
+  ],
+  "repository": "wooorm/parse-entities",
+  "bugs": "https://github.com/wooorm/parse-entities/issues",
+  "author": "Titus Wormer <tituswormer@gmail.com> (http://wooorm.com)",
+  "contributors": [
+    "Titus Wormer <tituswormer@gmail.com> (http://wooorm.com)"
+  ],
+  "files": [
+    "index.js"
+  ],
+  "dependencies": {
+    "character-entities": "^1.0.0",
+    "character-entities-legacy": "^1.0.0",
+    "character-reference-invalid": "^1.0.0",
+    "is-alphanumerical": "^1.0.0",
+    "is-decimal": "^1.0.0",
+    "is-hexadecimal": "^1.0.0"
+  },
+  "devDependencies": {
+    "browserify": "^14.0.0",
+    "esmangle": "^1.0.0",
+    "nyc": "^11.0.0",
+    "remark-cli": "^3.0.0",
+    "remark-preset-wooorm": "^3.0.0",
+    "tape": "^4.2.0",
+    "xo": "^0.18.0"
+  },
+  "scripts": {
+    "build-md": "remark . -qfo",
+    "build-bundle": "browserify index.js --bare -s parseEntities > parse-entities.js",
+    "build-mangle": "esmangle parse-entities.js > parse-entities.min.js",
+    "build": "npm run build-md && npm run build-bundle && npm run build-mangle",
+    "lint": "xo",
+    "test-api": "node test.js",
+    "test-coverage": "nyc --reporter lcov tape test.js",
+    "test": "npm run build && npm run lint && npm run test-coverage"
+  },
+  "nyc": {
+    "check-coverage": true,
+    "lines": 100,
+    "functions": 100,
+    "branches": 100
+  },
+  "xo": {
+    "space": true,
+    "esnext": false,
+    "rules": {
+      "guard-for-in": "off",
+      "no-negated-condition": "off",
+      "max-depth": "off",
+      "complexity": "off"
+    },
+    "ignores": [
+      "parse-entities.js"
+    ]
+  },
+  "remarkConfig": {
+    "plugins": ["preset-wooorm"]
+  }
+}

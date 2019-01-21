@@ -1,0 +1,33 @@
+{
+  "name": "statehood",
+  "description": "HTTP State Management Utilities",
+  "version": "4.1.0",
+  "repository": "git://github.com/hapijs/statehood",
+  "main": "lib/index.js",
+  "keywords": [
+    "HTTP",
+    "state",
+    "cookies",
+    "secure"
+  ],
+  "engines": {
+    "node": ">=4.0.0"
+  },
+  "dependencies": {
+      "boom": "3.x.x",
+      "cryptiles": "3.x.x",
+      "hoek": "4.x.x",
+      "iron": "4.x.x",
+      "items": "2.x.x",
+      "joi": "9.x.x"
+  },
+  "devDependencies": {
+    "code": "3.x.x",
+    "lab": "11.x.x"
+  },
+  "scripts": {
+    "test": "lab -a code -t 100 -L",
+    "test-cov-html": "lab -a code -r html -o coverage.html"
+  },
+  "license": "BSD-3-Clause"
+}

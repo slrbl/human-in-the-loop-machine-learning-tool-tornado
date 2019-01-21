@@ -1,0 +1,323 @@
+
+import {isArray} from 'vega-util';
+import {Channel, CHANNELS, isChannel, supportMark} from './channel';
+import {FacetMapping} from './facet';
+import {
+  ChannelDef,
+  Field,
+  FieldDef,
+  FieldDefWithCondition,
+  getFieldDef,
+  hasConditionalFieldDef,
+  isConditionalDef,
+  isFieldDef,
+  isValueDef,
+  MarkPropFieldDef,
+  normalize,
+  normalizeFieldDef,
+  OrderFieldDef,
+  PositionFieldDef,
+  TextFieldDef,
+  ValueDef,
+  ValueDefWithCondition
+} from './fielddef';
+import * as log from './log';
+import {Mark} from './mark';
+import {Type} from './type';
+import {contains, keys, some} from './util';
+
+export interface Encoding<F> {
+  /**
+   * X coordinates of the marks, or width of horizontal `"bar"` and `"area"`.
+   */
+  x?: PositionFieldDef<F> | ValueDef;
+
+  /**
+   * Y coordinates of the marks, or height of vertical `"bar"` and `"area"`.
+   */
+  y?: PositionFieldDef<F> | ValueDef;
+
+  /**
+   * X2 coordinates for ranged `"area"`, `"bar"`, `"rect"`, and  `"rule"`.
+   */
+  // TODO: Ham need to add default behavior
+  x2?: FieldDef<F> | ValueDef;
+
+  /**
+   * Y2 coordinates for ranged `"area"`, `"bar"`, `"rect"`, and  `"rule"`.
+   */
+  // TODO: Ham need to add default behavior
+  y2?: FieldDef<F> | ValueDef;
+
+
+  /**
+   * Longitude position of geographically projected marks.
+   */
+  longitude?: FieldDef<F>;
+
+  /**
+   * Latitude position of geographically projected marks.
+   */
+  latitude?: FieldDef<F>;
+
+  /**
+   * Longitude-2 position for geographically projected ranged `"area"`, `"bar"`, `"rect"`, and  `"rule"`.
+   */
+  longitude2?: FieldDef<F>;
+
+  /**
+   * Latitude-2 position for geographically projected ranged `"area"`, `"bar"`, `"rect"`, and  `"rule"`.
+   */
+  latitude2?: FieldDef<F>;
+
+  /**
+   * Color of the marks – either fill or stroke color based on  the `filled` property of mark definition.
+   * By default, `color` represents fill color for `"area"`, `"bar"`, `"tick"`,
+   * `"text"`, `"circle"`, and `"square"` / stroke color for `"line"` and `"point"`.
+   *
+   * __Default value:__ If undefined, the default color depends on [mark config](config.html#mark)'s `color` property.
+   *
+   * _Note:_
+   * 1) For fine-grained control over both fill and stroke colors of the marks, please use the `fill` and `stroke` channels.
+   * 2) See the scale documentation for more information about customizing [color scheme](scale.html#scheme).
+   */
+  color?: FieldDefWithCondition<MarkPropFieldDef<F>> | ValueDefWithCondition<MarkPropFieldDef<F>>;
+
+  /**
+   * Fill color of the marks.
+   * __Default value:__ If undefined, the default color depends on [mark config](config.html#mark)'s `color` property.
+   *
+   * _Note:_ The `fill` channel has higher precedence than `color` and will override color value.
+   */
+  fill?: FieldDefWithCondition<MarkPropFieldDef<F>> | ValueDefWithCondition<MarkPropFieldDef<F>>;
+
+
+  /**
+   * Stroke color of the marks.
+   * __Default value:__ If undefined, the default color depends on [mark config](config.html#mark)'s `color` property.
+   *
+   * _Note:_ The `stroke` channel has higher precedence than `color` and will override color value.
+   */
+  stroke?: FieldDefWithCondition<MarkPropFieldDef<F>> | ValueDefWithCondition<MarkPropFieldDef<F>>;
+
+
+  /**
+   * Opacity of the marks – either can be a value or a range.
+   *
+   * __Default value:__ If undefined, the default opacity depends on [mark config](config.html#mark)'s `opacity` property.
+   */
+  opacity?: FieldDefWithCondition<MarkPropFieldDef<F>> | ValueDefWithCondition<MarkPropFieldDef<F>>;
+
+  /**
+   * Size of the mark.
+   * - For `"point"`, `"square"` and `"circle"`, – the symbol size, or pixel area of the mark.
+   * - For `"bar"` and `"tick"` – the bar and tick's size.
+   * - For `"text"` – the text's font size.
+   * - Size is currently unsupported for `"line"`, `"area"`, and `"rect"`.
+   */
+  size?: FieldDefWithCondition<MarkPropFieldDef<F>> | ValueDefWithCondition<MarkPropFieldDef<F>>;
+
+  /**
+   * For `point` marks the supported values are
+   * `"circle"` (default), `"square"`, `"cross"`, `"diamond"`, `"triangle-up"`,
+   * or `"triangle-down"`, or else a custom SVG path string.
+   * For `geoshape` marks it should be a field definition of the geojson data
+   *
+   * __Default value:__ If undefined, the default shape depends on [mark config](config.html#point-config)'s `shape` property.
+   */
+  shape?: FieldDefWithCondition<MarkPropFieldDef<F>> | ValueDefWithCondition<MarkPropFieldDef<F>>; // TODO: maybe distinguish ordinal-only
+
+  /**
+   * Additional levels of detail for grouping data in aggregate views and
+   * in line and area marks without mapping data to a specific visual channel.
+   */
+  detail?: FieldDef<F> | FieldDef<F>[];
+
+  /**
+   * A data field to use as a unique key for data binding. When a visualization’s data is updated, the key value will be used to match data elements to existing mark instances. Use a key channel to enable object constancy for transitions over dynamic data.
+   */
+  key?: FieldDef<F>;
+
+  /**
+   * Text of the `text` mark.
+   */
+  text?: FieldDefWithCondition<TextFieldDef<F>> | ValueDefWithCondition<TextFieldDef<F>>;
+
+  /**
+   * The tooltip text to show upon mouse hover.
+   */
+  tooltip?: FieldDefWithCondition<TextFieldDef<F>> | ValueDefWithCondition<TextFieldDef<F>>;
+
+  /**
+   * A URL to load upon mouse click.
+   */
+  href?: FieldDefWithCondition<FieldDef<F>> | ValueDefWithCondition<FieldDef<F>>;
+
+  /**
+   * Order of the marks.
+   * - For stacked marks, this `order` channel encodes stack order.
+   * - For line marks, this `order` channel encodes order of data points in the lines. This can be useful for creating [a connected scatterplot](https://vega.github.io/vega-lite/examples/layer_connected_scatterplot.html).
+   * - Otherwise, this `order` channel encodes layer order of the marks.
+   *
+   * __Note__: In aggregate plots, `order` field should be `aggregate`d to avoid creating additional aggregation grouping.
+   */
+  order?: OrderFieldDef<F> | OrderFieldDef<F>[];
+}
+
+export interface EncodingWithFacet<F> extends Encoding<F>, FacetMapping<F> {}
+
+export function channelHasField(encoding: EncodingWithFacet<Field>, channel: Channel): boolean {
+  const channelDef = encoding && encoding[channel];
+  if (channelDef) {
+    if (isArray(channelDef)) {
+      return some(channelDef, (fieldDef) => !!fieldDef.field);
+    } else {
+      return isFieldDef(channelDef) || hasConditionalFieldDef(channelDef);
+    }
+  }
+  return false;
+}
+
+
+export function isAggregate(encoding: EncodingWithFacet<Field>) {
+  return some(CHANNELS, (channel) => {
+    if (channelHasField(encoding, channel)) {
+      const channelDef = encoding[channel];
+      if (isArray(channelDef)) {
+        return some(channelDef, (fieldDef) => !!fieldDef.aggregate);
+      } else {
+        const fieldDef = getFieldDef(channelDef);
+        return fieldDef && !!fieldDef.aggregate;
+      }
+    }
+    return false;
+  });
+}
+
+export function normalizeEncoding(encoding: Encoding<string>, mark: Mark): Encoding<string> {
+   return keys(encoding).reduce((normalizedEncoding: Encoding<string>, channel: Channel | string) => {
+    if (!isChannel(channel)) {
+      // Drop invalid channel
+      log.warn(log.message.invalidEncodingChannel(channel));
+      return normalizedEncoding;
+    }
+
+    if (!supportMark(channel, mark)) {
+      // Drop unsupported channel
+
+      log.warn(log.message.incompatibleChannel(channel, mark));
+      return normalizedEncoding;
+    }
+
+    // Drop line's size if the field is aggregated.
+    if (channel === 'size' && mark === 'line') {
+      const fieldDef = getFieldDef(encoding[channel]);
+      if (fieldDef && fieldDef.aggregate) {
+        log.warn(log.message.incompatibleChannel(channel, mark, 'when the field is aggregated.'));
+        return normalizedEncoding;
+      }
+    }
+
+    if (channel === 'detail' || channel === 'order') {
+      const channelDef = encoding[channel];
+      if (channelDef) {
+        // Array of fieldDefs for detail channel (or production rule)
+        normalizedEncoding[channel] = (isArray(channelDef) ? channelDef : [channelDef])
+          .reduce((defs: FieldDef<string>[], fieldDef: FieldDef<string>) => {
+            if (!isFieldDef(fieldDef)) {
+              log.warn(log.message.emptyFieldDef(fieldDef, channel));
+            } else {
+              defs.push(normalizeFieldDef(fieldDef, channel));
+            }
+            return defs;
+          }, []);
+      }
+    } else {
+      // FIXME: remove this casting.  (I don't know why Typescript doesn't infer this correctly here.)
+      const channelDef = encoding[channel] as ChannelDef<string>;
+
+      const fieldDef = getFieldDef(encoding[channel]);
+      if (fieldDef && contains([Type.LATITUDE, Type.LONGITUDE], fieldDef.type)) {
+        const {[channel]: _, ...newEncoding} = normalizedEncoding;
+        const newChannel = channel === 'x' ? 'longitude' :
+          channel === 'y' ? 'latitude' :
+          channel === 'x2' ? 'longitude2' :
+          channel === 'y2' ? 'latitude2' : undefined;
+        log.warn(log.message.latLongDeprecated(channel, fieldDef.type, newChannel));
+        return {
+          ...newEncoding,
+          [newChannel]: {
+            ...normalize(fieldDef as any, channel),
+            type: 'quantitative'
+          }
+        };
+      }
+
+      if (!isFieldDef(channelDef) && !isValueDef(channelDef) && !isConditionalDef(channelDef)) {
+        log.warn(log.message.emptyFieldDef(channelDef, channel));
+        return normalizedEncoding;
+      }
+      normalizedEncoding[channel] = normalize(channelDef, channel);
+    }
+    return normalizedEncoding;
+  }, {});
+}
+
+
+export function isRanged(encoding: EncodingWithFacet<any>) {
+  return encoding && ((!!encoding.x && !!encoding.x2) || (!!encoding.y && !!encoding.y2));
+}
+
+export function fieldDefs(encoding: EncodingWithFacet<Field>): FieldDef<Field>[] {
+  const arr: FieldDef<Field>[] = [];
+  CHANNELS.forEach(function(channel) {
+    if (channelHasField(encoding, channel)) {
+      const channelDef = encoding[channel];
+      (isArray(channelDef) ? channelDef : [channelDef]).forEach((def) => {
+        if (isFieldDef(def)) {
+          arr.push(def);
+        } else if (hasConditionalFieldDef(def)) {
+          arr.push(def.condition);
+        }
+      });
+    }
+  });
+  return arr;
+}
+
+export function forEach(mapping: any,
+    f: (fd: FieldDef<string>, c: Channel) => void,
+    thisArg?: any) {
+  if (!mapping) {
+    return;
+  }
+
+  for (const channel of keys(mapping)) {
+    if (isArray(mapping[channel])) {
+      mapping[channel].forEach(function(channelDef: ChannelDef<string>) {
+        f.call(thisArg, channelDef, channel);
+      });
+    } else {
+      f.call(thisArg, mapping[channel], channel);
+    }
+  }
+}
+
+export function reduce<T, U extends {[k in Channel]?: any}>(mapping: U,
+    f: (acc: any, fd: FieldDef<string>, c: Channel) => U,
+    init: T, thisArg?: any) {
+  if (!mapping) {
+    return init;
+  }
+
+  return keys(mapping).reduce((r, channel) => {
+    const map = mapping[channel];
+    if (isArray(map)) {
+      return map.reduce((r1: T, channelDef: ChannelDef<string>) => {
+        return f.call(thisArg, r1, channelDef, channel);
+      }, r);
+    } else {
+      return f.call(thisArg, r, map, channel);
+    }
+  }, init);
+}

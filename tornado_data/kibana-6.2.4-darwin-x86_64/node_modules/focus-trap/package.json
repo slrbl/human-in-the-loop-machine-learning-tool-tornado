@@ -1,0 +1,43 @@
+{
+  "name": "focus-trap",
+  "version": "2.4.2",
+  "description": "Trap focus within a DOM node.",
+  "main": "index.js",
+  "types": "index.d.ts",
+  "scripts": {
+    "lint": "eslint .",
+    "demo-bundle": "browserify demo/js/index.js -o demo/demo-bundle.js",
+    "start": "budo demo/js/index.js:demo-bundle.js --dir demo --live",
+    "test": "npm run lint"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/davidtheclark/focus-trap.git"
+  },
+  "keywords": [
+    "focus",
+    "accessibility",
+    "trap",
+    "capture",
+    "keyboard",
+    "modal"
+  ],
+  "author": "David Clark",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/davidtheclark/focus-trap/issues"
+  },
+  "homepage": "https://github.com/davidtheclark/focus-trap#readme",
+  "dependencies": {
+    "tabbable": "^1.0.3"
+  },
+  "devDependencies": {
+    "browserify": "^13.3.0",
+    "budo": "^9.4.1",
+    "eslint": "^3.13.1"
+  },
+  "files": [
+    "index.js",
+    "index.d.ts"
+  ]
+}

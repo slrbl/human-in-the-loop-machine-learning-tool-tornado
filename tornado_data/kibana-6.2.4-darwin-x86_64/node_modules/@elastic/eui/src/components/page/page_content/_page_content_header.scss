@@ -1,0 +1,13 @@
+.euiPageContentHeader {
+  margin-bottom: $euiSizeL;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@include screenXSmall {
+  .euiPageContentHeader {
+    flex-direction: column;
+  }
+}

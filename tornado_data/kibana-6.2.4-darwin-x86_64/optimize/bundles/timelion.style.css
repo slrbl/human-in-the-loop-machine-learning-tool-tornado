@@ -1,0 +1,264 @@
+/**
+ * 1. The local nav contains tooltips which should pop over the filter bar.
+ * 2. The filter and local nav components should always appear above the dashboard grid items.
+ * 3. The filter and local nav components should always appear above the discover content.
+ * 4. The sidebar collapser button should appear above the main Discover content but below the top elements.
+ * 5. Dragged panels in dashboard should always appear above other panels.
+ */
+/* 1 */
+/* 1 */
+/* 2 */
+/* 5 */
+/* 3 */
+/* 4 */
+.chart-top-title {
+  -webkit-box-flex: 0;
+  -webkit-flex: 0;
+      -ms-flex: 0;
+          flex: 0;
+  text-align: center;
+  font-weight: bold;
+  font-size: 11px;
+}
+.chart-canvas {
+  min-width: 100%;
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  overflow: hidden;
+}
+.timelionLegendCaption {
+  padding: 0px;
+  color: #545454;
+  white-space: nowrap;
+  font-weight: bold;
+}
+.tab-dashboard.theme-dark .timelionLegendCaption {
+  color: #aaaaaa;
+}
+.tab-dashboard.theme-dark .ngLegendValue {
+  color: #aaaaaa;
+}
+.tab-dashboard.theme-dark .flot-tick-label {
+  color: #aaaaaa;
+}
+.timelionExpressionInput {
+  cursor: text !important;
+}
+.suggestions {
+  background-color: #ffffff;
+  color: #2D2D2D;
+  border: 1px solid #D9D9D9;
+  border-top: 2px solid #D9D9D9;
+  border-radius: 0px 0px 4px 4px !important;
+  z-index: 10000;
+  max-height: 378px;
+  overflow-y: auto;
+  box-shadow: 0 5px 22px rgba(0, 0, 0, 0.25);
+}
+.suggestions .suggestion {
+  border-bottom: 1px solid #D9D9D9;
+  padding: 5px 20px;
+}
+.suggestions .suggestion:hover {
+  background-color: #D9D9D9;
+}
+.suggestions .suggestion.active {
+  background-color: #D9D9D9;
+}
+.suggestions .suggestion-details {
+  background-color: #ffffff;
+  padding: 10px;
+  border-radius: 4px;
+}
+.suggestions .suggestion-details > table {
+  color: #2D2D2D;
+  margin-bottom: 0px;
+}
+.suggestions.suggestions-isPopover {
+  position: absolute;
+  top: 100%;
+}
+[chart] {
+  height: 100%;
+  width: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.timelion {
+  position: relative;
+}
+.timelion .config .list-group-item .container-fluid {
+  background-color: transparent;
+  padding: 0;
+}
+.timelionHelpKeyboardTipsSection:last-child {
+  margin-bottom: 0;
+}
+/**
+ * 1. Anchor suggestions beneath input.
+ * 2. Allow for option of positioning suggestions absolutely.
+ */
+.timelionExpressionInputContainer {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1 1 auto;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  /* 1 */
+  position: relative;
+  /* 2 */
+}
+.timelionExpressionInput {
+  min-height: 65px;
+}
+.timelion-container {
+  margin: 20px;
+}
+.timelion-container-drawer {
+  position: fixed;
+  bottow: 0px;
+}
+.timelion-container-drawer-tab {
+  width: 100%;
+  background-color: #D9D9D9;
+}
+.timelion-subnav {
+  background-color: #D9D9D9;
+  margin: 0px;
+}
+.timelion-stats {
+  font-weight: normal;
+}
+.timelion-buttons {
+  position: absolute;
+  right: 0px;
+  display: inline-block;
+  padding: 5px 20px;
+  background-color: #E4E4E4;
+  border-bottom-left-radius: 4px;
+}
+.timelion-buttons a {
+  margin: 5px;
+  color: #000;
+}
+[ng-click] {
+  cursor: pointer;
+}
+.chart-container {
+  display: inline-block;
+  cursor: pointer;
+  position: relative;
+  box-sizing: border-box;
+  border: 2px dashed transparent;
+  padding-left: 0px !important;
+  padding-right: 0px !important;
+  margin-bottom: 10px;
+}
+.chart-container.active {
+  border-color: #ccc;
+}
+.chart-container.running {
+  opacity: 0.50;
+}
+timelion-interval {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+.timelionFunctionsDropdownContent {
+  height: 310px;
+  overflow-y: auto;
+}
+.timelionFunctionsTable {
+  background-color: white;
+}
+.timelionFunctionsTableRow:hover {
+  background-color: #f9f9f9;
+}
+/**
+ * 1. Override bootstrap .table styles.
+ */
+.timelionFunctionDetailsTable {
+  background-color: #f9f9f9 !important;
+}
+.doc-container-content {
+  position: relative;
+}
+.doc-container-buttons {
+  position: relative;
+  text-align: center;
+  height: 40px;
+}
+.doc-container-buttons .btn-doc-prev {
+  position: absolute;
+  left: 0px;
+}
+.doc-container-buttons .btn-doc-next {
+  position: absolute;
+  right: 0px;
+}
+.cell-actions {
+  position: absolute;
+  bottom: 5px;
+  left: 5px;
+  line-height: 10px;
+}
+.cell-actions > .cell-action,
+.cell-actions > .cell-id {
+  display: inline-block;
+  font-size: 10px;
+  text-align: center;
+  width: 20px;
+  height: 20px;
+  border-radius: 10px;
+  border: 1px solid #666;
+  padding: 3px;
+  font-weight: bold;
+  background-color: #ccc;
+  opacity: 0.50;
+  z-index: 10;
+}
+.cell-actions .cell-action {
+  opacity: 0;
+}
+.cell-actions .cell-action:focus {
+  opacity: 1;
+}
+.chart-container:hover .cell-action {
+  opacity: 0.50;
+}
+.chart-container:hover .cell-action:hover {
+  opacity: 1;
+}
+.legendLabel {
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow-x: hidden;
+}
+.ngLegendValue:focus,
+.ngLegendValue:hover {
+  text-decoration: underline;
+}
+.ngLegendValueNumber {
+  margin-left: 5px;
+  margin-right: 5px;
+  font-weight: bold;
+}

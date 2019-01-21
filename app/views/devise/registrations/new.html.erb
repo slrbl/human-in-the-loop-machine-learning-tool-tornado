@@ -1,0 +1,29 @@
+
+
+
+
+<br>
+
+<div style="background-color:#f0f2f4;border-style: solid;border-width: 1px;border-color: silver;font-size:12px;padding:20px;border-radius:5px;width:30%;margin-left:35%">
+<h3>Sign up</h3>
+<%= form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
+<table>
+  <tr><td><%= f.label :email %></td><td><%= f.email_field :email, autofocus: true, autocomplete: "email",size: "40px" %></td></tr>
+  <tr><td><%= f.label :password %></td><td>
+    <% if @minimum_password_length %>
+    <em>(<%= @minimum_password_length %> characters minimum)</em>
+    <% end %><br />
+  <%= f.password_field :password, autocomplete: "new-password",size: "40px" %>
+</td></tr>
+  <tr><td><%= f.label :password_confirmation %></td><td><%= f.password_field :password_confirmation, autocomplete: "new-password",size: "40px" %></td></tr>
+
+  <tr><td></td>
+    <td align="right">
+
+    </td></tr>
+  <tr><td></td><td align="right"><%= f.submit "Sign up" %></td></tr>
+  <tr><td></td><td><%= render "devise/shared/links" %>
+</td></tr>
+</table>
+<% end %>
+</div>

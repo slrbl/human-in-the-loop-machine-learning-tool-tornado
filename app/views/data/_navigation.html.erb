@@ -1,0 +1,17 @@
+<table width="100%">
+  <tr>
+    <td align="left">
+<div style="width:96%;margin-left:2%;text-align:left">
+  <a href = '/datas' ><button class="button">My datasets</button></a>
+  <a href = '/datas/new' ><button class="button">Add dataset</button></a>
+</div>
+</td>
+<td>
+<div style="width:96%;margin-left:2%;text-align:right">
+<a href = '/download/<%= @dataset.id %>' ><button class="button">Download</button></a>
+<a href = '/datas/threshold/<%= @dataset.id %>' ><button class="button">Label seed</button></a>
+<a href = '/models/new/<%= @dataset.id %>' ><button class="button">Train</button></a>
+</div>
+</td>
+</tr>
+</table>

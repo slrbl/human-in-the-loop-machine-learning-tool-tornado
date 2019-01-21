@@ -1,0 +1,147 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+
+
+ html {
+   font-family:Arial, Helvetica, sans-serif;
+ }
+
+body{
+  background-color:#f2f2f2;
+}
+
+ a:link {
+   color: black;
+ }
+
+ /* visited link */
+ a:visited {
+   color: black;
+ }
+
+ /* mouse over link */
+ a:hover {
+   color: black;
+ }
+
+ /* selected link */
+ a:active {
+   color: black;
+ }
+
+
+ table {
+
+   border-collapse: collapse;
+   width: 96%;
+   margin-left: 2%;
+   border-width: 0px;
+   font-size: 12px;
+   border-color:#b7bfc8;
+ }
+
+ th, td {
+
+   padding-left: 2px;
+   padding-right: 2px;
+   padding-top:2px;
+   padding-bottom:2px;
+
+ }
+
+
+.error{
+  border-color: #ff3300;
+  color:red;
+  border-width:2px;
+  text-align:center;
+  width:50%;
+  margin-left: 25%;
+  padding: 20px;
+  border-radius: 5px;
+  font-size: 14px;
+  border-style: solid;
+}
+
+ .button {
+  background-color:#cccccc;
+  border-radius: 2px;
+  border-style: solid;
+  border-width: 1px;
+
+  border: none;
+  color: black;
+  padding: 5px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 12px;
+  cursor: pointer;
+}
+
+input[type=submit] {
+  background-color:#cccccc;
+  border-radius: 2px;
+  border-style: solid;
+  border-width: 1px;
+
+  border: none;
+  color: black;
+  padding: 5px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 12px;
+  cursor: pointer;
+}
+
+.desc {
+  background-color: #e2e6e9;
+  border-color: #c5ccd3;
+  border-style: solid;
+  border-width: 1px;
+  padding:10px;
+  border-radius:2px;
+  font-size:12px;
+}
+
+.top_bar{
+  padding-top: 10px;
+  padding-bottom: 10px;
+
+   border-style:solid;
+   border-color: #d9d9d9;
+   text-shadow: 2px 2px 2px silver;
+   background-color: #e6e6e6;
+   border-width: 1px;
+   text-align:right;
+   font-size:14px;
+   border-radius:2px
+}
+
+.login_form{
+  background-color:#e6e6e6;
+  border-style: solid;
+  border-width: 1px;
+  border-color:#cccccc;
+  font-size:12px;
+  padding:20px;
+  border-radius:5px;
+  width:30%;
+  margin-left:35%
+
+}
+//https://www.w3schools.com/colors/colors_picker.asp?colorhex=A52A2A

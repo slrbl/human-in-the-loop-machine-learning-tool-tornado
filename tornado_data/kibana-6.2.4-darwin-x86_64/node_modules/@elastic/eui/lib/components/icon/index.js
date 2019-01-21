@@ -1,0 +1,20 @@
+'use strict';
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _icon = require('./icon');
+
+Object.defineProperty(exports, 'EuiIcon', {
+  enumerable: true,
+  get: function get() {
+    return _icon.EuiIcon;
+  }
+});
+Object.defineProperty(exports, 'ICON_TYPES', {
+  enumerable: true,
+  get: function get() {
+    return _icon.TYPES;
+  }
+});
