@@ -4,3 +4,7 @@
 <code>$ rake db:migrate</code>
 <br>
 <code>$ sh ./launch_tornado.sh</code>
+<p>Tornado will then be available at http://0.0.0.0:3000</p>
+  
+<h2>Details and how to use</h2>
+All information are available at: 
