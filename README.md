@@ -1,5 +1,4 @@
 <h1>Tornado Active Learning</h1>
-#activelearning
 <p>Tornado is an Active Learning tool</p>
 <h2>To launch Tornado</h2>
 <code>$ rake db:migrate</code>
