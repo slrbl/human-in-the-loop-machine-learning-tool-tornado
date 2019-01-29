@@ -1,3 +1,4 @@
 tornado_data/* linguist-vendored
 app/* linguist-vendored
 config/* linguist-vendored
+bin/* linguist-vendored
