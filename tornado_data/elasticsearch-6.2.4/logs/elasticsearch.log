@@ -1,87 +1,34 @@
-[2019-01-21T00:56:20,788][WARN ][o.e.c.r.a.DiskThresholdMonitor] [o7tK3Zt] high disk watermark [90%] exceeded on [o7tK3ZtkSc-fyUdTrXGFpA][o7tK3Zt][/Users/walid.daboubi/LEA/ACTIVE_LEARNING_FRAMEWORK/aLearn_with_authentication_optimization_4/tornado_data/elasticsearch-6.2.4/data/nodes/0] free: 39.6gb[8.5%], shards will be relocated away from this node
-[2019-01-21T09:56:41,169][WARN ][o.e.c.r.a.DiskThresholdMonitor] [o7tK3Zt] high disk watermark [90%] exceeded on [o7tK3ZtkSc-fyUdTrXGFpA][o7tK3Zt][/Users/walid.daboubi/LEA/ACTIVE_LEARNING_FRAMEWORK/aLearn_with_authentication_optimization_4/tornado_data/elasticsearch-6.2.4/data/nodes/0] free: 35.7gb[7.6%], shards will be relocated away from this node
-[2019-01-21T09:56:41,173][INFO ][o.e.c.r.a.DiskThresholdMonitor] [o7tK3Zt] rerouting shards: [high disk watermark exceeded on one or more nodes]
-[2019-01-21T10:07:05,113][WARN ][o.e.c.r.a.DiskThresholdMonitor] [o7tK3Zt] high disk watermark [90%] exceeded on [o7tK3ZtkSc-fyUdTrXGFpA][o7tK3Zt][/Users/walid.daboubi/LEA/ACTIVE_LEARNING_FRAMEWORK/aLearn_with_authentication_optimization_4/tornado_data/elasticsearch-6.2.4/data/nodes/0] free: 36.7gb[7.9%], shards will be relocated away from this node
-[2019-01-21T10:07:35,179][WARN ][o.e.c.r.a.DiskThresholdMonitor] [o7tK3Zt] high disk watermark [90%] exceeded on [o7tK3ZtkSc-fyUdTrXGFpA][o7tK3Zt][/Users/walid.daboubi/LEA/ACTIVE_LEARNING_FRAMEWORK/aLearn_with_authentication_optimization_4/tornado_data/elasticsearch-6.2.4/data/nodes/0] free: 38.7gb[8.3%], shards will be relocated away from this node
-[2019-01-21T10:07:35,179][INFO ][o.e.c.r.a.DiskThresholdMonitor] [o7tK3Zt] rerouting shards: [high disk watermark exceeded on one or more nodes]
-[2019-01-21T10:08:05,248][WARN ][o.e.c.r.a.DiskThresholdMonitor] [o7tK3Zt] high disk watermark [90%] exceeded on [o7tK3ZtkSc-fyUdTrXGFpA][o7tK3Zt][/Users/walid.daboubi/LEA/ACTIVE_LEARNING_FRAMEWORK/aLearn_with_authentication_optimization_4/tornado_data/elasticsearch-6.2.4/data/nodes/0] free: 38.7gb[8.3%], shards will be relocated away from this node
-[2019-01-21T10:08:35,302][WARN ][o.e.c.r.a.DiskThresholdMonitor] [o7tK3Zt] high disk watermark [90%] exceeded on [o7tK3ZtkSc-fyUdTrXGFpA][o7tK3Zt][/Users/walid.daboubi/LEA/ACTIVE_LEARNING_FRAMEWORK/aLearn_with_authentication_optimization_4/tornado_data/elasticsearch-6.2.4/data/nodes/0] free: 38.7gb[8.3%], shards will be relocated away from this node
-[2019-01-21T10:08:35,302][INFO ][o.e.c.r.a.DiskThresholdMonitor] [o7tK3Zt] rerouting shards: [high disk watermark exceeded on one or more nodes]
-[2019-01-21T10:29:43,064][WARN ][o.e.c.r.a.DiskThresholdMonitor] [o7tK3Zt] high disk watermark [90%] exceeded on [o7tK3ZtkSc-fyUdTrXGFpA][o7tK3Zt][/Users/walid.daboubi/LEA/ACTIVE_LEARNING_FRAMEWORK/aLearn_with_authentication_optimization_4/tornado_data/elasticsearch-6.2.4/data/nodes/0] free: 38.7gb[8.3%], shards will be relocated away from this node
-[2019-01-21T10:30:13,112][WARN ][o.e.c.r.a.DiskThresholdMonitor] [o7tK3Zt] high disk watermark [90%] exceeded on [o7tK3ZtkSc-fyUdTrXGFpA][o7tK3Zt][/Users/walid.daboubi/LEA/ACTIVE_LEARNING_FRAMEWORK/aLearn_with_authentication_optimization_4/tornado_data/elasticsearch-6.2.4/data/nodes/0] free: 38.7gb[8.3%], shards will be relocated away from this node
-[2019-01-21T10:30:13,112][INFO ][o.e.c.r.a.DiskThresholdMonitor] [o7tK3Zt] rerouting shards: [high disk watermark exceeded on one or more nodes]
-[2019-01-21T10:30:43,172][WARN ][o.e.c.r.a.DiskThresholdMonitor] [o7tK3Zt] high disk watermark [90%] exceeded on [o7tK3ZtkSc-fyUdTrXGFpA][o7tK3Zt][/Users/walid.daboubi/LEA/ACTIVE_LEARNING_FRAMEWORK/aLearn_with_authentication_optimization_4/tornado_data/elasticsearch-6.2.4/data/nodes/0] free: 38.8gb[8.3%], shards will be relocated away from this node
-[2019-01-21T10:31:13,273][WARN ][o.e.c.r.a.DiskThresholdMonitor] [o7tK3Zt] high disk watermark [90%] exceeded on [o7tK3ZtkSc-fyUdTrXGFpA][o7tK3Zt][/Users/walid.daboubi/LEA/ACTIVE_LEARNING_FRAMEWORK/aLearn_with_authentication_optimization_4/tornado_data/elasticsearch-6.2.4/data/nodes/0] free: 38.8gb[8.3%], shards will be relocated away from this node
-[2019-01-21T10:31:13,273][INFO ][o.e.c.r.a.DiskThresholdMonitor] [o7tK3Zt] rerouting shards: [high disk watermark exceeded on one or more nodes]
-[2019-01-21T10:31:43,322][WARN ][o.e.c.r.a.DiskThresholdMonitor] [o7tK3Zt] high disk watermark [90%] exceeded on [o7tK3ZtkSc-fyUdTrXGFpA][o7tK3Zt][/Users/walid.daboubi/LEA/ACTIVE_LEARNING_FRAMEWORK/aLearn_with_authentication_optimization_4/tornado_data/elasticsearch-6.2.4/data/nodes/0] free: 38.8gb[8.3%], shards will be relocated away from this node
-[2019-01-21T10:32:13,428][WARN ][o.e.c.r.a.DiskThresholdMonitor] [o7tK3Zt] high disk watermark [90%] exceeded on [o7tK3ZtkSc-fyUdTrXGFpA][o7tK3Zt][/Users/walid.daboubi/LEA/ACTIVE_LEARNING_FRAMEWORK/aLearn_with_authentication_optimization_4/tornado_data/elasticsearch-6.2.4/data/nodes/0] free: 38.8gb[8.3%], shards will be relocated away from this node
-[2019-01-21T10:32:13,429][INFO ][o.e.c.r.a.DiskThresholdMonitor] [o7tK3Zt] rerouting shards: [high disk watermark exceeded on one or more nodes]
-[2019-01-21T10:32:43,456][WARN ][o.e.c.r.a.DiskThresholdMonitor] [o7tK3Zt] high disk watermark [90%] exceeded on [o7tK3ZtkSc-fyUdTrXGFpA][o7tK3Zt][/Users/walid.daboubi/LEA/ACTIVE_LEARNING_FRAMEWORK/aLearn_with_authentication_optimization_4/tornado_data/elasticsearch-6.2.4/data/nodes/0] free: 38.8gb[8.3%], shards will be relocated away from this node
-[2019-01-21T10:33:13,470][WARN ][o.e.c.r.a.DiskThresholdMonitor] [o7tK3Zt] high disk watermark [90%] exceeded on [o7tK3ZtkSc-fyUdTrXGFpA][o7tK3Zt][/Users/walid.daboubi/LEA/ACTIVE_LEARNING_FRAMEWORK/aLearn_with_authentication_optimization_4/tornado_data/elasticsearch-6.2.4/data/nodes/0] free: 38.7gb[8.3%], shards will be relocated away from this node
-[2019-01-21T10:33:13,470][INFO ][o.e.c.r.a.DiskThresholdMonitor] [o7tK3Zt] rerouting shards: [high disk watermark exceeded on one or more nodes]
-[2019-01-21T10:33:43,489][WARN ][o.e.c.r.a.DiskThresholdMonitor] [o7tK3Zt] high disk watermark [90%] exceeded on [o7tK3ZtkSc-fyUdTrXGFpA][o7tK3Zt][/Users/walid.daboubi/LEA/ACTIVE_LEARNING_FRAMEWORK/aLearn_with_authentication_optimization_4/tornado_data/elasticsearch-6.2.4/data/nodes/0] free: 38.7gb[8.3%], shards will be relocated away from this node
-[2019-01-21T10:34:13,513][WARN ][o.e.c.r.a.DiskThresholdMonitor] [o7tK3Zt] high disk watermark [90%] exceeded on [o7tK3ZtkSc-fyUdTrXGFpA][o7tK3Zt][/Users/walid.daboubi/LEA/ACTIVE_LEARNING_FRAMEWORK/aLearn_with_authentication_optimization_4/tornado_data/elasticsearch-6.2.4/data/nodes/0] free: 38.8gb[8.3%], shards will be relocated away from this node
-[2019-01-21T10:34:13,513][INFO ][o.e.c.r.a.DiskThresholdMonitor] [o7tK3Zt] rerouting shards: [high disk watermark exceeded on one or more nodes]
-[2019-01-21T10:34:43,533][WARN ][o.e.c.r.a.DiskThresholdMonitor] [o7tK3Zt] high disk watermark [90%] exceeded on [o7tK3ZtkSc-fyUdTrXGFpA][o7tK3Zt][/Users/walid.daboubi/LEA/ACTIVE_LEARNING_FRAMEWORK/aLearn_with_authentication_optimization_4/tornado_data/elasticsearch-6.2.4/data/nodes/0] free: 38.8gb[8.3%], shards will be relocated away from this node
-[2019-01-21T10:35:13,554][WARN ][o.e.c.r.a.DiskThresholdMonitor] [o7tK3Zt] high disk watermark [90%] exceeded on [o7tK3ZtkSc-fyUdTrXGFpA][o7tK3Zt][/Users/walid.daboubi/LEA/ACTIVE_LEARNING_FRAMEWORK/aLearn_with_authentication_optimization_4/tornado_data/elasticsearch-6.2.4/data/nodes/0] free: 38.8gb[8.3%], shards will be relocated away from this node
-[2019-01-21T10:35:13,554][INFO ][o.e.c.r.a.DiskThresholdMonitor] [o7tK3Zt] rerouting shards: [high disk watermark exceeded on one or more nodes]
-[2019-01-21T10:35:43,577][WARN ][o.e.c.r.a.DiskThresholdMonitor] [o7tK3Zt] high disk watermark [90%] exceeded on [o7tK3ZtkSc-fyUdTrXGFpA][o7tK3Zt][/Users/walid.daboubi/LEA/ACTIVE_LEARNING_FRAMEWORK/aLearn_with_authentication_optimization_4/tornado_data/elasticsearch-6.2.4/data/nodes/0] free: 39.8gb[8.5%], shards will be relocated away from this node
-[2019-01-21T10:36:13,614][WARN ][o.e.c.r.a.DiskThresholdMonitor] [o7tK3Zt] high disk watermark [90%] exceeded on [o7tK3ZtkSc-fyUdTrXGFpA][o7tK3Zt][/Users/walid.daboubi/LEA/ACTIVE_LEARNING_FRAMEWORK/aLearn_with_authentication_optimization_4/tornado_data/elasticsearch-6.2.4/data/nodes/0] free: 39.8gb[8.5%], shards will be relocated away from this node
-[2019-01-21T10:36:13,614][INFO ][o.e.c.r.a.DiskThresholdMonitor] [o7tK3Zt] rerouting shards: [high disk watermark exceeded on one or more nodes]
-[2019-01-21T10:36:43,625][WARN ][o.e.c.r.a.DiskThresholdMonitor] [o7tK3Zt] high disk watermark [90%] exceeded on [o7tK3ZtkSc-fyUdTrXGFpA][o7tK3Zt][/Users/walid.daboubi/LEA/ACTIVE_LEARNING_FRAMEWORK/aLearn_with_authentication_optimization_4/tornado_data/elasticsearch-6.2.4/data/nodes/0] free: 39.8gb[8.5%], shards will be relocated away from this node
-[2019-01-21T10:37:13,643][WARN ][o.e.c.r.a.DiskThresholdMonitor] [o7tK3Zt] high disk watermark [90%] exceeded on [o7tK3ZtkSc-fyUdTrXGFpA][o7tK3Zt][/Users/walid.daboubi/LEA/ACTIVE_LEARNING_FRAMEWORK/aLearn_with_authentication_optimization_4/tornado_data/elasticsearch-6.2.4/data/nodes/0] free: 39.8gb[8.5%], shards will be relocated away from this node
-[2019-01-21T10:37:13,643][INFO ][o.e.c.r.a.DiskThresholdMonitor] [o7tK3Zt] rerouting shards: [high disk watermark exceeded on one or more nodes]
-[2019-01-21T21:35:38,057][ERROR][o.e.b.Bootstrap          ] Exception
-java.lang.IllegalStateException: plugins directory [/Users/walid.daboubi/LEA/ACTIVE_LEARNING_FRAMEWORK/tornado-active-learning_3/tornado_data/elasticsearch-6.2.4/plugins] not found
-	at org.elasticsearch.bootstrap.Spawner.spawnNativePluginControllers(Spawner.java:67) ~[elasticsearch-6.2.4.jar:6.2.4]
-	at org.elasticsearch.bootstrap.Bootstrap.setup(Bootstrap.java:167) ~[elasticsearch-6.2.4.jar:6.2.4]
-	at org.elasticsearch.bootstrap.Bootstrap.init(Bootstrap.java:323) [elasticsearch-6.2.4.jar:6.2.4]
-	at org.elasticsearch.bootstrap.Elasticsearch.init(Elasticsearch.java:121) [elasticsearch-6.2.4.jar:6.2.4]
-	at org.elasticsearch.bootstrap.Elasticsearch.execute(Elasticsearch.java:112) [elasticsearch-6.2.4.jar:6.2.4]
-	at org.elasticsearch.cli.EnvironmentAwareCommand.execute(EnvironmentAwareCommand.java:86) [elasticsearch-6.2.4.jar:6.2.4]
-	at org.elasticsearch.cli.Command.mainWithoutErrorHandling(Command.java:124) [elasticsearch-cli-6.2.4.jar:6.2.4]
-	at org.elasticsearch.cli.Command.main(Command.java:90) [elasticsearch-cli-6.2.4.jar:6.2.4]
-	at org.elasticsearch.bootstrap.Elasticsearch.main(Elasticsearch.java:92) [elasticsearch-6.2.4.jar:6.2.4]
-	at org.elasticsearch.bootstrap.Elasticsearch.main(Elasticsearch.java:85) [elasticsearch-6.2.4.jar:6.2.4]
-[2019-01-21T21:35:38,068][WARN ][o.e.b.ElasticsearchUncaughtExceptionHandler] [] uncaught exception in thread [main]
-org.elasticsearch.bootstrap.StartupException: java.lang.IllegalStateException: plugins directory [/Users/walid.daboubi/LEA/ACTIVE_LEARNING_FRAMEWORK/tornado-active-learning_3/tornado_data/elasticsearch-6.2.4/plugins] not found
-	at org.elasticsearch.bootstrap.Elasticsearch.init(Elasticsearch.java:125) ~[elasticsearch-6.2.4.jar:6.2.4]
-	at org.elasticsearch.bootstrap.Elasticsearch.execute(Elasticsearch.java:112) ~[elasticsearch-6.2.4.jar:6.2.4]
-	at org.elasticsearch.cli.EnvironmentAwareCommand.execute(EnvironmentAwareCommand.java:86) ~[elasticsearch-6.2.4.jar:6.2.4]
-	at org.elasticsearch.cli.Command.mainWithoutErrorHandling(Command.java:124) ~[elasticsearch-cli-6.2.4.jar:6.2.4]
-	at org.elasticsearch.cli.Command.main(Command.java:90) ~[elasticsearch-cli-6.2.4.jar:6.2.4]
-	at org.elasticsearch.bootstrap.Elasticsearch.main(Elasticsearch.java:92) ~[elasticsearch-6.2.4.jar:6.2.4]
-	at org.elasticsearch.bootstrap.Elasticsearch.main(Elasticsearch.java:85) ~[elasticsearch-6.2.4.jar:6.2.4]
-Caused by: java.lang.IllegalStateException: plugins directory [/Users/walid.daboubi/LEA/ACTIVE_LEARNING_FRAMEWORK/tornado-active-learning_3/tornado_data/elasticsearch-6.2.4/plugins] not found
-	at org.elasticsearch.bootstrap.Spawner.spawnNativePluginControllers(Spawner.java:67) ~[elasticsearch-6.2.4.jar:6.2.4]
-	at org.elasticsearch.bootstrap.Bootstrap.setup(Bootstrap.java:167) ~[elasticsearch-6.2.4.jar:6.2.4]
-	at org.elasticsearch.bootstrap.Bootstrap.init(Bootstrap.java:323) ~[elasticsearch-6.2.4.jar:6.2.4]
-	at org.elasticsearch.bootstrap.Elasticsearch.init(Elasticsearch.java:121) ~[elasticsearch-6.2.4.jar:6.2.4]
-	... 6 more
-[2019-01-21T21:36:12,692][ERROR][o.e.b.Bootstrap          ] Exception
-java.lang.IllegalStateException: plugins directory [/Users/walid.daboubi/LEA/ACTIVE_LEARNING_FRAMEWORK/tornado-active-learning_3/tornado_data/elasticsearch-6.2.4/plugins] not found
-	at org.elasticsearch.bootstrap.Spawner.spawnNativePluginControllers(Spawner.java:67) ~[elasticsearch-6.2.4.jar:6.2.4]
-	at org.elasticsearch.bootstrap.Bootstrap.setup(Bootstrap.java:167) ~[elasticsearch-6.2.4.jar:6.2.4]
-	at org.elasticsearch.bootstrap.Bootstrap.init(Bootstrap.java:323) [elasticsearch-6.2.4.jar:6.2.4]
-	at org.elasticsearch.bootstrap.Elasticsearch.init(Elasticsearch.java:121) [elasticsearch-6.2.4.jar:6.2.4]
-	at org.elasticsearch.bootstrap.Elasticsearch.execute(Elasticsearch.java:112) [elasticsearch-6.2.4.jar:6.2.4]
-	at org.elasticsearch.cli.EnvironmentAwareCommand.execute(EnvironmentAwareCommand.java:86) [elasticsearch-6.2.4.jar:6.2.4]
-	at org.elasticsearch.cli.Command.mainWithoutErrorHandling(Command.java:124) [elasticsearch-cli-6.2.4.jar:6.2.4]
-	at org.elasticsearch.cli.Command.main(Command.java:90) [elasticsearch-cli-6.2.4.jar:6.2.4]
-	at org.elasticsearch.bootstrap.Elasticsearch.main(Elasticsearch.java:92) [elasticsearch-6.2.4.jar:6.2.4]
-	at org.elasticsearch.bootstrap.Elasticsearch.main(Elasticsearch.java:85) [elasticsearch-6.2.4.jar:6.2.4]
-[2019-01-21T21:36:12,698][WARN ][o.e.b.ElasticsearchUncaughtExceptionHandler] [] uncaught exception in thread [main]
-org.elasticsearch.bootstrap.StartupException: java.lang.IllegalStateException: plugins directory [/Users/walid.daboubi/LEA/ACTIVE_LEARNING_FRAMEWORK/tornado-active-learning_3/tornado_data/elasticsearch-6.2.4/plugins] not found
-	at org.elasticsearch.bootstrap.Elasticsearch.init(Elasticsearch.java:125) ~[elasticsearch-6.2.4.jar:6.2.4]
-	at org.elasticsearch.bootstrap.Elasticsearch.execute(Elasticsearch.java:112) ~[elasticsearch-6.2.4.jar:6.2.4]
-	at org.elasticsearch.cli.EnvironmentAwareCommand.execute(EnvironmentAwareCommand.java:86) ~[elasticsearch-6.2.4.jar:6.2.4]
-	at org.elasticsearch.cli.Command.mainWithoutErrorHandling(Command.java:124) ~[elasticsearch-cli-6.2.4.jar:6.2.4]
-	at org.elasticsearch.cli.Command.main(Command.java:90) ~[elasticsearch-cli-6.2.4.jar:6.2.4]
-	at org.elasticsearch.bootstrap.Elasticsearch.main(Elasticsearch.java:92) ~[elasticsearch-6.2.4.jar:6.2.4]
-	at org.elasticsearch.bootstrap.Elasticsearch.main(Elasticsearch.java:85) ~[elasticsearch-6.2.4.jar:6.2.4]
-Caused by: java.lang.IllegalStateException: plugins directory [/Users/walid.daboubi/LEA/ACTIVE_LEARNING_FRAMEWORK/tornado-active-learning_3/tornado_data/elasticsearch-6.2.4/plugins] not found
-	at org.elasticsearch.bootstrap.Spawner.spawnNativePluginControllers(Spawner.java:67) ~[elasticsearch-6.2.4.jar:6.2.4]
-	at org.elasticsearch.bootstrap.Bootstrap.setup(Bootstrap.java:167) ~[elasticsearch-6.2.4.jar:6.2.4]
-	at org.elasticsearch.bootstrap.Bootstrap.init(Bootstrap.java:323) ~[elasticsearch-6.2.4.jar:6.2.4]
-	at org.elasticsearch.bootstrap.Elasticsearch.init(Elasticsearch.java:121) ~[elasticsearch-6.2.4.jar:6.2.4]
-	... 6 more
+[2019-03-09T20:46:34,690][INFO ][o.e.n.Node               ] [] initializing ...
+[2019-03-09T20:46:34,819][INFO ][o.e.e.NodeEnvironment    ] [KeetUvx] using [1] data paths, mounts [[/ (/dev/disk1)]], net usable_space [25gb], net total_space [464.7gb], types [hfs]
+[2019-03-09T20:46:34,820][INFO ][o.e.e.NodeEnvironment    ] [KeetUvx] heap size [990.7mb], compressed ordinary object pointers [true]
+[2019-03-09T20:46:34,823][INFO ][o.e.n.Node               ] node name [KeetUvx] derived from node ID [KeetUvxFRi6QZl44iXtS9A]; set [node.name] to override
+[2019-03-09T20:46:34,823][INFO ][o.e.n.Node               ] version[6.2.4], pid[41194], build[ccec39f/2018-04-12T20:37:28.497551Z], OS[Mac OS X/10.12.6/x86_64], JVM["Oracle Corporation"/Java HotSpot(TM) 64-Bit Server VM/10.0.1/10.0.1+10]
+[2019-03-09T20:46:34,823][INFO ][o.e.n.Node               ] JVM arguments [-Xms1g, -Xmx1g, -XX:+UseConcMarkSweepGC, -XX:CMSInitiatingOccupancyFraction=75, -XX:+UseCMSInitiatingOccupancyOnly, -XX:+AlwaysPreTouch, -Xss1m, -Djava.awt.headless=true, -Dfile.encoding=UTF-8, -Djna.nosys=true, -XX:-OmitStackTraceInFastThrow, -Dio.netty.noUnsafe=true, -Dio.netty.noKeySetOptimization=true, -Dio.netty.recycler.maxCapacityPerThread=0, -Dlog4j.shutdownHookEnabled=false, -Dlog4j2.disable.jmx=true, -Djava.io.tmpdir=/var/folders/wr/kktx6bm16jj_qrr05rvw0byr0000gn/T/elasticsearch.ToohXuV2, -XX:+HeapDumpOnOutOfMemoryError, -Xlog:gc*,gc+age=trace,safepoint:file=logs/gc.log:utctime,pid,tags:filecount=32,filesize=64m, -Djava.locale.providers=COMPAT, -Des.path.home=/Users/walid.daboubi/LEA/Tornado3/tornado_data/elasticsearch-6.2.4, -Des.path.conf=/Users/walid.daboubi/LEA/Tornado3/tornado_data/elasticsearch-6.2.4/config]
+[2019-03-09T20:46:35,936][INFO ][o.e.p.PluginsService     ] [KeetUvx] loaded module [aggs-matrix-stats]
+[2019-03-09T20:46:35,936][INFO ][o.e.p.PluginsService     ] [KeetUvx] loaded module [analysis-common]
+[2019-03-09T20:46:35,936][INFO ][o.e.p.PluginsService     ] [KeetUvx] loaded module [ingest-common]
+[2019-03-09T20:46:35,936][INFO ][o.e.p.PluginsService     ] [KeetUvx] loaded module [lang-expression]
+[2019-03-09T20:46:35,936][INFO ][o.e.p.PluginsService     ] [KeetUvx] loaded module [lang-mustache]
+[2019-03-09T20:46:35,936][INFO ][o.e.p.PluginsService     ] [KeetUvx] loaded module [lang-painless]
+[2019-03-09T20:46:35,937][INFO ][o.e.p.PluginsService     ] [KeetUvx] loaded module [mapper-extras]
+[2019-03-09T20:46:35,937][INFO ][o.e.p.PluginsService     ] [KeetUvx] loaded module [parent-join]
+[2019-03-09T20:46:35,937][INFO ][o.e.p.PluginsService     ] [KeetUvx] loaded module [percolator]
+[2019-03-09T20:46:35,937][INFO ][o.e.p.PluginsService     ] [KeetUvx] loaded module [rank-eval]
+[2019-03-09T20:46:35,937][INFO ][o.e.p.PluginsService     ] [KeetUvx] loaded module [reindex]
+[2019-03-09T20:46:35,937][INFO ][o.e.p.PluginsService     ] [KeetUvx] loaded module [repository-url]
+[2019-03-09T20:46:35,937][INFO ][o.e.p.PluginsService     ] [KeetUvx] loaded module [transport-netty4]
+[2019-03-09T20:46:35,937][INFO ][o.e.p.PluginsService     ] [KeetUvx] loaded module [tribe]
+[2019-03-09T20:46:35,938][INFO ][o.e.p.PluginsService     ] [KeetUvx] no plugins loaded
+[2019-03-09T20:46:41,494][INFO ][o.e.d.DiscoveryModule    ] [KeetUvx] using discovery type [zen]
+[2019-03-09T20:46:43,270][INFO ][o.e.n.Node               ] initialized
+[2019-03-09T20:46:43,270][INFO ][o.e.n.Node               ] [KeetUvx] starting ...
+[2019-03-09T20:46:48,807][INFO ][o.e.t.TransportService   ] [KeetUvx] publish_address {127.0.0.1:9300}, bound_addresses {[::1]:9300}, {127.0.0.1:9300}
+[2019-03-09T20:46:51,934][INFO ][o.e.c.s.MasterService    ] [KeetUvx] zen-disco-elected-as-master ([0] nodes joined), reason: new_master {KeetUvx}{KeetUvxFRi6QZl44iXtS9A}{TIC9JS_sT4Kp2gHvGzY16A}{127.0.0.1}{127.0.0.1:9300}
+[2019-03-09T20:46:51,941][INFO ][o.e.c.s.ClusterApplierService] [KeetUvx] new_master {KeetUvx}{KeetUvxFRi6QZl44iXtS9A}{TIC9JS_sT4Kp2gHvGzY16A}{127.0.0.1}{127.0.0.1:9300}, reason: apply cluster state (from master [master {KeetUvx}{KeetUvxFRi6QZl44iXtS9A}{TIC9JS_sT4Kp2gHvGzY16A}{127.0.0.1}{127.0.0.1:9300} committed version [1] source [zen-disco-elected-as-master ([0] nodes joined)]])
+[2019-03-09T20:46:51,980][INFO ][o.e.h.n.Netty4HttpServerTransport] [KeetUvx] publish_address {127.0.0.1:9200}, bound_addresses {[::1]:9200}, {127.0.0.1:9200}
+[2019-03-09T20:46:51,980][INFO ][o.e.n.Node               ] [KeetUvx] started
+[2019-03-09T20:46:52,019][INFO ][o.e.g.GatewayService     ] [KeetUvx] recovered [0] indices into cluster_state
+[2019-03-09T20:47:12,553][INFO ][o.e.n.Node               ] [KeetUvx] stopping ...
+[2019-03-09T20:47:12,569][INFO ][o.e.n.Node               ] [KeetUvx] stopped
+[2019-03-09T20:47:12,570][INFO ][o.e.n.Node               ] [KeetUvx] closing ...
+[2019-03-09T20:47:12,582][INFO ][o.e.n.Node               ] [KeetUvx] closed
