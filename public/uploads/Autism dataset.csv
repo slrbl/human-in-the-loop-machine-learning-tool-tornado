@@ -1,0 +1,1055 @@
+Case_No,A1,A2,A3,A4,A5,A6,A7,A8,A9,A10,Age_Mons,Qchat-10-Score,Sex,Ethnicity,Jaundice,Family_mem_with_ASD,Who completed the test,Class/ASD Traits ,es_id,auto_label,6d55f2d8083841b3959d327c05a889bb_human_label,auto_proba
+77,0,0,0,0,0,0,0,0,0,0,36,0,m,asian,no,no,family member,No,6d55f2d8083841b3959d327c05a889bb,No,empty,0.6830880042661751
+87,0,0,0,0,0,0,0,0,0,0,22,0,m,middle eastern,yes,yes,family member,No,6d55f2d8083841b3959d327c05a889bb,No,empty,0.6830880042661751
+100,0,0,0,0,0,0,0,0,0,1,31,1,f,Others,no,no,family member,No,6d55f2d8083841b3959d327c05a889bb,No,empty,0.6830880042661751
+124,0,0,0,0,0,1,0,0,0,0,25,1,f,asian,no,no,family member,No,6d55f2d8083841b3959d327c05a889bb,No,empty,0.6830880042661751
+128,0,0,0,0,0,0,0,0,0,1,36,1,m,middle eastern,no,no,family member,No,6d55f2d8083841b3959d327c05a889bb,No,empty,0.6830880042661751
+346,0,0,0,0,1,1,1,1,1,1,36,6,m,asian,no,no,family member,Yes,6d55f2d8083841b3959d327c05a889bb,No,empty,0.6830880042661751
+350,0,0,0,0,0,0,0,0,0,1,13,1,f,middle eastern,yes,no,family member,No,6d55f2d8083841b3959d327c05a889bb,No,empty,0.6830880042661751
+356,1,1,1,1,1,1,1,1,0,0,24,8,m,black,yes,yes,Health Care Professional,Yes,6d55f2d8083841b3959d327c05a889bb,Yes,empty,0.8758192574676572
+358,1,1,0,1,1,1,1,0,1,0,14,7,m,asian,no,no,family member,Yes,6d55f2d8083841b3959d327c05a889bb,Yes,empty,0.7178791655789291
+364,1,1,0,0,1,1,1,1,0,1,36,7,m,asian,no,no,Health Care Professional,Yes,6d55f2d8083841b3959d327c05a889bb,Yes,empty,0.7178791655789291
+368,1,1,1,1,1,1,0,1,1,1,36,9,m,asian,no,no,family member,Yes,6d55f2d8083841b3959d327c05a889bb,Yes,empty,0.8758192574676572
+370,1,1,0,1,0,1,1,0,0,1,27,6,f,south asian,no,no,family member,Yes,6d55f2d8083841b3959d327c05a889bb,Yes,empty,0.7178791655789291
+376,0,0,0,1,1,0,1,0,0,1,30,4,m,asian,no,no,Health Care Professional,Yes,6d55f2d8083841b3959d327c05a889bb,No,empty,0.6830880042661751
+384,0,0,0,0,0,1,0,0,0,0,36,1,m,White European,no,no,family member,No,6d55f2d8083841b3959d327c05a889bb,No,empty,0.6830880042661751
+185,1,0,1,1,1,1,1,1,1,1,35,9,m,asian,no,no,family member,Yes,6d55f2d8083841b3959d327c05a889bb,Yes,empty,0.7750440120817794
+197,1,1,0,1,0,1,1,0,1,0,36,6,f,asian,yes,no,family member,Yes,6d55f2d8083841b3959d327c05a889bb,Yes,empty,0.7178791655789291
+199,1,0,1,1,1,1,1,0,1,1,20,8,m,asian,no,no,family member,Yes,6d55f2d8083841b3959d327c05a889bb,Yes,empty,0.7750440120817794
+200,0,1,1,0,1,0,1,0,0,1,35,5,m,middle eastern,no,yes,family member,Yes,6d55f2d8083841b3959d327c05a889bb,Yes,empty,0.7246933150368985
+201,1,1,1,1,1,1,1,1,0,1,36,9,f,asian,no,no,family member,Yes,6d55f2d8083841b3959d327c05a889bb,Yes,empty,0.8758192574676572
+205,1,1,1,1,0,1,1,1,0,0,36,7,m,Latino,yes,no,family member,Yes,6d55f2d8083841b3959d327c05a889bb,Yes,empty,0.8758192574676572
+207,1,1,1,1,1,1,1,0,1,1,36,9,m,White European,no,yes,family member,Yes,6d55f2d8083841b3959d327c05a889bb,Yes,empty,0.8758192574676572
+210,0,0,0,0,1,0,0,0,0,1,36,2,m,south asian,no,no,family member,No,6d55f2d8083841b3959d327c05a889bb,No,empty,0.6830880042661751
+217,0,0,0,0,0,1,0,0,1,1,13,3,f,middle eastern,no,no,family member,No,6d55f2d8083841b3959d327c05a889bb,No,empty,0.6830880042661751
+223,1,1,0,0,0,0,0,1,0,1,36,4,m,White European,no,no,family member,Yes,6d55f2d8083841b3959d327c05a889bb,Yes,empty,0.7178791655789291
+224,1,1,1,1,1,1,1,1,1,0,21,9,m,middle eastern,yes,no,family member,Yes,6d55f2d8083841b3959d327c05a889bb,Yes,empty,0.8758192574676572
+225,1,1,1,1,1,1,1,1,0,1,22,9,m,black,no,no,family member,Yes,6d55f2d8083841b3959d327c05a889bb,Yes,empty,0.8758192574676572
+226,0,0,0,0,1,0,1,1,0,1,30,4,f,asian,no,yes,family member,Yes,6d55f2d8083841b3959d327c05a889bb,No,empty,0.6830880042661751
+287,0,0,0,0,1,1,1,0,0,1,31,4,m,Hispanic,yes,no,family member,Yes,6d55f2d8083841b3959d327c05a889bb,No,empty,0.6830880042661751
+289,1,1,0,0,0,0,1,0,1,0,36,4,m,White European,yes,no,family member,Yes,6d55f2d8083841b3959d327c05a889bb,Yes,empty,0.7178791655789291
+291,0,0,0,0,0,0,1,0,0,0,36,1,f,asian,no,no,family member,No,6d55f2d8083841b3959d327c05a889bb,No,empty,0.6830880042661751
+293,0,0,0,1,0,1,1,0,1,0,20,4,m,middle eastern,no,no,family member,Yes,6d55f2d8083841b3959d327c05a889bb,No,empty,0.6830880042661751
+302,1,0,1,1,1,1,1,1,1,1,26,9,m,Others,no,yes,family member,Yes,6d55f2d8083841b3959d327c05a889bb,Yes,empty,0.7750440120817794
+304,1,1,1,1,1,1,1,0,1,0,21,8,m,asian,no,no,family member,Yes,6d55f2d8083841b3959d327c05a889bb,Yes,empty,0.8758192574676572
+309,1,1,0,0,1,1,1,0,0,0,36,5,m,White European,no,no,family member,Yes,6d55f2d8083841b3959d327c05a889bb,Yes,empty,0.7178791655789291
+314,0,0,0,0,0,0,0,0,0,0,36,0,f,asian,no,no,family member,No,6d55f2d8083841b3959d327c05a889bb,No,empty,0.6830880042661751
+325,1,1,0,0,1,0,1,0,0,0,31,4,m,White European,yes,no,family member,Yes,6d55f2d8083841b3959d327c05a889bb,Yes,empty,0.7178791655789291
+332,1,1,1,1,1,0,0,0,0,1,36,6,f,White European,yes,no,family member,Yes,6d55f2d8083841b3959d327c05a889bb,Yes,empty,0.8758192574676572
+447,0,0,0,0,0,0,0,0,0,0,36,0,m,middle eastern,no,yes,family member,No,6d55f2d8083841b3959d327c05a889bb,No,empty,0.6830880042661751
+455,0,0,0,0,0,0,0,0,0,0,35,0,m,asian,no,no,family member,No,6d55f2d8083841b3959d327c05a889bb,No,empty,0.6830880042661751
+480,0,0,0,0,0,0,0,0,0,0,15,0,f,middle eastern,yes,no,family member,No,6d55f2d8083841b3959d327c05a889bb,No,empty,0.6830880042661751
+482,1,1,1,1,1,1,1,1,1,1,28,10,m,White European,no,no,family member,Yes,6d55f2d8083841b3959d327c05a889bb,Yes,empty,0.8758192574676572
+487,1,1,1,1,1,1,0,0,1,1,28,8,m,Pacifica,no,no,family member,Yes,6d55f2d8083841b3959d327c05a889bb,Yes,empty,0.8758192574676572
+545,1,1,0,1,0,1,1,1,0,1,36,7,m,White European,no,no,family member,Yes,6d55f2d8083841b3959d327c05a889bb,Yes,empty,0.7178791655789291
+549,1,1,1,1,1,1,1,1,1,1,19,10,m,White European,yes,no,family member,Yes,6d55f2d8083841b3959d327c05a889bb,Yes,empty,0.8758192574676572
+556,1,0,1,1,1,1,0,1,1,1,33,8,m,White European,yes,no,family member,Yes,6d55f2d8083841b3959d327c05a889bb,Yes,empty,0.7750440120817794
+560,1,1,1,1,1,1,1,1,1,1,31,10,m,White European,yes,yes,family member,Yes,6d55f2d8083841b3959d327c05a889bb,Yes,empty,0.8758192574676572
+564,0,0,0,0,0,0,0,1,0,0,36,1,f,black,no,no,family member,No,6d55f2d8083841b3959d327c05a889bb,No,empty,0.6830880042661751
+566,1,1,1,1,1,1,1,1,1,1,36,10,m,White European,no,no,family member,Yes,6d55f2d8083841b3959d327c05a889bb,Yes,empty,0.8758192574676572
+146,1,1,1,1,1,1,1,1,1,0,23,9,m,asian,no,no,family member,Yes,6d55f2d8083841b3959d327c05a889bb,Yes,empty,0.8758192574676572
+148,0,0,0,0,0,0,0,0,0,1,12,1,m,asian,no,no,family member,No,6d55f2d8083841b3959d327c05a889bb,No,empty,0.6830880042661751
+151,0,0,0,0,0,0,0,1,0,1,36,2,f,asian,no,no,Health care professional,No,6d55f2d8083841b3959d327c05a889bb,No,empty,0.6830880042661751
+177,0,0,1,0,1,0,0,0,0,1,33,3,m,asian,no,yes,family member,No,6d55f2d8083841b3959d327c05a889bb,Yes,empty,0.5625349045373181
+178,0,0,1,0,0,1,0,0,0,0,33,2,m,asian,no,yes,family member,No,6d55f2d8083841b3959d327c05a889bb,Yes,empty,0.5625349045373181
+182,0,0,0,1,0,0,0,0,0,0,30,1,m,south asian,yes,no,family member,No,6d55f2d8083841b3959d327c05a889bb,No,empty,0.6830880042661751
+237,1,1,1,1,0,0,1,1,0,1,36,7,m,asian,no,no,family member,Yes,6d55f2d8083841b3959d327c05a889bb,Yes,empty,0.8758192574676572
+244,0,0,0,0,0,0,0,0,0,1,19,1,f,middle eastern,no,no,family member,No,6d55f2d8083841b3959d327c05a889bb,No,empty,0.6830880042661751
+248,1,1,1,0,0,1,1,1,1,1,28,8,m,middle eastern,no,yes,family member,Yes,6d55f2d8083841b3959d327c05a889bb,Yes,empty,0.8758192574676572
+253,0,0,0,1,1,1,1,1,1,1,36,7,m,White European,no,no,family member,Yes,6d55f2d8083841b3959d327c05a889bb,No,empty,0.6830880042661751
+259,1,1,0,0,1,1,1,0,1,1,23,7,m,White European,yes,no,family member,Yes,6d55f2d8083841b3959d327c05a889bb,Yes,empty,0.7178791655789291
+270,1,0,1,1,0,1,1,1,1,1,30,8,m,White European,no,no,family member,Yes,6d55f2d8083841b3959d327c05a889bb,Yes,empty,0.7750440120817794
+281,1,1,1,1,1,1,1,1,1,1,28,10,m,White European,no,no,family member,Yes,6d55f2d8083841b3959d327c05a889bb,Yes,empty,0.8758192574676572
+501,1,1,1,1,1,1,1,1,1,1,25,10,m,White European,no,no,family member,Yes,6d55f2d8083841b3959d327c05a889bb,Yes,empty,0.8758192574676572
+504,1,1,0,1,1,1,0,1,1,0,36,7,m,White European,no,no,family member,Yes,6d55f2d8083841b3959d327c05a889bb,Yes,empty,0.7178791655789291
+505,1,0,1,0,1,0,0,0,0,0,36,3,m,White European,no,no,family member,No,6d55f2d8083841b3959d327c05a889bb,Yes,empty,0.7750440120817794
+515,1,1,1,1,1,1,1,1,1,1,36,10,m,black,no,no,family member,Yes,6d55f2d8083841b3959d327c05a889bb,Yes,empty,0.8758192574676572
+523,1,1,1,1,0,0,1,1,1,1,24,8,m,black,yes,no,family member,Yes,6d55f2d8083841b3959d327c05a889bb,Yes,empty,0.8758192574676572
+530,1,1,0,1,1,1,1,1,1,0,17,8,m,asian,no,no,family member,Yes,6d55f2d8083841b3959d327c05a889bb,Yes,empty,0.7178791655789291
+405,0,0,1,1,1,1,1,1,1,0,36,7,m,asian,no,no,family member,Yes,6d55f2d8083841b3959d327c05a889bb,Yes,empty,0.5625349045373181
+420,1,1,0,0,1,1,1,1,1,1,36,8,m,Others,yes,no,family member,Yes,6d55f2d8083841b3959d327c05a889bb,Yes,empty,0.7178791655789291
+422,0,0,0,1,0,1,1,1,1,0,30,5,m,asian,no,no,family member,Yes,6d55f2d8083841b3959d327c05a889bb,No,empty,0.6830880042661751
+426,1,1,1,1,0,1,1,0,1,0,18,7,f,White European,no,no,family member,Yes,6d55f2d8083841b3959d327c05a889bb,Yes,empty,0.8758192574676572
+431,1,1,0,1,1,1,1,1,1,1,36,9,m,White European,no,no,family member,Yes,6d55f2d8083841b3959d327c05a889bb,Yes,empty,0.7178791655789291
+438,0,0,1,1,0,0,1,1,0,1,25,5,m,asian,no,no,family member,Yes,6d55f2d8083841b3959d327c05a889bb,Yes,empty,0.5625349045373181
+926,1,1,0,0,1,1,1,0,1,1,36,7,m,asian,no,no,family member,Yes,6d55f2d8083841b3959d327c05a889bb,Yes,empty,0.7178791655789291
+930,0,0,1,1,1,0,0,0,1,0,12,4,m,White European,no,no,family member,Yes,6d55f2d8083841b3959d327c05a889bb,Yes,empty,0.5625349045373181
+934,0,0,0,0,0,1,1,0,0,1,36,3,f,asian,no,no,family member,No,6d55f2d8083841b3959d327c05a889bb,No,empty,0.6830880042661751
+945,1,1,0,0,0,1,0,0,0,1,36,4,m,asian,no,no,Health Care Professional,Yes,6d55f2d8083841b3959d327c05a889bb,Yes,empty,0.7178791655789291
+966,1,0,1,1,0,1,1,1,0,0,28,6,m,asian,no,no,family member,Yes,6d55f2d8083841b3959d327c05a889bb,Yes,empty,0.7750440120817794
+969,0,0,0,0,1,1,0,1,0,1,35,4,f,asian,no,no,family member,Yes,6d55f2d8083841b3959d327c05a889bb,No,empty,0.6830880042661751
+688,0,0,0,0,0,0,1,0,0,0,30,1,m,White European,no,no,family member,No,6d55f2d8083841b3959d327c05a889bb,No,empty,0.6830880042661751
+690,1,1,1,1,1,1,1,1,1,0,36,9,m,asian,yes,yes,family member,Yes,6d55f2d8083841b3959d327c05a889bb,Yes,empty,0.8758192574676572
+693,0,0,0,0,0,0,1,0,1,1,36,3,m,south asian,no,no,family member,No,6d55f2d8083841b3959d327c05a889bb,No,empty,0.6830880042661751
+694,1,1,1,1,1,1,1,1,0,1,27,9,m,Others,yes,yes,family member,Yes,6d55f2d8083841b3959d327c05a889bb,Yes,empty,0.8758192574676572
+702,0,0,0,0,0,0,0,0,1,1,26,2,f,White European,yes,no,family member,No,6d55f2d8083841b3959d327c05a889bb,No,empty,0.6830880042661751
+704,1,0,1,1,1,1,1,0,1,0,36,7,m,White European,yes,yes,family member,Yes,6d55f2d8083841b3959d327c05a889bb,Yes,empty,0.7750440120817794
+713,1,1,1,1,1,1,1,1,1,1,22,10,m,White European,yes,no,family member,Yes,6d55f2d8083841b3959d327c05a889bb,Yes,empty,0.8758192574676572
+718,1,1,0,1,1,1,1,0,1,1,36,8,m,White European,no,no,family member,Yes,6d55f2d8083841b3959d327c05a889bb,Yes,empty,0.7178791655789291
+728,1,1,1,1,1,1,1,1,1,1,15,10,m,south asian,no,no,family member,Yes,6d55f2d8083841b3959d327c05a889bb,Yes,empty,0.8758192574676572
+729,1,1,0,1,1,1,1,1,1,0,25,8,m,White European,no,no,family member,Yes,6d55f2d8083841b3959d327c05a889bb,Yes,empty,0.7178791655789291
+981,1,0,1,0,1,1,1,0,1,1,24,7,m,middle eastern,yes,no,family member,Yes,6d55f2d8083841b3959d327c05a889bb,Yes,empty,0.7750440120817794
+988,1,1,1,1,1,1,1,0,1,1,30,9,f,middle eastern,no,no,family member,Yes,6d55f2d8083841b3959d327c05a889bb,Yes,empty,0.8758192574676572
+1003,0,0,0,0,1,1,1,1,0,0,36,4,m,black,yes,no,Self,Yes,6d55f2d8083841b3959d327c05a889bb,No,empty,0.6830880042661751
+1008,0,0,0,1,0,0,1,0,0,1,34,3,f,White European,no,yes,family member,No,6d55f2d8083841b3959d327c05a889bb,No,empty,0.6830880042661751
+1010,1,0,1,1,0,0,1,0,0,1,24,5,m,asian,no,no,family member,Yes,6d55f2d8083841b3959d327c05a889bb,Yes,empty,0.7750440120817794
+1018,1,1,0,0,0,1,1,1,0,1,36,6,f,asian,no,no,family member,Yes,6d55f2d8083841b3959d327c05a889bb,Yes,empty,0.7178791655789291
+847,0,0,0,0,0,0,1,0,0,1,21,2,m,middle eastern,yes,no,family member,No,6d55f2d8083841b3959d327c05a889bb,No,empty,0.6830880042661751
+858,0,0,1,1,1,1,1,0,1,0,22,6,f,Others,no,no,family member,Yes,6d55f2d8083841b3959d327c05a889bb,Yes,empty,0.5625349045373181
+863,1,1,1,1,1,1,0,1,1,1,24,9,f,Hispanic,no,no,family member,Yes,6d55f2d8083841b3959d327c05a889bb,Yes,empty,0.8758192574676572
+869,1,1,1,1,0,0,1,1,0,1,36,7,f,mixed,yes,no,family member,Yes,6d55f2d8083841b3959d327c05a889bb,Yes,empty,0.8758192574676572
+874,0,0,0,0,0,0,0,0,0,0,36,0,m,Others,no,no,family member,No,6d55f2d8083841b3959d327c05a889bb,No,empty,0.6830880042661751
+876,0,0,1,1,1,1,1,0,1,1,30,7,f,Others,yes,no,family member,Yes,6d55f2d8083841b3959d327c05a889bb,Yes,empty,0.5625349045373181
+641,0,0,0,0,1,0,0,1,1,1,36,4,m,middle eastern,no,no,family member,Yes,6d55f2d8083841b3959d327c05a889bb,No,empty,0.6830880042661751
+642,0,0,0,0,0,0,0,0,0,1,12,1,m,middle eastern,no,no,family member,No,6d55f2d8083841b3959d327c05a889bb,No,empty,0.6830880042661751
+658,1,1,1,1,1,1,1,1,1,1,28,10,m,White European,no,no,family member,Yes,6d55f2d8083841b3959d327c05a889bb,Yes,empty,0.8758192574676572
+660,0,0,1,1,1,1,1,0,1,1,24,7,f,asian,no,no,family member,Yes,6d55f2d8083841b3959d327c05a889bb,Yes,empty,0.5625349045373181
+670,1,1,0,1,1,1,1,0,1,0,14,7,m,White European,no,no,family member,Yes,6d55f2d8083841b3959d327c05a889bb,Yes,empty,0.7178791655789291
+671,1,1,0,0,0,0,1,0,0,1,26,4,f,middle eastern,no,no,family member,Yes,6d55f2d8083841b3959d327c05a889bb,Yes,empty,0.7178791655789291
+676,0,0,0,0,0,0,0,1,0,0,24,1,m,asian,yes,no,family member,No,6d55f2d8083841b3959d327c05a889bb,No,empty,0.6830880042661751
+888,0,1,1,0,1,0,1,0,1,0,34,5,f,black,no,no,family member,Yes,6d55f2d8083841b3959d327c05a889bb,Yes,empty,0.7246933150368985
+895,0,0,0,0,1,1,1,1,0,1,30,5,m,Latino,yes,no,family member,Yes,6d55f2d8083841b3959d327c05a889bb,No,empty,0.6830880042661751
+904,1,1,0,1,0,1,1,0,1,1,36,7,f,White European,no,no,family member,Yes,6d55f2d8083841b3959d327c05a889bb,Yes,empty,0.7178791655789291
+908,1,1,1,1,1,1,1,1,1,1,21,10,m,asian,no,no,family member,Yes,6d55f2d8083841b3959d327c05a889bb,Yes,empty,0.8758192574676572
+909,1,1,0,0,0,0,1,0,1,1,25,5,m,White European,yes,no,family member,Yes,6d55f2d8083841b3959d327c05a889bb,Yes,empty,0.7178791655789291
+734,1,1,0,1,1,0,1,1,1,0,36,7,m,middle eastern,no,no,family member,Yes,6d55f2d8083841b3959d327c05a889bb,Yes,empty,0.7178791655789291
+740,0,0,0,0,0,0,0,0,1,1,30,2,m,asian,no,no,family member,No,6d55f2d8083841b3959d327c05a889bb,No,empty,0.6830880042661751
+753,1,1,0,0,1,1,1,1,1,0,28,7,m,south asian,no,no,family member,Yes,6d55f2d8083841b3959d327c05a889bb,Yes,empty,0.7178791655789291
+760,1,1,1,1,1,0,1,1,0,1,22,8,m,south asian,no,no,family member,Yes,6d55f2d8083841b3959d327c05a889bb,Yes,empty,0.8758192574676572
+776,0,1,1,1,0,1,1,1,1,0,12,7,m,Hispanic,no,no,family member,Yes,6d55f2d8083841b3959d327c05a889bb,Yes,empty,0.7246933150368985
+789,1,1,1,0,1,0,1,0,0,0,35,5,m,Others,no,no,family member,Yes,6d55f2d8083841b3959d327c05a889bb,Yes,empty,0.8758192574676572
+801,1,1,0,1,1,1,1,0,0,0,24,6,f,south asian,no,no,family member,Yes,6d55f2d8083841b3959d327c05a889bb,Yes,empty,0.7178791655789291
+808,1,1,0,0,1,1,1,0,1,1,36,7,m,White European,no,yes,family member,Yes,6d55f2d8083841b3959d327c05a889bb,Yes,empty,0.7178791655789291
+821,0,0,0,1,0,1,1,1,1,0,18,5,m,asian,no,yes,family member,Yes,6d55f2d8083841b3959d327c05a889bb,No,empty,0.6830880042661751
+829,1,1,1,1,1,1,1,1,1,1,14,10,m,middle eastern,no,no,family member,Yes,6d55f2d8083841b3959d327c05a889bb,Yes,empty,0.8758192574676572
+833,1,1,1,1,1,1,1,1,1,0,19,9,f,Hispanic,no,no,family member,Yes,6d55f2d8083841b3959d327c05a889bb,Yes,empty,0.8758192574676572
+620,1,1,0,1,1,1,1,1,1,1,28,9,m,asian,no,no,family member,Yes,6d55f2d8083841b3959d327c05a889bb,Yes,empty,0.7178791655789291
+632,0,0,0,1,1,1,1,0,0,0,36,4,m,asian,no,no,family member,Yes,6d55f2d8083841b3959d327c05a889bb,No,empty,0.6830880042661751
+1027,0,0,0,0,0,0,0,0,0,1,36,1,m,White European,no,no,family member,No,6d55f2d8083841b3959d327c05a889bb,No,empty,0.6830880042661751
+1030,1,1,0,1,0,1,1,1,1,1,36,8,m,White European,no,yes,family member,Yes,6d55f2d8083841b3959d327c05a889bb,Yes,empty,0.7178791655789291
+1041,0,0,0,0,0,0,0,0,0,1,25,1,m,White European,no,no,family member,No,6d55f2d8083841b3959d327c05a889bb,No,empty,0.6830880042661751
+1044,1,1,1,1,1,1,1,1,1,1,25,10,m,asian,no,yes,family member,Yes,6d55f2d8083841b3959d327c05a889bb,Yes,empty,0.8758192574676572
+1045,1,1,1,1,1,1,1,1,1,1,25,10,m,asian,no,yes,family member,Yes,6d55f2d8083841b3959d327c05a889bb,Yes,empty,0.8758192574676572
+31,0,0,0,0,0,0,0,0,0,0,18,0,f,middle eastern,no,no,family member,No,6d55f2d8083841b3959d327c05a889bb,No,No,0.6830880042661751
+33,0,0,0,0,0,0,0,0,0,1,15,1,f,middle eastern,no,no,Health care professional,No,6d55f2d8083841b3959d327c05a889bb,No,No,0.6830880042661751
+34,0,0,0,0,0,0,0,0,0,0,12,0,f,middle eastern,no,no,family member,No,6d55f2d8083841b3959d327c05a889bb,No,No,0.6830880042661751
+45,0,0,0,0,0,0,0,0,0,1,15,1,f,middle eastern,no,no,family member,No,6d55f2d8083841b3959d327c05a889bb,No,No,0.6830880042661751
+49,0,0,0,0,0,0,0,0,0,1,14,1,f,White European,no,no,family member,No,6d55f2d8083841b3959d327c05a889bb,No,No,0.6830880042661751
+51,0,0,0,0,0,0,0,0,0,1,12,1,m,middle eastern,no,no,family member,No,6d55f2d8083841b3959d327c05a889bb,No,No,0.6830880042661751
+52,0,0,0,0,0,0,0,0,0,1,12,1,f,middle eastern,no,no,family member,No,6d55f2d8083841b3959d327c05a889bb,No,No,0.6830880042661751
+62,0,0,0,0,0,0,0,0,0,1,12,1,f,middle eastern,no,no,family member,No,6d55f2d8083841b3959d327c05a889bb,No,No,0.6830880042661751
+68,0,0,0,0,0,0,0,1,0,0,29,1,m,White European,no,yes,family member,No,6d55f2d8083841b3959d327c05a889bb,No,No,0.6830880042661751
+69,1,0,1,0,0,0,0,0,0,0,23,2,m,south asian,no,yes,family member,No,6d55f2d8083841b3959d327c05a889bb,Yes,No,0.7750440120817794
+83,1,1,0,1,1,1,1,1,0,1,36,8,f,White European,yes,no,family member,Yes,6d55f2d8083841b3959d327c05a889bb,Yes,Yes,0.7178791655789291
+85,1,1,0,1,0,1,1,0,0,1,30,6,m,middle eastern,no,no,family member,Yes,6d55f2d8083841b3959d327c05a889bb,Yes,Yes,0.7178791655789291
+89,1,0,0,0,1,0,1,0,1,0,34,4,m,asian,no,no,family member,Yes,6d55f2d8083841b3959d327c05a889bb,Yes,Yes,0.554176278648098
+121,0,1,0,1,1,0,1,0,0,1,27,5,m,asian,no,no,family member,Yes,6d55f2d8083841b3959d327c05a889bb,No,Yes,0.5128953866895871
+129,0,0,1,1,1,1,1,0,0,1,17,6,f,White European,yes,no,family member,Yes,6d55f2d8083841b3959d327c05a889bb,Yes,Yes,0.5625349045373181
+138,0,0,1,1,1,0,0,0,1,0,36,4,m,asian,yes,no,family member,Yes,6d55f2d8083841b3959d327c05a889bb,Yes,Yes,0.5625349045373181
+2,1,1,0,0,0,1,1,0,0,0,36,4,m,White European,yes,no,family member,Yes,6d55f2d8083841b3959d327c05a889bb,Yes,Yes,0.7178791655789291
+28,1,1,1,1,1,1,1,1,1,1,35,10,m,Others,yes,no,family member,Yes,6d55f2d8083841b3959d327c05a889bb,Yes,Yes,0.8758192574676572
+341,1,1,1,1,1,1,1,1,1,1,28,10,m,White European,yes,no,family member,Yes,6d55f2d8083841b3959d327c05a889bb,Yes,Yes,0.8758192574676572
+343,1,1,1,1,1,1,1,1,1,1,28,10,m,White European,no,no,family member,Yes,6d55f2d8083841b3959d327c05a889bb,Yes,Yes,0.8758192574676572
+329,0,0,0,0,0,0,0,0,0,1,13,1,f,Hispanic,no,no,family member,No,6d55f2d8083841b3959d327c05a889bb,No,No,0.6830880042661751
+929,1,0,0,1,0,0,0,0,1,0,12,3,m,White European,no,no,family member,No,6d55f2d8083841b3959d327c05a889bb,Yes,No,0.554176278648098
+983,1,1,1,1,1,1,1,0,1,0,36,8,m,asian,no,no,family member,Yes,6d55f2d8083841b3959d327c05a889bb,Yes,Yes,0.8758192574676572
+883,1,1,1,1,1,0,1,0,1,0,36,7,m,asian,no,no,family member,Yes,6d55f2d8083841b3959d327c05a889bb,Yes,Yes,0.8758192574676572
+634,1,0,0,1,1,0,0,0,0,1,24,4,m,asian,yes,no,family member,Yes,6d55f2d8083841b3959d327c05a889bb,Yes,Yes,0.554176278648098
+345,0,1,0,0,1,1,1,1,1,0,36,6,m,asian,no,no,family member,Yes,6d55f2d8083841b3959d327c05a889bb,No,Yes,0.5128953866895871
+152,0,1,0,1,0,0,1,0,0,1,33,4,m,asian,no,no,family member,Yes,6d55f2d8083841b3959d327c05a889bb,No,Yes,0.5128953866895871
+508,0,1,0,1,0,1,0,0,1,0,36,4,m,asian,no,no,family member,Yes,6d55f2d8083841b3959d327c05a889bb,No,Yes,0.5128953866895871
+960,0,1,0,0,1,1,1,0,0,0,36,4,m,asian,no,no,family member,Yes,6d55f2d8083841b3959d327c05a889bb,No,Yes,0.5128953866895871
+81,0,1,0,0,0,0,0,0,0,1,30,2,m,middle eastern,no,no,family member,No,6d55f2d8083841b3959d327c05a889bb,No,No,0.5128953866895871
+573,0,1,0,0,0,0,0,1,0,0,36,2,m,White European,yes,no,family member,No,6d55f2d8083841b3959d327c05a889bb,No,No,0.5128953866895871
+174,0,1,0,0,0,0,0,0,0,1,36,2,f,White European,yes,yes,family member,No,6d55f2d8083841b3959d327c05a889bb,No,No,0.5128953866895871
+959,0,1,0,0,0,0,1,0,0,0,36,2,m,asian,no,no,family member,No,6d55f2d8083841b3959d327c05a889bb,No,No,0.5128953866895871
+1017,0,1,0,0,1,0,1,1,0,1,36,5,m,Hispanic,no,no,family member,Yes,6d55f2d8083841b3959d327c05a889bb,No,Yes,0.5128953866895871
+844,0,1,0,0,1,1,0,0,1,0,36,4,m,White European,no,no,family member,Yes,6d55f2d8083841b3959d327c05a889bb,No,Yes,0.5128953866895871
+870,0,1,0,1,0,1,1,1,1,1,36,7,f,mixed,yes,no,family member,Yes,6d55f2d8083841b3959d327c05a889bb,No,Yes,0.5128953866895871
+381,1,0,0,0,0,1,1,0,0,1,30,4,m,Hispanic,no,no,family member,Yes,6d55f2d8083841b3959d327c05a889bb,Yes,Yes,0.554176278648098
+195,1,0,0,1,0,1,0,0,0,0,36,3,m,middle eastern,no,no,Health Care Professional,No,6d55f2d8083841b3959d327c05a889bb,Yes,No,0.554176278648098
+452,1,0,0,0,1,1,1,0,0,0,30,4,f,asian,yes,no,family member,Yes,6d55f2d8083841b3959d327c05a889bb,Yes,Yes,0.554176278648098
+454,1,0,0,1,1,1,1,1,1,1,35,8,m,asian,no,no,family member,Yes,6d55f2d8083841b3959d327c05a889bb,Yes,Yes,0.554176278648098
+459,1,0,0,0,0,1,0,0,0,0,36,2,m,asian,no,yes,family member,No,6d55f2d8083841b3959d327c05a889bb,Yes,No,0.554176278648098
+489,1,0,0,0,1,1,1,1,1,0,36,6,m,Hispanic,no,no,family member,Yes,6d55f2d8083841b3959d327c05a889bb,Yes,Yes,0.554176278648098
+553,1,0,0,0,1,1,1,0,1,1,36,6,m,asian,no,no,family member,Yes,6d55f2d8083841b3959d327c05a889bb,Yes,Yes,0.554176278648098
+571,1,0,0,0,0,0,0,0,0,1,36,2,m,Hispanic,no,no,family member,No,6d55f2d8083841b3959d327c05a889bb,Yes,No,0.554176278648098
+231,1,0,0,0,0,1,1,0,1,1,33,5,m,asian,no,no,family member,Yes,6d55f2d8083841b3959d327c05a889bb,Yes,Yes,0.554176278648098
+499,1,0,0,1,1,1,0,0,0,1,29,5,m,White European,yes,no,family member,Yes,6d55f2d8083841b3959d327c05a889bb,Yes,Yes,0.554176278648098
+421,1,0,0,1,1,1,0,0,1,1,36,6,m,asian,no,no,family member,Yes,6d55f2d8083841b3959d327c05a889bb,Yes,Yes,0.554176278648098
+970,1,0,0,0,0,0,1,0,0,1,30,3,m,middle eastern,no,no,family member,No,6d55f2d8083841b3959d327c05a889bb,Yes,No,0.554176278648098
+975,1,0,0,0,0,0,1,1,1,1,36,5,m,White European,no,yes,family member,Yes,6d55f2d8083841b3959d327c05a889bb,Yes,Yes,0.554176278648098
+1015,1,0,0,0,0,1,1,1,1,0,30,5,f,White European,no,no,family member,Yes,6d55f2d8083841b3959d327c05a889bb,Yes,Yes,0.554176278648098
+924,1,0,0,1,0,1,1,1,1,0,36,6,m,White European,yes,no,family member,Yes,6d55f2d8083841b3959d327c05a889bb,Yes,Yes,0.554176278648098
+627,1,0,0,0,0,0,1,0,0,1,22,3,f,White European,yes,no,family member,No,6d55f2d8083841b3959d327c05a889bb,Yes,No,0.554176278648098
+1053,1,0,0,0,0,0,0,1,0,1,19,3,m,White European,no,yes,family member,No,6d55f2d8083841b3959d327c05a889bb,Yes,No,0.554176278648098
+355,0,0,1,1,0,0,0,0,0,0,36,2,m,asian,no,no,family member,No,6d55f2d8083841b3959d327c05a889bb,Yes,No,0.5625349045373181
+366,0,0,1,1,0,0,0,0,0,0,36,2,m,asian,no,no,family member,No,6d55f2d8083841b3959d327c05a889bb,Yes,No,0.5625349045373181
+317,0,0,1,1,1,1,1,0,1,1,14,7,m,White European,yes,no,family member,Yes,6d55f2d8083841b3959d327c05a889bb,Yes,Yes,0.5625349045373181
+475,0,0,1,1,0,1,0,0,1,0,17,4,m,asian,no,no,family member,Yes,6d55f2d8083841b3959d327c05a889bb,Yes,Yes,0.5625349045373181
+476,0,0,1,1,0,0,0,0,0,0,17,2,m,asian,no,no,family member,No,6d55f2d8083841b3959d327c05a889bb,Yes,No,0.5625349045373181
+44,0,0,0,0,0,0,0,0,0,0,15,0,f,middle eastern,no,no,family member,No,6d55f2d8083841b3959d327c05a889bb,No,empty,0.6830880042661751
+50,0,0,0,0,0,0,0,0,0,1,14,1,f,middle eastern,no,no,Self,No,6d55f2d8083841b3959d327c05a889bb,No,empty,0.6830880042661751
+56,0,0,1,1,0,1,1,0,1,1,36,6,f,White European,no,no,family member,Yes,6d55f2d8083841b3959d327c05a889bb,Yes,empty,0.5625349045373181
+58,0,0,0,1,1,1,1,1,1,0,25,6,m,asian,no,no,family member,Yes,6d55f2d8083841b3959d327c05a889bb,No,empty,0.6830880042661751
+63,1,1,0,0,1,1,1,1,1,1,36,8,m,White European,yes,no,family member,Yes,6d55f2d8083841b3959d327c05a889bb,Yes,empty,0.7178791655789291
+187,1,0,1,1,1,1,1,1,1,1,30,9,m,asian,yes,no,family member,Yes,6d55f2d8083841b3959d327c05a889bb,Yes,empty,0.7750440120817794
+193,1,1,0,0,0,0,1,0,0,1,27,4,f,south asian,no,no,family member,Yes,6d55f2d8083841b3959d327c05a889bb,Yes,empty,0.7178791655789291
+215,0,0,0,0,0,0,1,1,1,1,25,4,m,Hispanic,no,no,family member,Yes,6d55f2d8083841b3959d327c05a889bb,No,empty,0.6830880042661751
+220,0,1,1,1,1,1,1,1,0,1,23,8,m,black,no,no,family member,Yes,6d55f2d8083841b3959d327c05a889bb,Yes,empty,0.7246933150368985
+3,1,0,0,0,0,0,1,1,0,1,36,4,m,middle eastern,yes,no,family member,Yes,6d55f2d8083841b3959d327c05a889bb,Yes,empty,0.554176278648098
+7,1,0,0,1,1,1,0,0,1,0,33,5,m,asian,yes,no,family member,Yes,6d55f2d8083841b3959d327c05a889bb,Yes,empty,0.554176278648098
+378,1,0,0,1,1,1,1,0,1,0,30,6,m,asian,no,no,family member,Yes,6d55f2d8083841b3959d327c05a889bb,Yes,empty,0.554176278648098
+385,0,0,0,0,0,1,1,0,0,1,28,3,f,middle eastern,no,no,family member,No,6d55f2d8083841b3959d327c05a889bb,No,empty,0.6830880042661751
+393,1,1,0,1,1,1,1,0,0,1,36,7,m,asian,no,no,family member,Yes,6d55f2d8083841b3959d327c05a889bb,Yes,empty,0.7178791655789291
+396,0,0,0,0,0,0,0,0,0,0,36,0,f,White European,no,yes,family member,No,6d55f2d8083841b3959d327c05a889bb,No,empty,0.6830880042661751
+409,0,0,0,1,0,0,1,1,0,1,33,4,m,White European,yes,no,family member,Yes,6d55f2d8083841b3959d327c05a889bb,No,empty,0.6830880042661751
+410,1,1,1,1,1,1,1,0,1,0,36,8,m,south asian,no,no,family member,Yes,6d55f2d8083841b3959d327c05a889bb,Yes,empty,0.8758192574676572
+411,1,1,1,1,1,1,1,1,1,0,27,9,m,White European,no,no,family member,Yes,6d55f2d8083841b3959d327c05a889bb,Yes,empty,0.8758192574676572
+412,0,0,0,0,1,1,1,1,0,0,29,4,m,Others,no,no,family member,Yes,6d55f2d8083841b3959d327c05a889bb,No,empty,0.6830880042661751
+416,0,0,0,0,0,0,0,0,0,1,27,1,m,White European,no,no,family member,No,6d55f2d8083841b3959d327c05a889bb,No,empty,0.6830880042661751
+419,0,0,0,0,0,0,1,1,1,0,34,3,f,asian,no,no,family member,No,6d55f2d8083841b3959d327c05a889bb,No,empty,0.6830880042661751
+429,0,0,1,1,0,0,1,0,1,0,26,4,m,south asian,yes,no,family member,Yes,6d55f2d8083841b3959d327c05a889bb,Yes,empty,0.5625349045373181
+430,0,0,0,0,0,0,1,0,0,1,12,2,m,south asian,yes,no,family member,No,6d55f2d8083841b3959d327c05a889bb,No,empty,0.6830880042661751
+441,1,1,0,1,0,1,1,0,1,1,26,7,f,White European,no,no,family member,Yes,6d55f2d8083841b3959d327c05a889bb,Yes,empty,0.7178791655789291
+445,1,1,0,1,1,1,1,0,0,0,28,6,m,middle eastern,no,yes,family member,Yes,6d55f2d8083841b3959d327c05a889bb,Yes,empty,0.7178791655789291
+446,1,0,0,0,1,0,1,0,0,0,36,3,m,White European,no,no,family member,No,6d55f2d8083841b3959d327c05a889bb,Yes,empty,0.554176278648098
+451,0,0,1,1,1,1,1,1,1,1,24,8,f,White European,no,no,family member,Yes,6d55f2d8083841b3959d327c05a889bb,Yes,empty,0.5625349045373181
+458,1,0,0,0,0,1,0,0,0,0,36,2,m,asian,no,yes,family member,No,6d55f2d8083841b3959d327c05a889bb,Yes,empty,0.554176278648098
+460,0,0,0,1,0,0,1,0,1,1,15,4,f,middle eastern,yes,no,family member,Yes,6d55f2d8083841b3959d327c05a889bb,No,empty,0.6830880042661751
+461,0,0,0,0,0,0,0,0,1,0,15,1,f,middle eastern,yes,no,family member,No,6d55f2d8083841b3959d327c05a889bb,No,empty,0.6830880042661751
+474,1,0,1,1,0,0,0,0,0,0,36,3,m,asian,no,yes,family member,No,6d55f2d8083841b3959d327c05a889bb,Yes,empty,0.7750440120817794
+479,1,1,0,0,0,1,0,0,0,1,36,4,m,White European,yes,no,Health Care Professional,Yes,6d55f2d8083841b3959d327c05a889bb,Yes,empty,0.7178791655789291
+481,1,1,1,1,1,1,1,1,1,0,36,9,f,south asian,yes,no,family member,Yes,6d55f2d8083841b3959d327c05a889bb,Yes,empty,0.8758192574676572
+496,1,1,1,1,1,1,1,1,1,1,34,10,m,Native Indian,yes,no,family member,Yes,6d55f2d8083841b3959d327c05a889bb,Yes,empty,0.8758192574676572
+498,1,1,1,1,1,0,1,1,1,0,32,8,m,black,no,no,family member,Yes,6d55f2d8083841b3959d327c05a889bb,Yes,empty,0.8758192574676572
+510,0,0,0,0,1,1,1,1,0,1,30,5,f,asian,no,no,family member,Yes,6d55f2d8083841b3959d327c05a889bb,No,empty,0.6830880042661751
+514,1,0,0,0,1,1,1,0,0,0,36,4,m,asian,no,no,family member,Yes,6d55f2d8083841b3959d327c05a889bb,Yes,empty,0.554176278648098
+520,1,1,1,0,1,1,1,1,0,1,22,8,m,asian,no,no,family member,Yes,6d55f2d8083841b3959d327c05a889bb,Yes,empty,0.8758192574676572
+521,1,1,0,0,0,0,1,0,0,1,24,4,m,asian,yes,no,family member,Yes,6d55f2d8083841b3959d327c05a889bb,Yes,empty,0.7178791655789291
+171,0,0,0,1,1,1,0,0,0,0,19,3,f,mixed,no,no,family member,No,6d55f2d8083841b3959d327c05a889bb,No,empty,0.6830880042661751
+172,0,1,1,1,1,0,1,0,1,1,23,7,m,middle eastern,no,no,family member,Yes,6d55f2d8083841b3959d327c05a889bb,Yes,empty,0.7246933150368985
+173,0,0,0,0,0,0,0,0,0,1,12,1,m,middle eastern,no,yes,family member,No,6d55f2d8083841b3959d327c05a889bb,No,empty,0.6830880042661751
+76,1,0,0,1,1,1,1,1,1,0,19,7,m,middle eastern,no,no,family member,Yes,6d55f2d8083841b3959d327c05a889bb,Yes,empty,0.554176278648098
+88,0,0,0,1,0,0,1,0,0,1,20,3,m,middle eastern,no,no,family member,No,6d55f2d8083841b3959d327c05a889bb,No,empty,0.6830880042661751
+101,0,0,1,1,0,0,0,0,0,0,24,2,m,middle eastern,no,no,family member,No,6d55f2d8083841b3959d327c05a889bb,Yes,empty,0.5625349045373181
+102,0,0,0,0,0,1,1,1,0,1,31,4,f,middle eastern,no,yes,family member,Yes,6d55f2d8083841b3959d327c05a889bb,No,empty,0.6830880042661751
+103,1,0,0,1,0,1,1,0,0,1,31,5,f,middle eastern,yes,no,family member,Yes,6d55f2d8083841b3959d327c05a889bb,Yes,empty,0.554176278648098
+111,0,0,0,0,1,0,1,0,0,0,12,2,m,middle eastern,no,no,family member,No,6d55f2d8083841b3959d327c05a889bb,No,empty,0.6830880042661751
+113,0,0,0,0,0,0,1,1,0,0,32,2,m,asian,no,no,family member,No,6d55f2d8083841b3959d327c05a889bb,No,empty,0.6830880042661751
+119,1,1,0,0,0,1,0,0,0,0,28,3,m,middle eastern,no,no,family member,No,6d55f2d8083841b3959d327c05a889bb,Yes,empty,0.7178791655789291
+125,1,1,0,1,1,1,1,0,1,1,19,8,m,White European,no,no,family member,Yes,6d55f2d8083841b3959d327c05a889bb,Yes,empty,0.7178791655789291
+127,0,0,0,0,0,0,0,0,0,1,25,1,f,White European,no,no,family member,No,6d55f2d8083841b3959d327c05a889bb,No,empty,0.6830880042661751
+131,1,1,1,0,1,1,1,0,0,1,36,7,f,asian,no,no,family member,Yes,6d55f2d8083841b3959d327c05a889bb,Yes,empty,0.8758192574676572
+227,1,1,0,1,0,0,1,1,1,1,13,7,m,black,yes,yes,family member,Yes,6d55f2d8083841b3959d327c05a889bb,Yes,empty,0.7178791655789291
+229,1,1,0,1,1,1,1,1,1,1,22,9,f,asian,no,no,family member,Yes,6d55f2d8083841b3959d327c05a889bb,Yes,empty,0.7178791655789291
+240,0,0,0,0,0,1,1,1,0,0,31,3,m,White European,yes,no,family member,No,6d55f2d8083841b3959d327c05a889bb,No,empty,0.6830880042661751
+245,1,1,1,0,1,1,0,0,1,0,24,6,m,White European,yes,no,family member,Yes,6d55f2d8083841b3959d327c05a889bb,Yes,empty,0.8758192574676572
+250,0,0,0,0,1,1,0,0,0,0,26,2,m,asian,no,no,family member,No,6d55f2d8083841b3959d327c05a889bb,No,empty,0.6830880042661751
+252,0,0,0,0,1,0,1,1,1,0,23,4,f,asian,no,no,family member,Yes,6d55f2d8083841b3959d327c05a889bb,No,empty,0.6830880042661751
+255,1,1,1,1,1,1,1,1,0,1,31,9,m,White European,no,no,family member,Yes,6d55f2d8083841b3959d327c05a889bb,Yes,empty,0.8758192574676572
+257,1,0,1,1,1,0,1,1,1,1,35,8,m,White European,no,yes,family member,Yes,6d55f2d8083841b3959d327c05a889bb,Yes,empty,0.7750440120817794
+261,1,1,1,0,0,1,1,0,1,1,33,7,f,mixed,no,no,family member,Yes,6d55f2d8083841b3959d327c05a889bb,Yes,empty,0.8758192574676572
+263,1,0,1,1,0,1,0,0,1,0,30,5,f,middle eastern,no,no,family member,Yes,6d55f2d8083841b3959d327c05a889bb,Yes,empty,0.7750440120817794
+275,1,1,0,1,1,1,1,0,1,1,32,8,m,asian,yes,no,family member,Yes,6d55f2d8083841b3959d327c05a889bb,Yes,empty,0.7178791655789291
+276,1,1,0,0,0,1,1,0,1,0,32,5,m,asian,no,no,family member,Yes,6d55f2d8083841b3959d327c05a889bb,Yes,empty,0.7178791655789291
+280,1,1,1,1,1,1,1,1,1,0,12,9,m,White European,yes,no,family member,Yes,6d55f2d8083841b3959d327c05a889bb,Yes,empty,0.8758192574676572
+283,1,1,0,1,1,1,1,0,0,1,15,7,f,White European,yes,no,family member,Yes,6d55f2d8083841b3959d327c05a889bb,Yes,empty,0.7178791655789291
+307,0,0,0,0,1,1,1,0,1,1,33,5,m,White European,yes,no,family member,Yes,6d55f2d8083841b3959d327c05a889bb,No,empty,0.6830880042661751
+311,0,0,0,0,1,1,1,1,1,1,36,6,m,White European,no,no,family member,Yes,6d55f2d8083841b3959d327c05a889bb,No,empty,0.6830880042661751
+316,0,0,1,0,1,0,1,1,1,1,26,6,m,asian,no,no,family member,Yes,6d55f2d8083841b3959d327c05a889bb,Yes,empty,0.5625349045373181
+319,1,1,0,1,0,0,0,1,0,1,28,5,m,White European,yes,no,family member,Yes,6d55f2d8083841b3959d327c05a889bb,Yes,empty,0.7178791655789291
+321,0,0,0,0,0,0,0,0,0,0,21,0,m,asian,no,yes,family member,No,6d55f2d8083841b3959d327c05a889bb,No,empty,0.6830880042661751
+15,0,0,0,0,0,0,0,0,0,0,18,0,m,middle eastern,no,no,family member,No,6d55f2d8083841b3959d327c05a889bb,No,empty,0.6830880042661751
+24,1,1,1,0,1,1,0,1,1,0,36,7,m,middle eastern,yes,yes,family member,Yes,6d55f2d8083841b3959d327c05a889bb,Yes,empty,0.8758192574676572
+39,0,0,0,0,0,0,0,0,0,0,15,0,f,middle eastern,no,no,family member,No,6d55f2d8083841b3959d327c05a889bb,No,empty,0.6830880042661751
+41,0,0,0,0,0,0,0,0,0,1,12,1,f,middle eastern,no,no,family member,No,6d55f2d8083841b3959d327c05a889bb,No,empty,0.6830880042661751
+42,0,0,0,0,0,0,0,0,0,0,15,0,f,black,no,no,family member,No,6d55f2d8083841b3959d327c05a889bb,No,empty,0.6830880042661751
+134,1,0,0,0,1,0,0,0,0,0,33,2,f,south asian,yes,no,family member,No,6d55f2d8083841b3959d327c05a889bb,Yes,empty,0.554176278648098
+139,1,1,1,1,1,1,1,1,1,0,35,9,m,south asian,no,no,family member,Yes,6d55f2d8083841b3959d327c05a889bb,Yes,empty,0.8758192574676572
+140,1,1,0,0,0,0,0,1,1,0,26,4,f,asian,yes,no,family member,Yes,6d55f2d8083841b3959d327c05a889bb,Yes,empty,0.7178791655789291
+143,1,1,0,0,0,1,0,1,0,1,36,5,f,White European,no,no,family member,Yes,6d55f2d8083841b3959d327c05a889bb,Yes,empty,0.7178791655789291
+149,0,0,0,0,0,0,1,0,0,0,30,1,f,Latino,no,yes,family member,No,6d55f2d8083841b3959d327c05a889bb,No,empty,0.6830880042661751
+158,0,0,1,1,1,1,0,1,1,0,28,6,m,middle eastern,no,no,family member,Yes,6d55f2d8083841b3959d327c05a889bb,Yes,empty,0.5625349045373181
+525,1,1,1,1,1,1,1,1,1,1,20,10,f,White European,no,no,family member,Yes,6d55f2d8083841b3959d327c05a889bb,Yes,empty,0.8758192574676572
+528,1,1,1,0,1,1,1,1,1,0,31,8,f,asian,no,no,family member,Yes,6d55f2d8083841b3959d327c05a889bb,Yes,empty,0.8758192574676572
+531,0,0,0,0,0,0,0,0,0,1,12,1,f,middle eastern,no,no,family member,No,6d55f2d8083841b3959d327c05a889bb,No,empty,0.6830880042661751
+686,1,0,1,1,1,0,1,1,1,1,16,8,m,black,no,no,family member,Yes,6d55f2d8083841b3959d327c05a889bb,Yes,empty,0.7750440120817794
+698,1,0,0,1,0,1,1,1,0,1,23,6,m,White European,yes,no,family member,Yes,6d55f2d8083841b3959d327c05a889bb,Yes,empty,0.554176278648098
+703,0,1,1,0,0,0,0,0,0,1,35,3,f,black,yes,no,family member,No,6d55f2d8083841b3959d327c05a889bb,Yes,empty,0.7246933150368985
+705,0,0,0,0,0,0,0,0,0,0,12,0,m,asian,no,no,family member,No,6d55f2d8083841b3959d327c05a889bb,No,empty,0.6830880042661751
+708,1,1,0,1,0,1,1,1,1,0,35,7,m,middle eastern,no,no,family member,Yes,6d55f2d8083841b3959d327c05a889bb,Yes,empty,0.7178791655789291
+721,1,1,0,0,0,0,0,0,0,0,17,2,m,middle eastern,no,no,family member,No,6d55f2d8083841b3959d327c05a889bb,Yes,empty,0.7178791655789291
+727,0,0,0,0,0,0,0,1,0,1,36,2,f,White European,no,no,family member,No,6d55f2d8083841b3959d327c05a889bb,No,empty,0.6830880042661751
+585,0,0,1,1,1,1,1,1,1,1,36,8,m,White European,no,no,family member,Yes,6d55f2d8083841b3959d327c05a889bb,Yes,empty,0.5625349045373181
+592,1,1,0,0,0,1,0,0,1,1,36,5,m,asian,no,no,family member,Yes,6d55f2d8083841b3959d327c05a889bb,Yes,empty,0.7178791655789291
+595,0,1,1,1,1,1,1,1,1,0,36,8,m,black,no,no,family member,Yes,6d55f2d8083841b3959d327c05a889bb,Yes,empty,0.7246933150368985
+599,1,1,1,1,1,1,1,0,1,1,36,9,m,Hispanic,no,no,family member,Yes,6d55f2d8083841b3959d327c05a889bb,Yes,empty,0.8758192574676572
+601,1,1,1,1,1,1,1,1,1,0,36,9,m,White European,no,yes,family member,Yes,6d55f2d8083841b3959d327c05a889bb,Yes,empty,0.8758192574676572
+613,1,1,0,1,1,1,1,1,0,1,25,8,f,Pacifica,yes,no,family member,Yes,6d55f2d8083841b3959d327c05a889bb,Yes,empty,0.7178791655789291
+618,1,0,0,1,1,1,1,1,1,1,28,8,m,asian,no,no,family member,Yes,6d55f2d8083841b3959d327c05a889bb,Yes,empty,0.554176278648098
+621,1,1,1,1,1,1,1,1,1,1,28,10,m,asian,no,no,family member,Yes,6d55f2d8083841b3959d327c05a889bb,Yes,empty,0.8758192574676572
+625,1,1,0,0,1,1,1,0,1,1,27,7,m,White European,no,no,family member,Yes,6d55f2d8083841b3959d327c05a889bb,Yes,empty,0.7178791655789291
+536,0,0,0,0,0,0,0,1,0,0,36,1,m,Hispanic,no,no,family member,No,6d55f2d8083841b3959d327c05a889bb,No,empty,0.6830880042661751
+540,0,0,0,0,0,1,0,0,0,0,34,1,f,White European,no,yes,family member,No,6d55f2d8083841b3959d327c05a889bb,No,empty,0.6830880042661751
+548,0,0,0,0,1,1,1,0,1,1,35,5,m,asian,yes,no,family member,Yes,6d55f2d8083841b3959d327c05a889bb,No,empty,0.6830880042661751
+552,0,0,1,0,0,1,0,0,0,1,12,3,f,south asian,no,no,family member,No,6d55f2d8083841b3959d327c05a889bb,Yes,empty,0.5625349045373181
+575,0,1,1,1,1,0,1,1,0,1,36,7,f,White European,yes,yes,family member,Yes,6d55f2d8083841b3959d327c05a889bb,Yes,empty,0.7246933150368985
+581,0,0,1,1,0,1,1,0,1,1,26,6,m,White European,no,no,family member,Yes,6d55f2d8083841b3959d327c05a889bb,Yes,empty,0.5625349045373181
+583,0,0,0,1,0,0,1,0,0,1,28,3,m,middle eastern,yes,no,family member,No,6d55f2d8083841b3959d327c05a889bb,No,empty,0.6830880042661751
+730,0,0,0,1,1,1,1,1,1,1,33,7,f,asian,no,no,family member,Yes,6d55f2d8083841b3959d327c05a889bb,No,empty,0.6830880042661751
+739,1,1,1,1,1,1,1,1,1,0,36,9,f,middle eastern,yes,no,family member,Yes,6d55f2d8083841b3959d327c05a889bb,Yes,empty,0.8758192574676572
+745,1,1,1,1,1,1,1,0,1,1,31,9,m,White European,no,no,family member,Yes,6d55f2d8083841b3959d327c05a889bb,Yes,empty,0.8758192574676572
+764,0,0,1,0,1,1,1,1,0,1,34,6,f,asian,no,no,family member,Yes,6d55f2d8083841b3959d327c05a889bb,Yes,empty,0.5625349045373181
+766,1,0,1,0,0,0,1,1,1,0,27,5,m,asian,no,no,family member,Yes,6d55f2d8083841b3959d327c05a889bb,Yes,empty,0.7750440120817794
+767,1,1,0,1,1,1,1,1,1,1,28,9,m,White European,no,no,family member,Yes,6d55f2d8083841b3959d327c05a889bb,Yes,empty,0.7178791655789291
+770,0,0,1,1,1,0,1,0,0,0,31,4,m,White European,yes,no,family member,Yes,6d55f2d8083841b3959d327c05a889bb,Yes,empty,0.5625349045373181
+772,1,1,1,1,1,1,1,1,1,0,28,9,m,Others,no,no,family member,Yes,6d55f2d8083841b3959d327c05a889bb,Yes,empty,0.8758192574676572
+327,1,0,0,1,0,1,0,0,0,0,29,3,f,middle eastern,no,no,family member,No,6d55f2d8083841b3959d327c05a889bb,Yes,empty,0.554176278648098
+330,1,0,1,1,1,0,1,0,0,0,23,5,m,asian,no,no,family member,Yes,6d55f2d8083841b3959d327c05a889bb,Yes,empty,0.7750440120817794
+331,0,0,1,1,1,1,1,1,1,0,36,7,m,asian,no,no,family member,Yes,6d55f2d8083841b3959d327c05a889bb,Yes,empty,0.5625349045373181
+338,0,0,0,1,0,0,0,0,0,0,36,1,m,asian,no,no,family member,No,6d55f2d8083841b3959d327c05a889bb,No,empty,0.6830880042661751
+342,1,1,0,0,1,1,0,1,1,1,36,7,f,White European,no,no,family member,Yes,6d55f2d8083841b3959d327c05a889bb,Yes,empty,0.7178791655789291
+363,1,0,1,1,1,0,0,0,1,0,32,5,f,Hispanic,no,yes,family member,Yes,6d55f2d8083841b3959d327c05a889bb,Yes,empty,0.7750440120817794
+648,1,1,1,1,1,1,1,1,1,1,28,10,m,south asian,no,no,family member,Yes,6d55f2d8083841b3959d327c05a889bb,Yes,empty,0.8758192574676572
+654,1,0,1,1,1,1,1,0,0,0,22,6,f,White European,no,yes,family member,Yes,6d55f2d8083841b3959d327c05a889bb,Yes,empty,0.7750440120817794
+659,0,0,1,1,0,1,1,1,1,1,34,7,m,White European,yes,no,family member,Yes,6d55f2d8083841b3959d327c05a889bb,Yes,empty,0.5625349045373181
+663,1,0,0,1,1,1,1,0,0,0,36,5,f,White European,no,no,family member,Yes,6d55f2d8083841b3959d327c05a889bb,Yes,empty,0.554176278648098
+674,1,0,1,1,1,1,1,1,1,1,33,9,f,asian,no,no,family member,Yes,6d55f2d8083841b3959d327c05a889bb,Yes,empty,0.7750440120817794
+677,1,1,0,1,0,1,1,1,0,1,32,7,f,White European,no,no,family member,Yes,6d55f2d8083841b3959d327c05a889bb,Yes,empty,0.7178791655789291
+679,0,0,1,1,1,1,1,0,1,0,31,6,f,White European,no,no,family member,Yes,6d55f2d8083841b3959d327c05a889bb,Yes,empty,0.5625349045373181
+779,0,0,1,0,1,1,1,1,0,1,34,6,f,asian,no,no,family member,Yes,6d55f2d8083841b3959d327c05a889bb,Yes,empty,0.5625349045373181
+783,1,1,1,1,1,1,1,1,1,1,29,10,m,White European,no,no,family member,Yes,6d55f2d8083841b3959d327c05a889bb,Yes,empty,0.8758192574676572
+786,0,0,1,1,1,1,1,1,1,0,14,7,m,White European,yes,no,family member,Yes,6d55f2d8083841b3959d327c05a889bb,Yes,empty,0.5625349045373181
+790,1,0,0,0,0,0,1,1,0,1,35,4,f,White European,yes,no,family member,Yes,6d55f2d8083841b3959d327c05a889bb,Yes,empty,0.554176278648098
+791,1,0,0,0,0,1,1,0,0,1,31,4,f,White European,no,yes,family member,Yes,6d55f2d8083841b3959d327c05a889bb,Yes,empty,0.554176278648098
+793,1,0,0,0,0,1,1,0,0,0,36,3,m,asian,no,no,family member,No,6d55f2d8083841b3959d327c05a889bb,Yes,empty,0.554176278648098
+795,1,1,1,1,0,1,1,0,1,1,36,8,f,White European,no,no,family member,Yes,6d55f2d8083841b3959d327c05a889bb,Yes,empty,0.8758192574676572
+798,1,0,0,0,0,0,1,0,0,1,27,3,m,White European,no,no,family member,No,6d55f2d8083841b3959d327c05a889bb,Yes,empty,0.554176278648098
+802,1,0,0,1,0,1,1,0,0,1,23,5,f,asian,no,no,family member,Yes,6d55f2d8083841b3959d327c05a889bb,Yes,empty,0.554176278648098
+807,1,1,0,0,1,1,1,0,1,1,36,7,m,White European,no,yes,family member,Yes,6d55f2d8083841b3959d327c05a889bb,Yes,empty,0.7178791655789291
+809,1,1,1,1,1,1,1,0,1,1,16,9,m,middle eastern,no,no,family member,Yes,6d55f2d8083841b3959d327c05a889bb,Yes,empty,0.8758192574676572
+824,1,1,0,0,0,0,1,0,1,1,36,5,f,White European,no,yes,family member,Yes,6d55f2d8083841b3959d327c05a889bb,Yes,empty,0.7178791655789291
+825,0,0,0,0,0,0,0,1,0,0,30,1,f,middle eastern,no,no,family member,No,6d55f2d8083841b3959d327c05a889bb,No,empty,0.6830880042661751
+853,1,1,0,1,1,0,1,1,1,0,18,7,m,black,yes,yes,family member,Yes,6d55f2d8083841b3959d327c05a889bb,Yes,empty,0.7178791655789291
+868,0,0,0,0,0,0,0,0,0,1,36,1,m,White European,no,no,family member,No,6d55f2d8083841b3959d327c05a889bb,No,empty,0.6830880042661751
+871,0,0,0,0,0,0,1,0,0,0,30,1,f,Latino,no,no,family member,No,6d55f2d8083841b3959d327c05a889bb,No,empty,0.6830880042661751
+881,1,1,0,0,0,1,1,0,0,1,36,5,m,White European,yes,no,family member,Yes,6d55f2d8083841b3959d327c05a889bb,Yes,empty,0.7178791655789291
+892,0,0,0,0,0,0,0,0,0,0,24,0,m,black,no,no,family member,No,6d55f2d8083841b3959d327c05a889bb,No,empty,0.6830880042661751
+893,0,0,0,1,1,1,0,1,0,1,29,5,m,asian,no,no,family member,Yes,6d55f2d8083841b3959d327c05a889bb,No,empty,0.6830880042661751
+897,0,1,1,1,0,1,1,1,1,1,36,8,m,middle eastern,no,no,family member,Yes,6d55f2d8083841b3959d327c05a889bb,Yes,empty,0.7246933150368985
+900,1,0,1,1,1,1,1,1,1,1,23,9,m,Latino,no,no,family member,Yes,6d55f2d8083841b3959d327c05a889bb,Yes,empty,0.7750440120817794
+906,0,0,0,1,0,1,1,1,1,1,26,6,m,black,no,no,family member,Yes,6d55f2d8083841b3959d327c05a889bb,No,empty,0.6830880042661751
+912,0,0,1,1,1,1,1,1,1,0,15,7,m,White European,yes,no,family member,Yes,6d55f2d8083841b3959d327c05a889bb,Yes,empty,0.5625349045373181
+913,1,1,0,0,0,1,1,0,0,1,23,5,m,White European,no,no,family member,Yes,6d55f2d8083841b3959d327c05a889bb,Yes,empty,0.7178791655789291
+919,0,1,1,1,1,1,1,1,1,0,36,8,m,middle eastern,yes,yes,family member,Yes,6d55f2d8083841b3959d327c05a889bb,Yes,empty,0.7246933150368985
+936,1,1,0,1,1,1,1,0,1,1,32,8,m,asian,no,no,family member,Yes,6d55f2d8083841b3959d327c05a889bb,Yes,empty,0.7178791655789291
+946,0,0,1,1,1,1,1,1,1,0,15,7,m,White European,yes,no,family member,Yes,6d55f2d8083841b3959d327c05a889bb,Yes,empty,0.5625349045373181
+947,1,1,0,0,1,0,1,1,1,1,36,7,m,White European,no,no,family member,Yes,6d55f2d8083841b3959d327c05a889bb,Yes,empty,0.7178791655789291
+950,0,0,0,0,1,0,1,0,0,1,36,3,f,White European,no,no,family member,No,6d55f2d8083841b3959d327c05a889bb,No,empty,0.6830880042661751
+953,1,1,0,0,1,0,0,1,1,0,36,5,m,south asian,no,no,family member,Yes,6d55f2d8083841b3959d327c05a889bb,Yes,empty,0.7178791655789291
+956,1,1,1,1,1,1,1,1,1,0,36,9,f,White European,no,no,family member,Yes,6d55f2d8083841b3959d327c05a889bb,Yes,empty,0.8758192574676572
+961,1,1,0,1,1,1,1,0,0,0,27,6,m,White European,no,yes,family member,Yes,6d55f2d8083841b3959d327c05a889bb,Yes,empty,0.7178791655789291
+963,1,1,0,1,0,1,1,1,1,1,26,8,m,middle eastern,yes,no,family member,Yes,6d55f2d8083841b3959d327c05a889bb,Yes,empty,0.7178791655789291
+967,1,0,1,1,1,1,0,1,1,0,18,7,m,White European,no,no,family member,Yes,6d55f2d8083841b3959d327c05a889bb,Yes,empty,0.7750440120817794
+972,1,1,0,0,0,1,0,1,0,1,33,5,m,middle eastern,no,no,family member,Yes,6d55f2d8083841b3959d327c05a889bb,Yes,empty,0.7178791655789291
+980,1,1,1,1,1,1,1,0,0,0,36,7,m,asian,no,no,family member,Yes,6d55f2d8083841b3959d327c05a889bb,Yes,empty,0.8758192574676572
+982,0,0,0,1,1,0,1,1,0,1,36,5,m,south asian,yes,no,family member,Yes,6d55f2d8083841b3959d327c05a889bb,No,empty,0.6830880042661751
+985,1,0,1,1,0,1,1,0,1,0,24,6,m,White European,no,no,family member,Yes,6d55f2d8083841b3959d327c05a889bb,Yes,empty,0.7750440120817794
+992,1,1,1,1,1,1,1,0,0,1,33,8,m,White European,no,no,family member,Yes,6d55f2d8083841b3959d327c05a889bb,Yes,empty,0.8758192574676572
+1001,0,0,0,0,0,1,0,0,0,1,36,2,m,Latino,no,no,family member,No,6d55f2d8083841b3959d327c05a889bb,No,empty,0.6830880042661751
+1002,1,0,0,0,1,1,0,1,0,1,34,5,f,asian,no,no,family member,Yes,6d55f2d8083841b3959d327c05a889bb,Yes,empty,0.554176278648098
+1004,1,0,0,1,1,0,1,0,1,0,27,5,m,White European,no,no,family member,Yes,6d55f2d8083841b3959d327c05a889bb,Yes,empty,0.554176278648098
+1005,1,1,1,1,1,1,1,1,0,0,36,8,m,black,no,yes,family member,Yes,6d55f2d8083841b3959d327c05a889bb,Yes,empty,0.8758192574676572
+1009,1,1,1,1,1,1,1,1,1,0,32,9,m,south asian,yes,yes,family member,Yes,6d55f2d8083841b3959d327c05a889bb,Yes,empty,0.8758192574676572
+1020,1,1,0,0,1,1,1,0,0,1,36,6,m,asian,no,no,family member,Yes,6d55f2d8083841b3959d327c05a889bb,Yes,empty,0.7178791655789291
+1026,0,0,0,0,0,0,1,1,0,1,23,3,m,asian,yes,no,family member,No,6d55f2d8083841b3959d327c05a889bb,No,empty,0.6830880042661751
+1028,0,0,1,1,1,0,0,1,1,0,29,5,m,White European,no,no,family member,Yes,6d55f2d8083841b3959d327c05a889bb,Yes,empty,0.5625349045373181
+1029,0,0,1,1,1,1,0,0,1,0,22,5,f,Latino,no,no,family member,Yes,6d55f2d8083841b3959d327c05a889bb,Yes,empty,0.5625349045373181
+1035,0,0,0,0,0,0,0,1,0,0,28,1,m,White European,no,no,family member,No,6d55f2d8083841b3959d327c05a889bb,No,empty,0.6830880042661751
+1049,0,0,0,0,0,0,0,0,0,0,30,0,f,White European,no,no,family member,No,6d55f2d8083841b3959d327c05a889bb,No,empty,0.6830880042661751
+911,1,1,1,0,0,0,1,0,1,0,13,5,f,Latino,no,no,family member,Yes,6d55f2d8083841b3959d327c05a889bb,Yes,Yes,0.8758192574676572
+687,1,1,1,1,1,1,1,1,1,1,14,10,m,White European,no,no,family member,Yes,6d55f2d8083841b3959d327c05a889bb,Yes,empty,0.8758192574676572
+513,1,0,0,0,0,0,0,0,0,1,12,2,f,south asian,no,no,family member,No,6d55f2d8083841b3959d327c05a889bb,Yes,No,0.554176278648098
+236,0,0,0,0,0,0,1,0,0,1,12,2,f,White European,no,no,family member,No,6d55f2d8083841b3959d327c05a889bb,No,No,0.6830880042661751
+923,0,0,0,0,0,1,1,1,0,0,12,3,m,Latino,no,no,family member,No,6d55f2d8083841b3959d327c05a889bb,No,No,0.6830880042661751
+942,1,0,0,0,0,0,0,0,0,1,12,2,m,White European,no,no,family member,No,6d55f2d8083841b3959d327c05a889bb,Yes,No,0.554176278648098
+322,0,1,0,0,1,1,1,0,1,0,30,5,m,asian,no,no,family member,Yes,6d55f2d8083841b3959d327c05a889bb,No,Yes,0.5128953866895871
+213,0,1,0,0,1,1,1,1,1,1,36,7,f,middle eastern,no,no,family member,Yes,6d55f2d8083841b3959d327c05a889bb,No,Yes,0.5128953866895871
+402,0,1,0,0,0,0,0,0,0,1,13,2,m,middle eastern,no,no,family member,No,6d55f2d8083841b3959d327c05a889bb,No,No,0.5128953866895871
+462,0,1,0,0,0,0,1,0,0,0,36,2,m,middle eastern,no,yes,family member,No,6d55f2d8083841b3959d327c05a889bb,No,No,0.5128953866895871
+96,0,1,0,0,0,0,0,0,0,1,12,2,f,middle eastern,no,no,family member,No,6d55f2d8083841b3959d327c05a889bb,No,No,0.5128953866895871
+144,0,1,0,0,0,0,1,0,0,1,36,3,f,asian,no,no,family member,No,6d55f2d8083841b3959d327c05a889bb,No,No,0.5128953866895871
+161,0,1,0,1,1,1,1,1,1,1,23,8,m,White European,no,no,family member,Yes,6d55f2d8083841b3959d327c05a889bb,No,Yes,0.5128953866895871
+696,0,1,0,0,0,0,0,0,0,1,36,2,m,White European,no,no,family member,No,6d55f2d8083841b3959d327c05a889bb,No,No,0.5128953866895871
+697,0,1,0,0,1,0,0,0,0,1,29,3,m,White European,no,no,family member,No,6d55f2d8083841b3959d327c05a889bb,No,No,0.5128953866895871
+336,0,1,0,1,0,0,0,0,0,0,36,2,m,asian,no,no,family member,No,6d55f2d8083841b3959d327c05a889bb,No,No,0.5128953866895871
+16,1,1,1,0,1,0,1,1,0,1,12,7,m,black,no,no,family member,Yes,6d55f2d8083841b3959d327c05a889bb,Yes,empty,0.8758192574676572
+29,0,0,1,1,1,0,1,1,1,1,36,7,m,middle eastern,no,yes,family member,Yes,6d55f2d8083841b3959d327c05a889bb,Yes,empty,0.5625349045373181
+32,0,0,0,0,0,0,0,0,0,0,12,0,f,middle eastern,no,no,family member,No,6d55f2d8083841b3959d327c05a889bb,No,empty,0.6830880042661751
+35,0,0,0,0,0,0,0,0,0,1,12,1,f,middle eastern,no,no,family member,No,6d55f2d8083841b3959d327c05a889bb,No,empty,0.6830880042661751
+37,0,0,0,0,0,0,0,0,0,1,15,1,f,middle eastern,no,no,family member,No,6d55f2d8083841b3959d327c05a889bb,No,empty,0.6830880042661751
+47,0,0,0,0,0,0,0,0,0,1,18,1,m,middle eastern,yes,no,family member,No,6d55f2d8083841b3959d327c05a889bb,No,empty,0.6830880042661751
+53,0,0,0,0,0,0,0,0,0,1,15,1,f,middle eastern,no,no,family member,No,6d55f2d8083841b3959d327c05a889bb,No,empty,0.6830880042661751
+57,1,0,0,0,0,1,1,0,1,1,32,5,f,south asian,no,no,family member,Yes,6d55f2d8083841b3959d327c05a889bb,Yes,empty,0.554176278648098
+70,1,0,1,1,1,1,1,0,1,1,18,8,f,asian,yes,yes,family member,Yes,6d55f2d8083841b3959d327c05a889bb,Yes,empty,0.7750440120817794
+73,1,1,1,1,1,1,1,1,1,1,21,10,f,White European,no,no,family member,Yes,6d55f2d8083841b3959d327c05a889bb,Yes,empty,0.8758192574676572
+78,0,0,0,0,0,0,0,0,0,0,36,0,m,asian,no,no,family member,No,6d55f2d8083841b3959d327c05a889bb,No,empty,0.6830880042661751
+79,0,0,0,0,0,0,0,0,0,0,36,0,m,asian,no,no,family member,No,6d55f2d8083841b3959d327c05a889bb,No,empty,0.6830880042661751
+80,1,0,0,0,0,0,0,1,0,1,30,3,m,middle eastern,no,no,Health Care Professional,No,6d55f2d8083841b3959d327c05a889bb,Yes,empty,0.554176278648098
+4,1,1,1,1,1,1,1,1,1,1,24,10,m,Hispanic,no,no,family member,Yes,6d55f2d8083841b3959d327c05a889bb,Yes,empty,0.8758192574676572
+5,1,1,0,1,1,1,1,1,1,1,20,9,f,White European,no,yes,family member,Yes,6d55f2d8083841b3959d327c05a889bb,Yes,empty,0.7178791655789291
+12,1,1,1,1,0,1,1,1,0,1,17,8,m,middle eastern,yes,no,family member,Yes,6d55f2d8083841b3959d327c05a889bb,Yes,empty,0.8758192574676572
+394,0,0,0,0,0,1,1,1,0,1,36,4,m,Latino,no,no,family member,Yes,6d55f2d8083841b3959d327c05a889bb,No,empty,0.6830880042661751
+395,1,1,0,1,1,1,1,1,1,1,36,9,m,White European,no,yes,family member,Yes,6d55f2d8083841b3959d327c05a889bb,Yes,empty,0.7178791655789291
+397,0,1,1,0,0,1,0,0,1,1,20,5,m,black,no,yes,family member,Yes,6d55f2d8083841b3959d327c05a889bb,Yes,empty,0.7246933150368985
+400,1,0,0,1,1,1,1,0,1,1,24,7,f,south asian,no,no,family member,Yes,6d55f2d8083841b3959d327c05a889bb,Yes,empty,0.554176278648098
+406,0,0,1,1,1,1,1,1,1,0,36,7,m,asian,no,no,family member,Yes,6d55f2d8083841b3959d327c05a889bb,Yes,empty,0.5625349045373181
+407,0,0,0,0,0,0,0,0,0,0,30,0,m,White European,no,no,family member,No,6d55f2d8083841b3959d327c05a889bb,No,empty,0.6830880042661751
+408,1,0,1,0,1,1,0,1,1,0,36,6,m,asian,no,no,family member,Yes,6d55f2d8083841b3959d327c05a889bb,Yes,empty,0.7750440120817794
+423,0,0,1,0,1,0,0,1,0,0,36,3,m,asian,no,no,family member,No,6d55f2d8083841b3959d327c05a889bb,Yes,empty,0.5625349045373181
+425,1,1,0,1,0,0,1,1,1,1,15,7,m,White European,no,no,family member,Yes,6d55f2d8083841b3959d327c05a889bb,Yes,empty,0.7178791655789291
+427,1,0,0,0,0,1,1,1,0,1,36,5,m,asian,no,no,family member,Yes,6d55f2d8083841b3959d327c05a889bb,Yes,empty,0.554176278648098
+434,1,1,1,1,0,1,0,1,1,1,36,8,m,White European,no,no,family member,Yes,6d55f2d8083841b3959d327c05a889bb,Yes,empty,0.8758192574676572
+436,1,0,0,0,0,0,1,0,0,1,36,3,m,asian,no,no,family member,No,6d55f2d8083841b3959d327c05a889bb,Yes,empty,0.554176278648098
+437,1,1,0,0,0,1,0,0,1,0,30,4,m,south asian,yes,no,family member,Yes,6d55f2d8083841b3959d327c05a889bb,Yes,empty,0.7178791655789291
+439,1,1,0,1,0,1,1,0,0,1,14,6,f,White European,no,no,family member,Yes,6d55f2d8083841b3959d327c05a889bb,Yes,empty,0.7178791655789291
+440,1,1,0,1,0,1,1,0,1,1,14,7,f,White European,no,no,family member,Yes,6d55f2d8083841b3959d327c05a889bb,Yes,empty,0.7178791655789291
+141,1,1,1,1,1,1,1,1,1,0,23,9,m,south asian,no,no,family member,Yes,6d55f2d8083841b3959d327c05a889bb,Yes,empty,0.8758192574676572
+145,0,0,0,0,1,1,1,0,0,0,26,3,f,middle eastern,yes,no,family member,No,6d55f2d8083841b3959d327c05a889bb,No,empty,0.6830880042661751
+150,1,0,0,0,0,0,0,1,0,0,19,2,m,White European,no,no,family member,No,6d55f2d8083841b3959d327c05a889bb,Yes,empty,0.554176278648098
+155,1,1,0,1,0,0,1,0,0,1,33,5,m,asian,no,no,family member,Yes,6d55f2d8083841b3959d327c05a889bb,Yes,empty,0.7178791655789291
+157,1,1,1,1,1,1,1,0,1,1,24,9,f,White European,no,yes,family member,Yes,6d55f2d8083841b3959d327c05a889bb,Yes,empty,0.8758192574676572
+162,1,0,1,1,1,1,0,0,1,0,12,6,m,White European,yes,no,family member,Yes,6d55f2d8083841b3959d327c05a889bb,Yes,empty,0.7750440120817794
+163,1,1,1,1,1,1,1,0,1,1,29,9,m,White European,yes,no,family member,Yes,6d55f2d8083841b3959d327c05a889bb,Yes,empty,0.8758192574676572
+165,0,0,0,0,0,0,1,0,0,0,12,1,m,asian,no,no,Health Care Professional,No,6d55f2d8083841b3959d327c05a889bb,No,empty,0.6830880042661751
+169,0,0,0,0,0,0,0,0,0,0,30,0,f,Latino,no,yes,family member,No,6d55f2d8083841b3959d327c05a889bb,No,empty,0.6830880042661751
+179,1,0,1,0,0,1,0,0,0,0,33,3,m,asian,no,yes,family member,No,6d55f2d8083841b3959d327c05a889bb,Yes,empty,0.7750440120817794
+97,1,0,1,1,1,1,1,0,1,1,24,8,f,asian,no,no,family member,Yes,6d55f2d8083841b3959d327c05a889bb,Yes,empty,0.7750440120817794
+98,1,0,0,0,1,0,1,1,1,1,34,6,m,asian,no,no,family member,Yes,6d55f2d8083841b3959d327c05a889bb,Yes,empty,0.554176278648098
+99,0,0,0,0,0,0,0,0,0,1,34,1,m,asian,no,no,family member,No,6d55f2d8083841b3959d327c05a889bb,No,empty,0.6830880042661751
+106,1,1,1,1,1,1,1,1,1,0,25,9,m,middle eastern,no,no,family member,Yes,6d55f2d8083841b3959d327c05a889bb,Yes,empty,0.8758192574676572
+109,1,1,0,0,1,1,1,1,0,1,36,7,f,middle eastern,no,no,family member,Yes,6d55f2d8083841b3959d327c05a889bb,Yes,empty,0.7178791655789291
+115,1,1,0,0,1,1,1,0,1,1,30,7,m,White European,yes,yes,family member,Yes,6d55f2d8083841b3959d327c05a889bb,Yes,empty,0.7178791655789291
+120,1,1,0,1,1,1,0,0,0,1,18,6,m,Hispanic,yes,yes,family member,Yes,6d55f2d8083841b3959d327c05a889bb,Yes,empty,0.7178791655789291
+130,1,1,0,1,1,1,1,0,0,1,36,7,m,middle eastern,no,no,family member,Yes,6d55f2d8083841b3959d327c05a889bb,Yes,empty,0.7178791655789291
+132,1,0,1,1,1,0,0,1,1,1,20,7,m,asian,no,no,family member,Yes,6d55f2d8083841b3959d327c05a889bb,Yes,empty,0.7750440120817794
+133,0,0,0,0,0,0,0,0,0,0,33,0,f,south asian,yes,no,family member,No,6d55f2d8083841b3959d327c05a889bb,No,empty,0.6830880042661751
+333,0,1,1,1,1,0,1,0,1,0,26,6,m,asian,no,no,family member,Yes,6d55f2d8083841b3959d327c05a889bb,Yes,empty,0.7246933150368985
+340,1,0,1,1,1,1,1,1,1,1,36,9,m,Latino,no,no,family member,Yes,6d55f2d8083841b3959d327c05a889bb,Yes,empty,0.7750440120817794
+352,0,0,0,0,0,0,0,0,0,1,13,1,f,middle eastern,yes,no,family member,No,6d55f2d8083841b3959d327c05a889bb,No,empty,0.6830880042661751
+357,1,1,0,0,1,1,1,0,1,1,14,7,m,asian,no,no,family member,Yes,6d55f2d8083841b3959d327c05a889bb,Yes,empty,0.7178791655789291
+359,1,1,1,1,1,1,1,1,1,1,36,10,m,White European,no,no,Health Care Professional,Yes,6d55f2d8083841b3959d327c05a889bb,Yes,empty,0.8758192574676572
+360,0,0,0,0,0,0,0,0,0,0,19,0,f,asian,no,yes,family member,No,6d55f2d8083841b3959d327c05a889bb,No,empty,0.6830880042661751
+367,1,1,1,1,1,1,0,1,1,1,36,9,m,asian,no,no,family member,Yes,6d55f2d8083841b3959d327c05a889bb,Yes,empty,0.8758192574676572
+375,0,0,0,0,0,1,0,0,0,1,33,2,m,asian,no,no,family member,No,6d55f2d8083841b3959d327c05a889bb,No,empty,0.6830880042661751
+389,0,0,0,0,1,0,1,0,0,1,36,3,m,asian,yes,no,family member,No,6d55f2d8083841b3959d327c05a889bb,No,empty,0.6830880042661751
+392,1,1,0,0,0,0,1,1,0,1,36,5,m,asian,no,no,family member,Yes,6d55f2d8083841b3959d327c05a889bb,Yes,empty,0.7178791655789291
+284,1,1,1,1,1,1,1,0,1,1,36,9,f,White European,yes,no,family member,Yes,6d55f2d8083841b3959d327c05a889bb,Yes,empty,0.8758192574676572
+286,1,1,0,0,0,0,0,0,0,1,24,3,f,Hispanic,no,no,family member,No,6d55f2d8083841b3959d327c05a889bb,Yes,empty,0.7178791655789291
+298,1,1,1,1,0,1,1,1,1,0,36,8,m,middle eastern,yes,yes,family member,Yes,6d55f2d8083841b3959d327c05a889bb,Yes,empty,0.8758192574676572
+299,1,1,1,1,1,1,1,0,1,1,17,9,m,Hispanic,yes,yes,family member,Yes,6d55f2d8083841b3959d327c05a889bb,Yes,empty,0.8758192574676572
+300,1,1,1,1,0,1,1,1,0,1,24,8,f,Hispanic,no,yes,family member,Yes,6d55f2d8083841b3959d327c05a889bb,Yes,empty,0.8758192574676572
+305,1,0,1,1,0,1,1,1,1,0,36,7,m,White European,no,no,family member,Yes,6d55f2d8083841b3959d327c05a889bb,Yes,empty,0.7750440120817794
+306,0,0,0,0,0,0,0,1,0,0,36,1,m,asian,no,no,family member,No,6d55f2d8083841b3959d327c05a889bb,No,empty,0.6830880042661751
+323,1,1,1,1,1,1,1,1,1,1,12,10,f,asian,no,no,family member,Yes,6d55f2d8083841b3959d327c05a889bb,Yes,empty,0.8758192574676572
+328,0,1,1,1,1,1,0,1,1,0,12,7,m,black,yes,no,family member,Yes,6d55f2d8083841b3959d327c05a889bb,Yes,empty,0.7246933150368985
+491,1,1,1,1,1,1,1,1,1,1,28,10,m,black,no,no,family member,Yes,6d55f2d8083841b3959d327c05a889bb,Yes,empty,0.8758192574676572
+492,1,1,1,1,1,1,1,1,1,1,36,10,m,black,no,no,family member,Yes,6d55f2d8083841b3959d327c05a889bb,Yes,empty,0.8758192574676572
+500,1,0,0,0,1,1,1,1,1,0,27,6,m,White European,yes,yes,family member,Yes,6d55f2d8083841b3959d327c05a889bb,Yes,empty,0.554176278648098
+511,0,0,0,0,1,1,1,1,1,1,35,6,m,asian,no,no,family member,Yes,6d55f2d8083841b3959d327c05a889bb,No,empty,0.6830880042661751
+527,0,0,0,0,1,1,1,0,1,1,13,5,f,asian,no,no,family member,Yes,6d55f2d8083841b3959d327c05a889bb,No,empty,0.6830880042661751
+228,1,0,0,1,1,0,1,1,1,1,20,7,f,middle eastern,no,no,family member,Yes,6d55f2d8083841b3959d327c05a889bb,Yes,empty,0.554176278648098
+243,1,0,1,1,1,1,0,1,1,0,19,7,f,middle eastern,no,no,family member,Yes,6d55f2d8083841b3959d327c05a889bb,Yes,empty,0.7750440120817794
+246,0,1,1,1,1,0,1,1,1,1,28,8,m,south asian,yes,no,family member,Yes,6d55f2d8083841b3959d327c05a889bb,Yes,empty,0.7246933150368985
+247,1,0,0,1,1,1,0,0,1,1,36,6,m,asian,no,no,family member,Yes,6d55f2d8083841b3959d327c05a889bb,Yes,empty,0.554176278648098
+256,1,1,1,1,1,1,1,1,0,1,31,9,m,White European,no,no,family member,Yes,6d55f2d8083841b3959d327c05a889bb,Yes,empty,0.8758192574676572
+265,0,0,0,0,0,0,0,0,0,0,24,0,m,middle eastern,no,no,family member,No,6d55f2d8083841b3959d327c05a889bb,No,empty,0.6830880042661751
+271,0,0,0,0,0,0,0,0,0,0,36,0,m,mixed,no,no,family member,No,6d55f2d8083841b3959d327c05a889bb,No,empty,0.6830880042661751
+272,1,1,0,1,0,0,1,0,0,1,29,5,m,black,no,no,family member,Yes,6d55f2d8083841b3959d327c05a889bb,Yes,empty,0.7178791655789291
+448,1,1,1,1,1,1,1,1,1,1,12,10,m,Pacifica,no,no,family member,Yes,6d55f2d8083841b3959d327c05a889bb,Yes,empty,0.8758192574676572
+456,1,0,1,1,1,1,0,1,1,1,29,8,m,middle eastern,no,no,family member,Yes,6d55f2d8083841b3959d327c05a889bb,Yes,empty,0.7750440120817794
+457,1,0,1,0,0,1,0,1,0,0,36,4,m,asian,no,yes,family member,Yes,6d55f2d8083841b3959d327c05a889bb,Yes,empty,0.7750440120817794
+464,0,0,1,0,0,1,1,1,1,1,24,6,m,Hispanic,no,yes,family member,Yes,6d55f2d8083841b3959d327c05a889bb,Yes,empty,0.5625349045373181
+465,1,1,0,1,1,1,1,0,0,1,36,7,m,Hispanic,no,yes,family member,Yes,6d55f2d8083841b3959d327c05a889bb,Yes,empty,0.7178791655789291
+466,0,0,1,1,1,0,1,1,1,1,13,7,m,White European,yes,yes,family member,Yes,6d55f2d8083841b3959d327c05a889bb,Yes,empty,0.5625349045373181
+468,1,1,1,1,1,1,1,1,1,1,13,10,m,White European,yes,yes,family member,Yes,6d55f2d8083841b3959d327c05a889bb,Yes,empty,0.8758192574676572
+472,1,0,0,0,0,0,0,0,0,0,36,1,m,asian,no,yes,family member,No,6d55f2d8083841b3959d327c05a889bb,Yes,empty,0.554176278648098
+190,1,1,0,0,0,0,0,0,0,1,31,3,m,White European,yes,no,family member,No,6d55f2d8083841b3959d327c05a889bb,Yes,empty,0.7178791655789291
+194,0,0,0,1,0,0,0,0,0,0,36,1,m,middle eastern,no,no,Health Care Professional,No,6d55f2d8083841b3959d327c05a889bb,No,empty,0.6830880042661751
+196,1,1,1,1,0,1,1,0,1,1,36,8,f,asian,yes,no,family member,Yes,6d55f2d8083841b3959d327c05a889bb,Yes,empty,0.8758192574676572
+202,1,1,1,1,0,1,1,1,1,1,30,9,f,black,no,no,family member,Yes,6d55f2d8083841b3959d327c05a889bb,Yes,empty,0.8758192574676572
+211,0,1,1,1,0,0,0,0,0,0,30,3,m,asian,no,no,family member,No,6d55f2d8083841b3959d327c05a889bb,Yes,empty,0.7246933150368985
+214,1,1,1,1,1,1,1,1,1,1,16,10,f,White European,yes,no,family member,Yes,6d55f2d8083841b3959d327c05a889bb,Yes,empty,0.8758192574676572
+218,1,1,1,1,1,1,1,0,1,1,25,9,f,White European,no,yes,family member,Yes,6d55f2d8083841b3959d327c05a889bb,Yes,empty,0.8758192574676572
+538,1,1,0,1,1,1,0,0,0,0,34,5,m,Others,no,no,family member,Yes,6d55f2d8083841b3959d327c05a889bb,Yes,empty,0.7178791655789291
+539,1,1,0,1,1,1,1,0,0,1,34,7,m,Others,no,no,family member,Yes,6d55f2d8083841b3959d327c05a889bb,Yes,empty,0.7178791655789291
+543,1,1,0,0,0,0,1,0,0,1,25,4,m,middle eastern,no,no,family member,Yes,6d55f2d8083841b3959d327c05a889bb,Yes,empty,0.7178791655789291
+546,0,0,0,0,0,0,0,0,0,1,36,1,f,White European,no,no,family member,No,6d55f2d8083841b3959d327c05a889bb,No,empty,0.6830880042661751
+547,0,0,0,1,1,1,1,1,1,1,35,7,m,asian,no,yes,family member,Yes,6d55f2d8083841b3959d327c05a889bb,No,empty,0.6830880042661751
+551,1,1,0,0,0,1,0,1,0,1,36,5,m,White European,no,yes,family member,Yes,6d55f2d8083841b3959d327c05a889bb,Yes,empty,0.7178791655789291
+558,1,1,0,1,0,1,1,1,1,1,22,8,m,White European,no,no,family member,Yes,6d55f2d8083841b3959d327c05a889bb,Yes,empty,0.7178791655789291
+561,1,0,1,1,0,1,1,0,1,1,29,7,f,White European,no,no,family member,Yes,6d55f2d8083841b3959d327c05a889bb,Yes,empty,0.7750440120817794
+565,1,0,0,0,0,0,0,1,0,0,36,2,f,black,no,no,family member,No,6d55f2d8083841b3959d327c05a889bb,Yes,empty,0.554176278648098
+567,1,1,1,0,0,1,1,0,1,1,23,7,m,black,yes,no,family member,Yes,6d55f2d8083841b3959d327c05a889bb,Yes,empty,0.8758192574676572
+570,1,1,0,1,0,1,1,1,1,1,35,8,f,asian,no,no,family member,Yes,6d55f2d8083841b3959d327c05a889bb,Yes,empty,0.7178791655789291
+576,0,0,0,0,1,1,0,0,1,1,35,4,m,asian,yes,no,family member,Yes,6d55f2d8083841b3959d327c05a889bb,No,empty,0.6830880042661751
+577,1,0,1,0,1,1,0,0,1,0,24,5,m,White European,no,no,family member,Yes,6d55f2d8083841b3959d327c05a889bb,Yes,empty,0.7750440120817794
+578,1,0,1,1,1,1,0,0,1,0,24,6,m,White European,no,no,family member,Yes,6d55f2d8083841b3959d327c05a889bb,Yes,empty,0.7750440120817794
+584,0,0,0,0,0,0,0,0,0,1,31,1,m,Pacifica,no,no,family member,No,6d55f2d8083841b3959d327c05a889bb,No,empty,0.6830880042661751
+635,1,1,1,1,0,1,1,0,0,1,25,7,m,White European,yes,yes,family member,Yes,6d55f2d8083841b3959d327c05a889bb,Yes,empty,0.8758192574676572
+643,1,0,1,1,0,1,1,0,1,0,24,6,f,asian,no,no,family member,Yes,6d55f2d8083841b3959d327c05a889bb,Yes,empty,0.7750440120817794
+645,0,0,1,1,1,1,0,0,1,0,24,5,f,asian,no,no,family member,Yes,6d55f2d8083841b3959d327c05a889bb,Yes,empty,0.5625349045373181
+646,0,0,1,1,1,1,0,0,1,0,24,5,f,asian,no,no,family member,Yes,6d55f2d8083841b3959d327c05a889bb,Yes,empty,0.5625349045373181
+656,1,0,0,0,1,1,1,1,0,1,32,6,f,asian,no,no,family member,Yes,6d55f2d8083841b3959d327c05a889bb,Yes,empty,0.554176278648098
+661,1,1,1,1,1,1,1,0,1,1,22,9,m,asian,no,no,family member,Yes,6d55f2d8083841b3959d327c05a889bb,Yes,empty,0.8758192574676572
+668,1,1,1,1,1,0,1,1,0,0,24,7,m,Others,no,no,family member,Yes,6d55f2d8083841b3959d327c05a889bb,Yes,empty,0.8758192574676572
+669,1,1,1,1,1,1,1,0,1,0,14,8,m,White European,no,no,family member,Yes,6d55f2d8083841b3959d327c05a889bb,Yes,empty,0.8758192574676572
+675,1,0,1,0,1,1,1,1,1,1,33,8,f,asian,no,no,family member,Yes,6d55f2d8083841b3959d327c05a889bb,Yes,empty,0.7750440120817794
+680,1,0,1,1,0,1,0,1,0,0,17,5,m,asian,yes,no,family member,Yes,6d55f2d8083841b3959d327c05a889bb,Yes,empty,0.7750440120817794
+681,1,1,1,1,1,0,1,1,1,1,19,9,f,White European,yes,no,family member,Yes,6d55f2d8083841b3959d327c05a889bb,Yes,empty,0.8758192574676572
+682,1,1,1,1,1,1,1,1,1,0,19,9,f,White European,yes,no,family member,Yes,6d55f2d8083841b3959d327c05a889bb,Yes,empty,0.8758192574676572
+684,1,0,0,0,1,1,1,1,1,1,36,7,m,White European,no,no,Health Care Professional,Yes,6d55f2d8083841b3959d327c05a889bb,Yes,empty,0.554176278648098
+785,0,0,0,0,0,0,1,0,0,1,22,2,m,White European,yes,yes,family member,No,6d55f2d8083841b3959d327c05a889bb,No,empty,0.6830880042661751
+787,1,0,0,0,0,0,0,0,0,0,34,1,m,White European,yes,yes,family member,No,6d55f2d8083841b3959d327c05a889bb,Yes,empty,0.554176278648098
+796,0,0,1,0,0,1,1,1,1,1,36,6,f,middle eastern,no,yes,family member,Yes,6d55f2d8083841b3959d327c05a889bb,Yes,empty,0.5625349045373181
+797,1,1,1,1,1,1,1,1,1,1,36,10,f,middle eastern,yes,no,family member,Yes,6d55f2d8083841b3959d327c05a889bb,Yes,empty,0.8758192574676572
+803,1,0,0,0,1,1,1,1,1,0,34,6,f,asian,no,no,family member,Yes,6d55f2d8083841b3959d327c05a889bb,Yes,empty,0.554176278648098
+805,0,0,0,0,0,0,0,0,0,0,36,0,f,black,no,yes,family member,No,6d55f2d8083841b3959d327c05a889bb,No,empty,0.6830880042661751
+812,1,1,1,1,0,1,0,0,0,1,20,6,m,White European,yes,yes,family member,Yes,6d55f2d8083841b3959d327c05a889bb,Yes,empty,0.8758192574676572
+813,1,0,1,1,1,1,1,1,0,1,28,8,m,middle eastern,no,no,family member,Yes,6d55f2d8083841b3959d327c05a889bb,Yes,empty,0.7750440120817794
+814,1,1,1,1,1,1,1,1,1,0,29,9,m,asian,no,no,family member,Yes,6d55f2d8083841b3959d327c05a889bb,Yes,empty,0.8758192574676572
+831,0,0,1,1,1,0,0,1,0,0,35,4,m,asian,no,no,family member,Yes,6d55f2d8083841b3959d327c05a889bb,Yes,empty,0.5625349045373181
+588,0,0,1,1,1,1,1,1,1,1,34,8,f,White European,no,yes,family member,Yes,6d55f2d8083841b3959d327c05a889bb,Yes,empty,0.5625349045373181
+593,1,0,0,0,0,1,0,1,1,1,36,5,m,asian,no,no,family member,Yes,6d55f2d8083841b3959d327c05a889bb,Yes,empty,0.554176278648098
+596,0,0,0,0,0,0,0,1,0,0,36,1,f,black,no,no,family member,No,6d55f2d8083841b3959d327c05a889bb,No,empty,0.6830880042661751
+600,1,0,1,0,1,1,1,0,0,1,26,6,m,asian,no,no,family member,Yes,6d55f2d8083841b3959d327c05a889bb,Yes,empty,0.7750440120817794
+603,0,0,0,1,0,0,1,1,0,0,36,3,m,Hispanic,no,no,family member,No,6d55f2d8083841b3959d327c05a889bb,No,empty,0.6830880042661751
+607,0,0,0,1,0,0,1,0,1,0,36,3,m,asian,no,no,family member,No,6d55f2d8083841b3959d327c05a889bb,No,empty,0.6830880042661751
+610,1,1,1,1,1,1,1,1,1,1,36,10,m,black,no,yes,family member,Yes,6d55f2d8083841b3959d327c05a889bb,Yes,empty,0.8758192574676572
+622,1,1,1,1,0,1,1,0,1,1,36,8,m,White European,yes,no,family member,Yes,6d55f2d8083841b3959d327c05a889bb,Yes,empty,0.8758192574676572
+633,0,0,0,0,1,1,1,0,1,1,34,5,m,Others,yes,no,family member,Yes,6d55f2d8083841b3959d327c05a889bb,No,empty,0.6830880042661751
+939,1,0,1,0,0,0,1,0,0,1,20,4,m,middle eastern,no,no,family member,Yes,6d55f2d8083841b3959d327c05a889bb,Yes,empty,0.7750440120817794
+944,1,1,1,1,1,1,1,1,1,0,12,9,m,White European,no,no,family member,Yes,6d55f2d8083841b3959d327c05a889bb,Yes,empty,0.8758192574676572
+948,0,0,0,0,1,1,0,0,1,1,36,4,m,Native Indian,no,no,family member,Yes,6d55f2d8083841b3959d327c05a889bb,No,empty,0.6830880042661751
+949,0,0,0,0,0,0,1,0,0,1,24,2,m,middle eastern,no,no,family member,No,6d55f2d8083841b3959d327c05a889bb,No,empty,0.6830880042661751
+952,1,1,1,1,1,1,1,1,0,1,27,9,m,black,no,yes,family member,Yes,6d55f2d8083841b3959d327c05a889bb,Yes,empty,0.8758192574676572
+955,1,0,0,0,1,0,0,0,0,0,18,2,m,black,no,no,family member,No,6d55f2d8083841b3959d327c05a889bb,Yes,empty,0.554176278648098
+964,0,0,0,0,1,0,0,0,0,1,36,2,m,south asian,yes,no,family member,No,6d55f2d8083841b3959d327c05a889bb,No,empty,0.6830880042661751
+733,1,1,0,1,0,1,1,0,0,1,28,6,m,White European,no,no,family member,Yes,6d55f2d8083841b3959d327c05a889bb,Yes,empty,0.7178791655789291
+742,0,0,0,0,0,0,0,0,0,1,22,1,f,middle eastern,no,no,family member,No,6d55f2d8083841b3959d327c05a889bb,No,empty,0.6830880042661751
+759,0,0,1,1,1,1,1,0,0,0,31,5,m,White European,yes,no,family member,Yes,6d55f2d8083841b3959d327c05a889bb,Yes,empty,0.5625349045373181
+769,0,0,0,0,0,0,1,0,0,0,15,1,f,asian,no,yes,family member,No,6d55f2d8083841b3959d327c05a889bb,No,empty,0.6830880042661751
+771,0,0,0,0,0,0,0,0,0,0,17,0,f,asian,no,yes,family member,No,6d55f2d8083841b3959d327c05a889bb,No,empty,0.6830880042661751
+773,1,1,0,1,1,1,1,1,1,0,36,8,f,asian,no,no,family member,Yes,6d55f2d8083841b3959d327c05a889bb,Yes,empty,0.7178791655789291
+781,1,1,1,1,0,1,1,0,0,1,22,7,m,middle eastern,yes,yes,family member,Yes,6d55f2d8083841b3959d327c05a889bb,Yes,empty,0.8758192574676572
+782,0,0,1,1,0,0,1,0,0,1,36,4,f,asian,yes,no,family member,Yes,6d55f2d8083841b3959d327c05a889bb,Yes,empty,0.5625349045373181
+887,0,0,1,1,1,0,0,1,0,1,36,5,m,Others,no,no,family member,Yes,6d55f2d8083841b3959d327c05a889bb,Yes,empty,0.5625349045373181
+889,0,1,1,0,1,0,0,0,0,0,34,3,f,black,yes,no,family member,No,6d55f2d8083841b3959d327c05a889bb,Yes,empty,0.7246933150368985
+898,1,1,1,1,1,1,1,1,1,1,30,10,m,White European,yes,no,family member,Yes,6d55f2d8083841b3959d327c05a889bb,Yes,empty,0.8758192574676572
+899,1,1,1,1,0,1,1,1,1,1,27,9,f,White European,no,no,family member,Yes,6d55f2d8083841b3959d327c05a889bb,Yes,empty,0.8758192574676572
+902,0,0,1,1,1,0,1,0,1,0,36,5,f,south asian,no,no,family member,Yes,6d55f2d8083841b3959d327c05a889bb,Yes,empty,0.5625349045373181
+905,1,1,0,0,1,0,1,1,1,0,36,6,m,Hispanic,no,no,family member,Yes,6d55f2d8083841b3959d327c05a889bb,Yes,empty,0.7178791655789291
+907,0,0,0,0,0,0,0,0,0,0,28,0,f,black,no,no,family member,No,6d55f2d8083841b3959d327c05a889bb,No,empty,0.6830880042661751
+834,0,0,0,1,0,0,0,0,0,0,31,1,f,middle eastern,yes,no,family member,No,6d55f2d8083841b3959d327c05a889bb,No,empty,0.6830880042661751
+838,1,0,0,0,1,1,1,1,1,0,36,6,m,White European,no,no,family member,Yes,6d55f2d8083841b3959d327c05a889bb,Yes,empty,0.554176278648098
+840,1,0,1,1,0,1,1,0,0,0,26,5,m,White European,no,no,family member,Yes,6d55f2d8083841b3959d327c05a889bb,Yes,empty,0.7750440120817794
+846,0,0,0,0,0,0,1,0,0,1,21,2,m,middle eastern,yes,no,family member,No,6d55f2d8083841b3959d327c05a889bb,No,empty,0.6830880042661751
+854,0,0,0,1,1,1,0,1,0,0,24,4,m,asian,no,no,family member,Yes,6d55f2d8083841b3959d327c05a889bb,No,empty,0.6830880042661751
+859,1,1,1,1,1,1,1,1,1,1,30,10,m,White European,yes,yes,family member,Yes,6d55f2d8083841b3959d327c05a889bb,Yes,empty,0.8758192574676572
+695,0,0,1,1,1,1,1,1,1,1,33,8,m,White European,no,no,family member,Yes,6d55f2d8083841b3959d327c05a889bb,Yes,empty,0.5625349045373181
+699,1,0,1,1,1,1,1,0,0,1,34,7,m,White European,yes,no,family member,Yes,6d55f2d8083841b3959d327c05a889bb,Yes,empty,0.7750440120817794
+707,1,0,0,1,0,0,1,0,1,1,24,5,m,White European,yes,yes,family member,Yes,6d55f2d8083841b3959d327c05a889bb,Yes,empty,0.554176278648098
+711,1,0,0,1,0,0,1,0,0,0,27,3,m,south asian,no,no,family member,No,6d55f2d8083841b3959d327c05a889bb,Yes,empty,0.554176278648098
+716,0,0,0,0,0,0,0,0,0,1,15,1,m,asian,no,no,family member,No,6d55f2d8083841b3959d327c05a889bb,No,empty,0.6830880042661751
+726,0,0,0,0,0,0,0,1,0,1,23,2,m,White European,yes,no,family member,No,6d55f2d8083841b3959d327c05a889bb,No,empty,0.6830880042661751
+977,1,1,0,1,0,0,0,0,0,1,16,4,f,Latino,no,no,family member,Yes,6d55f2d8083841b3959d327c05a889bb,Yes,empty,0.7178791655789291
+979,1,0,1,1,1,1,0,1,1,0,30,7,m,White European,yes,no,family member,Yes,6d55f2d8083841b3959d327c05a889bb,Yes,empty,0.7750440120817794
+984,1,1,1,1,1,1,1,1,1,1,34,10,f,White European,no,no,family member,Yes,6d55f2d8083841b3959d327c05a889bb,Yes,empty,0.8758192574676572
+989,0,0,0,0,1,0,1,1,0,1,36,4,m,south asian,yes,no,family member,Yes,6d55f2d8083841b3959d327c05a889bb,No,empty,0.6830880042661751
+990,1,0,1,1,1,1,1,1,1,1,35,9,f,middle eastern,no,no,family member,Yes,6d55f2d8083841b3959d327c05a889bb,Yes,empty,0.7750440120817794
+993,1,0,0,1,0,0,1,0,0,1,34,4,m,asian,yes,no,family member,Yes,6d55f2d8083841b3959d327c05a889bb,Yes,empty,0.554176278648098
+994,1,1,1,1,1,1,1,1,1,1,24,10,f,Latino,no,no,Health care professional,Yes,6d55f2d8083841b3959d327c05a889bb,Yes,empty,0.8758192574676572
+1000,0,1,1,1,0,1,0,0,0,0,23,4,f,Pacifica,yes,no,family member,Yes,6d55f2d8083841b3959d327c05a889bb,Yes,empty,0.7246933150368985
+1006,1,0,1,1,1,0,1,0,0,1,24,6,m,asian,no,no,family member,Yes,6d55f2d8083841b3959d327c05a889bb,Yes,empty,0.7750440120817794
+1013,0,0,0,0,0,0,1,0,0,1,32,2,m,south asian,no,no,family member,No,6d55f2d8083841b3959d327c05a889bb,No,empty,0.6830880042661751
+1016,0,0,1,1,0,0,1,0,1,0,24,4,m,Latino,no,no,family member,Yes,6d55f2d8083841b3959d327c05a889bb,Yes,empty,0.5625349045373181
+1025,0,0,0,0,0,0,0,0,0,1,35,1,m,asian,yes,no,family member,No,6d55f2d8083841b3959d327c05a889bb,No,empty,0.6830880042661751
+1032,1,1,0,0,0,1,1,1,0,1,36,6,f,Others,no,yes,family member,Yes,6d55f2d8083841b3959d327c05a889bb,Yes,empty,0.7178791655789291
+1039,1,1,0,0,0,0,1,0,1,0,26,4,m,asian,no,yes,family member,Yes,6d55f2d8083841b3959d327c05a889bb,Yes,empty,0.7178791655789291
+1043,1,1,1,1,0,0,1,1,1,1,30,8,m,Hispanic,yes,no,family member,Yes,6d55f2d8083841b3959d327c05a889bb,Yes,empty,0.8758192574676572
+1046,1,1,1,1,1,1,1,1,1,1,30,10,m,middle eastern,no,no,Health Care Professional,Yes,6d55f2d8083841b3959d327c05a889bb,Yes,empty,0.8758192574676572
+1048,1,1,0,0,1,1,1,0,0,0,30,5,f,White European,no,no,family member,Yes,6d55f2d8083841b3959d327c05a889bb,Yes,empty,0.7178791655789291
+1050,0,0,0,0,0,0,0,0,0,1,24,1,f,White European,no,yes,family member,No,6d55f2d8083841b3959d327c05a889bb,No,empty,0.6830880042661751
+1051,0,0,1,1,1,0,1,0,1,0,12,5,m,black,yes,no,family member,Yes,6d55f2d8083841b3959d327c05a889bb,Yes,empty,0.5625349045373181
+830,0,0,1,1,1,0,1,1,1,0,14,6,m,White European,yes,no,family member,Yes,6d55f2d8083841b3959d327c05a889bb,Yes,empty,0.5625349045373181
+59,0,0,0,0,0,0,0,1,0,1,15,2,f,White European,no,no,family member,No,6d55f2d8083841b3959d327c05a889bb,No,No,0.6830880042661751
+181,0,1,0,1,0,1,1,1,0,0,12,5,f,White European,no,no,family member,Yes,6d55f2d8083841b3959d327c05a889bb,No,Yes,0.5128953866895871
+490,0,0,0,0,0,1,0,0,0,1,12,2,f,Hispanic,no,no,Health care professional,No,6d55f2d8083841b3959d327c05a889bb,No,No,0.6830880042661751
+497,0,0,0,1,0,1,1,0,0,0,12,3,f,White European,no,no,family member,No,6d55f2d8083841b3959d327c05a889bb,No,No,0.6830880042661751
+653,0,0,0,0,0,0,0,0,0,1,12,1,m,White European,yes,yes,family member,No,6d55f2d8083841b3959d327c05a889bb,No,No,0.6830880042661751
+928,0,0,1,1,1,0,0,0,0,0,12,3,m,White European,no,no,family member,No,6d55f2d8083841b3959d327c05a889bb,Yes,No,0.5625349045373181
+941,1,0,0,0,0,0,0,0,0,0,12,1,m,White European,no,no,family member,No,6d55f2d8083841b3959d327c05a889bb,Yes,No,0.554176278648098
+142,1,1,0,1,1,0,1,0,1,1,24,7,m,middle eastern,no,no,family member,Yes,6d55f2d8083841b3959d327c05a889bb,Yes,Yes,0.7178791655789291
+82,1,0,1,1,0,1,1,1,1,0,29,7,m,asian,no,no,family member,Yes,6d55f2d8083841b3959d327c05a889bb,Yes,Yes,0.7750440120817794
+84,1,0,1,1,0,1,1,1,1,0,30,7,m,asian,no,no,family member,Yes,6d55f2d8083841b3959d327c05a889bb,Yes,Yes,0.7750440120817794
+877,1,1,1,1,1,1,1,1,1,1,30,10,f,Others,no,no,family member,Yes,6d55f2d8083841b3959d327c05a889bb,Yes,Yes,0.8758192574676572
+432,0,1,0,0,0,0,1,0,0,0,35,2,f,asian,yes,no,family member,No,6d55f2d8083841b3959d327c05a889bb,No,No,0.5128953866895871
+167,0,1,0,0,0,0,1,0,0,1,36,3,f,asian,no,no,family member,No,6d55f2d8083841b3959d327c05a889bb,No,No,0.5128953866895871
+122,0,1,0,0,0,1,1,1,0,1,27,5,f,White European,no,yes,family member,Yes,6d55f2d8083841b3959d327c05a889bb,No,Yes,0.5128953866895871
+507,0,1,0,1,0,1,0,0,1,0,36,4,m,asian,no,no,family member,Yes,6d55f2d8083841b3959d327c05a889bb,No,Yes,0.5128953866895871
+555,0,1,0,1,1,0,1,0,0,1,36,5,m,White European,yes,yes,family member,Yes,6d55f2d8083841b3959d327c05a889bb,No,Yes,0.5128953866895871
+608,0,1,0,1,0,0,0,0,1,1,36,4,m,black,yes,yes,family member,Yes,6d55f2d8083841b3959d327c05a889bb,No,Yes,0.5128953866895871
+717,0,1,0,1,0,1,1,0,0,0,30,4,m,asian,yes,no,family member,Yes,6d55f2d8083841b3959d327c05a889bb,No,Yes,0.5128953866895871
+965,1,0,1,1,1,1,1,0,1,0,16,7,m,White European,no,yes,family member,Yes,6d55f2d8083841b3959d327c05a889bb,Yes,empty,0.7750440120817794
+974,1,1,0,1,1,1,0,1,0,1,36,7,m,White European,yes,yes,family member,Yes,6d55f2d8083841b3959d327c05a889bb,Yes,empty,0.7178791655789291
+986,1,1,1,0,1,1,0,0,1,1,23,7,m,White European,no,no,family member,Yes,6d55f2d8083841b3959d327c05a889bb,Yes,empty,0.8758192574676572
+995,1,1,0,0,0,0,0,0,1,1,36,4,m,White European,yes,no,family member,Yes,6d55f2d8083841b3959d327c05a889bb,Yes,empty,0.7178791655789291
+998,0,0,0,1,0,0,0,0,1,1,36,3,m,asian,no,no,family member,No,6d55f2d8083841b3959d327c05a889bb,No,empty,0.6830880042661751
+1007,1,0,1,1,1,0,1,0,0,1,24,6,m,asian,no,no,family member,Yes,6d55f2d8083841b3959d327c05a889bb,Yes,empty,0.7750440120817794
+1014,1,1,1,1,1,1,1,1,1,0,30,9,m,middle eastern,no,no,family member,Yes,6d55f2d8083841b3959d327c05a889bb,Yes,empty,0.8758192574676572
+1024,1,1,0,0,0,0,0,1,0,1,36,4,m,White European,no,yes,family member,Yes,6d55f2d8083841b3959d327c05a889bb,Yes,empty,0.7178791655789291
+1034,0,0,0,0,0,1,0,0,0,1,16,2,m,south asian,yes,yes,Health Care Professional,No,6d55f2d8083841b3959d327c05a889bb,No,empty,0.6830880042661751
+1042,0,0,0,1,0,0,1,0,0,0,25,2,m,White European,yes,no,family member,No,6d55f2d8083841b3959d327c05a889bb,No,empty,0.6830880042661751
+1054,1,1,0,0,1,1,0,1,1,0,24,6,m,asian,yes,yes,family member,Yes,6d55f2d8083841b3959d327c05a889bb,Yes,empty,0.7178791655789291
+344,1,1,1,1,1,0,1,1,1,1,12,9,m,asian,no,no,family member,Yes,6d55f2d8083841b3959d327c05a889bb,Yes,Yes,0.8758192574676572
+943,0,0,0,0,0,0,0,0,0,0,12,0,m,White European,no,no,family member,No,6d55f2d8083841b3959d327c05a889bb,No,No,0.6830880042661751
+1038,0,0,1,0,0,0,0,0,0,0,12,1,m,White European,no,no,family member,No,6d55f2d8083841b3959d327c05a889bb,Yes,No,0.5625349045373181
+48,0,0,0,0,0,0,0,0,0,1,12,1,f,White European,no,no,family member,No,6d55f2d8083841b3959d327c05a889bb,No,No,0.6830880042661751
+678,0,0,0,0,0,0,0,0,0,0,13,0,f,White European,no,yes,family member,No,6d55f2d8083841b3959d327c05a889bb,No,No,0.6830880042661751
+731,0,0,0,0,1,0,0,0,1,1,12,3,f,White European,no,no,family member,No,6d55f2d8083841b3959d327c05a889bb,No,No,0.6830880042661751
+987,1,0,0,1,0,0,0,0,0,0,12,2,m,White European,no,no,family member,No,6d55f2d8083841b3959d327c05a889bb,Yes,No,0.554176278648098
+90,1,1,1,1,1,1,1,1,1,0,34,9,m,asian,no,no,family member,Yes,6d55f2d8083841b3959d327c05a889bb,Yes,Yes,0.8758192574676572
+303,1,1,0,1,1,0,1,1,1,0,23,7,m,asian,no,no,family member,Yes,6d55f2d8083841b3959d327c05a889bb,Yes,Yes,0.7178791655789291
+112,0,1,0,0,0,0,1,1,0,1,36,4,m,south asian,no,no,family member,Yes,6d55f2d8083841b3959d327c05a889bb,No,Yes,0.5128953866895871
+219,0,1,0,1,1,1,1,1,0,1,22,7,m,black,no,no,family member,Yes,6d55f2d8083841b3959d327c05a889bb,No,Yes,0.5128953866895871
+8,0,1,0,0,1,0,1,1,1,1,33,6,m,asian,yes,no,family member,Yes,6d55f2d8083841b3959d327c05a889bb,No,Yes,0.5128953866895871
+349,0,1,0,0,0,1,1,0,1,0,36,4,m,asian,yes,no,family member,Yes,6d55f2d8083841b3959d327c05a889bb,No,Yes,0.5128953866895871
+234,0,1,0,1,1,0,0,0,1,0,36,4,m,asian,yes,no,family member,Yes,6d55f2d8083841b3959d327c05a889bb,No,Yes,0.5128953866895871
+683,0,1,0,0,1,1,0,1,0,1,29,5,m,White European,no,no,family member,Yes,6d55f2d8083841b3959d327c05a889bb,No,Yes,0.5128953866895871
+609,0,1,0,1,0,0,0,0,1,1,36,4,m,black,yes,yes,family member,Yes,6d55f2d8083841b3959d327c05a889bb,No,Yes,0.5128953866895871
+611,0,1,0,0,1,1,1,1,1,0,30,6,m,White European,no,no,family member,Yes,6d55f2d8083841b3959d327c05a889bb,No,Yes,0.5128953866895871
+318,0,1,0,1,0,1,1,1,1,1,16,7,m,middle eastern,yes,yes,family member,Yes,6d55f2d8083841b3959d327c05a889bb,No,Yes,0.5128953866895871
+842,0,1,0,0,1,0,0,0,0,0,32,2,m,middle eastern,no,no,family member,No,6d55f2d8083841b3959d327c05a889bb,No,No,0.5128953866895871
+997,0,1,0,0,0,0,0,0,0,1,36,2,m,middle eastern,yes,no,family member,No,6d55f2d8083841b3959d327c05a889bb,No,No,0.5128953866895871
+574,0,0,1,1,0,1,0,1,0,0,32,4,f,White European,yes,no,family member,Yes,6d55f2d8083841b3959d327c05a889bb,Yes,empty,0.5625349045373181
+580,1,1,1,1,0,1,1,0,1,1,30,8,f,White European,no,no,family member,Yes,6d55f2d8083841b3959d327c05a889bb,Yes,empty,0.8758192574676572
+582,1,1,1,1,1,1,1,1,1,1,12,10,m,Others,yes,yes,family member,Yes,6d55f2d8083841b3959d327c05a889bb,Yes,empty,0.8758192574676572
+586,1,0,0,0,1,1,1,0,0,1,23,5,m,asian,yes,no,family member,Yes,6d55f2d8083841b3959d327c05a889bb,Yes,empty,0.554176278648098
+449,1,1,0,0,1,1,1,0,0,1,36,6,m,White European,yes,no,family member,Yes,6d55f2d8083841b3959d327c05a889bb,Yes,empty,0.7178791655789291
+450,1,0,1,1,1,1,0,1,1,0,19,7,m,asian,no,no,family member,Yes,6d55f2d8083841b3959d327c05a889bb,Yes,empty,0.7750440120817794
+463,1,1,1,1,1,1,1,0,1,0,19,8,m,asian,no,no,family member,Yes,6d55f2d8083841b3959d327c05a889bb,Yes,empty,0.8758192574676572
+469,1,1,0,1,1,0,1,0,0,1,36,6,m,White European,no,no,Others,Yes,6d55f2d8083841b3959d327c05a889bb,Yes,empty,0.7178791655789291
+471,1,1,1,1,0,1,1,1,1,1,36,9,f,White European,yes,no,family member,Yes,6d55f2d8083841b3959d327c05a889bb,Yes,empty,0.8758192574676572
+473,1,0,1,0,0,1,0,0,0,0,36,3,m,asian,no,yes,family member,No,6d55f2d8083841b3959d327c05a889bb,Yes,empty,0.7750440120817794
+485,1,1,1,1,1,1,1,0,1,1,28,9,m,middle eastern,no,no,family member,Yes,6d55f2d8083841b3959d327c05a889bb,Yes,empty,0.8758192574676572
+486,1,1,0,1,0,1,1,1,1,0,26,7,m,Hispanic,no,yes,family member,Yes,6d55f2d8083841b3959d327c05a889bb,Yes,empty,0.7178791655789291
+488,1,1,1,1,1,1,1,0,1,1,36,9,f,Others,no,no,Self,Yes,6d55f2d8083841b3959d327c05a889bb,Yes,empty,0.8758192574676572
+691,1,1,0,0,1,1,1,0,1,0,32,6,m,White European,no,no,family member,Yes,6d55f2d8083841b3959d327c05a889bb,Yes,empty,0.7178791655789291
+692,0,0,0,0,0,1,1,0,0,0,21,2,f,White European,no,no,family member,No,6d55f2d8083841b3959d327c05a889bb,No,empty,0.6830880042661751
+706,0,0,0,0,0,1,0,1,0,0,36,2,f,middle eastern,no,no,family member,No,6d55f2d8083841b3959d327c05a889bb,No,empty,0.6830880042661751
+709,1,0,1,1,1,0,1,1,1,1,15,8,m,White European,yes,no,family member,Yes,6d55f2d8083841b3959d327c05a889bb,Yes,empty,0.7750440120817794
+719,1,1,0,0,0,0,0,0,0,0,17,2,m,asian,no,no,family member,No,6d55f2d8083841b3959d327c05a889bb,Yes,empty,0.7178791655789291
+722,1,1,0,0,1,1,0,1,1,1,29,7,m,White European,no,no,family member,Yes,6d55f2d8083841b3959d327c05a889bb,Yes,empty,0.7178791655789291
+724,1,1,0,0,0,1,1,1,0,1,23,6,m,White European,yes,yes,family member,Yes,6d55f2d8083841b3959d327c05a889bb,Yes,empty,0.7178791655789291
+725,0,0,0,0,0,0,1,0,0,1,23,2,m,White European,yes,yes,family member,No,6d55f2d8083841b3959d327c05a889bb,No,empty,0.6830880042661751
+285,1,1,0,0,1,1,1,1,1,1,28,8,m,White European,no,no,family member,Yes,6d55f2d8083841b3959d327c05a889bb,Yes,empty,0.7178791655789291
+290,1,1,0,0,0,1,1,0,0,1,26,5,m,White European,yes,no,family member,Yes,6d55f2d8083841b3959d327c05a889bb,Yes,empty,0.7178791655789291
+324,1,1,1,1,1,1,1,1,1,1,32,10,m,White European,yes,no,family member,Yes,6d55f2d8083841b3959d327c05a889bb,Yes,empty,0.8758192574676572
+335,0,1,1,1,0,0,0,1,0,0,36,4,m,asian,no,no,family member,Yes,6d55f2d8083841b3959d327c05a889bb,Yes,empty,0.7246933150368985
+401,1,1,1,1,1,1,1,1,0,1,35,9,m,White European,no,yes,family member,Yes,6d55f2d8083841b3959d327c05a889bb,Yes,empty,0.8758192574676572
+404,1,1,1,1,1,1,0,1,1,1,24,9,f,south asian,no,no,family member,Yes,6d55f2d8083841b3959d327c05a889bb,Yes,empty,0.8758192574676572
+413,1,1,1,0,0,1,1,0,0,1,36,6,m,White European,no,no,family member,Yes,6d55f2d8083841b3959d327c05a889bb,Yes,empty,0.8758192574676572
+415,1,1,0,0,0,0,0,1,0,1,33,4,m,asian,no,no,Health Care Professional,Yes,6d55f2d8083841b3959d327c05a889bb,Yes,empty,0.7178791655789291
+424,0,0,0,1,1,0,0,1,0,0,36,3,m,asian,no,no,family member,No,6d55f2d8083841b3959d327c05a889bb,No,empty,0.6830880042661751
+433,1,1,1,1,0,1,1,1,1,1,36,9,m,middle eastern,no,no,family member,Yes,6d55f2d8083841b3959d327c05a889bb,Yes,empty,0.8758192574676572
+495,0,1,1,1,1,1,0,1,1,0,24,7,f,asian,yes,no,family member,Yes,6d55f2d8083841b3959d327c05a889bb,Yes,empty,0.7246933150368985
+506,0,1,1,0,0,0,0,1,0,1,36,4,m,south asian,no,no,family member,Yes,6d55f2d8083841b3959d327c05a889bb,Yes,empty,0.7246933150368985
+509,0,0,0,0,1,0,0,0,0,1,35,2,m,asian,no,no,family member,No,6d55f2d8083841b3959d327c05a889bb,No,empty,0.6830880042661751
+519,1,1,1,1,1,1,1,1,1,1,26,10,f,Latino,no,no,family member,Yes,6d55f2d8083841b3959d327c05a889bb,Yes,empty,0.8758192574676572
+532,1,1,1,1,1,0,1,1,1,1,12,9,f,middle eastern,no,no,family member,Yes,6d55f2d8083841b3959d327c05a889bb,Yes,empty,0.8758192574676572
+534,1,1,1,1,1,1,1,1,1,0,13,9,m,Hispanic,yes,no,family member,Yes,6d55f2d8083841b3959d327c05a889bb,Yes,empty,0.8758192574676572
+535,1,1,1,1,1,1,1,1,1,0,13,9,m,Hispanic,yes,no,family member,Yes,6d55f2d8083841b3959d327c05a889bb,Yes,empty,0.8758192574676572
+732,0,0,1,1,1,1,1,0,1,1,12,7,f,middle eastern,no,no,family member,Yes,6d55f2d8083841b3959d327c05a889bb,Yes,empty,0.5625349045373181
+736,1,1,1,1,1,1,0,1,1,1,30,9,m,asian,no,no,family member,Yes,6d55f2d8083841b3959d327c05a889bb,Yes,empty,0.8758192574676572
+737,1,0,0,0,1,1,0,0,1,1,30,5,m,asian,no,no,family member,Yes,6d55f2d8083841b3959d327c05a889bb,Yes,empty,0.554176278648098
+741,1,1,1,0,1,1,1,0,0,1,29,7,m,Pacifica,no,yes,family member,Yes,6d55f2d8083841b3959d327c05a889bb,Yes,empty,0.8758192574676572
+743,0,0,1,0,1,1,1,1,0,1,34,6,f,asian,no,no,family member,Yes,6d55f2d8083841b3959d327c05a889bb,Yes,empty,0.5625349045373181
+744,0,1,1,1,1,1,1,1,0,1,36,8,f,White European,no,no,Self,Yes,6d55f2d8083841b3959d327c05a889bb,Yes,empty,0.7246933150368985
+746,1,1,1,1,0,1,1,0,0,1,36,7,f,White European,no,no,family member,Yes,6d55f2d8083841b3959d327c05a889bb,Yes,empty,0.8758192574676572
+750,1,0,0,0,1,1,1,0,1,0,26,5,m,asian,no,no,family member,Yes,6d55f2d8083841b3959d327c05a889bb,Yes,empty,0.554176278648098
+752,1,0,1,1,1,1,1,1,1,0,36,8,m,asian,yes,no,family member,Yes,6d55f2d8083841b3959d327c05a889bb,Yes,empty,0.7750440120817794
+768,0,0,1,1,1,1,1,1,1,0,14,7,m,White European,yes,no,family member,Yes,6d55f2d8083841b3959d327c05a889bb,Yes,empty,0.5625349045373181
+775,1,0,1,1,1,1,1,0,1,0,15,7,m,White European,no,no,family member,Yes,6d55f2d8083841b3959d327c05a889bb,Yes,empty,0.7750440120817794
+778,1,0,1,1,1,1,1,1,1,1,28,9,m,White European,no,no,family member,Yes,6d55f2d8083841b3959d327c05a889bb,Yes,empty,0.7750440120817794
+784,0,0,0,0,0,0,1,1,0,1,36,3,m,White European,no,no,family member,No,6d55f2d8083841b3959d327c05a889bb,No,empty,0.6830880042661751
+792,1,1,0,1,1,1,1,0,1,1,36,8,m,asian,yes,no,family member,Yes,6d55f2d8083841b3959d327c05a889bb,Yes,empty,0.7178791655789291
+800,1,1,0,1,1,1,1,1,1,1,24,9,f,south asian,no,no,family member,Yes,6d55f2d8083841b3959d327c05a889bb,Yes,empty,0.7178791655789291
+804,1,0,1,1,1,1,1,1,1,1,13,9,m,black,yes,yes,family member,Yes,6d55f2d8083841b3959d327c05a889bb,Yes,empty,0.7750440120817794
+815,0,0,0,0,0,0,0,0,0,0,25,0,m,asian,no,no,family member,No,6d55f2d8083841b3959d327c05a889bb,No,empty,0.6830880042661751
+818,1,1,0,0,0,1,0,0,0,0,36,3,m,middle eastern,no,no,family member,No,6d55f2d8083841b3959d327c05a889bb,Yes,empty,0.7178791655789291
+819,1,1,1,1,1,1,1,1,1,0,19,9,m,middle eastern,no,no,Health Care Professional,Yes,6d55f2d8083841b3959d327c05a889bb,Yes,empty,0.8758192574676572
+822,0,0,1,1,0,0,0,0,1,0,36,3,m,White European,no,no,family member,No,6d55f2d8083841b3959d327c05a889bb,Yes,empty,0.5625349045373181
+386,0,0,0,1,0,1,1,0,0,1,28,4,f,middle eastern,no,no,family member,Yes,6d55f2d8083841b3959d327c05a889bb,No,empty,0.6830880042661751
+388,0,0,1,1,0,0,0,1,0,1,36,4,m,asian,no,no,family member,Yes,6d55f2d8083841b3959d327c05a889bb,Yes,empty,0.5625349045373181
+391,1,1,1,1,1,0,1,1,1,1,32,9,m,asian,no,no,family member,Yes,6d55f2d8083841b3959d327c05a889bb,Yes,empty,0.8758192574676572
+644,0,0,0,1,0,1,1,0,0,0,25,3,f,asian,no,no,family member,No,6d55f2d8083841b3959d327c05a889bb,No,empty,0.6830880042661751
+650,0,0,1,1,0,0,0,1,0,1,24,4,m,asian,no,no,family member,Yes,6d55f2d8083841b3959d327c05a889bb,Yes,empty,0.5625349045373181
+651,0,0,1,1,0,1,0,0,0,1,24,4,m,asian,no,no,family member,Yes,6d55f2d8083841b3959d327c05a889bb,Yes,empty,0.5625349045373181
+652,1,0,1,1,1,0,1,0,1,0,16,6,f,asian,no,no,family member,Yes,6d55f2d8083841b3959d327c05a889bb,Yes,empty,0.7750440120817794
+655,0,0,1,1,1,1,1,0,0,1,22,6,f,White European,no,yes,family member,Yes,6d55f2d8083841b3959d327c05a889bb,Yes,empty,0.5625349045373181
+657,1,1,1,1,1,1,1,0,1,0,18,8,m,middle eastern,yes,no,family member,Yes,6d55f2d8083841b3959d327c05a889bb,Yes,empty,0.8758192574676572
+662,0,0,0,0,0,0,0,0,0,1,36,1,m,asian,no,no,family member,No,6d55f2d8083841b3959d327c05a889bb,No,empty,0.6830880042661751
+664,1,0,0,0,1,0,1,1,1,0,14,5,m,asian,yes,no,family member,Yes,6d55f2d8083841b3959d327c05a889bb,Yes,empty,0.554176278648098
+672,1,0,0,1,1,0,1,0,1,0,36,5,m,south asian,no,no,family member,Yes,6d55f2d8083841b3959d327c05a889bb,Yes,empty,0.554176278648098
+673,1,1,1,1,1,1,1,0,0,0,24,7,m,Others,no,no,family member,Yes,6d55f2d8083841b3959d327c05a889bb,Yes,empty,0.8758192574676572
+589,0,0,1,1,0,1,0,1,1,1,36,6,m,Hispanic,no,no,family member,Yes,6d55f2d8083841b3959d327c05a889bb,Yes,empty,0.5625349045373181
+590,1,1,0,0,1,1,1,0,0,1,36,6,m,Others,no,no,family member,Yes,6d55f2d8083841b3959d327c05a889bb,Yes,empty,0.7178791655789291
+591,1,0,0,1,1,1,1,0,1,1,36,7,m,White European,yes,no,family member,Yes,6d55f2d8083841b3959d327c05a889bb,Yes,empty,0.554176278648098
+598,1,1,0,1,1,1,1,0,1,1,36,8,m,White European,no,no,family member,Yes,6d55f2d8083841b3959d327c05a889bb,Yes,empty,0.7178791655789291
+602,0,0,0,0,1,0,1,1,0,0,36,3,m,Hispanic,no,no,family member,No,6d55f2d8083841b3959d327c05a889bb,No,empty,0.6830880042661751
+604,1,1,1,1,1,1,1,1,1,1,27,10,m,White European,yes,no,family member,Yes,6d55f2d8083841b3959d327c05a889bb,Yes,empty,0.8758192574676572
+617,1,1,0,1,1,1,1,1,1,1,28,9,m,asian,no,no,family member,Yes,6d55f2d8083841b3959d327c05a889bb,Yes,empty,0.7178791655789291
+623,1,1,1,1,1,1,1,1,1,0,29,9,f,Latino,no,no,family member,Yes,6d55f2d8083841b3959d327c05a889bb,Yes,empty,0.8758192574676572
+624,1,1,1,1,1,1,1,1,1,1,30,10,m,Latino,no,no,Others,Yes,6d55f2d8083841b3959d327c05a889bb,Yes,empty,0.8758192574676572
+628,1,0,0,0,0,1,1,0,0,1,22,4,m,Hispanic,yes,no,family member,Yes,6d55f2d8083841b3959d327c05a889bb,Yes,empty,0.554176278648098
+630,0,0,0,1,0,0,1,1,0,1,36,4,f,asian,no,no,family member,Yes,6d55f2d8083841b3959d327c05a889bb,No,empty,0.6830880042661751
+541,1,1,0,0,0,0,1,0,0,1,36,4,m,Hispanic,no,no,family member,Yes,6d55f2d8083841b3959d327c05a889bb,Yes,empty,0.7178791655789291
+542,1,1,0,0,1,0,1,0,0,1,25,5,m,middle eastern,yes,no,family member,Yes,6d55f2d8083841b3959d327c05a889bb,Yes,empty,0.7178791655789291
+550,0,1,1,1,0,0,1,0,1,0,12,5,f,middle eastern,yes,no,family member,Yes,6d55f2d8083841b3959d327c05a889bb,Yes,empty,0.7246933150368985
+559,0,0,0,0,0,1,1,0,0,0,36,2,f,White European,no,no,family member,No,6d55f2d8083841b3959d327c05a889bb,No,empty,0.6830880042661751
+562,1,0,0,0,0,0,1,0,1,1,36,4,m,asian,no,no,family member,Yes,6d55f2d8083841b3959d327c05a889bb,Yes,empty,0.554176278648098
+563,0,0,0,1,1,1,1,0,1,1,36,6,m,asian,no,no,family member,Yes,6d55f2d8083841b3959d327c05a889bb,No,empty,0.6830880042661751
+572,1,0,0,0,0,0,1,0,0,1,16,3,m,White European,no,no,family member,No,6d55f2d8083841b3959d327c05a889bb,Yes,empty,0.554176278648098
+826,0,0,0,0,0,0,0,0,0,1,36,1,m,White European,no,no,family member,No,6d55f2d8083841b3959d327c05a889bb,No,empty,0.6830880042661751
+827,1,0,0,0,0,0,1,0,0,0,25,2,f,asian,no,no,family member,No,6d55f2d8083841b3959d327c05a889bb,Yes,empty,0.554176278648098
+835,0,0,0,1,0,0,0,0,0,0,31,1,f,middle eastern,yes,no,family member,No,6d55f2d8083841b3959d327c05a889bb,No,empty,0.6830880042661751
+836,0,0,0,1,0,0,0,0,0,0,31,1,f,middle eastern,yes,no,family member,No,6d55f2d8083841b3959d327c05a889bb,No,empty,0.6830880042661751
+837,1,1,1,1,1,1,1,1,1,1,29,10,m,White European,no,no,family member,Yes,6d55f2d8083841b3959d327c05a889bb,Yes,empty,0.8758192574676572
+839,0,0,0,0,0,0,0,0,0,0,28,0,m,middle eastern,no,no,family member,No,6d55f2d8083841b3959d327c05a889bb,No,empty,0.6830880042661751
+841,1,1,0,0,0,0,1,1,0,0,28,4,m,middle eastern,no,no,family member,Yes,6d55f2d8083841b3959d327c05a889bb,Yes,empty,0.7178791655789291
+848,1,0,0,0,0,1,1,0,0,1,21,4,m,middle eastern,yes,no,family member,Yes,6d55f2d8083841b3959d327c05a889bb,Yes,empty,0.554176278648098
+850,0,0,0,0,0,1,1,1,1,0,36,4,m,asian,no,no,family member,Yes,6d55f2d8083841b3959d327c05a889bb,No,empty,0.6830880042661751
+852,1,1,1,0,1,0,1,0,1,1,27,7,m,asian,yes,no,family member,Yes,6d55f2d8083841b3959d327c05a889bb,Yes,empty,0.8758192574676572
+867,1,1,1,1,1,1,1,1,1,1,30,10,m,White European,yes,yes,family member,Yes,6d55f2d8083841b3959d327c05a889bb,Yes,empty,0.8758192574676572
+872,1,1,1,1,1,1,1,1,1,1,21,10,m,White European,yes,no,family member,Yes,6d55f2d8083841b3959d327c05a889bb,Yes,empty,0.8758192574676572
+878,0,0,0,1,1,1,0,0,1,1,33,5,m,White European,no,no,family member,Yes,6d55f2d8083841b3959d327c05a889bb,No,empty,0.6830880042661751
+880,1,0,0,0,0,0,0,0,0,1,12,2,f,middle eastern,no,no,family member,No,6d55f2d8083841b3959d327c05a889bb,Yes,empty,0.554176278648098
+884,0,0,0,1,1,1,1,1,0,0,24,5,f,White European,no,no,family member,Yes,6d55f2d8083841b3959d327c05a889bb,No,empty,0.6830880042661751
+885,0,0,0,0,0,0,0,0,0,0,36,0,m,Others,no,no,family member,No,6d55f2d8083841b3959d327c05a889bb,No,empty,0.6830880042661751
+886,1,1,1,1,1,1,1,1,1,1,24,10,m,south asian,no,no,family member,Yes,6d55f2d8083841b3959d327c05a889bb,Yes,empty,0.8758192574676572
+894,1,1,1,1,1,1,1,1,1,1,20,10,m,middle eastern,no,yes,family member,Yes,6d55f2d8083841b3959d327c05a889bb,Yes,empty,0.8758192574676572
+903,1,1,1,1,0,1,1,0,1,1,22,8,f,Pacifica,yes,no,family member,Yes,6d55f2d8083841b3959d327c05a889bb,Yes,empty,0.8758192574676572
+910,1,1,1,1,1,1,1,1,1,1,28,10,f,White European,yes,no,family member,Yes,6d55f2d8083841b3959d327c05a889bb,Yes,empty,0.8758192574676572
+914,0,0,0,0,0,0,0,0,1,0,24,1,m,asian,no,no,family member,No,6d55f2d8083841b3959d327c05a889bb,No,empty,0.6830880042661751
+917,0,0,0,0,0,0,1,0,0,1,12,2,m,asian,yes,no,family member,No,6d55f2d8083841b3959d327c05a889bb,No,empty,0.6830880042661751
+920,0,0,0,0,1,0,1,0,0,1,36,3,m,south asian,no,no,family member,No,6d55f2d8083841b3959d327c05a889bb,No,empty,0.6830880042661751
+932,0,0,0,0,0,1,1,0,0,1,20,3,m,south asian,no,no,family member,No,6d55f2d8083841b3959d327c05a889bb,No,empty,0.6830880042661751
+933,0,0,0,0,0,1,1,0,0,1,36,3,f,asian,no,no,family member,No,6d55f2d8083841b3959d327c05a889bb,No,empty,0.6830880042661751
+937,0,0,0,0,1,1,0,1,0,1,35,4,f,asian,no,no,family member,Yes,6d55f2d8083841b3959d327c05a889bb,No,empty,0.6830880042661751
+938,0,0,1,0,0,0,0,0,0,1,19,2,m,middle eastern,no,no,family member,No,6d55f2d8083841b3959d327c05a889bb,Yes,empty,0.5625349045373181
+940,1,0,1,0,0,0,0,0,0,1,20,3,m,middle eastern,no,no,family member,No,6d55f2d8083841b3959d327c05a889bb,Yes,empty,0.7750440120817794
+954,1,0,0,0,1,1,0,1,0,1,35,5,f,asian,no,no,family member,Yes,6d55f2d8083841b3959d327c05a889bb,Yes,empty,0.554176278648098
+957,1,1,1,1,0,0,0,1,0,0,22,5,f,Hispanic,no,no,family member,Yes,6d55f2d8083841b3959d327c05a889bb,Yes,empty,0.8758192574676572
+962,0,0,1,1,1,0,1,1,1,0,26,6,f,White European,no,no,family member,Yes,6d55f2d8083841b3959d327c05a889bb,Yes,empty,0.5625349045373181
+27,1,1,0,1,1,1,1,1,0,1,36,8,m,middle eastern,no,no,family member,Yes,6d55f2d8083841b3959d327c05a889bb,Yes,empty,0.7178791655789291
+64,0,0,1,1,1,1,1,0,0,0,30,5,m,White European,no,no,family member,Yes,6d55f2d8083841b3959d327c05a889bb,Yes,empty,0.5625349045373181
+66,1,1,1,1,1,1,1,0,1,1,12,9,f,White European,no,yes,family member,Yes,6d55f2d8083841b3959d327c05a889bb,Yes,empty,0.8758192574676572
+72,0,0,1,1,1,1,1,0,1,1,34,7,m,asian,no,no,family member,Yes,6d55f2d8083841b3959d327c05a889bb,Yes,empty,0.5625349045373181
+74,0,0,0,0,0,0,0,1,0,0,30,1,m,middle eastern,no,no,family member,No,6d55f2d8083841b3959d327c05a889bb,No,empty,0.6830880042661751
+9,0,0,0,0,0,0,1,0,0,1,36,2,m,asian,no,no,family member,No,6d55f2d8083841b3959d327c05a889bb,No,empty,0.6830880042661751
+13,0,0,0,0,0,0,0,0,0,0,25,0,f,middle eastern,yes,no,family member,No,6d55f2d8083841b3959d327c05a889bb,No,empty,0.6830880042661751
+18,1,1,1,0,1,1,1,1,0,1,12,8,f,middle eastern,yes,no,family member,Yes,6d55f2d8083841b3959d327c05a889bb,Yes,empty,0.8758192574676572
+21,1,0,0,1,1,1,1,1,1,0,36,7,m,middle eastern,no,no,family member,Yes,6d55f2d8083841b3959d327c05a889bb,Yes,empty,0.554176278648098
+166,0,0,0,0,0,0,0,0,0,1,36,1,f,Others,no,yes,family member,No,6d55f2d8083841b3959d327c05a889bb,No,empty,0.6830880042661751
+170,0,0,0,0,0,0,0,0,0,0,36,0,m,mixed,no,no,family member,No,6d55f2d8083841b3959d327c05a889bb,No,empty,0.6830880042661751
+176,1,0,0,0,1,1,0,1,0,1,33,5,m,asian,no,yes,family member,Yes,6d55f2d8083841b3959d327c05a889bb,Yes,empty,0.554176278648098
+180,1,0,1,0,0,1,0,0,0,0,33,3,m,asian,no,yes,family member,No,6d55f2d8083841b3959d327c05a889bb,Yes,empty,0.7750440120817794
+337,0,0,0,1,0,0,0,1,0,0,36,2,m,asian,no,no,family member,No,6d55f2d8083841b3959d327c05a889bb,No,empty,0.6830880042661751
+347,1,1,0,0,1,0,1,1,0,0,36,5,m,black,yes,no,family member,Yes,6d55f2d8083841b3959d327c05a889bb,Yes,empty,0.7178791655789291
+230,1,0,0,0,1,1,1,0,1,0,33,5,m,asian,no,no,Health Care Professional,Yes,6d55f2d8083841b3959d327c05a889bb,Yes,empty,0.554176278648098
+232,1,0,1,1,1,1,1,1,1,1,36,9,m,asian,no,no,family member,Yes,6d55f2d8083841b3959d327c05a889bb,Yes,empty,0.7750440120817794
+233,1,1,1,1,1,1,1,1,1,1,20,10,m,middle eastern,no,yes,family member,Yes,6d55f2d8083841b3959d327c05a889bb,Yes,empty,0.8758192574676572
+239,1,0,0,0,1,1,1,1,0,0,31,5,m,White European,yes,no,family member,Yes,6d55f2d8083841b3959d327c05a889bb,Yes,empty,0.554176278648098
+249,1,1,1,1,1,1,1,1,1,1,18,10,m,White European,yes,no,family member,Yes,6d55f2d8083841b3959d327c05a889bb,Yes,empty,0.8758192574676572
+251,1,1,0,1,1,1,1,1,1,1,36,9,m,black,no,yes,Health Care Professional,Yes,6d55f2d8083841b3959d327c05a889bb,Yes,empty,0.7178791655789291
+354,1,0,1,1,1,1,0,1,0,0,34,6,m,asian,no,no,family member,Yes,6d55f2d8083841b3959d327c05a889bb,Yes,empty,0.7750440120817794
+362,1,1,1,0,1,1,1,1,1,0,36,8,m,asian,no,no,family member,Yes,6d55f2d8083841b3959d327c05a889bb,Yes,empty,0.8758192574676572
+365,1,1,1,1,1,1,1,1,0,1,36,9,m,Latino,yes,no,family member,Yes,6d55f2d8083841b3959d327c05a889bb,Yes,empty,0.8758192574676572
+369,1,1,0,0,0,1,1,1,1,1,36,7,f,asian,yes,no,family member,Yes,6d55f2d8083841b3959d327c05a889bb,Yes,empty,0.7178791655789291
+372,1,1,1,1,0,1,1,0,1,0,17,7,f,White European,no,no,family member,Yes,6d55f2d8083841b3959d327c05a889bb,Yes,empty,0.8758192574676572
+373,0,0,1,1,1,0,1,0,1,0,35,5,m,middle eastern,yes,no,family member,Yes,6d55f2d8083841b3959d327c05a889bb,Yes,empty,0.5625349045373181
+377,1,1,1,1,0,1,1,1,0,1,36,8,f,middle eastern,no,no,family member,Yes,6d55f2d8083841b3959d327c05a889bb,Yes,empty,0.8758192574676572
+382,1,1,1,1,0,1,1,1,1,0,24,8,m,black,yes,no,family member,Yes,6d55f2d8083841b3959d327c05a889bb,Yes,empty,0.8758192574676572
+383,0,0,0,0,0,0,0,0,0,0,36,0,m,White European,no,no,family member,No,6d55f2d8083841b3959d327c05a889bb,No,empty,0.6830880042661751
+260,1,0,0,0,0,1,1,0,0,0,27,3,m,White European,yes,yes,family member,No,6d55f2d8083841b3959d327c05a889bb,Yes,empty,0.554176278648098
+262,1,1,1,1,1,1,1,1,1,0,36,9,m,White European,yes,yes,family member,Yes,6d55f2d8083841b3959d327c05a889bb,Yes,empty,0.8758192574676572
+264,1,0,1,1,0,1,0,0,0,0,30,4,m,middle eastern,no,no,family member,Yes,6d55f2d8083841b3959d327c05a889bb,Yes,empty,0.7750440120817794
+266,0,0,1,1,1,1,1,1,1,0,16,7,f,asian,no,no,family member,Yes,6d55f2d8083841b3959d327c05a889bb,Yes,empty,0.5625349045373181
+267,0,0,0,0,1,1,1,0,0,0,36,3,m,asian,yes,no,family member,No,6d55f2d8083841b3959d327c05a889bb,No,empty,0.6830880042661751
+273,1,0,1,0,0,1,0,0,0,0,36,3,m,asian,no,yes,family member,No,6d55f2d8083841b3959d327c05a889bb,Yes,empty,0.7750440120817794
+91,0,0,0,0,0,0,0,0,0,1,34,1,m,asian,no,no,family member,No,6d55f2d8083841b3959d327c05a889bb,No,empty,0.6830880042661751
+94,0,0,0,0,0,0,0,1,0,0,36,1,f,Others,yes,yes,family member,No,6d55f2d8083841b3959d327c05a889bb,No,empty,0.6830880042661751
+104,1,1,0,0,0,0,0,1,1,0,36,4,m,middle eastern,no,no,family member,Yes,6d55f2d8083841b3959d327c05a889bb,Yes,empty,0.7178791655789291
+107,0,0,0,0,0,0,0,0,0,1,23,1,f,middle eastern,yes,no,family member,No,6d55f2d8083841b3959d327c05a889bb,No,empty,0.6830880042661751
+116,0,0,1,1,1,1,1,1,1,1,32,8,m,asian,no,no,family member,Yes,6d55f2d8083841b3959d327c05a889bb,Yes,empty,0.5625349045373181
+118,1,1,1,1,1,1,1,1,1,1,29,10,m,White European,no,no,family member,Yes,6d55f2d8083841b3959d327c05a889bb,Yes,empty,0.8758192574676572
+126,1,0,0,0,1,0,1,1,1,1,36,6,m,asian,no,no,family member,Yes,6d55f2d8083841b3959d327c05a889bb,Yes,empty,0.554176278648098
+135,1,1,0,0,1,0,0,1,0,0,33,4,f,south asian,yes,yes,family member,Yes,6d55f2d8083841b3959d327c05a889bb,Yes,empty,0.7178791655789291
+136,0,0,0,0,1,0,0,0,0,0,34,1,f,south asian,yes,no,family member,No,6d55f2d8083841b3959d327c05a889bb,No,empty,0.6830880042661751
+183,1,0,0,0,0,1,0,0,1,0,33,3,m,asian,no,yes,family member,No,6d55f2d8083841b3959d327c05a889bb,Yes,empty,0.554176278648098
+184,1,0,1,1,0,0,0,0,0,0,30,3,m,south asian,yes,no,family member,No,6d55f2d8083841b3959d327c05a889bb,Yes,empty,0.7750440120817794
+191,1,0,0,0,1,1,1,0,0,1,24,5,m,White European,no,yes,family member,Yes,6d55f2d8083841b3959d327c05a889bb,Yes,empty,0.554176278648098
+203,1,0,1,1,1,1,1,0,0,1,30,7,f,black,no,no,family member,Yes,6d55f2d8083841b3959d327c05a889bb,Yes,empty,0.7750440120817794
+212,1,1,0,0,1,1,1,1,1,0,36,7,m,asian,no,no,family member,Yes,6d55f2d8083841b3959d327c05a889bb,Yes,empty,0.7178791655789291
+221,1,1,1,1,0,0,1,0,1,0,36,6,f,White European,no,no,family member,Yes,6d55f2d8083841b3959d327c05a889bb,Yes,empty,0.8758192574676572
+222,0,0,0,0,0,0,0,0,0,1,28,1,m,middle eastern,no,no,family member,No,6d55f2d8083841b3959d327c05a889bb,No,empty,0.6830880042661751
+1012,0,1,0,0,1,1,0,0,1,0,36,4,m,White European,no,yes,family member,Yes,6d55f2d8083841b3959d327c05a889bb,No,Yes,0.5128953866895871
+175,0,1,0,0,0,0,0,0,0,1,36,2,f,White European,yes,yes,family member,No,6d55f2d8083841b3959d327c05a889bb,No,No,0.5128953866895871
+971,1,0,0,0,0,0,1,1,0,1,30,4,m,middle eastern,no,no,family member,Yes,6d55f2d8083841b3959d327c05a889bb,Yes,Yes,0.554176278648098
+1036,1,0,0,1,0,1,1,1,0,0,18,5,m,Others,yes,no,family member,Yes,6d55f2d8083841b3959d327c05a889bb,Yes,Yes,0.554176278648098
+478,0,0,1,1,1,0,1,1,0,0,20,5,m,White European,yes,no,family member,Yes,6d55f2d8083841b3959d327c05a889bb,Yes,Yes,0.5625349045373181
+288,0,0,1,1,1,1,1,0,1,1,23,7,m,south asian,no,yes,family member,Yes,6d55f2d8083841b3959d327c05a889bb,Yes,Yes,0.5625349045373181
+292,1,0,0,1,1,0,1,0,1,1,20,6,m,middle eastern,no,no,family member,Yes,6d55f2d8083841b3959d327c05a889bb,Yes,Yes,0.554176278648098
+315,0,0,1,0,1,1,1,1,1,0,26,6,m,asian,no,no,family member,Yes,6d55f2d8083841b3959d327c05a889bb,Yes,Yes,0.5625349045373181
+418,1,0,0,0,1,1,1,1,0,0,30,5,f,asian,no,no,family member,Yes,6d55f2d8083841b3959d327c05a889bb,Yes,Yes,0.554176278648098
+428,1,0,0,0,0,0,1,0,1,1,12,4,m,asian,no,no,family member,Yes,6d55f2d8083841b3959d327c05a889bb,Yes,Yes,0.554176278648098
+493,1,0,0,1,1,0,1,0,1,1,28,6,m,White European,yes,no,family member,Yes,6d55f2d8083841b3959d327c05a889bb,Yes,Yes,0.554176278648098
+649,0,0,1,1,0,0,0,0,0,1,24,3,m,asian,no,no,family member,No,6d55f2d8083841b3959d327c05a889bb,Yes,No,0.5625349045373181
+36,1,1,1,1,1,1,1,1,1,1,15,10,f,middle eastern,no,no,family member,Yes,6d55f2d8083841b3959d327c05a889bb,Yes,empty,0.8758192574676572
+38,0,0,0,0,0,0,0,0,0,0,15,0,f,middle eastern,no,no,family member,No,6d55f2d8083841b3959d327c05a889bb,No,empty,0.6830880042661751
+40,0,0,0,0,0,0,0,0,0,1,15,1,f,middle eastern,no,no,family member,No,6d55f2d8083841b3959d327c05a889bb,No,empty,0.6830880042661751
+43,0,0,0,0,0,0,0,0,0,0,15,0,f,black,no,no,family member,No,6d55f2d8083841b3959d327c05a889bb,No,empty,0.6830880042661751
+46,0,0,0,0,0,0,1,0,0,1,19,2,m,asian,no,no,family member,No,6d55f2d8083841b3959d327c05a889bb,No,empty,0.6830880042661751
+54,1,1,1,1,1,1,1,1,1,1,12,10,f,middle eastern,no,no,family member,Yes,6d55f2d8083841b3959d327c05a889bb,Yes,empty,0.8758192574676572
+60,0,0,0,0,0,0,0,0,0,1,13,1,f,middle eastern,no,no,family member,No,6d55f2d8083841b3959d327c05a889bb,No,empty,0.6830880042661751
+61,0,0,0,0,0,0,0,0,0,1,13,1,f,middle eastern,no,no,family member,No,6d55f2d8083841b3959d327c05a889bb,No,empty,0.6830880042661751
+65,0,0,1,1,0,0,0,0,1,0,36,3,m,middle eastern,yes,yes,family member,No,6d55f2d8083841b3959d327c05a889bb,Yes,empty,0.5625349045373181
+67,0,0,0,0,1,0,1,1,0,1,36,4,f,middle eastern,yes,no,family member,Yes,6d55f2d8083841b3959d327c05a889bb,No,empty,0.6830880042661751
+71,1,1,0,0,1,1,1,1,0,0,34,6,m,Others,no,no,family member,Yes,6d55f2d8083841b3959d327c05a889bb,Yes,empty,0.7178791655789291
+75,1,1,0,0,1,0,1,0,0,0,26,4,m,asian,no,no,family member,Yes,6d55f2d8083841b3959d327c05a889bb,Yes,empty,0.7178791655789291
+86,0,0,0,1,1,1,0,0,1,1,23,5,m,White European,yes,yes,family member,Yes,6d55f2d8083841b3959d327c05a889bb,No,empty,0.6830880042661751
+92,1,0,0,0,0,0,1,0,0,1,34,3,m,asian,no,no,family member,No,6d55f2d8083841b3959d327c05a889bb,Yes,empty,0.554176278648098
+93,1,1,0,0,1,1,1,1,1,0,32,7,m,asian,no,no,family member,Yes,6d55f2d8083841b3959d327c05a889bb,Yes,empty,0.7178791655789291
+1,0,0,0,0,0,0,1,1,0,1,28,3,f,middle eastern,yes,no,family member,No,6d55f2d8083841b3959d327c05a889bb,No,empty,0.6830880042661751
+6,1,1,0,0,1,1,1,1,1,1,21,8,m,black,no,no,family member,Yes,6d55f2d8083841b3959d327c05a889bb,Yes,empty,0.7178791655789291
+10,1,1,1,0,1,1,0,1,1,1,22,8,m,south asian,no,no,Health Care Professional,Yes,6d55f2d8083841b3959d327c05a889bb,Yes,empty,0.8758192574676572
+11,1,0,0,1,0,1,1,0,1,1,36,6,m,Hispanic,yes,yes,family member,Yes,6d55f2d8083841b3959d327c05a889bb,Yes,empty,0.554176278648098
+14,1,1,1,1,0,0,1,0,1,1,15,7,f,middle eastern,yes,no,family member,Yes,6d55f2d8083841b3959d327c05a889bb,Yes,empty,0.8758192574676572
+17,0,0,0,0,0,0,0,0,0,0,36,0,m,middle eastern,no,yes,family member,No,6d55f2d8083841b3959d327c05a889bb,No,empty,0.6830880042661751
+19,1,0,0,0,1,0,0,0,0,1,29,3,f,middle eastern,no,no,family member,No,6d55f2d8083841b3959d327c05a889bb,Yes,empty,0.554176278648098
+22,1,0,1,1,1,1,1,0,1,0,36,7,m,middle eastern,no,no,family member,Yes,6d55f2d8083841b3959d327c05a889bb,Yes,empty,0.7750440120817794
+23,1,0,1,1,0,1,0,1,1,1,36,7,m,Native Indian,yes,yes,Health Care Professional,Yes,6d55f2d8083841b3959d327c05a889bb,Yes,empty,0.7750440120817794
+25,1,1,1,1,1,1,1,1,1,0,22,9,m,White European,no,no,family member,Yes,6d55f2d8083841b3959d327c05a889bb,Yes,empty,0.8758192574676572
+26,0,0,0,0,0,0,0,0,0,0,24,0,f,middle eastern,no,no,family member,No,6d55f2d8083841b3959d327c05a889bb,No,empty,0.6830880042661751
+30,0,0,0,0,0,0,0,0,0,0,32,0,m,middle eastern,yes,no,family member,No,6d55f2d8083841b3959d327c05a889bb,No,empty,0.6830880042661751
+105,1,1,0,0,0,1,0,0,0,1,31,4,f,middle eastern,yes,no,family member,Yes,6d55f2d8083841b3959d327c05a889bb,Yes,empty,0.7178791655789291
+108,1,1,0,0,1,1,0,1,0,1,24,6,m,middle eastern,no,no,family member,Yes,6d55f2d8083841b3959d327c05a889bb,Yes,empty,0.7178791655789291
+110,0,0,0,0,0,0,0,0,0,1,36,1,f,middle eastern,no,no,family member,No,6d55f2d8083841b3959d327c05a889bb,No,empty,0.6830880042661751
+114,0,0,0,0,0,0,1,1,0,0,32,2,m,asian,no,no,family member,No,6d55f2d8083841b3959d327c05a889bb,No,empty,0.6830880042661751
+117,0,0,1,1,0,0,1,0,0,1,32,4,m,asian,no,no,family member,Yes,6d55f2d8083841b3959d327c05a889bb,Yes,empty,0.5625349045373181
+123,0,0,0,0,0,0,0,1,0,0,26,1,f,White European,yes,no,family member,No,6d55f2d8083841b3959d327c05a889bb,No,empty,0.6830880042661751
+137,1,1,1,1,1,1,1,1,1,1,24,10,m,middle eastern,yes,no,family member,Yes,6d55f2d8083841b3959d327c05a889bb,Yes,empty,0.8758192574676572
+294,1,1,0,0,0,1,1,1,1,0,31,6,f,asian,yes,no,family member,Yes,6d55f2d8083841b3959d327c05a889bb,Yes,empty,0.7178791655789291
+296,0,0,0,0,0,0,0,0,0,0,32,0,m,White European,yes,no,family member,No,6d55f2d8083841b3959d327c05a889bb,No,empty,0.6830880042661751
+297,1,0,0,0,1,0,0,0,0,1,33,3,m,White European,no,no,family member,No,6d55f2d8083841b3959d327c05a889bb,Yes,empty,0.554176278648098
+301,1,1,0,1,1,0,1,1,1,1,18,8,f,White European,no,no,family member,Yes,6d55f2d8083841b3959d327c05a889bb,Yes,empty,0.7178791655789291
+308,1,1,1,1,1,1,1,1,1,1,33,10,m,asian,yes,no,family member,Yes,6d55f2d8083841b3959d327c05a889bb,Yes,empty,0.8758192574676572
+310,1,1,1,0,1,0,0,0,1,0,36,5,m,south asian,yes,yes,Health Care Professional,Yes,6d55f2d8083841b3959d327c05a889bb,Yes,empty,0.8758192574676572
+312,1,0,0,0,1,1,1,0,1,0,32,5,f,asian,yes,no,family member,Yes,6d55f2d8083841b3959d327c05a889bb,Yes,empty,0.554176278648098
+313,1,1,1,1,1,1,1,1,1,1,26,10,m,asian,no,no,family member,Yes,6d55f2d8083841b3959d327c05a889bb,Yes,empty,0.8758192574676572
+320,0,0,0,0,0,0,0,0,0,0,24,0,m,asian,no,no,family member,No,6d55f2d8083841b3959d327c05a889bb,No,empty,0.6830880042661751
+326,1,1,0,0,0,1,1,0,1,0,23,5,m,White European,yes,no,family member,Yes,6d55f2d8083841b3959d327c05a889bb,Yes,empty,0.7178791655789291
+334,1,0,0,0,0,1,1,1,0,1,36,5,f,White European,yes,no,family member,Yes,6d55f2d8083841b3959d327c05a889bb,Yes,empty,0.554176278648098
+339,1,1,1,1,1,1,1,1,1,1,33,10,m,White European,no,yes,family member,Yes,6d55f2d8083841b3959d327c05a889bb,Yes,empty,0.8758192574676572
+348,1,1,0,0,1,0,1,1,1,0,36,6,m,south asian,no,no,family member,Yes,6d55f2d8083841b3959d327c05a889bb,Yes,empty,0.7178791655789291
+351,0,0,0,0,0,0,0,0,0,1,13,1,f,middle eastern,yes,no,family member,No,6d55f2d8083841b3959d327c05a889bb,No,empty,0.6830880042661751
+353,0,0,0,0,0,0,0,0,0,0,36,0,m,asian,no,no,family member,No,6d55f2d8083841b3959d327c05a889bb,No,empty,0.6830880042661751
+361,0,0,0,1,1,1,1,0,0,0,34,4,m,black,yes,no,family member,Yes,6d55f2d8083841b3959d327c05a889bb,No,empty,0.6830880042661751
+371,1,1,1,1,1,1,1,1,1,1,36,10,m,south asian,no,no,family member,Yes,6d55f2d8083841b3959d327c05a889bb,Yes,empty,0.8758192574676572
+374,0,0,1,1,1,1,0,0,1,0,30,5,m,asian,no,no,family member,Yes,6d55f2d8083841b3959d327c05a889bb,Yes,empty,0.5625349045373181
+380,1,0,0,0,0,0,1,0,0,1,30,3,f,south asian,no,no,family member,No,6d55f2d8083841b3959d327c05a889bb,Yes,empty,0.554176278648098
+387,1,1,0,0,1,1,0,1,1,1,26,7,m,White European,yes,yes,family member,Yes,6d55f2d8083841b3959d327c05a889bb,Yes,empty,0.7178791655789291
+390,1,0,0,0,0,1,0,1,0,0,25,3,m,White European,no,no,family member,No,6d55f2d8083841b3959d327c05a889bb,Yes,empty,0.554176278648098
+398,1,0,0,0,1,1,0,1,0,1,26,5,m,White European,no,no,family member,Yes,6d55f2d8083841b3959d327c05a889bb,Yes,empty,0.554176278648098
+399,0,0,0,0,1,1,1,0,0,1,32,4,m,White European,yes,no,family member,Yes,6d55f2d8083841b3959d327c05a889bb,No,empty,0.6830880042661751
+403,1,1,0,1,1,1,1,0,1,0,24,7,f,south asian,no,no,family member,Yes,6d55f2d8083841b3959d327c05a889bb,Yes,empty,0.7178791655789291
+235,0,0,0,1,1,1,1,1,0,1,36,6,m,asian,yes,no,family member,Yes,6d55f2d8083841b3959d327c05a889bb,No,empty,0.6830880042661751
+238,0,0,0,0,0,0,0,0,0,0,31,0,m,White European,yes,no,family member,No,6d55f2d8083841b3959d327c05a889bb,No,empty,0.6830880042661751
+241,1,1,1,1,1,1,1,1,1,1,15,10,f,middle eastern,no,no,family member,Yes,6d55f2d8083841b3959d327c05a889bb,Yes,empty,0.8758192574676572
+242,0,1,1,1,1,1,0,1,1,0,19,7,f,middle eastern,no,no,family member,Yes,6d55f2d8083841b3959d327c05a889bb,Yes,empty,0.7246933150368985
+254,1,1,1,1,1,1,1,1,0,0,36,8,m,asian,no,no,family member,Yes,6d55f2d8083841b3959d327c05a889bb,Yes,empty,0.8758192574676572
+269,0,0,0,1,1,1,1,1,0,0,36,5,m,Latino,no,no,family member,Yes,6d55f2d8083841b3959d327c05a889bb,No,empty,0.6830880042661751
+274,1,0,1,0,0,1,0,0,0,0,36,3,m,asian,no,yes,family member,No,6d55f2d8083841b3959d327c05a889bb,Yes,empty,0.7750440120817794
+279,0,0,0,0,0,0,0,0,0,1,25,1,m,White European,yes,no,family member,No,6d55f2d8083841b3959d327c05a889bb,No,empty,0.6830880042661751
+282,1,1,1,1,1,1,1,1,1,0,27,9,m,White European,no,no,family member,Yes,6d55f2d8083841b3959d327c05a889bb,Yes,empty,0.8758192574676572
+502,1,1,0,0,1,0,0,0,0,1,36,4,m,White European,yes,no,family member,Yes,6d55f2d8083841b3959d327c05a889bb,Yes,empty,0.7178791655789291
+503,0,1,1,1,1,1,1,0,1,1,12,8,m,White European,no,yes,family member,Yes,6d55f2d8083841b3959d327c05a889bb,Yes,empty,0.7246933150368985
+512,1,1,1,1,0,1,1,0,1,1,31,8,f,White European,no,no,family member,Yes,6d55f2d8083841b3959d327c05a889bb,Yes,empty,0.8758192574676572
+516,1,0,1,0,0,0,0,0,0,0,36,2,m,asian,no,yes,family member,No,6d55f2d8083841b3959d327c05a889bb,Yes,empty,0.7750440120817794
+517,1,0,1,0,0,0,0,0,0,0,36,2,m,asian,no,yes,family member,No,6d55f2d8083841b3959d327c05a889bb,Yes,empty,0.7750440120817794
+518,1,1,0,0,0,1,1,0,0,1,36,5,f,White European,no,no,family member,Yes,6d55f2d8083841b3959d327c05a889bb,Yes,empty,0.7178791655789291
+522,0,0,1,1,1,0,0,1,1,0,19,5,m,middle eastern,no,no,family member,Yes,6d55f2d8083841b3959d327c05a889bb,Yes,empty,0.5625349045373181
+524,1,0,1,1,1,1,1,0,1,1,21,8,m,White European,yes,yes,family member,Yes,6d55f2d8083841b3959d327c05a889bb,Yes,empty,0.7750440120817794
+526,0,0,0,1,1,1,0,1,1,0,30,5,m,middle eastern,no,no,family member,Yes,6d55f2d8083841b3959d327c05a889bb,No,empty,0.6830880042661751
+529,1,1,1,0,1,1,1,1,0,0,31,7,f,asian,no,no,family member,Yes,6d55f2d8083841b3959d327c05a889bb,Yes,empty,0.8758192574676572
+533,0,0,0,0,0,1,0,1,0,1,13,3,f,middle eastern,yes,no,family member,No,6d55f2d8083841b3959d327c05a889bb,No,empty,0.6830880042661751
+537,1,0,0,0,0,0,0,0,0,1,36,2,m,Hispanic,no,no,family member,No,6d55f2d8083841b3959d327c05a889bb,Yes,empty,0.554176278648098
+186,0,0,0,0,1,0,1,0,1,1,12,4,f,White European,yes,no,family member,Yes,6d55f2d8083841b3959d327c05a889bb,No,empty,0.6830880042661751
+188,1,1,0,0,0,0,0,0,0,1,32,3,m,White European,no,yes,family member,No,6d55f2d8083841b3959d327c05a889bb,Yes,empty,0.7178791655789291
+192,0,0,0,0,0,0,1,1,0,1,27,3,f,south asian,no,no,family member,No,6d55f2d8083841b3959d327c05a889bb,No,empty,0.6830880042661751
+198,1,1,0,0,0,1,1,1,1,1,20,7,m,middle eastern,no,no,family member,Yes,6d55f2d8083841b3959d327c05a889bb,Yes,empty,0.7178791655789291
+204,1,0,0,0,0,0,1,1,0,1,34,4,m,White European,yes,yes,family member,Yes,6d55f2d8083841b3959d327c05a889bb,Yes,empty,0.554176278648098
+206,1,1,0,0,0,0,1,0,0,1,15,4,m,middle eastern,yes,no,family member,Yes,6d55f2d8083841b3959d327c05a889bb,Yes,empty,0.7178791655789291
+208,0,0,0,1,1,1,1,1,0,0,36,5,m,White European,no,no,family member,Yes,6d55f2d8083841b3959d327c05a889bb,No,empty,0.6830880042661751
+216,0,0,0,1,0,0,0,1,0,1,35,3,m,middle eastern,no,no,family member,No,6d55f2d8083841b3959d327c05a889bb,No,empty,0.6830880042661751
+147,1,1,0,1,1,1,0,1,1,0,23,7,m,asian,no,no,family member,Yes,6d55f2d8083841b3959d327c05a889bb,Yes,empty,0.7178791655789291
+153,0,0,0,1,0,0,1,0,0,1,33,3,m,asian,no,no,family member,No,6d55f2d8083841b3959d327c05a889bb,No,empty,0.6830880042661751
+154,1,1,1,1,1,1,1,1,1,0,26,9,m,White European,no,no,family member,Yes,6d55f2d8083841b3959d327c05a889bb,Yes,empty,0.8758192574676572
+156,1,1,0,1,1,1,1,1,1,1,36,9,m,middle eastern,no,no,family member,Yes,6d55f2d8083841b3959d327c05a889bb,Yes,empty,0.7178791655789291
+159,0,1,1,1,0,1,0,1,0,1,36,6,m,asian,no,no,family member,Yes,6d55f2d8083841b3959d327c05a889bb,Yes,empty,0.7246933150368985
+164,0,0,0,0,1,1,1,0,0,0,22,3,m,White European,no,yes,family member,No,6d55f2d8083841b3959d327c05a889bb,No,empty,0.6830880042661751
+168,0,0,0,0,0,0,1,0,0,0,30,1,f,White European,yes,yes,family member,No,6d55f2d8083841b3959d327c05a889bb,No,empty,0.6830880042661751
+453,1,1,0,0,1,1,1,0,1,1,32,7,m,asian,yes,yes,family member,Yes,6d55f2d8083841b3959d327c05a889bb,Yes,empty,0.7178791655789291
+467,0,0,0,0,0,0,1,0,0,1,25,2,m,asian,no,no,family member,No,6d55f2d8083841b3959d327c05a889bb,No,empty,0.6830880042661751
+470,1,1,0,1,0,0,1,0,0,0,36,4,m,White European,no,no,family member,Yes,6d55f2d8083841b3959d327c05a889bb,Yes,empty,0.7178791655789291
+477,1,0,1,1,1,1,1,1,1,1,22,9,f,White European,no,no,family member,Yes,6d55f2d8083841b3959d327c05a889bb,Yes,empty,0.7750440120817794
+483,1,0,0,0,1,1,1,1,1,1,30,7,f,asian,yes,no,family member,Yes,6d55f2d8083841b3959d327c05a889bb,Yes,empty,0.554176278648098
+484,1,0,0,0,0,1,1,1,1,1,30,6,f,asian,no,no,family member,Yes,6d55f2d8083841b3959d327c05a889bb,Yes,empty,0.554176278648098
+494,0,0,0,0,0,0,1,0,0,0,28,1,m,White European,yes,no,family member,No,6d55f2d8083841b3959d327c05a889bb,No,empty,0.6830880042661751
+544,1,1,1,1,1,1,1,1,1,1,24,10,f,black,no,no,family member,Yes,6d55f2d8083841b3959d327c05a889bb,Yes,empty,0.8758192574676572
+554,1,1,0,1,1,1,1,1,0,1,36,8,m,White European,yes,yes,family member,Yes,6d55f2d8083841b3959d327c05a889bb,Yes,empty,0.7178791655789291
+557,1,1,0,1,0,0,1,0,1,1,22,6,m,White European,no,yes,family member,Yes,6d55f2d8083841b3959d327c05a889bb,Yes,empty,0.7178791655789291
+568,1,1,0,0,1,0,0,1,0,1,36,5,m,White European,yes,no,family member,Yes,6d55f2d8083841b3959d327c05a889bb,Yes,empty,0.7178791655789291
+569,1,1,1,1,1,1,1,1,1,1,28,10,f,White European,yes,no,family member,Yes,6d55f2d8083841b3959d327c05a889bb,Yes,empty,0.8758192574676572
+579,1,0,1,0,1,1,0,0,1,0,24,5,m,White European,no,no,family member,Yes,6d55f2d8083841b3959d327c05a889bb,Yes,empty,0.7750440120817794
+587,1,0,0,0,1,1,1,0,1,0,36,5,m,asian,yes,no,family member,Yes,6d55f2d8083841b3959d327c05a889bb,Yes,empty,0.554176278648098
+435,1,0,0,0,0,0,1,1,1,1,36,5,f,asian,no,no,family member,Yes,6d55f2d8083841b3959d327c05a889bb,Yes,empty,0.554176278648098
+442,1,1,0,0,1,1,1,1,1,1,36,8,f,Others,yes,no,family member,Yes,6d55f2d8083841b3959d327c05a889bb,Yes,empty,0.7178791655789291
+443,1,0,0,0,1,0,1,1,1,1,35,6,f,asian,no,yes,family member,Yes,6d55f2d8083841b3959d327c05a889bb,Yes,empty,0.554176278648098
+444,1,1,0,1,1,0,1,0,0,0,28,5,m,middle eastern,no,yes,family member,Yes,6d55f2d8083841b3959d327c05a889bb,Yes,empty,0.7178791655789291
+738,1,0,0,0,0,0,0,0,0,1,36,2,m,Hispanic,no,no,family member,No,6d55f2d8083841b3959d327c05a889bb,Yes,empty,0.554176278648098
+747,0,0,0,0,0,0,0,0,0,1,22,1,m,middle eastern,no,no,Health Care Professional,No,6d55f2d8083841b3959d327c05a889bb,No,empty,0.6830880042661751
+748,1,0,1,1,1,1,1,0,1,1,36,8,m,middle eastern,no,no,family member,Yes,6d55f2d8083841b3959d327c05a889bb,Yes,empty,0.7750440120817794
+749,1,1,0,1,1,1,1,1,1,1,12,9,m,Latino,yes,no,family member,Yes,6d55f2d8083841b3959d327c05a889bb,Yes,empty,0.7178791655789291
+751,0,0,0,0,1,1,1,0,1,0,36,4,f,Latino,no,no,family member,Yes,6d55f2d8083841b3959d327c05a889bb,No,empty,0.6830880042661751
+754,0,0,0,0,0,0,0,0,0,0,36,0,f,middle eastern,yes,no,family member,No,6d55f2d8083841b3959d327c05a889bb,No,empty,0.6830880042661751
+755,1,1,1,1,1,1,0,1,0,1,36,8,f,White European,no,no,family member,Yes,6d55f2d8083841b3959d327c05a889bb,Yes,empty,0.8758192574676572
+756,1,1,1,1,1,1,1,1,1,0,12,9,m,White European,no,yes,Health Care Professional,Yes,6d55f2d8083841b3959d327c05a889bb,Yes,empty,0.8758192574676572
+757,1,0,0,0,0,0,1,1,0,0,36,3,m,White European,no,no,family member,No,6d55f2d8083841b3959d327c05a889bb,Yes,empty,0.554176278648098
+758,0,0,1,1,1,1,1,0,0,0,31,5,m,White European,no,no,family member,Yes,6d55f2d8083841b3959d327c05a889bb,Yes,empty,0.5625349045373181
+761,0,0,0,1,0,0,1,0,0,1,36,3,m,south asian,no,no,family member,No,6d55f2d8083841b3959d327c05a889bb,No,empty,0.6830880042661751
+762,1,1,0,0,1,0,1,1,1,1,36,7,m,White European,no,no,family member,Yes,6d55f2d8083841b3959d327c05a889bb,Yes,empty,0.7178791655789291
+763,1,1,1,1,1,1,1,1,1,1,15,10,f,middle eastern,no,yes,family member,Yes,6d55f2d8083841b3959d327c05a889bb,Yes,empty,0.8758192574676572
+765,0,0,1,1,1,1,1,1,1,0,14,7,m,White European,yes,no,family member,Yes,6d55f2d8083841b3959d327c05a889bb,Yes,empty,0.5625349045373181
+774,1,0,0,0,0,1,1,0,0,1,26,4,f,Others,no,no,family member,Yes,6d55f2d8083841b3959d327c05a889bb,Yes,empty,0.554176278648098
+780,1,1,1,1,1,1,1,1,1,0,24,9,m,asian,no,no,family member,Yes,6d55f2d8083841b3959d327c05a889bb,Yes,empty,0.8758192574676572
+788,0,0,0,1,1,0,1,1,1,0,36,5,m,asian,no,no,family member,Yes,6d55f2d8083841b3959d327c05a889bb,No,empty,0.6830880042661751
+594,0,0,0,0,0,0,1,0,0,1,36,2,f,Latino,no,no,family member,No,6d55f2d8083841b3959d327c05a889bb,No,empty,0.6830880042661751
+597,0,0,0,0,0,1,0,0,0,1,36,2,m,White European,yes,yes,family member,No,6d55f2d8083841b3959d327c05a889bb,No,empty,0.6830880042661751
+605,1,1,1,1,1,1,1,1,1,1,36,10,m,asian,no,no,family member,Yes,6d55f2d8083841b3959d327c05a889bb,Yes,empty,0.8758192574676572
+606,1,1,1,1,1,1,1,1,1,1,36,10,m,asian,no,no,family member,Yes,6d55f2d8083841b3959d327c05a889bb,Yes,empty,0.8758192574676572
+614,1,1,0,1,1,1,0,1,1,0,20,7,f,south asian,no,no,family member,Yes,6d55f2d8083841b3959d327c05a889bb,Yes,empty,0.7178791655789291
+615,0,0,1,1,1,0,1,1,0,0,20,5,m,asian,yes,no,family member,Yes,6d55f2d8083841b3959d327c05a889bb,Yes,empty,0.5625349045373181
+616,0,0,0,0,1,1,1,1,1,0,20,5,f,asian,no,no,Health care professional,Yes,6d55f2d8083841b3959d327c05a889bb,No,empty,0.6830880042661751
+626,1,1,1,1,1,1,1,1,1,1,22,10,f,White European,no,no,family member,Yes,6d55f2d8083841b3959d327c05a889bb,Yes,empty,0.8758192574676572
+629,0,0,0,0,0,0,1,1,0,1,36,3,f,asian,no,no,family member,No,6d55f2d8083841b3959d327c05a889bb,No,empty,0.6830880042661751
+631,1,1,1,1,1,1,1,1,1,1,36,10,m,asian,no,no,family member,Yes,6d55f2d8083841b3959d327c05a889bb,Yes,empty,0.8758192574676572
+636,1,0,1,0,1,1,1,0,1,0,25,6,m,White European,no,yes,family member,Yes,6d55f2d8083841b3959d327c05a889bb,Yes,empty,0.7750440120817794
+637,1,0,0,0,0,0,0,0,0,1,30,2,f,middle eastern,no,no,family member,No,6d55f2d8083841b3959d327c05a889bb,Yes,empty,0.554176278648098
+638,0,0,0,0,0,1,0,1,0,0,36,2,f,asian,no,no,family member,No,6d55f2d8083841b3959d327c05a889bb,No,empty,0.6830880042661751
+639,0,0,0,0,1,0,0,1,0,1,32,3,m,black,yes,no,family member,No,6d55f2d8083841b3959d327c05a889bb,No,empty,0.6830880042661751
+640,0,0,1,1,0,1,1,1,1,0,33,6,m,White European,yes,no,family member,Yes,6d55f2d8083841b3959d327c05a889bb,Yes,empty,0.5625349045373181
+843,1,1,1,1,1,1,1,1,1,1,36,10,m,Latino,no,no,family member,Yes,6d55f2d8083841b3959d327c05a889bb,Yes,empty,0.8758192574676572
+845,0,0,1,1,1,1,1,1,1,1,18,8,m,Hispanic,no,no,family member,Yes,6d55f2d8083841b3959d327c05a889bb,Yes,empty,0.5625349045373181
+849,1,1,1,1,1,1,1,0,1,1,32,9,m,Hispanic,no,no,family member,Yes,6d55f2d8083841b3959d327c05a889bb,Yes,empty,0.8758192574676572
+851,0,0,0,0,0,0,0,0,0,0,20,0,m,asian,yes,no,family member,No,6d55f2d8083841b3959d327c05a889bb,No,empty,0.6830880042661751
+856,0,0,0,0,0,0,0,0,0,0,36,0,f,White European,yes,no,family member,No,6d55f2d8083841b3959d327c05a889bb,No,empty,0.6830880042661751
+857,1,1,0,0,1,1,1,0,0,0,36,5,m,asian,no,no,family member,Yes,6d55f2d8083841b3959d327c05a889bb,Yes,empty,0.7178791655789291
+860,1,1,1,1,1,1,1,1,1,1,19,10,m,White European,yes,no,family member,Yes,6d55f2d8083841b3959d327c05a889bb,Yes,empty,0.8758192574676572
+861,1,1,1,1,1,1,1,1,1,1,16,10,m,White European,no,no,family member,Yes,6d55f2d8083841b3959d327c05a889bb,Yes,empty,0.8758192574676572
+862,1,1,0,1,1,1,1,1,1,1,26,9,f,middle eastern,no,no,family member,Yes,6d55f2d8083841b3959d327c05a889bb,Yes,empty,0.7178791655789291
+864,0,0,1,0,1,1,1,0,1,1,30,6,f,Others,yes,no,family member,Yes,6d55f2d8083841b3959d327c05a889bb,Yes,empty,0.5625349045373181
+865,1,0,0,0,1,0,0,0,0,1,12,3,m,middle eastern,yes,no,family member,No,6d55f2d8083841b3959d327c05a889bb,Yes,empty,0.554176278648098
+866,1,1,0,1,1,1,1,0,1,0,26,7,f,White European,no,no,family member,Yes,6d55f2d8083841b3959d327c05a889bb,Yes,empty,0.7178791655789291
+873,1,1,0,0,0,1,1,1,1,1,36,7,m,White European,no,no,family member,Yes,6d55f2d8083841b3959d327c05a889bb,Yes,empty,0.7178791655789291
+875,0,0,1,1,0,0,0,1,1,0,31,4,m,south asian,no,no,family member,Yes,6d55f2d8083841b3959d327c05a889bb,Yes,empty,0.5625349045373181
+879,1,1,0,0,1,1,1,1,1,0,26,7,m,White European,no,yes,family member,Yes,6d55f2d8083841b3959d327c05a889bb,Yes,empty,0.7178791655789291
+882,1,1,0,0,0,0,1,0,0,0,36,3,m,Hispanic,no,no,family member,No,6d55f2d8083841b3959d327c05a889bb,Yes,empty,0.7178791655789291
+890,0,1,1,0,1,0,0,0,0,0,34,3,f,black,no,no,family member,No,6d55f2d8083841b3959d327c05a889bb,Yes,empty,0.7246933150368985
+891,1,1,1,1,1,1,1,1,1,1,24,10,m,White European,no,no,Health Care Professional,Yes,6d55f2d8083841b3959d327c05a889bb,Yes,empty,0.8758192574676572
+896,0,0,0,0,0,0,0,0,0,0,26,0,f,south asian,no,no,family member,No,6d55f2d8083841b3959d327c05a889bb,No,empty,0.6830880042661751
+901,1,0,1,1,0,1,1,1,1,1,23,8,m,Latino,no,no,Health Care Professional,Yes,6d55f2d8083841b3959d327c05a889bb,Yes,empty,0.7750440120817794
+915,0,0,1,1,0,0,0,0,1,1,24,4,m,asian,no,no,family member,Yes,6d55f2d8083841b3959d327c05a889bb,Yes,empty,0.5625349045373181
+916,1,0,1,1,1,1,1,0,1,1,36,8,m,Hispanic,no,yes,family member,Yes,6d55f2d8083841b3959d327c05a889bb,Yes,empty,0.7750440120817794
+918,1,0,1,1,1,1,1,1,1,0,29,8,m,White European,yes,no,family member,Yes,6d55f2d8083841b3959d327c05a889bb,Yes,empty,0.7750440120817794
+921,0,0,0,0,0,0,0,1,0,1,27,2,m,asian,no,yes,family member,No,6d55f2d8083841b3959d327c05a889bb,No,empty,0.6830880042661751
+922,1,1,1,1,0,0,1,1,0,1,32,7,m,asian,no,no,family member,Yes,6d55f2d8083841b3959d327c05a889bb,Yes,empty,0.8758192574676572
+925,1,0,0,1,0,1,1,0,1,0,36,5,m,Others,yes,no,family member,Yes,6d55f2d8083841b3959d327c05a889bb,Yes,empty,0.554176278648098
+794,1,1,1,1,1,1,1,0,1,1,15,9,m,mixed,no,no,family member,Yes,6d55f2d8083841b3959d327c05a889bb,Yes,empty,0.8758192574676572
+799,0,0,0,0,1,0,1,0,1,1,36,4,m,Others,yes,no,family member,Yes,6d55f2d8083841b3959d327c05a889bb,No,empty,0.6830880042661751
+806,1,1,0,0,1,1,1,0,1,1,36,7,m,White European,no,no,family member,Yes,6d55f2d8083841b3959d327c05a889bb,Yes,empty,0.7178791655789291
+810,1,1,1,1,0,1,1,0,1,1,24,8,f,White European,no,no,family member,Yes,6d55f2d8083841b3959d327c05a889bb,Yes,empty,0.8758192574676572
+811,0,0,0,0,0,0,1,0,0,1,36,2,m,White European,no,yes,family member,No,6d55f2d8083841b3959d327c05a889bb,No,empty,0.6830880042661751
+816,0,0,0,0,0,0,1,0,1,0,24,2,f,middle eastern,no,no,family member,No,6d55f2d8083841b3959d327c05a889bb,No,empty,0.6830880042661751
+817,1,0,0,0,1,0,1,1,1,0,24,5,m,White European,no,no,family member,Yes,6d55f2d8083841b3959d327c05a889bb,Yes,empty,0.554176278648098
+820,1,0,0,0,1,1,1,1,1,1,34,7,f,asian,no,no,family member,Yes,6d55f2d8083841b3959d327c05a889bb,Yes,empty,0.554176278648098
+823,0,0,0,0,0,1,1,0,1,0,24,3,f,middle eastern,no,no,family member,No,6d55f2d8083841b3959d327c05a889bb,No,empty,0.6830880042661751
+828,0,0,0,0,0,0,1,0,0,1,14,2,m,middle eastern,no,no,family member,No,6d55f2d8083841b3959d327c05a889bb,No,empty,0.6830880042661751
+832,1,1,1,1,1,1,1,1,1,1,35,10,m,asian,no,no,family member,Yes,6d55f2d8083841b3959d327c05a889bb,Yes,empty,0.8758192574676572
+689,1,0,1,0,1,0,1,1,0,1,24,6,m,White European,no,no,family member,Yes,6d55f2d8083841b3959d327c05a889bb,Yes,empty,0.7750440120817794
+700,1,1,0,0,0,1,1,1,1,1,16,7,f,White European,yes,no,family member,Yes,6d55f2d8083841b3959d327c05a889bb,Yes,empty,0.7178791655789291
+701,0,0,1,0,0,0,0,0,0,0,36,1,f,White European,no,yes,family member,No,6d55f2d8083841b3959d327c05a889bb,Yes,empty,0.5625349045373181
+710,0,0,1,1,1,0,1,1,1,0,15,6,m,White European,yes,no,family member,Yes,6d55f2d8083841b3959d327c05a889bb,Yes,empty,0.5625349045373181
+712,1,1,1,1,1,0,1,0,1,1,12,8,f,White European,no,no,family member,Yes,6d55f2d8083841b3959d327c05a889bb,Yes,empty,0.8758192574676572
+714,1,0,0,0,0,1,1,0,1,0,36,4,m,Others,no,yes,family member,Yes,6d55f2d8083841b3959d327c05a889bb,Yes,empty,0.554176278648098
+715,0,0,0,0,0,1,0,0,0,0,36,1,m,White European,yes,no,family member,No,6d55f2d8083841b3959d327c05a889bb,No,empty,0.6830880042661751
+723,1,1,1,1,1,1,1,1,1,1,26,10,m,Pacifica,no,no,family member,Yes,6d55f2d8083841b3959d327c05a889bb,Yes,empty,0.8758192574676572
+735,0,0,0,0,0,1,0,0,0,1,31,2,m,asian,no,yes,family member,No,6d55f2d8083841b3959d327c05a889bb,No,empty,0.6830880042661751
+935,0,0,0,1,0,0,0,1,0,0,36,2,m,White European,yes,no,family member,No,6d55f2d8083841b3959d327c05a889bb,No,empty,0.6830880042661751
+951,1,1,1,1,1,1,1,1,0,1,27,9,m,black,no,yes,family member,Yes,6d55f2d8083841b3959d327c05a889bb,Yes,empty,0.8758192574676572
+958,1,1,0,1,1,1,1,1,1,1,29,9,m,south asian,yes,no,family member,Yes,6d55f2d8083841b3959d327c05a889bb,Yes,empty,0.7178791655789291
+968,1,0,0,0,0,0,1,0,1,0,36,3,m,south asian,no,no,family member,No,6d55f2d8083841b3959d327c05a889bb,Yes,empty,0.554176278648098
+973,0,0,0,1,0,0,0,0,0,0,24,1,m,White European,no,no,family member,No,6d55f2d8083841b3959d327c05a889bb,No,empty,0.6830880042661751
+976,1,1,1,0,0,0,1,1,0,0,24,5,m,black,no,no,Others,Yes,6d55f2d8083841b3959d327c05a889bb,Yes,empty,0.8758192574676572
+978,0,0,0,0,0,1,1,0,0,1,24,3,m,White European,no,no,family member,No,6d55f2d8083841b3959d327c05a889bb,No,empty,0.6830880042661751
+991,1,0,1,1,1,1,1,0,1,1,35,8,f,middle eastern,no,no,family member,Yes,6d55f2d8083841b3959d327c05a889bb,Yes,empty,0.7750440120817794
+996,0,0,0,0,0,0,0,0,0,0,36,0,m,middle eastern,no,no,family member,No,6d55f2d8083841b3959d327c05a889bb,No,empty,0.6830880042661751
+999,1,0,1,1,1,0,1,0,1,1,33,7,f,middle eastern,no,no,family member,Yes,6d55f2d8083841b3959d327c05a889bb,Yes,empty,0.7750440120817794
+1011,0,1,1,1,1,1,1,1,1,1,30,9,m,Latino,no,no,family member,Yes,6d55f2d8083841b3959d327c05a889bb,Yes,empty,0.7246933150368985
+665,0,0,0,0,0,1,0,0,0,1,30,2,m,asian,no,no,family member,No,6d55f2d8083841b3959d327c05a889bb,No,empty,0.6830880042661751
+666,1,1,0,0,1,1,1,1,1,1,36,8,f,Others,no,no,family member,Yes,6d55f2d8083841b3959d327c05a889bb,Yes,empty,0.7178791655789291
+667,0,0,0,0,0,0,0,0,0,0,36,0,f,Others,yes,no,family member,No,6d55f2d8083841b3959d327c05a889bb,No,empty,0.6830880042661751
+685,1,1,0,1,1,1,1,1,1,1,14,9,m,White European,yes,no,family member,Yes,6d55f2d8083841b3959d327c05a889bb,Yes,empty,0.7178791655789291
+1019,0,0,1,1,0,0,0,0,1,0,21,3,m,asian,no,no,family member,No,6d55f2d8083841b3959d327c05a889bb,Yes,empty,0.5625349045373181
+1021,0,0,0,0,1,0,0,0,1,0,19,2,f,White European,yes,yes,family member,No,6d55f2d8083841b3959d327c05a889bb,No,empty,0.6830880042661751
+1022,0,1,1,1,1,1,1,1,0,0,12,7,m,White European,no,no,family member,Yes,6d55f2d8083841b3959d327c05a889bb,Yes,empty,0.7246933150368985
+1023,0,0,0,0,0,0,0,0,0,0,36,0,f,White European,no,yes,family member,No,6d55f2d8083841b3959d327c05a889bb,No,empty,0.6830880042661751
+1031,0,0,0,0,1,0,0,1,0,1,36,3,m,south asian,yes,no,family member,No,6d55f2d8083841b3959d327c05a889bb,No,empty,0.6830880042661751
+1033,1,0,1,1,1,0,1,0,0,0,32,5,m,White European,yes,no,family member,Yes,6d55f2d8083841b3959d327c05a889bb,Yes,empty,0.7750440120817794
+1037,1,1,0,1,0,1,1,1,0,0,14,6,f,asian,no,no,family member,Yes,6d55f2d8083841b3959d327c05a889bb,Yes,empty,0.7178791655789291
+1040,0,0,0,0,1,1,1,0,1,0,26,4,m,asian,no,yes,family member,Yes,6d55f2d8083841b3959d327c05a889bb,No,empty,0.6830880042661751
+1052,1,0,1,1,1,1,1,1,1,1,18,9,m,middle eastern,yes,no,family member,Yes,6d55f2d8083841b3959d327c05a889bb,Yes,empty,0.7750440120817794
+20,1,1,1,0,1,0,1,1,0,1,12,7,f,black,no,no,family member,Yes,6d55f2d8083841b3959d327c05a889bb,Yes,Yes,0.8758192574676572
+720,1,1,0,1,0,0,0,0,0,0,17,3,m,middle eastern,no,no,family member,No,6d55f2d8083841b3959d327c05a889bb,Yes,empty,0.7178791655789291
+55,0,0,0,0,0,0,0,0,0,1,12,1,f,black,no,no,family member,No,6d55f2d8083841b3959d327c05a889bb,No,No,0.6830880042661751
+927,1,0,1,1,0,0,0,0,1,0,12,4,m,White European,no,no,family member,Yes,6d55f2d8083841b3959d327c05a889bb,Yes,Yes,0.7750440120817794
+931,0,0,1,1,1,0,0,0,0,0,12,3,m,White European,no,no,family member,No,6d55f2d8083841b3959d327c05a889bb,Yes,No,0.5625349045373181
+95,0,0,0,1,0,0,1,1,1,1,33,5,m,asian,no,no,family member,Yes,6d55f2d8083841b3959d327c05a889bb,No,Yes,0.6830880042661751
+379,0,0,0,1,0,0,1,0,1,1,30,4,m,asian,no,no,family member,Yes,6d55f2d8083841b3959d327c05a889bb,No,Yes,0.6830880042661751
+160,0,1,1,1,0,1,1,1,1,1,30,8,m,asian,no,no,family member,Yes,6d55f2d8083841b3959d327c05a889bb,Yes,Yes,0.7246933150368985
+417,0,1,1,1,1,1,1,0,1,1,12,8,m,asian,no,yes,family member,Yes,6d55f2d8083841b3959d327c05a889bb,Yes,Yes,0.7246933150368985
+619,1,1,0,1,1,1,1,1,1,0,28,8,m,asian,no,no,family member,Yes,6d55f2d8083841b3959d327c05a889bb,Yes,Yes,0.7178791655789291
+777,0,1,0,0,0,0,1,1,0,1,16,4,m,White European,yes,no,family member,Yes,6d55f2d8083841b3959d327c05a889bb,No,Yes,0.5128953866895871
+647,0,1,0,0,1,1,1,1,0,1,29,6,m,White European,yes,no,family member,Yes,6d55f2d8083841b3959d327c05a889bb,No,Yes,0.5128953866895871
+1047,0,1,0,1,1,1,1,1,1,0,24,7,f,middle eastern,no,no,family member,Yes,6d55f2d8083841b3959d327c05a889bb,No,Yes,0.5128953866895871
+295,0,1,0,0,1,1,1,0,0,1,12,5,f,Hispanic,yes,yes,family member,Yes,6d55f2d8083841b3959d327c05a889bb,No,Yes,0.5128953866895871
+258,0,1,0,0,0,0,0,1,0,0,36,2,m,middle eastern,no,no,family member,No,6d55f2d8083841b3959d327c05a889bb,No,No,0.5128953866895871
+268,0,1,0,0,1,1,1,1,0,1,36,6,m,asian,no,no,family member,Yes,6d55f2d8083841b3959d327c05a889bb,No,Yes,0.5128953866895871
+277,0,1,0,1,1,1,1,1,1,0,36,7,m,middle eastern,no,no,family member,Yes,6d55f2d8083841b3959d327c05a889bb,No,Yes,0.5128953866895871
+278,0,1,0,1,1,1,0,1,1,1,36,7,m,middle eastern,no,no,family member,Yes,6d55f2d8083841b3959d327c05a889bb,No,Yes,0.5128953866895871
+189,0,1,0,0,0,0,0,0,0,1,31,2,m,White European,yes,no,family member,No,6d55f2d8083841b3959d327c05a889bb,No,No,0.5128953866895871
+209,0,1,0,1,0,1,0,0,0,0,15,3,m,middle eastern,yes,no,family member,No,6d55f2d8083841b3959d327c05a889bb,No,No,0.5128953866895871
+414,0,1,0,0,0,0,0,0,0,1,33,2,m,asian,no,no,family member,No,6d55f2d8083841b3959d327c05a889bb,No,No,0.5128953866895871
+612,0,1,0,0,0,0,1,1,0,1,26,4,m,mixed,no,no,family member,Yes,6d55f2d8083841b3959d327c05a889bb,No,Yes,0.5128953866895871
+855,0,1,0,0,0,1,0,0,0,0,36,2,f,White European,yes,no,family member,No,6d55f2d8083841b3959d327c05a889bb,No,No,0.5128953866895871

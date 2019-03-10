@@ -1,5 +1,8 @@
 
 echo 'Launching Elasticsearch..'
+cd ./tornado_data/*elastic*/
+mkdir plugins
+cd -
 if [ "$(ps -eaf | grep tornado_data | grep elasticsearch | wc -l | grep '1')" == "" ]; then
   nohup ./tornado_data/*elastic*/bin/elasticsearch > /tmp/es_tornado.log 2>&1 &
   if [ "$(ps -eaf | grep tornado_data | grep elasticsearch | wc -l | grep '1')" == "" ]; then
