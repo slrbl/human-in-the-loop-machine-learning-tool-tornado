@@ -1,5 +1,5 @@
 <h1>Tornado Active Learning</h1>
-<p>Tornado is an Active Learning tool</p>
+<p>Tornado is a human in the loop machine learning tool</p>
 <h2>To launch Tornado</h2>
 <code>$ bundle install</code>
 <br>
