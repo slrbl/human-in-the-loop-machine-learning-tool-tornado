@@ -1,4 +1,4 @@
-# About: Tornado Stopper
+# About: Tornado Launcher
 # Version: V1.0
 # Author: walid.daboubi@gmail.com
 
