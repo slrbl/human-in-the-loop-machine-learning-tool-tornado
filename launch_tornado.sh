@@ -1,3 +1,9 @@
+# About: Tornado Stopper
+# Version: V1.0
+# Author: walid.daboubi@gmail.com
+
+bundle install
+rake db:migrate
 
 echo 'Launching Elasticsearch..'
 cd ./tornado_data/*elastic*/
