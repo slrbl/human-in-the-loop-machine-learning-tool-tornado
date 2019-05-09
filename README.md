@@ -1,7 +1,7 @@
 <h1>Tornado Active Learning</h1>
 <p>Tornado is a human in the loop machine learning tool</p>
 
-<center><img src="https://media.licdn.com/dms/image/C5612AQFG1h7oypt4tA/article-inline_image-shrink_1500_2232/0?e=1557964800&v=beta&t=dXl0j2ecVYsMSi41lDcIE_S9U8seAEK4Wl73AeNmCR4" width="70%" align="center"/></center>
+<div align="center"><img src="https://media.licdn.com/dms/image/C5612AQFG1h7oypt4tA/article-inline_image-shrink_1500_2232/0?e=1557964800&v=beta&t=dXl0j2ecVYsMSi41lDcIE_S9U8seAEK4Wl73AeNmCR4" width="70%"/></div>
 
 <h2>To launch Tornado</h2>
 <code>$ sh ./launch_tornado.sh</code>
