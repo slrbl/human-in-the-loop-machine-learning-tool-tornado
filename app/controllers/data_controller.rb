@@ -183,5 +183,5 @@ class DataController < ApplicationController
     send_data(@csv, :type => 'text/plain', :disposition => 'attachment', :filename => @dataset.name+'.csv')
   end
 
-
+end
 end
