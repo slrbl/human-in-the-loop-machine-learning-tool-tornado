@@ -8,57 +8,55 @@ class DataController < ApplicationController
   require 'rest-client'
 
 
-  # GET
   def new
     @dataset = Dataset.new()
   end
 
-
-  # POST
   def create
-      File.open(Rails.root.join('public', 'uploads', params[:file].original_filename), 'wb') do |file|
-        file.write(params[:file].read)
+    # Save data file
+    save_data_file(params[:file])
+    created_dataset = Dataset.create(
+      :name => params[:dataset][:name],
+      :description => params[:dataset][:description],
+      :es_id => SecureRandom.hex(16),
+      :path => Rails.root.join('public', 'uploads', params[:file].original_filename),
+      :user_id => current_user.id
+    )
+    # Save data in Elasticseach
+    data = CSV.read(created_dataset.path, { encoding: "UTF-8", headers: true, converters: :all})
+    hashed_data = data.map { |data_unit| data_unit.to_hash }
+    hashed_data.each do |line|
+      es_ready = '{'
+      data.headers.each do |col|
+        line_non_return = line[col].to_s.sub("\"","MMMM")
+        es_ready = es_ready + '"' + col + '":"' + line_non_return + '",' unless col == nil
       end
-      created_dataset = Dataset.create(:name => params[:dataset][:name], :description => params[:dataset][:description],:es_id => SecureRandom.hex(16),:path => Rails.root.join('public', 'uploads', params[:file].original_filename), :user_id => current_user.id)
-      # Add the data to ES
-      data = CSV.read(created_dataset.path, { encoding: "UTF-8", headers: true, converters: :all})
-      hashed_data = data.map { |data_unit| data_unit.to_hash }
-      hashed_data.each do |line|
-        to_be_posted_to_es = '{'
-        data.headers.each do |col|
-          line_non_return = line[col].to_s.sub("\"","MMMM")
-          to_be_posted_to_es = to_be_posted_to_es + '"' + col + '":"' + line_non_return + '",' unless col == nil
-        end
-        to_be_posted_to_es = to_be_posted_to_es + '"es_id":"'+created_dataset.es_id + '",'
-        human_label_key = created_dataset.es_id + '_human_label'
-        to_be_posted_to_es = to_be_posted_to_es + '"auto_label":"",' + '"'+human_label_key+'"' + ':"empty",'
-        to_be_posted_to_es[-1] = ''
-        to_be_posted_to_es = to_be_posted_to_es + '}'
-        RestClient.post(ES_SERVER + ES_INDEX ,to_be_posted_to_es,:content_type => 'application/json')
-      end
-      created_dataset.update(:inputs_count => hashed_data.count)
-      sleep(2)
-      redirect_to '/datas/' + created_dataset.id.to_s
+      es_ready = es_ready + '"es_id":"'+created_dataset.es_id + '",'
+      human_label_key = created_dataset.es_id + '_human_label'
+      es_ready = es_ready + '"auto_label":"",' + '"'+human_label_key+'"' + ':"empty",'
+      es_ready[-1] = ''
+      es_ready = es_ready + '}'
+      RestClient.post(ES_SERVER + ES_INDEX ,es_ready,:content_type => 'application/json')
+    end
+    created_dataset.update(:inputs_count => hashed_data.count)
+    sleep(2)
+    redirect_to '/datas/' + created_dataset.id.to_s
   end
 
 
   def show
-      @dataset = Dataset.find(params[:id])
-      @human_label_key = @dataset.es_id + '_human_label'
-      request = contruct_es_request(JSON.dump( {"query": {"bool": {"must": [{ "match": { "es_id": @dataset.es_id } }]}},"size": 10000} ))
-      response = Net::HTTP.start(es_uri.hostname, es_uri.port, request_options) do |http|
-            http.request(request)
-      end
-      @data = JSON.parse(response.body)
+    @dataset = Dataset.find(params[:id])
+    @human_label_key = @dataset.es_id + '_human_label'
+    request = contruct_es_request(JSON.dump( {"query": {"bool": {"must": [{ "match": { "es_id": @dataset.es_id } }]}},"size": 10000} ))
+    response = make_http_request(request,es_uri,request_options)
+    @data = JSON.parse(response.body)
   end
 
 
   def label
     @dataset = Dataset.find(params[:id])
     request = contruct_es_request(JSON.dump({"query":{"bool":{"must":[{"match":{"es_id": @dataset.es_id}}]}},"size":10000}))
-    response = Net::HTTP.start(es_uri.hostname, es_uri.port, request_options) do |http|
-      http.request(request)
-    end
+    response = make_http_request(request,es_uri,request_options)
     @data = JSON.parse(response.body)
     if @data == nil
       redirect_to '/oops'
@@ -69,9 +67,7 @@ class DataController < ApplicationController
   def threshold
     @dataset = Dataset.find(params[:id])
     request = contruct_es_request(JSON.dump( {"query": {"bool": {"must": [{ "match": { "es_id": @dataset.es_id  } }]}},"size": 1000} ))
-    response = Net::HTTP.start(es_uri.hostname, es_uri.port, request_options) do |http|
-      http.request(request)
-    end
+    response = make_http_request(request,es_uri,request_options)
     @data = JSON.parse(response.body)
     auto_proba = []
     @max_proba = 0
@@ -111,10 +107,8 @@ class DataController < ApplicationController
       redirect_to '/oops'
     end
     @human_label_key = @dataset.es_id + '_human_label'
-    request = contruct_es_request(JSON.dump( {"query": {"bool": {"must": [{ "match": { "es_id": @dataset.es_id } }]}},"size": 10000}))
-    response = Net::HTTP.start(es_uri.hostname, es_uri.port, request_options) do |http|
-      http.request(request)
-    end
+    request = contruct_es_request(JSON.dump({"query":{"bool":{"must":[{"match":{"es_id": @dataset.es_id}}]}},"size": 10000}))
+    response = make_http_request(request,es_uri,request_options)
     @data = JSON.parse(response.body)
     @csv = ""
     attributes = []
@@ -153,6 +147,19 @@ end
 
 def request_options
   {use_ssl: es_uri.scheme == "https",}
+end
+
+def make_http_request(request,uri,options)
+  response = Net::HTTP.start(uri.hostname, uri.port, options) do |http|
+    http.request(request)
+  end
+  response
+end
+
+def save_data_file(file_param)
+  File.open(Rails.root.join('public', 'uploads', file_param.original_filename), 'wb') do |file|
+    file.write(file_param.read)
+  end
 end
 
 end
