@@ -9,18 +9,14 @@ class DataController < ApplicationController
 
   # GET
   def new
-    begin
-      @dataset = Dataset.new()
-    rescue
-      redirect_to '/oops'
-    end
+    @dataset = Dataset.new()
+    redirect_to '/oops'
   end
 
   #ES_INDEX = '/tornado/data'
 
   # POST
   def create
-    #begin
       File.open(Rails.root.join('public', 'uploads', params[:file].original_filename), 'wb') do |file|
         file.write(params[:file].read)
       end
@@ -67,7 +63,6 @@ class DataController < ApplicationController
 
 
   def show
-    begin
       @dataset = Dataset.find(params[:id])
       @human_label_key = @dataset.es_id + '_human_label'
       uri = URI.parse(ES_SERVER + ES_INDEX+ '/_search/')
@@ -79,9 +74,6 @@ class DataController < ApplicationController
             http.request(request)
       end
       @data = JSON.parse(response.body)
-    rescue
-      redirect_to '/oops'
-    end
   end
 
 
@@ -189,9 +181,6 @@ class DataController < ApplicationController
       @csv[-1] = "\n"
     end
     send_data(@csv, :type => 'text/plain', :disposition => 'attachment', :filename => @dataset.name+'.csv')
-  rescue
-    redirect_to '/oops'
-  end
   end
 
 

@@ -1,7 +1,7 @@
 class ModelsController < ApplicationController
 
   def new
-    begin
+
       @dataset = Dataset.find(params[:id])
       uri = URI.parse(ES_SERVER + ES_INDEX + '/_search/')
       request = Net::HTTP::Get.new(uri)
@@ -12,9 +12,8 @@ class ModelsController < ApplicationController
         http.request(request)
       end
       @es_data = JSON.parse(response.body)
-    rescue
-      redirect_to '/oops'
-    end
+
+
   end
 
 
@@ -24,7 +23,7 @@ class ModelsController < ApplicationController
 
 
   def create
-    begin
+
       if params[:features].class == String
         features = {}
         params[:features].gsub(', ', ',').gsub('{', '').gsub('}', '').split(',').each do |current|
@@ -69,9 +68,8 @@ class ModelsController < ApplicationController
         http.request(request)
       end
       @es_data = JSON.parse(response.body)
-    rescue
-      redirect_to '/oops'
-    end
+
+
   end
 
   def index

@@ -10,7 +10,6 @@
 
 <% @user_datasets = Dataset.where(:user_id => current_user.id)%>
 
-
 <% if @user_datasets.count >0 %>
 <table border=1>
   <tr style="background-color:#e2e6e9">
