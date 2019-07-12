@@ -4,78 +4,59 @@
 <table>
   <tr>
     <td>
-<div style="width:96%;margin-left:2%;text-align:left">
-  <a href = '/datas' ><button class="button">My datasets</button></a>
-  <a href = '/datas/new' ><button class="button">Add dataset</button></a>
-  </div>
-  </td>
-
+      <div style="width:96%;margin-left:2%;text-align:left">
+        <a href = '/datas' ><button class="button">My datasets</button></a>
+        <a href = '/datas/new' ><button class="button">Add dataset</button></a>
+      </div>
+    </td>
     <td>
-  <div style="width:96%;margin-left:2%;text-align:right">
-
-
-<a href = '/datas/threshold/<%= @dataset.id %>' ><button class="button">Label seed</button></a>
-<a href = '/models/new/<%= @dataset.id %>' ><button class="button">Train</button></a>
-</div>
-</td>
-</tr>
+      <div style="width:96%;margin-left:2%;text-align:right">
+        <a href = '/datas/threshold/<%= @dataset.id %>' ><button class="button">Label seed</button></a>
+        <a href = '/models/new/<%= @dataset.id %>' ><button class="button">Train</button></a>
+      </div>
+    </td>
+  </tr>
 </table>
 
-
-
-
-
-
 <br>
 <br>
+
 <div style="background-color:#e2e6e9;border-style: solid;border-width: 1px;border-color:#d4d9de;font-size:12px;padding:20px;border-radius:5px;width:30%;margin-left:35%">
-<h3>Current model certitude</h3>
-
-
-<div class="performances">
-<div style="width:<%= @max_proba*100 %>%;">
-<div style="width:<%= @max_proba*100 %>%;;text-align:right;padding-bottom:3px">
-  <%= @max_proba.round(4)*100 %>%
-</div>
-</div>
-<div style="width:<%= @max_proba*100 %>%;background-color:gainsboro;height:20px;border-style:solid;border-color:silver;border-width:1px">
-<div style="width:<%= @max_proba*100 %>%;background-color:lime;height:20px;">
-  <div style="width:<%= @min_proba*100 %>%;background-color:orangered;height:20px;">
+  <h3>Current model certitude</h3>
+  <div class="performances">
+    <div style="width:<%= @max_proba*100 %>%;">
+      <div style="width:<%= @max_proba*100 %>%;;text-align:right;padding-bottom:3px">
+        <%= (@max_proba*100).round(2) %>%
+      </div>
+    </div>
+    <div style="width:<%= @max_proba*100 %>%;background-color:gainsboro;height:20px;border-style:solid;border-color:silver;border-width:1px">
+      <div style="width:<%= @max_proba*100 %>%;background-color:lime;height:20px;">
+        <div style="width:<%= @min_proba*100 %>%;background-color:orangered;height:20px;">
+        </div>
+      </div>
+    </div>
+    <div style="width:<%= @max_proba*100 %>%;">
+      <div style="width:<%= @max_proba*100 %>%;">
+        <div style="width:<%= @min_proba*100 %>%;text-align:right;padding-top:3px">
+          <%= (@min_proba*100).round(2)  %>%
+        </div>
+      </div>
+    </div>
   </div>
-</div>
-</div>
-<div style="width:<%= @max_proba*100 %>%;">
-<div style="width:<%= @max_proba*100 %>%;">
-  <div style="width:<%= @min_proba*100 %>%;text-align:right;padding-top:3px">
-    <%= (@min_proba.round(4))*100  %>%s
-  </div>
-</div>
-</div>
-</div>
-<br>
-<h3>Select a threshold </h3>
-<p>The threshold has to be between <%= @min_proba.round(4)*100 %> and <%= @max_proba.round(4)*100 %></p>
 
-<br>
+  <br>
 
-
-<%= form_tag('/datas/label/'+@dataset.id.to_s , method: "get") do -%>
-
-<table>
-  <tr>
-    <td>Threshold</td><td><%= text_field_tag 'threshold', @max_proba.round(4)*100, maxlength: 20, size: 40  %></td>
-  </tr>
-
-  <tr>
-    <td></td><td><%= submit_tag "Select" %></td>
-  </tr>
-</table>
-
-
-
-
-
-
-
-<% end -%>
+  <h3>Select a threshold </h3>
+  <p>The threshold has to be between <%= (@min_proba*100).round(2) %> and <%= (@max_proba*100).round(2) %></p>
+  <br>
+  <%= form_tag('/datas/label/'+@dataset.id.to_s , method: "get") do -%>
+    <table>
+      <tr>
+        <td>Threshold</td><td><%= text_field_tag 'threshold', (@max_proba*100).round(2), maxlength: 20, size: 40  %></td>
+      </tr>
+      <tr>
+        <td></td><td><%= submit_tag "Select" %></td>
+      </tr>
+    </table>
+  <% end %>
 </div>
