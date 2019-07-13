@@ -12,6 +12,7 @@ class DataController < ApplicationController
     @dataset = Dataset.new()
   end
 
+
   def create
     # Save data file
     save_data_file(params[:file])
@@ -97,6 +98,7 @@ class DataController < ApplicationController
     redirect_to '/datas/'+params[:data_id].to_s
   end
 
+
   def error
   end
 
@@ -146,7 +148,7 @@ def es_uri
 end
 
 def request_options
-  {use_ssl: es_uri.scheme == "https",}
+  {use_ssl: es_uri.scheme == "https"}
 end
 
 def make_http_request(request,uri,options)
