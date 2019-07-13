@@ -144,4 +144,20 @@ input[type=submit] {
   margin-left:35%
 
 }
+
+
+.positive_flash{
+  background-color:lime;
+  opacity:0.8;
+  margin-left:30%;
+  width:40%;
+  font-size:12px;
+  border-width:1px;
+  border-color:lime;
+  border-style:solid;
+  padding:3px;
+  border-radius:5px;
+  text-align:center;
+}
+
 //https://www.w3schools.com/colors/colors_picker.asp?colorhex=A52A2A

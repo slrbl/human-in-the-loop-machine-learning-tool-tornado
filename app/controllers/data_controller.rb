@@ -24,23 +24,11 @@ class DataController < ApplicationController
       :user_id => current_user.id
     )
     # Save data in Elasticseach
-    data = CSV.read(created_dataset.path, { encoding: "UTF-8", headers: true, converters: :all})
-    hashed_data = data.map { |data_unit| data_unit.to_hash }
-    hashed_data.each do |line|
-      es_ready = '{'
-      data.headers.each do |col|
-        line_non_return = line[col].to_s.sub("\"","MMMM")
-        es_ready = es_ready + '"' + col + '":"' + line_non_return + '",' unless col == nil
-      end
-      es_ready = es_ready + '"es_id":"'+created_dataset.es_id + '",'
-      human_label_key = created_dataset.es_id + '_human_label'
-      es_ready = es_ready + '"auto_label":"",' + '"'+human_label_key+'"' + ':"empty",'
-      es_ready[-1] = ''
-      es_ready = es_ready + '}'
-      RestClient.post(ES_SERVER + ES_INDEX ,es_ready,:content_type => 'application/json')
-    end
-    created_dataset.update(:inputs_count => hashed_data.count)
-    sleep(2)
+
+    push_to_es(created_dataset)
+
+    flash[:data_creation] = 'Your dataset has successfully been added'
+
     redirect_to '/datas/' + created_dataset.id.to_s
   end
 
@@ -161,6 +149,25 @@ end
 def save_data_file(file_param)
   File.open(Rails.root.join('public', 'uploads', file_param.original_filename), 'wb') do |file|
     file.write(file_param.read)
+  end
+end
+
+def push_to_es(data_set)
+  data = CSV.read(data_set.path, { encoding: "UTF-8", headers: true, converters: :all})
+  data_hash = data.map { |data_unit| data_unit.to_hash }
+  data_hash.each do |line|
+    es_ready = '{'
+    data.headers.each do |col|
+      line_non_return = line[col].to_s.sub("\"","MMMM")
+      es_ready = es_ready + '"' + col + '":"' + line_non_return + '",' unless col == nil
+    end
+    es_ready = es_ready + '"es_id":"'+data_set.es_id + '",'
+    human_label_key = data_set.es_id + '_human_label'
+    es_ready = es_ready + '"auto_label":"",' + '"'+human_label_key+'"' + ':"empty",'
+    es_ready[-1] = ''
+    es_ready = es_ready + '}'
+    data_set.update(:inputs_count => data_hash.count)
+    RestClient.post(ES_SERVER + ES_INDEX ,es_ready,:content_type => 'application/json')
   end
 end
 
