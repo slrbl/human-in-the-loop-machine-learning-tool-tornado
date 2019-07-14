@@ -3,4 +3,5 @@ db/*.sqlite3
 tmp/*
 tornado_data/elasticsearch-6.2.4/logs/*
 tornado_data/elasticsearch-6.2.4/data/nodes/*
+public/uploads/*
 log/*
