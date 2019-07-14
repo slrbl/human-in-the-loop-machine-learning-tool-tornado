@@ -2,14 +2,14 @@
 
 
 <br>
-<div style="width:96%;margin-left:2%;text-align:left">
-  <a href = '/datas' ><button class="button">My datasets</button></a>
-  <a href = '/datas/new' ><button class="button">Add dataset</button></a>
+<div class="buttons_bar_left">
+  <a href = '/datasets' ><button class="button">My datasets</button></a>
+  <a href = '/datasets/new' ><button class="button">Add dataset</button></a>
 </div>
 
 <br>
 
-<div style="background-color:#e2e6e9;border-style: solid;border-width: 1px;border-color:#d4d9de;font-size:12px;padding:20px;border-radius:5px;width:30%;margin-left:35%">
+<div class="new_data_form">
   <h3>New Dataset</h3>
   <%= form_for @dataset, url: {action: "create"},multipart: true, html: {class: "nifty_form",enctype:"multipart/form-data"} do |f| %>
     <table>

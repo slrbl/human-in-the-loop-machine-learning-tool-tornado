@@ -67,7 +67,7 @@
           <% if data_unit['_source']['Class/ASD Traits '] == 'Yes'%>
             <% @t = 1%>
           <% else %>
-            <% @t = 0%>
+            <% @t = 0 %>
           <% end %>
           <% @condition = (attribute == 'auto_label' and ( (data_unit['_source'][attribute] == 'kid' and data_unit['_source']['age'].to_i <10) or (data_unit['_source'][attribute] == 'adult' and data_unit['_source']['age'].to_i >= 10))) %>
           <% @condition = (attribute == 'auto_label' and ( (data_unit['_source'][attribute].to_s == data_unit['_source']['Class/ASD Traits ']))) %>
@@ -75,7 +75,15 @@
             <% @g+=1%>
             <td ><div style="background-color:lime"><%= data_unit['_source'][attribute] unless (attribute==@human_label_key and data_unit['_source'][attribute]=='empty') %></div></td>
           <% else %>
-            <td><%= data_unit['_source'][attribute] unless (attribute== @human_label_key and data_unit['_source'][attribute]=='empty') %> </td>
+            <td>
+              <% if attribute!= @human_label_key and data_unit['_source'][attribute]!='empty'%>
+                <% if attribute == 'auto_proba' %>
+                  <%= (data_unit['_source'][attribute].to_f).round(2) %>
+                <% else %>
+                  <%= data_unit['_source'][attribute] %>
+                <% end %>
+              <% end %>
+            </td>
           <% end %>
         <% end %>
       <% end %>

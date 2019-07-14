@@ -1,14 +1,12 @@
 
 
 <br>
-<div style="width:96%;margin-left:2%;text-align:left">
-
-<a href = '/datas' ><button class="button">My datasets</button></a>
-<a href = '/datas/new' ><button class="button">Add dataset</button></a>
+<div class="buttons_bar_left">
+<a href = '/datasets' ><button class="button">My datasets</button></a>
+<a href = '/datasets/new' ><button class="button">Add dataset</button></a>
 </div>
 <br>
 
-<% @user_datasets = Dataset.where(:user_id => current_user.id)%>
 
 <% if @user_datasets.count >0 %>
 <table border=1>
@@ -21,10 +19,12 @@
   </tr>
   <% @user_datasets.all.each do |data_set| %>
   <tr>
-    <td><a href = "/datas/<%= data_set.id.to_s %>" ><%= data_set.name %></a></td>
+    <td><a href = "/datasets/<%= data_set.id.to_s %>" ><%= data_set.name %></a></td>
     <td><%= data_set.inputs_count %></td>
     <td><%= data_set.created_at.to_s.split(' ')[0] %></td>
-    <td><%= data_set.description %></td>
+    <% @description = data_set.description %>
+    <% @description = 'No description available' unless data_set.description.present? %>
+    <td><%= @description %></td>
     <td><%= User.find(data_set.user_id).email unless ( data_set.user_id == nil or User.exists?(data_set.user_id) == false ) %></td>
   </tr>
   <% end %>

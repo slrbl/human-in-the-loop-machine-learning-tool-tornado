@@ -24,12 +24,9 @@ class DataController < ApplicationController
       :user_id => current_user.id
     )
     # Save data in Elasticseach
-
     push_to_es(created_dataset)
-
     flash[:data_creation] = 'Your dataset has successfully been added'
-
-    redirect_to '/datas/' + created_dataset.id.to_s
+    redirect_to '/datasets/' + created_dataset.id.to_s
   end
 
 
@@ -42,14 +39,11 @@ class DataController < ApplicationController
   end
 
 
-  def label
+  def label_data
     @dataset = Dataset.find(params[:id])
     request = contruct_es_request(JSON.dump({"query":{"bool":{"must":[{"match":{"es_id": @dataset.es_id}}]}},"size":10000}))
     response = make_http_request(request,es_uri,request_options)
     @data = JSON.parse(response.body)
-    if @data == nil
-      redirect_to '/oops'
-    end
   end
 
 
@@ -83,7 +77,7 @@ class DataController < ApplicationController
         logger.debug(update_result)
       end
     end
-    redirect_to '/datas/'+params[:data_id].to_s
+    redirect_to '/datasets/'+params[:data_id].to_s
   end
 
 
@@ -117,7 +111,7 @@ class DataController < ApplicationController
   end
 
   def index
-
+    @user_datasets = Dataset.where(:user_id => current_user.id).order('id DESC')
   end
 
   def edit

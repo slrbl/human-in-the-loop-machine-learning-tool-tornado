@@ -15,12 +15,12 @@ Rails.application.routes.draw do
 
   get 'oops', to: 'data#error'
 
-  get 'datas', to: 'data#index'
-  get 'datas/new', to: 'data#new'
+  get 'datasets', to: 'data#index'
+  get 'datasets/new', to: 'data#new'
   post 'create', to: 'data#create'
-  get '/datas/:id', to: 'data#show'
-  get '/datas/label/:id', to: 'data#label'
-  get '/datas/threshold/:id', to: 'data#threshold'
+  get '/datasets/:id', to: 'data#show'
+  get '/datasets/label/:id', to: 'data#label_data'
+  get '/datasets/threshold/:id', to: 'data#threshold'
   post 'update_docs', to: 'data#update_docs'
 
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html

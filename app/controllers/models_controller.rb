@@ -55,7 +55,7 @@ class ModelsController < ApplicationController
     logger.debug("Training script launched: " + cmd)
     cmd_result = `#{cmd}`
     logger.debug(cmd_result)
-    redirect_to '/datas/'+params[:id]
+    redirect_to '/datasets/'+params[:id]
     # Parse the es dataset
     request = contruct_es_request(JSON.dump( {"query": {"bool": {"must": [{ "match": { "es_id": es_id}},{ "match": { "es_id": es_id} }]}},"size": 2} ))
     response = make_http_request(request,es_uri,request_options)
