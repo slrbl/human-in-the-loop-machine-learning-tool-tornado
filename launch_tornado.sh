@@ -37,3 +37,11 @@ fi
 
 echo 'Launching Tornado server in production mode'
 nohup rails s -e production > /tmp/tornado.log 2>&1 &
+sleep 10
+es_pid="$(ps -eaf | grep -v "grep" |grep "elasticsearch" | grep "tornado_data/elasticsearch" | awk '{print $2}')"
+kibana_pid="$(ps -eaf | grep -v "grep" | grep "kibana" | grep "tornado_data/kibana" | awk '{print $2}')"
+puma_pid="$(ps -eaf | grep "puma" | grep "0.0.0.0"| grep "3000" | awk '{print $2}')"
+
+echo "Elasticseach PID: "$es_pid
+echo "Kibana PID: "$kibana_pid
+echo "Puma PID: "$puma_pid
