@@ -198,4 +198,13 @@ input[type=submit] {
   margin-left:35%;
 }
 
+
+.note{
+  width: 100%;
+  text-align: center;
+  font-size:13px;
+  font-style: italic;
+  padding-top: 20px;
+}
+
 //https://www.w3schools.com/colors/colors_picker.asp?colorhex=A52A2A
