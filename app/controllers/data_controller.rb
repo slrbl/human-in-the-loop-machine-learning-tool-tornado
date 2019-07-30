@@ -7,16 +7,14 @@ class DataController < ApplicationController
   require 'securerandom'
   require 'rest-client'
 
-
   def new
     @dataset = Dataset.new()
   end
 
-
   def create
     # Save data file
     save_data_file(params[:file])
-    created_dataset = Dataset.create(
+    data_set = Dataset.create(
       :name => params[:dataset][:name],
       :description => params[:dataset][:description],
       :es_id => SecureRandom.hex(16),
@@ -24,9 +22,10 @@ class DataController < ApplicationController
       :user_id => current_user.id
     )
     # Save data in Elasticseach
-    push_to_es(created_dataset)
+    DataAddWorker.perform_async(data_set.id)
     flash[:data_creation] = 'Your dataset has successfully been added'
-    redirect_to '/datasets/' + created_dataset.id.to_s
+    sleep 5
+    redirect_to '/datasets/' + data_set.id.to_s
   end
 
 

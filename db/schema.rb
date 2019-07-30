@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20190120185114) do
+ActiveRecord::Schema.define(version: 20190719214236) do
 
   create_table "datasets", force: :cascade do |t|
     t.string "name"
@@ -22,6 +22,7 @@ ActiveRecord::Schema.define(version: 20190120185114) do
     t.integer "inputs_count"
     t.integer "user_id"
     t.integer "human_labels_count"
+    t.string "status"
   end
 
   create_table "users", force: :cascade do |t|

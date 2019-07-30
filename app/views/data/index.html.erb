@@ -7,15 +7,15 @@
 </div>
 <br>
 
-
 <% if @user_datasets.count >0 %>
 <table border=1>
   <tr style="background-color:#e2e6e9">
-    <td width="15%"><b>Title</b></td>
+    <td width="20%"><b>Title</b></td>
     <td width="15%"><b>Inputs #</td>
     <td width="15%"><b>Creation date</td>
     <td width="40%"><b>Description</td>
     <td width="15%"><b>owner</b></td>
+    <td width="5%"><b>Status</td>
   </tr>
   <% @user_datasets.all.each do |data_set| %>
   <tr>
@@ -26,6 +26,11 @@
     <% @description = 'No description available' unless data_set.description.present? %>
     <td><%= @description %></td>
     <td><%= User.find(data_set.user_id).email unless ( data_set.user_id == nil or User.exists?(data_set.user_id) == false ) %></td>
+    <td>
+      <div class="status_<%= data_set.status %>">
+        <%= data_set.status %>
+      </div>
+    </td>
   </tr>
   <% end %>
 </table>

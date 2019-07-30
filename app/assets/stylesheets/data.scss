@@ -1,3 +1,21 @@
 // Place all the styles related to the data controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+.status_ready{
+  background-color:LimeGreen;
+  width:100px;
+  padding: 2px;
+  border-radius: 2px;
+  text-align: center;
+  color:black;
+}
+
+.status_processing{
+  background-color:silver;
+  width:100px;
+  padding: 2px;
+  border-radius: 2px;
+  text-align: center;
+  color:black;
+}
