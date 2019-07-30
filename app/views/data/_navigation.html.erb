@@ -1,15 +1,15 @@
 <table width="100%">
   <tr>
     <td align="left">
-<div style="width:96%;margin-left:2%;text-align:left">
-  <a href = '/datas' ><button class="button">My datasets</button></a>
-  <a href = '/datas/new' ><button class="button">Add dataset</button></a>
+<div class="buttons_bar_left">
+  <a href = '/datasets' ><button class="button">My datasets</button></a>
+  <a href = '/datasets/new' ><button class="button">Add dataset</button></a>
 </div>
 </td>
 <td>
-<div style="width:96%;margin-left:2%;text-align:right">
+<div class="buttons_bar_right">
 <a href = '/download/<%= @dataset.id %>' ><button class="button">Download</button></a>
-<a href = '/datas/threshold/<%= @dataset.id %>' ><button class="button">Label seed</button></a>
+<a href = '/datasets/threshold/<%= @dataset.id %>' ><button class="button">Label seed</button></a>
 <a href = '/models/new/<%= @dataset.id %>' ><button class="button">Train</button></a>
 </div>
 </td>

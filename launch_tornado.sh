@@ -35,5 +35,5 @@ else
   echo "Tornado kibana is already running"
 fi
 
-echo 'Launching Tornado server'
-nohup rails s > /tmp/tornado.log 2>&1 &
+echo 'Launching Tornado server in production mode'
+nohup rails s -e production > /tmp/tornado.log 2>&1 &

@@ -48,9 +48,9 @@ body{
    border-collapse: collapse;
    width: 96%;
    margin-left: 2%;
-   border-width: 0px;
+   border-width: 1px;
    font-size: 12px;
-   border-color:#b7bfc8;
+   border-color:black;
  }
 
  th, td {
@@ -116,6 +116,9 @@ input[type=submit] {
   padding:10px;
   border-radius:2px;
   font-size:12px;
+  margin-left: 1%;
+  margin-right: 1%;
+
 }
 
 .top_bar{
@@ -144,4 +147,55 @@ input[type=submit] {
   margin-left:35%
 
 }
+
+.positive_flash{
+  background-color:lime;
+  opacity:0.8;
+  margin-left:30%;
+  width:40%;
+  font-size:12px;
+  border-width:1px;
+  border-color:lime;
+  border-style:solid;
+  padding:3px;
+  border-radius:5px;
+  text-align:center;
+}
+
+.buttons_bar_left{
+  width:96%;
+  margin-left:2%;
+  text-align:left;
+}
+
+.buttons_bar_right{
+  width:96%;
+  margin-left:2%;
+  text-align:right;
+}
+
+.new_data_form{
+  background-color:#e2e6e9;
+  border-style: solid;
+  border-width: 1px;
+  border-color:#d4d9de;
+  font-size:12px;
+  padding:20px;
+  border-radius:5px;
+  width:30%;
+  margin-left:35%;
+}
+
+.threshold_form{
+  background-color:#e2e6e9;
+  border-style: solid;
+  border-width:1px;
+  border-color:#d4d9de;
+  font-size:12px;
+  padding:20px;
+  border-radius:5px;
+  width:30%;
+  margin-left:35%;
+}
+
 //https://www.w3schools.com/colors/colors_picker.asp?colorhex=A52A2A
