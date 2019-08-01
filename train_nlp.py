@@ -28,10 +28,6 @@ es_id = args.es_address
 source = features.split(',')
 source.append(label)
 
-
-print source
-print '-- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- --'
-
 #URL = "http://localhost:9200/lake/stats/_search/"
 URL = es_address + '/_search/'
 query = {'query':{'bool': {'must': [{'match': {'es_id': es_id}}, {'match': {'es_id': es_id}}]}}, 'size': 10000, '_source': source}
@@ -119,13 +115,6 @@ clf = ensemble.GradientBoostingClassifier()
                                            subsample=1.0, verbose=0, warm_start=False)"""
 clf = clf.fit(X, y)
 
-# Label the data units without human labels
-
-#puts 'http://127.0.0.1:9200/lake/stats/'+doc_id+'/_update'
-#puts '{"doc":{"data_label":"'+params[param]+'"+"human_label":"true"}}'
-#puts RestClient.post('http://127.0.0.1:9200/lake/stats/'+doc_id+'/_update','{"doc":{"data_label":"'+params[param]+'","human_label":"true"}}',:content_type => 'application/json') unless (params[param] == nil or params[param] == '')
-
-#URL = "http://localhost:9200/lake/stats/_search/"
 URL = es_address + '/_search/'
 query = {'query':{'bool': {'must': [{'match': {'es_id': es_id}}, {'match': {'es_id': es_id}}]}}, 'size': 10000}
 headers = {'Content-type': 'application/json', 'Accept': 'application/json'}
