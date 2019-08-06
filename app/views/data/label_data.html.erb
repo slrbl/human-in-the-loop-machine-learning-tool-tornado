@@ -1,11 +1,5 @@
 
-
-
-
-
 <% human_label_key = @dataset.es_id+'_human_label' %>
-
-
 
 <div class = "desc">
   <table width="100%">
@@ -47,7 +41,7 @@
       </td>
       <td>
         <div class="buttons_bar_right">
-          <a href = '/datasets/threshold/<%= @dataset.id %>' ><button class="button">Label seed</button></a>
+          <a href = '/datasets/select_threshold/<%= @dataset.id %>' ><button class="button">Label seed</button></a>
           <a href = '/models/new/<%= @dataset.id %>' ><button class="button">Train</button></a>
           <%= submit_tag("Update") %>
         </div>

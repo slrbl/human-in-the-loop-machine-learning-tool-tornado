@@ -3,18 +3,14 @@ class ModelsController < ApplicationController
   def proc
   end
 
-
   def index
   end
-
 
   def show
   end
 
-
   def edit
   end
-
 
   def new
     @dataset = Dataset.find(params[:id])
@@ -22,10 +18,6 @@ class ModelsController < ApplicationController
     response = make_http_request(request,es_uri,request_options)
     @es_data = JSON.parse(response.body)
   end
-
-
-
-
 
   def create
     TrainModelWorker.perform_async(params[:features],params[:id])
@@ -37,12 +29,6 @@ class ModelsController < ApplicationController
     #@es_data = JSON.parse(response.body)
   end
 
-
-
-
-
-
-
   private
   def contruct_es_request(body)
     request = Net::HTTP::Get.new(es_uri)
@@ -51,16 +37,13 @@ class ModelsController < ApplicationController
     request
   end
 
-
   def es_uri
     URI.parse(ES_SERVER + ES_INDEX + '/_search/')
   end
 
-
   def request_options
     {use_ssl: es_uri.scheme == "https"}
   end
-
 
   def make_http_request(request,uri,options)
     response = Net::HTTP.start(uri.hostname, uri.port, options) do |http|
@@ -68,6 +51,5 @@ class ModelsController < ApplicationController
     end
     response
   end
-
 
 end

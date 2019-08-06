@@ -17,7 +17,7 @@ class DataAddWorker
       es_ready = es_ready + '"auto_label":"",' + '"'+human_label_key+'"' + ':"empty",'
       es_ready[-1] = ''
       es_ready = es_ready + '}'
-      data_set.update(:status => "processing")
+      data_set.update(:status => 'processing')
       RestClient.post(ES_SERVER + ES_INDEX ,es_ready,:content_type => 'application/json')
       data_set.update(:inputs_count => data_hash.count)
       data_set.update(:status => "ready")

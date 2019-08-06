@@ -46,7 +46,7 @@ class DataController < ApplicationController
   end
 
 
-  def threshold
+  def select_threshold
     @dataset = Dataset.find(params[:id])
     request = contruct_es_request(JSON.dump( {"query": {"bool": {"must": [{ "match": { "es_id": @dataset.es_id  } }]}},"size": 1000} ))
     response = make_http_request(request,es_uri,request_options)

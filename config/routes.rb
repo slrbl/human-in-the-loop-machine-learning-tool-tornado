@@ -20,7 +20,7 @@ Rails.application.routes.draw do
   post 'create', to: 'data#create'
   get '/datasets/:id', to: 'data#show'
   get '/datasets/label/:id', to: 'data#label_data'
-  get '/datasets/threshold/:id', to: 'data#threshold'
+  get '/datasets/select_threshold/:id', to: 'data#select_threshold'
   post 'update_docs', to: 'data#update_docs'
 
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html

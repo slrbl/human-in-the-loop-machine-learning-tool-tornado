@@ -131,7 +131,7 @@ for unit in result['hits']['hits']:
     print unit['_source']['auto_label']
     doc_id = unit['_id']
 
-    URL = es_address + '/'+doc_id+'/_update'
+    URL = es_address + '/'+doc_id + '/_update'
     print URL
 
     current_features = []
