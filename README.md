@@ -7,6 +7,9 @@
 <h3>Build Tornado Docker image</h3>
 <code>$ docker build . -t tornado</code>
 
+<h3>Launch Tornado image</h3>
+<code>$ docker run -p 3000:3000 tornado</code>
+
 <h2>To launch Tornado</h2>
 <code>$ sh ./launch_tornado.sh</code>
 <p>Tornado will then be available at http://0.0.0.0:3000</p>
