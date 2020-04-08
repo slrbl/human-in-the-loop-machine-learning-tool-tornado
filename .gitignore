@@ -1,4 +1,5 @@
 Gemfile.lock
+docker_data/*
 db/*.sqlite3
 tmp/*
 tmp/cache/*

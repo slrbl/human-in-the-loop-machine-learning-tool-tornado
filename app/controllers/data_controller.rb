@@ -35,6 +35,7 @@ class DataController < ApplicationController
     request = contruct_es_request(JSON.dump( {"query": {"bool": {"must": [{ "match": { "es_id": @dataset.es_id } }]}},"size": 10000} ))
     response = make_http_request(request,es_uri,request_options)
     @data = JSON.parse(response.body)
+    puts response.body
   end
 
 
@@ -118,7 +119,11 @@ class DataController < ApplicationController
 
 private
 def contruct_es_request(body)
+  puts  "++++++++++++++++++++++++++++++++++"
+  puts es_uri
+  puts  "++++++++++++++++++++++++++++++++++"
   request = Net::HTTP::Get.new(es_uri)
+
   request.content_type = "application/json"
   request.body = body
   request
