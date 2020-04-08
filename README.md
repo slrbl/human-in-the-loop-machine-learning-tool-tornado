@@ -1,11 +1,15 @@
 <h1>Tornado Active Learning</h1>
 <h2>What is Tornado</h2>
-<p>Tornado is an open source human in the loop machine learning tool. It helps you label your dataset on the fly while training your model through a simple user interface.</p>
+<p>Tornado is an open source Active Learning (human in the loop machine learning) tool. It helps you label your dataset on the fly while training your model through a simple user interface.</p>
 
+<h3>Data flow</h3>
+<div align="center"><img src="https://media-exp1.licdn.com/dms/image/C5612AQFG1h7oypt4tA/article-inline_image-shrink_1500_2232/0?e=1591833600&v=beta&t=-ENm3VL5yDIixSgOhkDnlnci0-arSJuKlLUY0Nc0oow" width="70%"/></div>
+
+<h3>Technological stack</h3>
 <div align="center"><img src="https://media-exp1.licdn.com/dms/image/C5612AQEUuz1BIEnDRQ/article-inline_image-shrink_1500_2232/0?e=1591833600&v=beta&t=HKpCMxAkte9CSnuiClR892uoKNFaSSX_rwQ5Isv5gBQ" width="70%"/></div>
 
 
-<div align="center"><img src="https://media-exp1.licdn.com/dms/image/C5612AQFG1h7oypt4tA/article-inline_image-shrink_1500_2232/0?e=1591833600&v=beta&t=-ENm3VL5yDIixSgOhkDnlnci0-arSJuKlLUY0Nc0oow" width="70%"/></div>
+
 
 
 <h3>Build Tornado Docker image</h3>
