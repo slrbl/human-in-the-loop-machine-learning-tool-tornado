@@ -4,6 +4,12 @@
 
 <div align="center"><img src="https://media.licdn.com/dms/image/C5612AQFG1h7oypt4tA/article-inline_image-shrink_1500_2232/0?e=1568246400&v=beta&t=MLTa63NzMrSFyupkUMSqdPVd_Uzm8erYq8I1zqsMHSE" width="70%"/></div>
 
+<h3>Build Tornado Docker image</h3>
+<code>$ docker build . -t tornado</code>
+
+<h3>Launch Tornado image</h3>
+<code>$ docker run -p 3000:3000 tornado</code>
+
 <h2>To launch Tornado</h2>
 <code>$ sh ./launch_tornado.sh</code>
 <p>Tornado will then be available at http://0.0.0.0:3000</p>
