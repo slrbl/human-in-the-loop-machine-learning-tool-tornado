@@ -9,7 +9,7 @@
 
 <h3>Launch Tornado image</h3>
 <code>$ docker-compose up</code>
-
+<br>
 <p>Tornado will then be available at http://0.0.0.0:3000</p>
 
 <h2>Details and how to use</h2>
