@@ -3,8 +3,7 @@ docker_data/*
 db/*.sqlite3
 tmp/*
 tmp/cache/*
-tornado_data/elasticsearch-6.2.4/logs/*
-tornado_data/elasticsearch-6.2.4/data/nodes/*
+/elasticsearch/*
 public/uploads/*
 log/*
 dump.rdb

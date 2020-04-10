@@ -14,7 +14,7 @@ services:
         - xpack.watcher.enabled=false
         - xpack.security.enabled=false
     volumes:
-      - ./docker_data/elasticsearch/data:/usr/share/elasticsearch/data
+      - ./elasticsearch/data:/usr/share/elasticsearch/data
     ports:
       - "9200:9200"
       - "9300:9300"
