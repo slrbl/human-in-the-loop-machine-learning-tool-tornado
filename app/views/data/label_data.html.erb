@@ -77,7 +77,7 @@
             <% if attribute != 'es_id'%>
               <td>
                 <% if human_label_key == attribute and data_unit['_source'][attribute]=='empty'%>
-                  -
+                  <%= data_unit['_source'][attribute] %>
                 <%else%>
                   <% if attribute == 'auto_proba' %>
                   <%= (data_unit['_source'][attribute].to_f).round(2) %>

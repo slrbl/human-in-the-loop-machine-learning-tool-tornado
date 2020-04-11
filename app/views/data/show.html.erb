@@ -85,6 +85,11 @@
                   <%= data_unit['_source'][attribute] %>
                 <% end %>
               <% end %>
+
+              <% if attribute == @human_label_key %>
+               <%= data_unit['_source'][attribute] %>
+              <% end %>
+
             </td>
           <% end %>
         <% end %>

@@ -13,6 +13,7 @@ services:
         - xpack.graph.enabled=false
         - xpack.watcher.enabled=false
         - xpack.security.enabled=false
+        - Des.insecure.allow.root=true
     volumes:
       - ./elasticsearch/data:/usr/share/elasticsearch/data
     ports:
@@ -22,8 +23,21 @@ services:
     image: docker.elastic.co/kibana/kibana:6.2.4
     ports:
       - '5601:5601'
+
+  sidekiq:
+    build: .
+    command: bash -c "bin/bundle install && bin/rails db:migrate && bin/bundle exec sidekiq"
+    environment:
+      RAILS_ENV: "development"
+      REDIS_URL: "redis://redis:6379"
+    volumes:
+      - .:/myapp
+    depends_on:
+      - redis
+      - myapp
   myapp:
     build: .
+    command: bash -c "bin/bundle install && bin/rails db:migrate && rm -f tmp/pids/server.pid && bin/bundle exec rails s -p 3000 -b '0.0.0.0'"
     environment:
       RAILS_ENV: "development"
       REDIS_URL: "redis://redis:6379"
@@ -35,16 +49,3 @@ services:
       - redis
       - elasticsearch
       - kibana
-    command: bash -c "bundle install && bin/rails db:migrate RAILS_ENV=development && bin/rails db:seed RAILS_ENV=development && rm -f tmp/pids/server.pid && bundle exec rails s -p 3000 -b '0.0.0.0'"
-  sidekiq:
-    build: .
-    command: bundle exec sidekiq
-    environment:
-      RAILS_ENV: "development"
-      REDIS_URL: "redis://redis:6379"
-    volumes:
-      - .:/myapp
-    depends_on:
-      - redis
-      - myapp
-
