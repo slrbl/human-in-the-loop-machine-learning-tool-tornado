@@ -20,10 +20,6 @@
 <br>
 <p>Tornado will then be available at http://0.0.0.0:3000</p>
 
-<h3>Login with test user</h3>
-<code>email: test.user@tornado.com </code>
-<code>password: 22sççd*dq00=9b@-?=2345GFd </code>
-
 <h2>Details and how to use</h2>
 All information are available at:
 <br>
