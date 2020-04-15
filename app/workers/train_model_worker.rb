@@ -23,7 +23,10 @@ class TrainModelWorker
     es_id = Dataset.find(dataset_id).es_id
     # Train the model
     human_label_key = es_id + '_human_label'
-    if selected_features.length > 1
+
+    logger.debug("=========================================================")
+
+    if selected_features.length >= 1
       training_script_args = selected_features.join(',') + "\" -l "+human_label_key + " -i \"" + es_id + "\" -s \"" + ES_SERVER + ES_INDEX + "\""
       cmd = "python train.py -f \"" + training_script_args
     else

@@ -30,18 +30,18 @@ services:
       RAILS_ENV: "development"
       REDIS_URL: "redis://redis:6379"
     volumes:
-      - .:/myapp
+      - .:/tornado
     depends_on:
       - redis
-      - myapp
-  myapp:
+      - tornado
+  tornado:
     build: .
     command: bash -c "bin/bundle install && bin/rails db:migrate && rm -f tmp/pids/server.pid && bin/bundle exec rails s -p 3000 -b '0.0.0.0'"
     environment:
       RAILS_ENV: "development"
       REDIS_URL: "redis://redis:6379"
     volumes:
-      - .:/myapp
+      - .:/tornado
     ports:
       - "3000:3000"
     depends_on:

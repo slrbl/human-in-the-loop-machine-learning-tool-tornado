@@ -5,7 +5,7 @@ class DataAddWorker
   def perform(data_set_id)
     puts data_set_id
     data_set = Dataset.find(data_set_id)
-    data = CSV.read(data_set.path, { encoding: "UTF-8", headers: true, converters: :all})
+    data = CSV.read(data_set.path, { encoding: "ISO-8859-1", headers: true, converters: :all})
     data_hash = data.map { |data_unit| data_unit.to_hash }
     data_hash.each do |line|
       es_ready = '{'

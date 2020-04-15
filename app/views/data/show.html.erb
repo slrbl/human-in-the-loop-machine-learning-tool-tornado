@@ -48,6 +48,7 @@
 
 <table width ="100%" border = 1>
   <tr style="background-color:#e2e6e9">
+    <td>#</td>
     <% attributes.each do |attribute| %>
       <% if attribute != 'es_id'%>
         <% if attribute == @human_label_key%>
@@ -64,6 +65,7 @@
     <% end %>
     <% @c+=1%>
     <tr>
+      <td><%= @c %></td>
       <% attributes.each do |attribute| %>
         <% if attribute != 'es_id'%>
           <% if data_unit['_source']['Class/ASD Traits '] == 'Yes'%>

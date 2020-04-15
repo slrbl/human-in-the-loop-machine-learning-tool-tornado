@@ -14,9 +14,9 @@ RUN pip install requests
 RUN pip install sklearn
 RUN pip install argparse
 
-RUN mkdir /myapp
-COPY . /myapp
-WORKDIR /myapp
+RUN mkdir /tornado
+COPY . /tornado
+WORKDIR /tornado
 
 RUN gem install sqlite3 -v '1.3.13' --source 'https://rubygems.org/'
 RUN gem update --system
