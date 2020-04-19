@@ -10,10 +10,34 @@
 
 <%= render "dataset_desc" %>
 
-
 <br>
 
-<%= render "navigation" %>
+
+
+
+
+
+          <table width="100%">
+  <tr>
+    <td align="left">
+<div class="buttons_bar_left">
+  <a href = '/datasets' ><button class="button">My datasets</button></a>
+  <a href = '/datasets/new' ><button class="button">Add dataset</button></a>
+</div>
+</td>
+<td>
+<div class="buttons_bar_right">
+
+<a href = '/download/<%= @dataset.id %>' ><button class="button">Download</button></a>
+            <a href = '/datasets/<%= @dataset.id %>' ><button class="button">Dataset</button></a>
+
+<a href = '/datasets/select_threshold/<%= @dataset.id %>' ><button class="button">Label seed</button></a>
+<a href = '/seeds/<%= @dataset.id %>' ><button class="button">Check seed</button></a>
+<a href = '/models/new/<%= @dataset.id %>' ><button class="button">Auto Label</button></a>
+</div>
+</td>
+</tr>
+</table>
 
 <br>
 
@@ -32,7 +56,7 @@
       <% if attribute != 'es_id'%>
         <% if attribute == @human_label_key%>
           <th><%= 'Human label'  %></th>
-        <% elsif attribute=='auto_proba'
+                  <% elsif attribute=='auto_proba'
           %>
           <th>Confidence</th>
         <% else %>
@@ -41,12 +65,10 @@
       <% end %>
     <% end %>
   </tr>
-  <% all_auto_labelled = true %>
   <% @data['hits']['hits'].each do |data_unit| %>
-
     <% if data_unit['_source'][@human_label_key] != 'empty' %>
       <% @u+=1%>
-    <% end %>
+    
     <% @c+=1%>
     <% if @dataset.inputs_count == @c and @dataset.status== "processing"%>
      <% @dataset.update(status:"ready")%>
@@ -54,14 +76,6 @@
     <tr>
       <td><%= @c %></td>
       <% attributes.each do |attribute| %>
-
-
-
-     <% if data_unit['_source']['auto_label'] == '' %>
-     <% all_auto_labelled = false %>
-     <% end %>
-
-
         <% if attribute != 'es_id'%>
           <% if data_unit['_source']['Class/ASD Traits '] == 'Yes'%>
             <% @t = 1%>
@@ -77,7 +91,7 @@
             <td>
               <% if attribute!= @human_label_key and data_unit['_source'][attribute]!='empty'%>
                 <% if attribute == 'auto_proba' %>
-                  <%= (data_unit['_source'][attribute].to_f*100).round(2) %>%
+                                    <%= (data_unit['_source'][attribute].to_f*100).round(2) %>%
                   <progress value="<%= (data_unit['_source'][attribute].to_f).round(2) %>" max="1"> >
                 <% elsif attribute == 'auto_label' %>
                 <% else %>
@@ -86,15 +100,17 @@
               <% end %>
 
               <% if (attribute == @human_label_key and data_unit['_source'][attribute]!='empty') or (attribute == "auto_label" and data_unit['_source'][attribute]!='')%>
-                <%if data_unit['_source'][attribute]=='good' %>
-                  <span style="background-color: lime;padding:1px;padding-right:4px;padding-left:4px;border-radius:2px;align-content: center;"><%= data_unit['_source'][attribute] %></span>
-                <% elsif data_unit['_source'][attribute]=='bad' %>
+
+                                  <%if data_unit['_source'][attribute]=='good' %>
+                      <span style="background-color: lime;padding:1px;padding-right:4px;padding-left:4px;border-radius:2px;align-content: center;"><%= data_unit['_source'][attribute] %></span>
+                  <% elsif data_unit['_source'][attribute]=='bad' %>
                   <span style="background-color: orangered;padding:1px;padding-right:4px;padding-left:4px;border-radius:2px;align-content: center;"><%= data_unit['_source'][attribute] %></span>
                   <%else%>
+
+
                   <%= data_unit['_source'][attribute] %>
+
                   <% end %>
-
-
 
 
               <% end %>
@@ -104,6 +120,7 @@
         <% end %>
       <% end %>
     </tr>
+    <% end %>
   <% end %>
 </table>
 <!--
@@ -113,11 +130,3 @@
 -->
 <br>
 <% @dataset.update(:human_labels_count => @u) %>
-
-<% if all_auto_labelled == true %>
-
-<% @dataset.update(:status => "ready") %>
-
-<% end %>
-
-

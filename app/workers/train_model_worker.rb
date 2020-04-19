@@ -1,6 +1,7 @@
 class TrainModelWorker
   include Sidekiq::Worker
   def perform(params_features,dataset_id)
+    data_set=Dataset.find(dataset_id)
     if params_features.class == String
       # Create a bag of words to train a NLP text classififcation model
       features = {}
@@ -33,6 +34,7 @@ class TrainModelWorker
       cmd = "python train_nlp.py -f \"" + training_script_args
     end
     logger.debug("Training script launched witht the following command: " + cmd)
+     data_set.update(:status => 'labelling')
     cmd_result = `#{cmd}`
     logger.debug(cmd_result)
   end

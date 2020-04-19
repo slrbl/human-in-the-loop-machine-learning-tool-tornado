@@ -20,13 +20,19 @@ class ModelsController < ApplicationController
   end
 
   def create
+
+      data_set = Dataset.find(params[:id])
+
+      data_set.update(:status => 'labelling')
+
+      es_id = data_set.es_id
+
+      update_result = RestClient.post(ES_SERVER + ES_INDEX + '/_update_by_query','{"query":{"bool":{"must":[{"match":{"es_id": "'+es_id+'"}}]}},"script" : "ctx._source.auto_label = \"\";ctx._source.auto_proba = 0;","size": 10000}',:content_type => 'application/json')
+      logger.debug(update_result)
+    
     TrainModelWorker.perform_async(params[:features],params[:id])
-    redirect_to '/datasets/'+params[:id]
-    # Parse the es dataset
-    #es_id = Dataset.find(params[:id]).es_id
-    #request = contruct_es_request(JSON.dump( {"query": {"bool": {"must": [{ "match": { "es_id": es_id}},{ "match": { "es_id": es_id} }]}},"size": 2} ))
-    #response = make_http_request(request,es_uri,request_options)
-    #@es_data = JSON.parse(response.body)
+     redirect_to '/seeds/'+params[:id]
+    
   end
 
   private

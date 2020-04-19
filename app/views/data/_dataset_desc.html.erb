@@ -1,0 +1,38 @@
+<div class = "desc">
+  <table width="100%">
+    <tr>
+      <td width="50%">
+        <b>ID: </b><%= @dataset.es_id %>
+        <br>
+        <b>Owner: </b><%= User.find(@dataset.user_id).email %>
+        <br>
+        <b>Inputs count: </b><%= @dataset.inputs_count %>
+        <br>
+        <b>Seed size: </b><%= @dataset.human_labels_count %>
+        <br>
+        <b>Description: </b>
+        <% if @dataset.description!="" and @dataset.description!=nil%>
+        <br>
+        <%= @dataset.description %>
+        <% else %>
+          None
+        <% end %>
+      </td>
+      <td style="text-align:right">
+        <span style="font-size:20px"><%= @dataset.name %></span>
+        <br>
+        <br>
+        <% if @dataset.status == "ready" %>
+        <span style="color:green;background-color: lime;padding:3px;padding-right:6px;padding-left:6px;border-radius:2px;align-content: center;">
+        <b><%= @dataset.status %></b>
+        </span>
+        <% else %>
+        <span style="color:orangered;background-color: orange;padding:3px;padding-right:6px;padding-left:6px;border-radius:2px;align-content: center;">
+        <b> <%= @dataset.status %>..</b>
+                <% end %>
+
+        </span>
+      </td>
+    </tr>
+  </table>
+</div>

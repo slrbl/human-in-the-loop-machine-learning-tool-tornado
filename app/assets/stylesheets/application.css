@@ -43,6 +43,7 @@ body{
  }
 
 
+
  table {
 
    border-collapse: collapse;
@@ -63,6 +64,179 @@ body{
  }
 
 
+
+
+
+.responsive-table {
+   border-collapse: collapse;
+   width: 96%;
+   margin-left: 2%;
+   border-width: 1px;
+   font-size: 12px;
+   border-color:black;
+} 
+
+.responsive-table th{
+  padding: 3px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  text-align: center;
+  color: gainsboro;
+  border-style: solid;
+  border-width: 0.1px;
+  border-color: grey;
+  background-color: #2b506e;
+  text-decoration: none;
+}
+
+.responsive-table td{
+  padding: 3px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  text-align: left;
+  color: #24435c;
+  border-style: solid;
+  border-width: 0.1px;
+  border-color: grey;
+}
+
+
+
+
+
+
+
+
+.flat-table {
+  display: block;
+  font-family: sans-serif;
+  -webkit-font-smoothing: antialiased;
+  font-size: 115%;
+  overflow: auto;
+  width: auto;
+  
+  th {
+    background-color: rgb(112, 196, 105);
+    color: white;
+    font-weight: normal;
+    padding: 20px 30px;
+    text-align: center;
+  }
+  td {
+    background-color: rgb(238, 238, 238);
+    color: rgb(111, 111, 111);
+    padding: 20px 30px;
+  }
+}
+
+
+
+.esponsive-table {
+  background: #f5f5f5;
+  border-collapse: separate;
+  box-shadow: inset 0 1px 0 #fff;
+  font-size: 12px;
+  line-height: 24px;
+  margin: 0px auto;
+  text-align: left;
+  width: 96%;
+} 
+
+.esponsive-table th {
+  background: white, linear-gradient(#777, #444);
+  border-left: 1px solid #555;
+  border-right: 1px solid #777;
+  border-top: 1px solid #555;
+  border-bottom: 1px solid #333;
+  box-shadow: inset 0 1px 0 #999;
+  color: #fff;
+  font-weight: bold;
+  padding: 10px 15px;
+  position: relative;
+  text-shadow: 0 1px 0 #000;  
+}
+
+.esponsive-table th:after {
+  background: linear-gradient(rgba(255,255,255,0), rgba(255,255,255,.08));
+  content: '';
+  display: block;
+  height: 25%;
+  left: 0;
+  margin: 1px 0 0 0;
+  position: absolute;
+  top: 25%;
+  width: 100%;
+}
+
+
+.esponsive-table th:first-child {
+  border-left: 1px solid #777;  
+  box-shadow: inset 1px 1px 0 #999;
+}
+
+
+.esponsive-table th:last-child {
+  box-shadow: inset -1px 1px 0 #999;
+}
+
+
+.esponsive-table td {
+  border-right: 1px solid #fff;
+  border-left: 1px solid #e8e8e8;
+  border-top: 1px solid #fff;
+  border-bottom: 1px solid #e8e8e8;
+  padding: 10px 15px;
+  position: relative;
+  transition: all 300ms;
+}
+
+
+.esponsive-table td:first-child {
+  box-shadow: inset 1px 0 0 #fff;
+} 
+
+
+.esponsive-table td:last-child {
+  border-right: 1px solid #e8e8e8;
+  box-shadow: inset -1px 0 0 #fff;
+} 
+
+
+.esponsive-table tr {
+  background: white; 
+}
+
+
+.esponsive-table tr:nth-child(odd) td {
+  background: #f1f1f1 white; 
+}
+
+.esponsive-table tr:last-of-type td {
+  box-shadow: inset 0 -1px 0 #fff; 
+}
+
+.esponsive-table tr:last-of-type td:first-child {
+  box-shadow: inset 1px -1px 0 #fff;
+} 
+
+.esponsive-table tr:last-of-type td:last-child {
+  box-shadow: inset -1px -1px 0 #fff;
+} 
+
+/*
+
+.esponsive-table tbody:hover td {
+  color: transparent;
+  text-shadow: 0 0 3px #aaa;
+}
+
+.esponsive-table tbody:hover tr:hover td {
+  color: #444;
+  text-shadow: 0 1px 0 #fff;
+}
+
+*/
+
 .error{
   border-color: #ff3300;
   color:red;
@@ -77,14 +251,13 @@ body{
 }
 
  .button {
-  background-color:#cccccc;
+  background-color:#24435c;
   border-radius: 2px;
   border-style: solid;
   border-width: 1px;
-
   border: none;
-  color: black;
-  padding: 5px 32px;
+  color: white;
+  padding: 3px 16px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
@@ -93,14 +266,13 @@ body{
 }
 
 input[type=submit] {
-  background-color:#cccccc;
+  background-color:#24435c;
   border-radius: 2px;
   border-style: solid;
   border-width: 1px;
-
   border: none;
-  color: black;
-  padding: 5px 32px;
+  color: white;
+  padding: 3px 16px;
   text-align: center;
   text-decoration: none;
   display: inline-block;

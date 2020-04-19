@@ -56,3 +56,5 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 gem 'rest-client'
 gem 'devise'
 gem 'sidekiq'
+gem 'sidekiq-status'
+gem 'sidekiq_status'

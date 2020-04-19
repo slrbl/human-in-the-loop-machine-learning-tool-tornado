@@ -23,6 +23,11 @@ Rails.application.routes.draw do
   get '/datasets/select_threshold/:id', to: 'data#select_threshold'
   post 'update_docs', to: 'data#update_docs'
 
+
+
+  get '/seeds/:id', to: 'data#seed'
+
+
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
   get "/download/:id" , to: 'data#download_data'
 

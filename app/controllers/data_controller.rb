@@ -22,15 +22,37 @@ class DataController < ApplicationController
       :user_id => current_user.id
     )
     # Save data in Elasticseach
-    DataAddWorker.perform_async(data_set.id)
+    job_id = DataAddWorker.perform_async(data_set.id)
     flash[:data_creation] = 'Your dataset is being processed'
+
+    if session[:creation_jobs] == nil
+      session[:creation_jobs] = {}
+    end
+    session[:creation_jobs][data_set.id] = job_id
+
     sleep 10
     redirect_to '/datasets/' + data_set.id.to_s
   end
 
 
   def show
+
     @dataset = Dataset.find(params[:id])
+
+
+    #if session[:jobs]
+    @human_label_key = @dataset.es_id + '_human_label'
+    #request = contruct_es_request(JSON.dump( {"query": {"bool": {"must": [{ "match": { "es_id": @dataset.es_id } }]}},"size": 10000} ))
+    request = contruct_es_request(JSON.dump({"query":{"bool":{"must":[{"function_score": {"functions": [{"random_score": {"seed": rand(1000).to_s}}]}},{"match":{"es_id": @dataset.es_id}}]}},"size":10000}))
+
+    response = make_http_request(request,es_uri,request_options)
+    @data = JSON.parse(response.body)
+    puts response.body
+  end
+
+    def seed
+    @dataset = Dataset.find(params[:id])
+    #if session[:jobs]
     @human_label_key = @dataset.es_id + '_human_label'
     request = contruct_es_request(JSON.dump( {"query": {"bool": {"must": [{ "match": { "es_id": @dataset.es_id } }]}},"size": 10000} ))
     response = make_http_request(request,es_uri,request_options)
@@ -40,11 +62,18 @@ class DataController < ApplicationController
 
 
   def label_data
+    size=params[:size]
     @dataset = Dataset.find(params[:id])
-    request = contruct_es_request(JSON.dump({"query":{"bool":{"must":[{"match":{"es_id": @dataset.es_id}}]}},"size":10000}))
+    request = contruct_es_request(JSON.dump({"query":{"bool":{"must":[{"function_score": {"functions": [{"random_score": {"seed": rand(1000).to_s}}]}},{"match":{"es_id": @dataset.es_id}}]}},"size":size}))
+    #request = contruct_es_request(JSON.dump({"query":{"bool":{"must":[ {"match":{"es_id": @dataset.es_id}}]}},"size":10}))
+    #request = contruct_es_request(JSON.dump({"size": 10,"query": {"function_score": {"functions": [{"random_score": {"seed": "100"}}]}}}))
     response = make_http_request(request,es_uri,request_options)
     @data = JSON.parse(response.body)
   end
+
+    #request = contruct_es_request(JSON.dump({"query":{"bool":{"must":[{"function_score": {"functions": [{"random_score": {"seed": "100"}}]}},{"match":{"es_id": @dataset.es_id}}]}},"size":10}))
+
+  
 
 
   def select_threshold
@@ -77,7 +106,7 @@ class DataController < ApplicationController
         logger.debug(update_result)
       end
     end
-    redirect_to '/datasets/'+params[:data_id].to_s
+    redirect_to '/seeds/'+params[:data_id].to_s
   end
 
 
@@ -97,18 +126,31 @@ class DataController < ApplicationController
     @csv = ""
     attributes = []
     @data['hits']['hits'][0]['_source'].each do |attribute|
+      if attribute[0]!="es_id" and attribute[0]!="auto_proba" and !attribute[0].include?"_human_label"
       attributes << attribute[0]
       @csv += attribute[0]+','
+    
     end
+  end
     @csv[-1] = "\n"
     @data['hits']['hits'].each do |data_unit|
       attributes.each do |attribute|
-        @csv += data_unit['_source'][attribute].to_s+ ','
+         if attribute!="es_id" and attribute!="auto_proba" and !attribute.include?"_human_label"
+        if attribute == "text"
+          cleaned = data_unit['_source'][attribute].to_s.gsub(",","")
+          @csv += cleaned
+        else
+          @csv += data_unit['_source'][attribute].to_s+ ','
+        end
       end
+    end
       @csv[-1] = "\n"
     end
+  
+    
     send_data(@csv, :type => 'text/plain', :disposition => 'attachment', :filename => @dataset.name+'.csv')
-  end
+  
+end 
 
   def index
     @user_datasets = Dataset.where(:user_id => current_user.id).order('id DESC')

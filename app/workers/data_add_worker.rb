@@ -1,5 +1,7 @@
 class DataAddWorker
   include Sidekiq::Worker
+  include Sidekiq::Status::Worker
+  include SidekiqStatus::Worker
   require 'csv'
 
   def perform(data_set_id)
@@ -10,7 +12,7 @@ class DataAddWorker
     data_hash.each do |line|
       es_ready = '{'
       data.headers.each do |col|
-        line_non_return = line[col].to_s.sub("\"","MMMM")
+        line_non_return = line[col].to_s.gsub("\"","MMMM")
         es_ready = es_ready + '"' + col + '":"' + line_non_return + '",' unless col == nil
       end
       es_ready = es_ready + '"es_id":"'+data_set.es_id + '",'
@@ -21,7 +23,8 @@ class DataAddWorker
       data_set.update(:status => 'processing')
       RestClient.post(ES_SERVER + ES_INDEX ,es_ready,:content_type => 'application/json')
       data_set.update(:inputs_count => data_hash.count)
-      data_set.update(:status => "ready")
+     #data_set.update(:status => "ready")
+
   end
 end
 end

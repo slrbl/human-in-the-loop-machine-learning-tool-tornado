@@ -1,26 +1,8 @@
 
 <% human_label_key = @dataset.es_id+'_human_label' %>
 
-<div class = "desc">
-  <table width="100%">
-    <tr>
-      <td width="50%">
-        <b>ID: </b><%= @dataset.es_id %>
-        <br>
-        <b>Owner: </b><%= User.find(@dataset.user_id).email %>
-        <br>
-        <b>Inputs count: </b><%= @dataset.inputs_count %>
-        <br>
-        <b>Description: </b>
-        <br>
-        <%= @dataset.description %>
-      </td>
-      <td style="text-align:right">
-        <span style="font-size:20px"><%= @dataset.name %></span>
-      </td>
-    </tr>
-  </table>
-</div>
+<%= render "dataset_desc" %>
+
 
 <br>
 
@@ -41,26 +23,32 @@
       </td>
       <td>
         <div class="buttons_bar_right">
+          <a href = '/datasets/<%= @dataset.id %>' ><button class="button">Dataset</button></a>
+          <a href = '/seeds/<%= @dataset.id %>' ><button class="button">Check seed</button></a>
+          <!--
           <a href = '/datasets/select_threshold/<%= @dataset.id %>' ><button class="button">Label seed</button></a>
-          <a href = '/models/new/<%= @dataset.id %>' ><button class="button">Train</button></a>
-          <%= submit_tag("Update") %>
+          <a href = '/models/new/<%= @dataset.id %>' ><button class="button">Train</button></a>-->
+          <%= submit_tag("Update labels") %>
         </div>
       </td>
     </tr>
   </table>
   <br>
-  <table id="indextable" border=1>
+<table class="responsive-table">
     <tr style="background-color:#e2e6e9">
-      <td>Human label</td>
+      <th>Human label</th>
         <% attributes.each do |attribute| %>
           <% if attribute != 'es_id'%>
-            <td>
+            <th>
               <% if attribute == human_label_key %>
                 Human label
+                        <% elsif attribute=='auto_proba'%>
+          Confidence
               <% else %>
+
                 <%= attribute  %>
               <% end %>
-            </td>
+            </th>
           <% end %>
         <% end %>
     </tr>
@@ -77,12 +65,26 @@
             <% if attribute != 'es_id'%>
               <td>
                 <% if human_label_key == attribute and data_unit['_source'][attribute]=='empty'%>
-                  <%= data_unit['_source'][attribute] %>
+
+
                 <%else%>
                   <% if attribute == 'auto_proba' %>
-                  <%= (data_unit['_source'][attribute].to_f).round(2) %>
+                  <%= (data_unit['_source'][attribute].to_f*100).round(2) %>%
+                  <progress value="<%= (data_unit['_source'][attribute].to_f).round(2) %>" max="1"> >
                   <% else %>
+
+
+
+                   <%if data_unit['_source'][attribute]=='good' %>
+                      <span style="background-color: lime;padding:1px;padding-right:4px;padding-left:4px;border-radius:2px;align-content: center;"><%= data_unit['_source'][attribute] %></span>
+                  <% elsif data_unit['_source'][attribute]=='bad' %>
+                  <span style="background-color: orangered;padding:1px;padding-right:4px;padding-left:4px;border-radius:2px;align-content: center;"><%= data_unit['_source'][attribute] %></span>
+                  <%else%>
+
+
                   <%= data_unit['_source'][attribute] %>
+
+                  <% end %>
                   <% end %>
                 <%end%>
               </td>

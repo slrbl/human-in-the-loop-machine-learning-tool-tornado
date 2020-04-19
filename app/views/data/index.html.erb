@@ -8,14 +8,14 @@
 <br>
 
 <% if @user_datasets.count >0 %>
-<table border=1>
+<table class="responsive-table">
   <tr style="background-color:#e2e6e9">
-    <td width="20%"><b>Title</b></td>
-    <td width="15%"><b>Inputs #</td>
-    <td width="15%"><b>Creation date</td>
-    <td width="40%"><b>Description</td>
-    <td width="15%"><b>owner</b></td>
-    <td width="5%"><b>Status</td>
+    <th width="20%"><b>Title</b></th>
+    <th width="15%"><b>Inputs #</th>
+    <th width="15%"><b>Creation date</th>
+    <th width="40%"><b>Description</th>
+    <th width="15%"><b>owner</b></th>
+    <th width="5%"><b>Status</th>
   </tr>
   <% @user_datasets.all.each do |data_set| %>
   <tr>
