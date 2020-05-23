@@ -4,9 +4,7 @@
 
 <h3>Live demo</h3>
 
-<center>
 [![Alt text](https://img.youtube.com/vi/xcX-95iGKxY/0.jpg)](https://www.youtube.com/watch?v=xcX-95iGKxY)
-</center>
 
 <h3>Data flow</h3>
 <div align="center"><img src="https://media-exp1.licdn.com/dms/image/C5612AQFG1h7oypt4tA/article-inline_image-shrink_1500_2232/0?e=1591833600&v=beta&t=-ENm3VL5yDIixSgOhkDnlnci0-arSJuKlLUY0Nc0oow" width="70%"/></div>
