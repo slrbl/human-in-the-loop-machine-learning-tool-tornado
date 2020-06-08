@@ -9,7 +9,7 @@
 <h3>Data flow</h3>
 <div align="center"><img src="https://media-exp1.licdn.com/dms/image/C5612AQFG1h7oypt4tA/article-inline_image-shrink_1500_2232/0?e=1591833600&v=beta&t=-ENm3VL5yDIixSgOhkDnlnci0-arSJuKlLUY0Nc0oow" width="70%"/></div>
 
-<h3>Technological stack</h3>
+<h3>Technology stack</h3>
 <div align="center"><img src="https://media-exp1.licdn.com/dms/image/C5612AQEUuz1BIEnDRQ/article-inline_image-shrink_1500_2232/0?e=1591833600&v=beta&t=HKpCMxAkte9CSnuiClR892uoKNFaSSX_rwQ5Isv5gBQ" width="70%"/></div>
 
 
