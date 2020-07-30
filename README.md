@@ -7,10 +7,10 @@
 [![Alt text](https://img.youtube.com/vi/xcX-95iGKxY/0.jpg)](https://www.youtube.com/watch?v=xcX-95iGKxY)
 
 <h3>Data flow</h3>
-<div align="center"><img src="https://media-exp1.licdn.com/dms/image/C5612AQFG1h7oypt4tA/article-inline_image-shrink_1500_2232/0?e=1591833600&v=beta&t=-ENm3VL5yDIixSgOhkDnlnci0-arSJuKlLUY0Nc0oow" width="70%"/></div>
+<div align="center"><img src="https://media-exp1.licdn.com/dms/image/C5612AQFG1h7oypt4tA/article-inline_image-shrink_1500_2232/0?e=1601510400&v=beta&t=EF9FHAHr0gC-A7YUXg689tvjW3rFdJj_B5cw3lEhwbo" width="70%"/></div>
 
 <h3>Technology stack</h3>
-<div align="center"><img src="https://media-exp1.licdn.com/dms/image/C5612AQEUuz1BIEnDRQ/article-inline_image-shrink_1500_2232/0?e=1591833600&v=beta&t=HKpCMxAkte9CSnuiClR892uoKNFaSSX_rwQ5Isv5gBQ" width="70%"/></div>
+<div align="center"><img src="https://media-exp1.licdn.com/dms/image/C5612AQEUuz1BIEnDRQ/article-inline_image-shrink_1500_2232/0?e=1601510400&v=beta&t=0pZlmRvEP4wXdgkdsTuXnf9cTIdI2sXi_fnsB9yhBAI" width="70%"/></div>
 
 
 
