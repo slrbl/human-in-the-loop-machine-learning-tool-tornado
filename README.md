@@ -1,4 +1,4 @@
-<h1>Tornado Human-In-The-Loop Machine Learning</h1>
+<h1>Tornado Human in the loop Machine Learning</h1>
 <h2>What is Tornado</h2>
 <p>Tornado is an open source Human-in-the-loop machine learning tool. It helps you label your dataset on the fly while training your model through a simple web user interface.</p>
 
