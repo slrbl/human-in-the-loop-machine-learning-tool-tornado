@@ -1,6 +1,6 @@
 <h1>Tornado Active Learning</h1>
 <h2>What is Tornado</h2>
-<p>Tornado is an open source Active Learning (human in the loop machine learning) tool. It helps you label your dataset on the fly while training your model through a simple user interface.</p>
+<p>Tornado is an open source Human-in-the-loop machine learning tool. It helps you label your dataset on the fly while training your model through a simple web user interface.</p>
 
 <h3>Live demo</h3>
 
