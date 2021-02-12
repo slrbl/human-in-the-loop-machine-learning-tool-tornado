@@ -29,10 +29,10 @@ class ModelsController < ApplicationController
 
       update_result = RestClient.post(ES_SERVER + ES_INDEX + '/_update_by_query','{"query":{"bool":{"must":[{"match":{"es_id": "'+es_id+'"}}]}},"script" : "ctx._source.auto_label = \"\";ctx._source.auto_proba = 0;","size": 10000}',:content_type => 'application/json')
       logger.debug(update_result)
-    
+
     TrainModelWorker.perform_async(params[:features],params[:id])
      redirect_to '/seeds/'+params[:id]
-    
+
   end
 
   private

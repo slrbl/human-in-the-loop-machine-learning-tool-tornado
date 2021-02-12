@@ -47,7 +47,7 @@ class DataController < ApplicationController
 
     response = make_http_request(request,es_uri,request_options)
     @data = JSON.parse(response.body)
-    puts response.body
+    #puts response.body
   end
 
     def seed
@@ -57,7 +57,7 @@ class DataController < ApplicationController
     request = contruct_es_request(JSON.dump( {"query": {"bool": {"must": [{ "match": { "es_id": @dataset.es_id } }]}},"size": 10000} ))
     response = make_http_request(request,es_uri,request_options)
     @data = JSON.parse(response.body)
-    puts response.body
+    #puts response.body
   end
 
 
@@ -73,7 +73,7 @@ class DataController < ApplicationController
 
     #request = contruct_es_request(JSON.dump({"query":{"bool":{"must":[{"function_score": {"functions": [{"random_score": {"seed": "100"}}]}},{"match":{"es_id": @dataset.es_id}}]}},"size":10}))
 
-  
+
 
 
   def select_threshold
@@ -129,7 +129,7 @@ class DataController < ApplicationController
       if attribute[0]!="es_id" and attribute[0]!="auto_proba" and !attribute[0].include?"_human_label"
       attributes << attribute[0]
       @csv += attribute[0]+','
-    
+
     end
   end
     @csv[-1] = "\n"
@@ -146,11 +146,11 @@ class DataController < ApplicationController
     end
       @csv[-1] = "\n"
     end
-  
-    
+
+
     send_data(@csv, :type => 'text/plain', :disposition => 'attachment', :filename => @dataset.name+'.csv')
-  
-end 
+
+end
 
   def index
     @user_datasets = Dataset.where(:user_id => current_user.id).order('id DESC')
@@ -161,9 +161,10 @@ end
 
 private
 def contruct_es_request(body)
-  puts  "++++++++++++++++++++++++++++++++++"
+  """puts  '++++++++++++++++++++++++++++++++++'
   puts es_uri
-  puts  "++++++++++++++++++++++++++++++++++"
+  puts  '++++++++++++++++++++++++++++++++++'
+  """
   request = Net::HTTP::Get.new(es_uri)
 
   request.content_type = "application/json"
