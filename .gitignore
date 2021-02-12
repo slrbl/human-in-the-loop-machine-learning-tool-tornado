@@ -7,3 +7,4 @@ tmp/cache/*
 public/uploads/*
 log/*
 dump.rdb
+.DS_Store
