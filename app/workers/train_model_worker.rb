@@ -29,9 +29,9 @@ class TrainModelWorker
 
     if selected_features.length >= 1
       training_script_args = selected_features.join(',') + "\" -l "+human_label_key + " -i \"" + es_id + "\" -s \"" + ES_SERVER + ES_INDEX + "\""
-      cmd = "python ML/train.py -f \"" + training_script_args
+      cmd = "python brain/train.py -f \"" + training_script_args
     else
-      cmd = "python ML/train_nlp.py -f \"" + training_script_args
+      cmd = "python brain/train_nlp.py -f \"" + training_script_args
     end
     logger.debug("Training script launched witht the following command: " + cmd)
      data_set.update(:status => 'labelling')
