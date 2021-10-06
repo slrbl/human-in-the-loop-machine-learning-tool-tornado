@@ -1,9 +1,8 @@
-FROM debian:latest
+FROM python:3.8-slim
 
 RUN apt-get update
 RUN echo "y" | apt-get install libsqlite3-dev
 RUN apt-get update && apt-get install -y build-essential nodejs
-RUN apt-get -y install python python-pip
 RUN apt-get -y install ruby ruby-dev
 RUN apt-get -y install git
 RUN apt-get install zlib1g-dev
