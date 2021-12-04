@@ -5,6 +5,7 @@ tmp/*
 tmp/cache/*
 /elasticsearch/*
 public/uploads/*
+public/datasets/*
 log/*
 dump.rdb
 .DS_Store
