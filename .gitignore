@@ -2,6 +2,7 @@ Gemfile.lock
 docker_data/*
 db/*.sqlite3
 tmp/*
+vendor/*
 tmp/cache/*
 /elasticsearch/*
 public/uploads/*
