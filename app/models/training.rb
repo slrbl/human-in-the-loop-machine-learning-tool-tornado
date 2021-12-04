@@ -1,0 +1,2 @@
+class Training < ApplicationRecord
+end

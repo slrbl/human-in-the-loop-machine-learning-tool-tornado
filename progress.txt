@@ -1,0 +1,4 @@
+## 20210423
+- Login/Signup forms and buttons enhanced
+- Data membership done (add member with check in controller)
+- Flash messages using semantic ui

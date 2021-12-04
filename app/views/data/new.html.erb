@@ -1,23 +1,54 @@
 
 
+<div class="ui container" style="background:whitesmoke;padding:5px;margin-top:10px;border-radius:5px;border-style:solid;border-color:gainsboro;border-width:1px">
 
-<br>
-<div class="buttons_bar_left">
-  <a href = '/datasets' ><button class="button">My datasets</button></a>
-  <a href = '/datasets/new' ><button class="button">Add dataset</button></a>
+<div class="ui two column grid">
+  <div class="column"  style="width:60%">
+</div>
+
+  <div class="column"  style="width:40%">
+    <div align="right">
+    <a href = '/datasets' >
+    <button class="ui mini blue button" style="background:#314455">
+      <i class="database icon"></i>
+      My Datasets
+    </button>
+    </a>
+    <a href = '/datasets/new' >
+    <button class="ui mini blue button" style="background:#314455">
+      <i class="arrow alternate circle down icon"></i>
+      Import Dataset
+    </button>
+    </a>
+    </div>
+  </div>
+</div>
 </div>
 
 <br>
+<br>
+<br>
 
-<div class="new_data_form">
-  <h3>New Dataset</h3>
-  <%= form_for @dataset, url: {action: "create"},multipart: true, html: {class: "nifty_form",enctype:"multipart/form-data"} do |f| %>
+
+
+<div class="ui tree column grid">
+  <div class="column" style="width:10%">
+    </div>
+  <div class="column" style="width:80%;background:whitesmoke;border-radius:5px;padding:40px;">
+
+
+  <h3>Add new Dataset</h3>
+  <%= form_for @dataset, url: {action: "create"},multipart: true, html: {class: "ui form",enctype:"multipart/form-data"} do |f| %>
+
     <table>
       <tr>
         <td>Title</td><td><%= f.text_field :name, :size => "50px"%></td>
       </tr>
       <tr>
         <td>Description</td><td><%= f.text_area :description, :size => "48x4" %></td>
+      </tr>
+      <tr>
+        <td>Type</td><td><%= f.select :data_type, options_for_select([["Choose your data type", ""], "Image","Structured","Text"]), :class => 'genForm_dropBox' %></td>
       </tr>
       <tr>
         <td>Source</td><td><%= file_field_tag 'file' %></td>
@@ -28,3 +59,6 @@
     </table>
   <% end %>
 </div>
+<div class="column" style="width:10%">
+  </div>
+  </div>

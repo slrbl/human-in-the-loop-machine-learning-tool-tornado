@@ -1,0 +1,12 @@
+Labelling Strategy
+
+
+1. Label 100
+2. Add 50 entries with the less auto lebelling confidence
+RESULT: BAD
+
+
+TODO
+2. Make the user able to download a rails application to be used to consume the model
+OR
+Use FastAPI https://towardsdatascience.com/how-to-deploy-machine-learning-models-as-a-microservice-using-fastapi-b3a6002768af

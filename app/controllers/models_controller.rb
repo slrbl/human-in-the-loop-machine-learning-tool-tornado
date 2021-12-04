@@ -4,6 +4,8 @@ class ModelsController < ApplicationController
   end
 
   def index
+    @dataset = Dataset.find(params[:id])
+    @tainings = Training.where(es_id:@dataset.es_id)
   end
 
   def show
@@ -20,22 +22,16 @@ class ModelsController < ApplicationController
   end
 
   def create
-
-      data_set = Dataset.find(params[:id])
-
-      data_set.update(:status => 'labelling')
-
-      es_id = data_set.es_id
-
-      update_result = RestClient.post(ES_SERVER + ES_INDEX + '/_update_by_query','{"query":{"bool":{"must":[{"match":{"es_id": "'+es_id+'"}}]}},"script" : "ctx._source.auto_label = \"\";ctx._source.auto_proba = 0;","size": 10000}',:content_type => 'application/json')
-      logger.debug(update_result)
-
+    data_set = Dataset.find(params[:id])
+    data_set.update(:status => 'labelling')
+    update_result = RestClient.post(ES_SERVER + ES_INDEX + '/_update_by_query','{"query":{"bool":{"must":[{"match":{"es_id": "'+data_set.es_id+'"}}]}},"script" : "ctx._source.auto_label = \"\";","size": 10000}',:content_type => 'application/json')
+    logger.debug(update_result)
     TrainModelWorker.perform_async(params[:features],params[:id])
-     redirect_to '/seeds/'+params[:id]
-
+    redirect_to '/seeds/'+params[:id]
   end
 
   private
+
   def contruct_es_request(body)
     request = Net::HTTP::Get.new(es_uri)
     request.content_type = "application/json"

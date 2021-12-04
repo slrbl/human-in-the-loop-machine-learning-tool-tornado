@@ -11,12 +11,15 @@
 <br>
 <%d={}%>
 <%= form_tag('/models/create', :method => 'post', :id => 'ff') do %>
+
 <% features = params[:features]%>
+<% if Dataset.find(params[:id]).data_type !='image'%>
 <% features.each do |feature| %>
   <% if feature != 'es_id' and feature != 'data_label' and feature != 'auto_label' and feature != 'auto_proba' and !feature.include?"human_label"%>
 
     <br>
   <% end %>
+<% end %>
 <% end %>
 <br>
 <%= hidden_field_tag 'id', params[:id] %>

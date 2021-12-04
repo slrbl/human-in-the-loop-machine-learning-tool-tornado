@@ -4,9 +4,13 @@
 
 <br>
 
-<div class="login_form" >
+<div class="ui tree column grid">
+  <div class="column" style="width:20%">
+    </div>
+  <div class="column" style="width:60%;background:whitesmoke;border-radius:5px;padding:40px;">
+
 <h3>Sign up</h3>
-<%= form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
+<%= form_for(resource, as: resource_name, url: registration_path(resource_name), html: {class: "ui form",enctype:"multipart/form-data"}) do |f| %>
 <table>
   <tr><td><%= f.label :email %></td><td><%= f.email_field :email, autofocus: true, autocomplete: "email",size: "40px" %></td></tr>
   <tr><td><%= f.label :password %></td><td>
@@ -27,3 +31,6 @@
 </table>
 <% end %>
 </div>
+<div class="column" style="width:20%">
+  </div>
+  </div>

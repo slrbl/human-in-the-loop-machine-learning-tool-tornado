@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  acc: 1.5
+  val_acc: 1.5
+  dataset_id: 1
+  es_id: MyString
+
+two:
+  acc: 1.5
+  val_acc: 1.5
+  dataset_id: 1
+  es_id: MyString

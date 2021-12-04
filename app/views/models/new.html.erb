@@ -1,99 +1,57 @@
 
 
 
+<%= render "navigation" %>
 
-<div class = "desc">
-  <div style="font-size:20px;text-align:right"><%= @dataset.name %></div>
-  <br><br>
-  <b>ID: </b><%= @dataset.es_id %>
+<% if flash[:data_creation] %>
+  <div class="positive_flash">
+    <%= flash[:data_creation] %>
+  </div>
   <br>
-  <b>Owner: </b><%= User.find(@dataset.user_id).email %>
-  <br>
-  <b>Inputs count: </b><%= @dataset.inputs_count %>
-  <br>
-  <b>Description: </b>
-  <br>
-  <%= @dataset.description %>
-
-</div>
-
-<br>
-<div style="width:96%;margin-left:2%;text-align:right">
-<a href = '/datas/label/<%= @dataset.id %>' ><button class="button">Label it</button></a>
-<a href = '/models/new/<%= @dataset.id %>' ><button class="button">Auto Label</button></a>
-<a href = '/datas' ><button class="button">My datasets</button></a>
-<a href = '/datas/new' ><button class="button">Add dataset</button></a>
-</div>
-
-<br>
-
-<!--
-<div style="background-color:#e2e6e9;border-style: solid;border-width: 1px;border-color:#d4d9de;font-size:12px;padding:20px;border-radius:5px;width:30%;margin-left:35%">
-<h3>Train new model for <%= @dataset.name %> Dataset</h3>
-
-<% features = [] %>
-<% @es_data['hits']['hits'][0]['_source'].each do |attribute| %>
-<% features << attribute[0] %>
 <% end %>
 
-<span>Select the features you want to consider when training the model </span>
+<%= render "dataset_desc" %>
+
 <br>
 <br>
+<br>
 
-<%= form_tag('/models/create', :method => 'post') do %>
+<div class="ui tree column grid">
+  <div class="column" style="width:10%">
+    </div>
+  <div class="column" style="width:80%;background:whitesmoke;border-radius:5px;padding:40px;">
+    <h3>
 
-<% features.each do |feature| %>
-  <% if feature != 'es_id' and feature != 'data_label' and feature != 'auto_label' and feature != 'auto_proba' and !feature.include?"human_label"%>
+  Run a new training iteration for <%= @dataset.name %> Dataset</h3>
 
-    <%= check_box("features", feature) %> <%= feature %>
-    <br>
+    <p>Select the features you want to consider when training the model</p>
+    <% features = [] %>
+    <% @es_data['hits']['hits'][0]['_source'].each do |attribute| %>
+    <% features << attribute[0] %>
+    <% end %>
+
+  <%= form_tag('/models/proc', :method => 'get') do %>
+  <% if @dataset.data_type != 'image' %>
+
+  <% features.each do |feature| %>
+    <% if feature != 'es_id' and feature != 'data_label' and feature != 'auto_label' and feature != 'auto_proba' and !feature.include?"human_label"%>
+
+      <%= check_box("features", feature) %> <%= feature %>
+      <br>
+    <% end %>
   <% end %>
-<% end %>
-<br>
-
-<%= hidden_field_tag 'id', @dataset.id %>
-
-<div width="100%" align="right">
-  <%= submit_tag 'Train' %>
-</div>
-<% end %>
-</div>
--->
-
-
-
-
-
-
-
-
-<div style="background-color:#e2e6e9;border-style: solid;border-width: 1px;border-color:#d4d9de;font-size:12px;padding:20px;border-radius:5px;width:30%;margin-left:35%">
-<h3>Train new model for <%= @dataset.name %> Dataset</h3>
-
-<% features = [] %>
-<% @es_data['hits']['hits'][0]['_source'].each do |attribute| %>
-<% features << attribute[0] %>
-<% end %>
-
-<span>Select the features you want to consider when training the model </span>
-<br>
-<br>
-
-<%= form_tag('/models/proc', :method => 'get') do %>
-
-<% features.each do |feature| %>
-  <% if feature != 'es_id' and feature != 'data_label' and feature != 'auto_label' and feature != 'auto_proba' and !feature.include?"human_label"%>
-
-    <%= check_box("features", feature) %> <%= feature %>
-    <br>
+  <br>
   <% end %>
-<% end %>
-<br>
 
-<%= hidden_field_tag 'id', @dataset.id %>
 
-<div width="100%" align="right">
-  <%= submit_tag 'Train' %>
+  <%= hidden_field_tag 'id', @dataset.id %>
+
+  <div width="100%" align="right">
+    <%= submit_tag 'Start' %>
+  </div>
+  <% end %>
+
 </div>
-<% end %>
+<div class="column" style="width:10%">
+  </div>
 </div>

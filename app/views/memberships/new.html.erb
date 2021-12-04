@@ -1,0 +1,24 @@
+<h1>Add a new member</h1>
+
+
+
+<%= form_for @membership, url: {action: "create"}, html: {class: "ui form",enctype:"multipart/form-data",id:"membership_form"} do |f| %>
+
+
+    <%= hidden_field_tag 'dataset_id', params[:id] %>
+
+    <div class="field">
+      <label>Select the new member you wish to add to <%= Dataset.find(params[:id]).name%> Project</label>
+      <select name="user_id" class="ui fluid dropdown">
+        <% @user_options.each do |email,id| %>
+        <option value="<%= id %>"><%= email  %></option>
+        <% end %>
+
+  </select>
+   </div>
+
+   <div class="ui button" onclick="getElementById('membership_form').submit()">Add Member</div>
+
+
+
+<% end %>

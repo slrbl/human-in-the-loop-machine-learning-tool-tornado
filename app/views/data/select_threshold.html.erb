@@ -1,32 +1,19 @@
 
-<br>
 
-<table>
-  <tr>
-    <td>
-      <div class="buttons_bar_left">
-        <a href = '/datas' ><button class="button">My datasets</button></a>
-        <a href = '/datas/new' ><button class="button">Add dataset</button></a>
-      </div>
-    </td>
-    <td>
-      <div class="buttons_bar_right">
-        <a href = '/datas/select_threshold/<%= @dataset.id %>' ><button class="button">Label seed</button></a>
-        <a href = '/models/new/<%= @dataset.id %>' ><button class="button">Auto Label</button></a>
-      </div>
-    </td>
-  </tr>
-</table>
-
+<%= render "navigation" %>
 <br>
 <br>
+<br>
+<div class="ui tree column grid">
+  <div class="column" style="width:10%">
+    </div>
+  <div class="column" style="width:80%;background:whitesmoke;border-radius:5px;padding:40px;">
 
-<div class="threshold_form">
-  <h3>Current model certitude</h3>
+  <h3>Current model confidence</h3>
   <div class="performances">
     <div style="width:<%= @max_proba*100 %>%;">
       <div style="width:<%= @max_proba*100 %>%;;text-align:right;padding-bottom:3px">
-        <%= (@max_proba*100).round(2) %>%
+        max=<%= (@max_proba*100).round(2) %>%
       </div>
     </div>
     <div style="width:<%= @max_proba*100 %>%;background-color:gainsboro;height:20px;border-style:solid;border-color:silver;border-width:1px">
@@ -38,28 +25,43 @@
     <div style="width:<%= @max_proba*100 %>%;">
       <div style="width:<%= @max_proba*100 %>%;">
         <div style="width:<%= @min_proba*100 %>%;text-align:right;padding-top:3px">
-          <%= (@min_proba*100).round(2)  %>%
+          min=<%=  (@min_proba*100).round(2)  %>%
         </div>
       </div>
     </div>
   </div>
 
+  <h3>Select a threshold </h3>
+  <p>The threshold has to be between the minimum current confidence <%= (@min_proba*100).round(2) %> and the maximum current confidence <%= (@max_proba*100).round(2) %></p>
   <br>
 
-  <h3>Select a threshold </h3>
-  <p>The threshold has to be between <%= (@min_proba*100).round(2) %> and <%= (@max_proba*100).round(2) %></p>
-  <br>
-  <%= form_tag('/datasets/label/'+@dataset.id.to_s , method: "get") do -%>
-    <table>
-      <tr>
-        <td>Threshold</td><td><%= text_field_tag 'threshold', (@max_proba*100).round(2), maxlength: 20, size: 40  %></td>
-      </tr>
-            <tr>
-        <td>Size</td><td><%= text_field_tag 'size', "30", maxlength: 20, size: 40  %></td>
-      </tr>
-      <tr>
-        <td></td><td><%= submit_tag "Select" %></td>
-      </tr>
-    </table>
-  <% end %>
+<%= form_tag('/datasets/label/'+@dataset.id.to_s , method: "get", class:"ui form") do -%>
+  <div class="field">
+    <label>Threshold</label>
+    <input type="text" name="threshold"  value="<%=  (@max_proba*100).round(2) %>" id="threshold_input" onchange="getElementById('threshold_range').value=this.value">
+
+    <input type="range" min="1.0" max="100.0" value="50" class="slider" step="0.1" id="threshold_range" oninput="getElementById('threshold_input').value=this.value">
+
+
+  </div>
+  <div class="field">
+    <label>Seed Size</label>
+    <input type="text" name="size"  value="50" id="seed_size_input" onchange="getElementById('seed_size_range').value=this.value">
+    <input type="range" min="1.0" max="500.0" value="50" class="slider" id="seed_size_range" oninput="getElementById('seed_size_input').value=this.value">
+
+  </div>
+
+  <div class="ui checkbox">
+    <input type="checkbox" name="only_unlabeled" checked>
+    <label>Only not yet labelld</label>
+  </div>
+  <div>
+    <br>
+  <button class="ui button" type="submit">Label Seed</button>
+  </div>
+<% end %>
+
+</div>
+<div class="column" style="width:10%">
+  </div>
 </div>

@@ -1,40 +1,99 @@
 
 
-<br>
-<div class="buttons_bar_left">
-<a href = '/datasets' ><button class="button">My datasets</button></a>
-<a href = '/datasets/new' ><button class="button">Add dataset</button></a>
-</div>
-<br>
 
-
+  <div class="ui two column very relaxed grid">
+    <div class="column">
+      <!--<h3 class="ui header">My Tornado Projects</h3>-->
+    </div>
+  </div>
 
 <% if @user_datasets.count >0 %>
-<table class="responsive-table">
-  <tr style="background-color:#e2e6e9">
-    <th width="20%"><b>Title</b></th>
-    <th width="15%"><b>Inputs #</th>
-    <th width="15%"><b>Creation date</th>
+<!--<table class="responsive-table">-->
+  <table class="ui sortable celled table">
+  <thead>
+    <tr>
+      <th width="10%"><b>Status</th>
+    <th width="15%"><b>Title</b></th>
+    <th width="5%"><b>Type</th>
+      <th width="5%"><b>Size</th>
+    <th width="10%"><b>Creation date</th>
     <th width="40%"><b>Description</th>
-    <th width="15%"><b>owner</b></th>
-    <th width="5%"><b>Status</th>
+    <th width="25%"><b>Members</b></th>
   </tr>
-  <% @user_datasets.all.each do |data_set| %>
+  </thead>
+  <tbody>
+
+  <% @user_datasets.each do |data_set| %>
+
   <tr>
-    <td><a href = "/datasets/<%= data_set.id.to_s %>" ><%= data_set.name %></a></td>
+    <td>
+      <!--
+      <div class="status_<%= data_set.status %>">
+        <%= data_set.status %>
+      </div>
+      -->
+
+      <div class="green item">
+        <% if data_set.status == "ready" %>
+          <i class="check green icon"></i>
+          <%= data_set.status.capitalize() unless  data_set.status == nil %>
+        <% elsif data_set.status == "processing" %>
+          <i class="spinner loading orange icon"></i>
+          Loading
+        <% elsif data_set.status == "labelling" %>
+          <i class="spinner loading orange icon"></i>
+          Labelling
+        <% else %>
+          <i class="exclamation triangle red icon"></i>
+          Error
+        <% end %>
+      </div>
+
+    </td>
+    <td><b><a href = "/datasets/<%= data_set.id.to_s %>" ><%= data_set.name %></a></b></td>
+<td>
+  <center>
+    <%if data_set.data_type == 'image'%>
+    <i class="file image blue icon"></i>
+
+    <%elsif data_set.data_type == 'text'%>
+    <i class="file text orange icon"></i>
+    <%elsif data_set.data_type == 'structured'%>
+    <i class="table brown icon"></i>
+    <% end %>
+
+    </center>
+</td>
+
+
     <td><%= data_set.inputs_count %></td>
     <td><%= data_set.created_at.to_s.split(' ')[0] %></td>
     <% @description = data_set.description %>
     <% @description = 'No description available' unless data_set.description.present? %>
     <td><%= @description %></td>
-    <td><%= User.find(data_set.user_id).email unless ( data_set.user_id == nil or User.exists?(data_set.user_id) == false ) %></td>
-    <td>
-      <div class="status_<%= data_set.status %>">
-        <%= data_set.status %>
-      </div>
+
+    <% if data_set.user_id != nil and User.exists?(data_set.user_id) != false  %>
+
+    <td><span style="border-radius:2px;background-color:gold;color:black;font-size:10px;padding:2px;margin:2px">owner </span><%= User.find(data_set.user_id).email %>
+      <% end %>
+      <br>
+      <%Membership.where(dataset_id:data_set.id).each do |membership| %>
+      <span style="border-radius:2px;background-color:silver;color:black;font-size:10px;padding:2px;margin:2px">member</span><%= membership.user.email %>
+          <br>
+      <% end %>
+
+
+      <a href = '/memberships/new/<%= data_set.id.to_s %>' >
+        <i class="plus blue icon"></i>
+        Add Member
+      </a>
+
     </td>
+
   </tr>
   <% end %>
+
+  </tbody>
 </table>
 
 <% else %>

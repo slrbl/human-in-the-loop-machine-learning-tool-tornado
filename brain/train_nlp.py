@@ -57,7 +57,6 @@ for unit in result['hits']['hits']:
             for word in words:
                 if word not in bag and len(word)>=2: bag.append(word)
             print "----------"
-    print
     if unit['_source'][label]!='empty' and unit['_source'][label] not in vectors[label]:vectors[label].append(unit['_source'][label])
 
 
@@ -91,7 +90,6 @@ for unit in result['hits']['hits']:
                     if len(word)>=2:
                         x[bag.index(word)]=1
                     print x
-                print '***********************'
             else:
                 y.append(vectors[label].index(unit['_source'][label]))
         X.append(x)
@@ -106,13 +104,7 @@ print y
 
 # Train a GradientBoostingClassifier classifier
 clf = ensemble.GradientBoostingClassifier()
-"""criterion='friedman_mse', init=None,
-                                           learning_rate=0.1, loss='deviance', max_depth=3,
-                                           max_features=None, max_leaf_nodes=None,
-                                           min_samples_leaf=1,
-                                           min_samples_split=2, min_weight_fraction_leaf=0.0,
-                                           n_estimators=100, presort='auto', random_state=None,
-                                           subsample=1.0, verbose=0, warm_start=False)"""
+
 clf = clf.fit(X, y)
 
 URL = es_address + '/_search/'
@@ -144,8 +136,5 @@ for unit in result['hits']['hits']:
     print '----'
 
     data = {'doc':{'auto_label':vectors[label][pred],'auto_proba':current_proba[pred]}}
-
-    #query = {'query':{'bool': {'must': [{'match': {'es_id': es_id}}, {'match': {'es_id': es_id}}]}}, 'size': 1000, '_source': source}
-
 
     print requests.post(URL, data = json.dumps(data), headers = headers).text

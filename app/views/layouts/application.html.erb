@@ -1,46 +1,114 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Tornado [beta]</title>
+    <title>Tornado[ai]</title>
     <%= csrf_meta_tags %>
-
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <style type="text/css">
+      body {
+        background-color: #FFFFFF;
+      }
+      .ui.inverted.menu{
+        background-color: #314455;#2f363d; #611b21;#6e1e24;
+      }
+      .ui.menu .item img.logo {
+        margin-right: 1.5em;
+      }
+      .ui.main.container {
+        margin-top: 5em;
+        padding-left:0px;
+      }
+      .wireframe {
+        margin-top: 2em;
+      }
+      .ui.footer.segment {
+        margin: 5em 0em 0em;
+        padding: 5em 0em;
+      }
+    </style>
   </head>
-
   <body>
+    <div class="ui fixed inverted menu">
+      <div class="ui container">
+        <a href="#" class="header item">
+          <span style="font-size:37px">🌪</span>&nbsp;<span style="font-size:32px;color:whitesmoke">tornado</span>&nbsp;<span style="font-size:12px;color:whitesmoke">AI</span>
+        </a>
+        <a href="/" class="item"><i class="home icon"></i>Home</a>
+        <a href="/datasets" class="item"><i class="database icon"></i>My Projects</a>
+        <a href="/datasets/new" class="item"><i class="arrow alternate circle down icon"></i>New Project</a>
+        <a href="/about" class="item"><i class="arrow info circle icon"></i>About</a>
 
-<div class ="top_bar">
-
-  <table width="100%">
-    <tr>
-      <td width="50%" style="text-align:left">
-        <b><span style="font-size:32px;color:#24435c">T</span><span style="font-size:30px;color:#24435c">O</span><span style="font-size:28px;color:#24435c">R</span><span style="font-size:26px;color:#24435c">N</span><span style="font-size:28px;color:#24435c">A</span><span style="font-size:30px;color:#24435c">D</span><span style="font-size:32px;color:#24435c">O</span></b>
-        <br>
-          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ActiveML & AutoML
 
 
-      </td>
-
-      <td>
         <% if user_signed_in? %>
-      <span style="font-size:12px">logged in as <%= current_user.email%> </span>
-          <span style="decoration:none"><%= link_to('logout', destroy_user_session_path, method: :delete) %></span>
-        <% else %>
-          <%= link_to('login', new_user_session_path)  %>
+
+
+        <%= link_to( destroy_user_session_path, method: :delete,class: 'right item') do %>
+          <i class="sign-out icon"></i>Logout
         <% end %>
-      </td>
 
-    </tr>
-  </table>
-</div>
+        <% else %>
+
+        <a href='<%= new_user_session_path%>' class="right item"><i class="user icon"></i>Login</a>
+
+        <% end %>
 
 
-<div style="background-color:snow;font-size:12px">
-<p class="notice"><%= notice %></p>
-   <p class="alert"><%= alert %></p>
- </div>
+      </div>
+    </div>
+    <div class="ui main container">
+      <div style="background-color:snow;font-size:12px">
+        <p class="notice"><%= notice %></p>
+        <p class="alert"><%= alert %></p>
+      </div>
 
-    <%= yield %>
+
+      <% if flash[:done] != nil %>
+      <div class="ui positive message">
+        <i class="close icon"></i>
+        <div class="header">
+          <%= flash[:done] %>
+        </div>
+        <p>Enjoy your day!</p>
+      </div>
+      <% end %>
+
+      <% if flash[:error] != nil %>
+      <div class="ui negative message">
+        <i class="close icon"></i>
+        <div class="header">
+          <%= flash[:error] %>
+        </div>
+        <p>Contact the site admin.</p>
+      </div>
+<% end %>
+
+      <% if flash[:data_creation] %>
+      <div class="ui positive message">
+        <i class="close icon"></i>
+        <div class="header">
+          Data creation
+        </div>
+        <p><%= flash[:data_creation] %></p>
+      </div>
+      <% end %>
+
+
+
+
+      <%= yield %>
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <div>
+    <center> © Tornado AI 2021</center>
+
+    <br>
+  </div>
+
   </body>
+
 </html>

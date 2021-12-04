@@ -1,10 +1,150 @@
 
-<% human_label_key = @dataset.es_id+'_human_label' %>
+<div class="ui two column grid">
+  <div class="column" style="width:60%">
 
+    <a href = '/datasets/<%= @dataset.id %>' >
+    <button class="ui mini blue button" style="background:#314455">
+      <i class="folder open icon"></i>
+      Dataset
+    </button>
+    </a>
+
+    <a href = '/download/<%= @dataset.id %>' >
+    <button class="ui mini blue button" style="background:#314455">
+      <i class="download icon"></i>
+      Download
+    </button>
+    </a>
+
+    <a href = '/seeds/<%= @dataset.id %>' >
+    <button class="ui mini blue button" style="background:#314455">
+      <i class="tree icon"></i>
+      Check seed
+    </button>
+    </a>
+    <button class="ui mini blue button" style="background:#314455" onclick="document.getElementById('lables_form').submit();">
+      <i class="save icon"></i>
+      Update Labels
+    </button>
+  </div>
+
+
+  <div class="column"  style="width:40%">
+    <div align="right">
+    <a href = '/datasets' >
+    <button class="ui mini blue button" style="background:#314455">
+      <i class="database icon"></i>
+      My Datasets
+    </button>
+    </a>
+    <a href = '/datasets/new' >
+    <button class="ui mini blue button" style="background:#314455">
+      <i class="arrow alternate circle down icon"></i>
+      Import Dataset
+    </button>
+    </a>
+    </div>
+  </div>
+</div>
+
+<% human_label_key = @dataset.es_id+'_human_label' %>
 <%= render "dataset_desc" %>
 
+<% if @dataset.data_type == 'image'%>
+  <%= form_tag("/update_docs", method: "post", id: "lables_form", class:"ui form") do -%>
+  <%= hidden_field_tag 'data_id', @dataset.id %>
 
-<br>
+
+  <table class="ui sortable celled table">
+  <thead>
+    <tr>
+    <th><b>#</b></th>
+    <th><b>image #</th>
+    <th><b>Auto Label</th>
+    <th><b>Human Label</th>
+  </tr>
+  </thead>
+  <tbody>
+
+
+    <% if params[:only_unlabeled] == 'on' %>
+
+      <% c=0%>
+      <% @data['hits']['hits'].each do |data_unit| %>
+        <% if data_unit['_source']['es_id'] == @dataset.es_id %>
+          <% if data_unit['_source'][human_label_key] == '' ||  data_unit['_source'][human_label_key]=='empty' || data_unit['_source'][human_label_key]==nil %>
+            <% if data_unit['_source']['auto_proba'].to_f.round(4) <= params[:threshold].to_f/100  and (c<@size) %>
+              <tr>
+                <td>
+                  <%= c+1 %>
+                  <% c+=1%>
+                </td>
+                <td>
+                  <center>
+                    <%image_file_name= data_unit['_source']['image_file'] %>
+                    <img src="/datasets/<%= @dataset.es_id+'/'+image_file_name %>" width="600px"/>
+                    <br>
+                    <%= image_file_name %>
+                  </center>
+                </td>
+                <td>
+                  <%=data_unit['_source']['auto_label'] %>
+                  <br>
+                  <%= (data_unit['_source']['auto_proba'].to_f*100).round(2) %>%
+                  <progress value="<%= (data_unit['_source']['auto_proba'].to_f).round(2) %>" max="1"> >
+                </td>
+                <td>
+                  <% humna_label_to_display = data_unit['_source'][human_label_key] %>
+                  <% humna_label_to_display = '' unless humna_label_to_display != 'empty' %>
+                  <center><%= text_field_tag 'doc_'+data_unit['_id'], humna_label_to_display %></center>
+                </td>
+              </tr>
+            <% end %>
+          <% end %>
+        <% end %>
+      <% end %>
+
+    <% else %>
+
+      <% c=0%>
+      <% @data['hits']['hits'].each do |data_unit| %>
+        <% if data_unit['_source']['es_id'] == @dataset.es_id %>
+            <% if data_unit['_source']['auto_proba'].to_f.round(4) <= params[:threshold].to_f/100  and (c<@size) %>
+              <tr>
+                <td>
+                  <%= c+1 %>
+                  <% c+=1%>
+                </td>
+                <td>
+                  <center>
+                    <%image_file_name= data_unit['_source']['image_file'] %>
+                    <img src="/datasets/<%= @dataset.es_id+'/'+image_file_name %>" width="600px"/>
+                    <br>
+                    <%= image_file_name %>
+                  </center>
+                </td>
+                <td>
+                  <%=data_unit['_source']['auto_label'] %>
+                  <br>
+                  <%= (data_unit['_source']['auto_proba'].to_f*100).round(2) %>%
+                  <progress value="<%= (data_unit['_source']['auto_proba'].to_f).round(2) %>" max="1"> >
+                </td>
+                <td>
+                  <% humna_label_to_display = data_unit['_source'][human_label_key] %>
+                  <% humna_label_to_display = '' unless humna_label_to_display != 'empty' %>
+                  <center><%= text_field_tag 'doc_'+data_unit['_id'], humna_label_to_display %></center>
+                </td>
+              </tr>
+            <% end %>
+        <% end %>
+      <% end %>
+
+    <% end %>
+
+  </table>
+<% end %>
+
+<% else %>
 
 <% attributes = [] %>
 
@@ -12,30 +152,12 @@
   <% attributes << attribute[0] %>
 <% end %>
 
-<%= form_tag("/update_docs", method: "post") do -%>
-  <table>
+<%= form_tag("/update_docs", method: "post", id: "lables_form", class:"ui form") do -%>
+
+
+  <table class="ui sortable celled table">
+  <thead>
     <tr>
-      <td>
-        <div class="buttons_bar_left">
-          <a href = '/datasets' ><button class="button">My datasets</button></a>
-          <a href = '/datasets/new' ><button class="button">Add dataset</button></a>
-        </div>
-      </td>
-      <td>
-        <div class="buttons_bar_right">
-          <a href = '/datasets/<%= @dataset.id %>' ><button class="button">Dataset</button></a>
-          <a href = '/seeds/<%= @dataset.id %>' ><button class="button">Check seed</button></a>
-          <!--
-          <a href = '/datasets/select_threshold/<%= @dataset.id %>' ><button class="button">Label seed</button></a>
-          <a href = '/models/new/<%= @dataset.id %>' ><button class="button">Train</button></a>-->
-          <%= submit_tag("Update labels") %>
-        </div>
-      </td>
-    </tr>
-  </table>
-  <br>
-<table class="responsive-table">
-    <tr style="background-color:#e2e6e9">
       <th>Human label</th>
         <% attributes.each do |attribute| %>
           <% if attribute != 'es_id'%>
@@ -52,6 +174,8 @@
           <% end %>
         <% end %>
     </tr>
+    </thead>
+    <tbody>
 
     <% @c = 0 %>
     <% @data['hits']['hits'].each do |data_unit| %>
@@ -65,7 +189,6 @@
             <% if attribute != 'es_id'%>
               <td>
                 <% if human_label_key == attribute and data_unit['_source'][attribute]=='empty'%>
-
 
                 <%else%>
                   <% if attribute == 'auto_proba' %>
@@ -94,8 +217,8 @@
       <% end %>
     <% end %>
     <%= hidden_field_tag 'data_id', @dataset.id %>
+    </tbody>
   </table>
 <% end %>
-<!--
-<%= @c%>
--->
+
+<% end %>

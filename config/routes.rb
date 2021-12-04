@@ -1,12 +1,20 @@
 Rails.application.routes.draw do
 
+  get 'memberships/new/:id', to: 'memberships#new'
+
+  get 'memberships/edit'
+
+  get 'memberships/show'
+
+  post 'memberships/create', to: 'memberships#create'
+
   devise_for :users
   root to: "data#index"
 
   get 'models/new/:id', to: 'models#new'
   post 'models/create', to: 'models#create'
 
-  get 'models/index'
+  get 'models/list/:id', to: 'models#index'
 
   get 'models/show'
 

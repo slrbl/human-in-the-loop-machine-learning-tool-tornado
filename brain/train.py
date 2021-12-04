@@ -74,27 +74,13 @@ for unit in result['hits']['hits']:
         print unit['_source']
         x=[]
         for feature in unit['_source']:
-            #if feature!=label:x.append(float(unit['_source'][feature]))
-
             try:
                 if feature!=label:x.append(float(unit['_source'][feature]))
             except:
                 if feature!=label:x.append(float(vectors[feature].index(unit['_source'][feature])))
-        #y.append(int(unit['_source'][label]))
         y.append(vectors[label].index(unit['_source'][label]))
-
-        print '---------------'
-        print x
-        print '---------------'
-
         X.append(x)
 
-
-# 749
-# 728
-#439
-#839
-#876
 
 print X
 print '-----'
@@ -107,19 +93,8 @@ clf = LogisticRegression(random_state = 0, solver='lbfgs', multi_class = 'multin
 # Train a GradientBoostingClassifier classifier
 #clf = ensemble.GradientBoostingClassifier()
 
-"""#criterion='friedman_mse', init=None,
-                                           learning_rate=0.1, loss='deviance', max_depth=3,
-                                           max_features=None, max_leaf_nodes=None,
-                                           min_samples_leaf=1,
-                                           min_samples_split=2, min_weight_fraction_leaf=0.0,
-                                           n_estimators=100, presort='auto', random_state=None,
-                                           subsample=1.0, verbose=0, warm_start=False)"""
-#clf = clf.fit(X, y)
-
-
 
 # Label the data units without human label
-#URL = "http://localhost:9200/lake/stats/_search/"
 URL = es_address + '/_search/'
 query = {'query':{'bool': {'must': [{'match': {'es_id': es_id}}, {'match': {'es_id': es_id}}]}}, 'size': 10000}
 headers = {'Content-type': 'application/json', 'Accept': 'application/json'}

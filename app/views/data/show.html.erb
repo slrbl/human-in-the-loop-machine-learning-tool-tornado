@@ -1,21 +1,127 @@
 
 
-
+<%= render "navigation" %>
+<!--
 <% if flash[:data_creation] %>
   <div class="positive_flash">
     <%= flash[:data_creation] %>
   </div>
-  <br>
 <% end %>
-
+-->
 <%= render "dataset_desc" %>
 
+<% human_labeled_count = 0 %>
+<% min_confidence = 0 %>
+<% min_confidence = params[:min_confidence].to_f unless params[:min_confidence] == nil %>
+<% human_auto_compatibility = 0%>
 
-<br>
+<% if @dataset.data_type == "image" %>
+<% c = 1 %>
+<table class="ui sortable celled table">
+<thead>
+  <tr>
+    <th><b>#</b></th>
+    <th><b>Image</th>
+    <th><b>Auto Label</th>
+    <th><b>Human Label</th>
+  </tr>
+</thead>
+<tbody>
 
-<%= render "navigation" %>
+<% if %>
+<% @data['hits']['hits'].count > 0 %>
+<% all_auto_labelled = true %>
+<% else %>
+<i>Your data is being loadded</i>
+<% end %>
 
-<br>
+
+
+<% @data['hits']['hits'].each do |data_unit| %>
+
+
+
+<% if c == @dataset.inputs_count and @dataset.status == 'processing' %>
+<% @dataset.update(status:"ready")%>
+<script type="text/javascript">
+  alert("You dataset has successfully been saved")
+  location.reload();
+</script>
+<% end %>
+
+<% if data_unit['_source']['auto_label'] == nil || data_unit['_source']['auto_label'] == '' %>
+<% all_auto_labelled = false %>
+<% end %>
+<% if data_unit['_source']['es_id'] == @dataset.es_id %>
+
+<%image_file_name= data_unit['_source']['image_file'] %>
+
+<% if  (data_unit['_source']['auto_proba'] == nil )|| ((data_unit['_source']['auto_proba'].to_f).round(2)*100 > min_confidence) %>
+<% c+=1%>
+<tr>
+
+  <td>
+    <br>
+    <%= image_file_name %>
+
+  </td>
+  <td>
+  <img class="ui small image" src="/datasets/<%= @dataset.es_id+'/'+image_file_name %>" style="border-radius:5px">
+  <br>
+
+  </td>
+
+  <td>
+    <% if data_unit['_source']['auto_label']!= nil and data_unit['_source']['auto_label'] != '' %>
+    <% auto_label = data_unit['_source']['auto_label'] %>
+    Auto:<%=data_unit['_source']['auto_label'] %>
+  <br>
+
+
+
+    <% progress_value = (data_unit['_source']['auto_proba'].to_f).round(2)*100 %>
+
+    <% if progress_value<50 %>
+    <% color='red'%>
+    <% elsif  progress_value<70%>
+    <% color='yellow'%>
+    <% else %>
+    <% color='green'%>
+    <% end %>
+
+<%= (data_unit['_source']['auto_proba'].to_f*100).round(2) %>%
+    <div class="ui <%= color %> progress">
+
+      <div class="bar" style="width:<%= progress_value.to_s+ "%" %>">
+        <div class="progress">
+</div>
+
+      </div>
+    </div>
+<% end %>
+
+  </td>
+  <td>
+    <% human_label = data_unit['_source'][@human_label_key]%>
+    <% if human_label!='empty'%>
+    <%= human_label %>
+      <% human_labeled_count +=1 %>
+    <% end %>
+    <% if human_label == auto_label%>
+    <% human_auto_compatibility +=1 %>
+
+    <% end %>
+  </td>
+</tr>
+<% end %>
+<% end %>
+<% end %>
+<tbody>
+<table>
+
+
+
+<% else %>
 
 <% attributes = [] %>
 <% @data['hits']['hits'][0]['_source'].each do |attribute| %>
@@ -25,8 +131,9 @@
 <% @g=0%>
 <% @u=1%>
 
-<table class="responsive-table">
-  <tr style="background-color:#e2e6e9">
+<table class="ui sortable celled table">
+<thead>
+  <tr>
     <th>#</th>
     <% attributes.each do |attribute| %>
       <% if attribute != 'es_id'%>
@@ -41,23 +148,32 @@
       <% end %>
     <% end %>
   </tr>
+  </thead>
+  <tbody>
+
   <% all_auto_labelled = true %>
   <% @data['hits']['hits'].each do |data_unit| %>
+  <% all_auto_labelled = true %>
 
     <% if data_unit['_source'][@human_label_key] != 'empty' %>
       <% @u+=1%>
     <% end %>
     <% @c+=1%>
+
+
     <% if @dataset.inputs_count == @c and @dataset.status== "processing"%>
+
      <% @dataset.update(status:"ready")%>
     <% end %>
+
+
     <tr>
       <td><%= @c %></td>
       <% attributes.each do |attribute| %>
 
 
 
-     <% if data_unit['_source']['auto_label'] == '' %>
+     <% if data_unit['_source']['auto_label'] == '' || data_unit['_source']['auto_label'] == nil %>
      <% all_auto_labelled = false %>
      <% end %>
 
@@ -77,14 +193,26 @@
             <td>
               <% if attribute!= @human_label_key and data_unit['_source'][attribute]!='empty'%>
                 <% if attribute == 'auto_proba' %>
-                  <%= (data_unit['_source'][attribute].to_f*100).round(2) %>%
-                  <progress value="<%= (data_unit['_source'][attribute].to_f).round(2) %>" max="1"> >
+                  <% if data_unit['_source']['auto_proba']!= nil and data_unit['_source']['auto_proba'] != '' %>
+
+                    <%= (data_unit['_source'][attribute].to_f*100).round(2) %>
+                    <% progress_value = (data_unit['_source'][attribute].to_f).round(2)*100 %>
+                    <% if progress_value < 50 %>
+                      <% color='red'%>
+                    <% elsif  progress_value<70%>
+                      <% color='yellow'%>
+                    <% else %>
+                      <% color='green'%>
+                    <% end %>
+                    <div class="ui <%= color %> progress">
+                      <div class="bar" style="width:<%= progress_value.to_s+ "%" %>"></div>
+                    </div>
+                  <% end %>
                 <% elsif attribute == 'auto_label' %>
                 <% else %>
                   <%= data_unit['_source'][attribute] %>
                 <% end %>
               <% end %>
-
               <% if (attribute == @human_label_key and data_unit['_source'][attribute]!='empty') or (attribute == "auto_label" and data_unit['_source'][attribute]!='')%>
                 <%if data_unit['_source'][attribute]=='good' %>
                   <span style="background-color: lime;padding:1px;padding-right:4px;padding-left:4px;border-radius:2px;align-content: center;"><%= data_unit['_source'][attribute] %></span>
@@ -105,17 +233,26 @@
       <% end %>
     </tr>
   <% end %>
+    </tbody>
 </table>
-<!--
-<%=@c%>
-<br>
-<%=@g%>
--->
+
+<% end %>
+
 <br>
 <% @dataset.update(:human_labels_count => @u) %>
+
+
+
 
 <% if all_auto_labelled == true %>
 
 <% @dataset.update(:status => "ready") %>
 
 <% end %>
+
+<% human_auto_compatibility %>
+<br>
+<% human_labeled_count %>
+<br>
+
+<% human_auto_compatibility*1.1/human_labeled_count %>

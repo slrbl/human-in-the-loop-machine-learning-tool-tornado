@@ -1,38 +1,70 @@
-<div class = "desc">
-  <table width="100%">
-    <tr>
-      <td width="50%">
-        <b>ID: </b><%= @dataset.es_id %>
-        <br>
-        <b>Owner: </b><%= User.find(@dataset.user_id).email %>
-        <br>
-        <b>Inputs count: </b><%= @dataset.inputs_count %>
-        <br>
-        <b>Seed size: </b><%= @dataset.human_labels_count %>
-        <br>
-        <b>Description: </b>
-        <% if @dataset.description!="" and @dataset.description!=nil%>
-        <br>
-        <%= @dataset.description %>
-        <% else %>
-          None
-        <% end %>
-      </td>
-      <td style="text-align:right">
-        <span style="font-size:20px"><%= @dataset.name %></span>
-        <br>
-        <br>
-        <% if @dataset.status == "ready" %>
-        <span style="color:green;background-color: lime;padding:3px;padding-right:6px;padding-left:6px;border-radius:2px;align-content: center;">
-        <b><%= @dataset.status %></b>
-        </span>
-        <% else %>
-        <span style="color:orangered;background-color: orange;padding:3px;padding-right:6px;padding-left:6px;border-radius:2px;align-content: center;">
-        <b> <%= @dataset.status %>..</b>
-                <% end %>
 
-        </span>
-      </td>
-    </tr>
-  </table>
+<!--<div class="ui container" style="background:whitesmoke;padding:20px;margin-top:10px;border-radius:5px;border-style:solid;border-color:gainsboro;border-width:1px">-->
+
+  <div class="ui container">
+    <div class='desc'>
+      <h3 class="ui header">  <%= @dataset.name %></h3>
+      <table width="100%">
+        <tr>
+          <td width="20%">
+            <b>ID: </b><%= @dataset.es_id %>
+            <br>
+            <b>Type: </b><%= @dataset.data_type %>
+            <br>
+            <b>Owner: </b><%= User.find(@dataset.user_id).email %>
+            <br>
+            <b>Data Size: </b><%= @dataset.inputs_count %>
+            <br>
+            <b>Seed size: </b><%= Training.where(es_id:@dataset.es_id).last.seed_size  unless Training.where(es_id:@dataset.es_id).count == 0%>
+            <br>
+            <b>Description: </b>
+            <% if @dataset.description!="" and @dataset.description!=nil%>
+            <br>
+            <%= @dataset.description %>
+            <% else %>
+              None
+            <% end %>
+          </td>
+          <td width="80%">
+            <div id="curve_chart" style="width:100%;"></div>
+          </td>
+        </tr>
+      </table>
+      <% if Training.where(es_id:@dataset.es_id).count >0 %>
+        <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+        <script type="text/javascript">
+          google.charts.load('current', {'packages':['corechart']});
+          google.charts.setOnLoadCallback(drawChart);
+          function drawChart() {
+            var data = google.visualization.arrayToDataTable([
+              ['Training', 'validation accuracy', 'accuracy','min confidence','max confidence','seed size/10','Human/Auto accuracy'],
+              <% training_count = 1%>
+              <% Training.where(es_id:@dataset.es_id).each do |training|%>
+              <% if training_count== 100 %>
+                <% break %>
+              <% end %>
+              <% human_auto_accuracy = 0 %>
+              <% min_confidence = 0%>
+              <% max_confidence = 0%>
+              <% min_confidence = training.min_confidence unless training.min_confidence == nil %>
+              <% max_confidence = training.max_confidence unless training.max_confidence == nil %>
+              <% human_auto_accuracy = training.compatible_human_machine_count*1.0/training.humna_label_count unless (training.compatible_human_machine_count==nil)%>
+              ['<%=training_count.to_s%>',<%= training.val_acc*100%>,<%= training.acc*100%>,<%=min_confidence*100%>,<%=max_confidence*100%>,<%= training.seed_size/10.0%>,<%=human_auto_accuracy*100%>],
+              <%training_count+=1%>
+              <% end %>
+            ]);
+            var options = {
+              hAxis: {
+                title: 'Human In The Loop Iterations'
+              },
+              lineWidth:1.5,
+              backgroundColor:'whitesmoke',
+              legend: { position: 'top' }
+            };
+            var chart = new google.visualization.LineChart(document.getElementById('curve_chart'));
+            chart.draw(data, options);
+          }
+        </script>
+      <% end %>
+    </div>
 </div>

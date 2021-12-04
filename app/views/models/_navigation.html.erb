@@ -1,0 +1,129 @@
+
+
+
+<div class="ui small menu">
+    <a class="item" href = '/datasets/<%= @dataset.id %>' >
+      <i class="folder open icon"></i>
+      Dataset
+    </a>
+
+    <a class="item" href = '/models/list/<%= @dataset.id %>' >
+      <i class="circle notch icon"></i>
+      Iterations
+    </a>
+
+    <a class="item" href = '/download/<%= @dataset.id %>' >
+      <i class="download icon"></i>
+      Download
+    </a>
+
+    <a class="item" href = '/datasets/select_threshold/<%= @dataset.id %>' >
+      <i class="pencil alternate icon"></i>
+      Label seed
+    </a>
+    <a class="item" href = '/seeds/<%= @dataset.id %>' >
+      <i class="tree icon"></i>
+      Check seed
+    </a>
+    <a class="item" href = '/models/new/<%= @dataset.id %>' >
+      <i class="cogs icon"></i>
+      Auto Label
+    </a>
+
+
+  <div class="right menu">
+
+
+    <div class="green item">
+      <% if @dataset.status == "ready" %>
+        <i class="check green icon"></i>
+        <%= @dataset.status.capitalize() unless  @dataset.status == nil %>
+      <% else %>
+        <i class="spinner loading icon"></i>
+        <%= @dataset.status.capitalize() unless  @dataset.status == nil%>
+
+      <% end %>
+    </div>
+  </div>
+</div>
+
+
+<% if 1==2%>
+<div class="ui container" style="background:whitesmoke;padding:5px;margin-top:0px;border-radius:5px;border-style:solid;border-color:gainsboro;border-width:1px">
+
+<div class="ui two column grid">
+  <div class="column" style="width:80%">
+
+    <a href = '/datasets/<%= @dataset.id %>' >
+    <button class="ui mini blue button" style="background:#314455">
+      <i class="folder open icon"></i>
+      Dataset
+    </button>
+    </a>
+
+    <a href = '/models/<%= @dataset.id %>' >
+    <button class="ui mini blue button" style="background:#314455">
+      <i class="circle notch icon"></i>
+      Iterations
+    </button>
+    </a>
+
+    <a href = '/download/<%= @dataset.id %>' >
+    <button class="ui mini blue button" style="background:#314455">
+      <i class="download icon"></i>
+      Download
+    </button>
+    </a>
+    <a href = '/datasets/select_threshold/<%= @dataset.id %>' >
+    <button class="ui mini blue button" style="background:#314455">
+      <i class="pencil alternate icon"></i>
+      Label seed
+    </button>
+    </a>
+    <a href = '/seeds/<%= @dataset.id %>' >
+    <button class="ui mini blue button" style="background:#314455">
+      <i class="tree icon"></i>
+      Check seed
+    </button>
+    </a>
+    <a href = '/models/new/<%= @dataset.id %>' >
+    <button class="ui mini blue button" style="background:#314455">
+      <i class="cogs icon"></i>
+      Auto Label
+    </button>
+    </a>
+  </div>
+
+  <div class="column"  style="width:20%" align="right">
+    <% if @dataset.status == "ready" %>
+    <button class="ui mini basic green button" onclick="alert('Nothing is going on. Ready for a new iteration!')">
+      <i class="check icon"></i>
+      <%= @dataset.status.capitalize() unless  @dataset.status == nil %>
+    </button>
+    <% else %>
+    <button class="ui mini basic orange button" onclick="alert('A training iteration is ongoing.')">
+      <i class="spinner loading icon"></i>
+      <%= @dataset.status.capitalize() unless  @dataset.status == nil%>
+    </button>
+
+    <% end %>
+    <!--
+    <div align="right">
+    <a href = '/datasets' >
+    <button class="ui mini blue button" style="background:#314455">
+      <i class="database icon"></i>
+      My Datasets
+    </button>
+    </a>
+    <a href = '/datasets/new' >
+    <button class="ui mini blue button" style="background:#314455">
+      <i class="arrow alternate circle down icon"></i>
+      Import Dataset
+    </button>
+    </a>
+    </div>
+    -->
+  </div>
+</div>
+</div>
+<% end %>

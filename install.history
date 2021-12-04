@@ -1,0 +1,167 @@
+    1  ls -lrt
+    2  mkdir TORNADO
+    3  mv human-in-the-loop-machine-learning-tool-tornado_aws.tar.gz TORNADO/
+    4  cd TORNADO/
+    5  tar -xzvf human-in-the-loop-machine-learning-tool-tornado_aws.tar.gz 
+    6  ls -lrt
+    7  docker
+    8  yum install docker
+    9  sudo yum install docker
+   10  sudo curl -L "https://github.com/docker/compose/releases/download/1.29.2/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
+   11  sudo chmod +x /usr/local/bin/docker-compose
+   12  ls -lrt
+   13  cd human-in-the-loop-machine-learning-tool-tornado_scp/
+   14  ls -lrt
+   15  df -g
+   16  df -h
+   17  cd /media/ephemeral0/
+   18  ls
+   19  cd -
+   20  ls -lrt
+   21  cd ..
+   22  ls -lrt
+   23  mv human-in-the-loop-machine-learning-tool-tornado_scp /media/ephemeral0/
+   24  sudo mv human-in-the-loop-machine-learning-tool-tornado_scp /media/ephemeral0/
+   25  cd /media/ephemeral0/
+   26  ls -lrt
+   27  cd human-in-the-loop-machine-learning-tool-tornado_scp/
+   28  ls -lrt
+   29  sudo docker-up
+   30  sudo docker-compose build
+   31  exit
+   32  cd /media/ephemeral0/
+   33  ls -lrt
+   34  cd human-in-the-loop-machine-learning-tool-tornado_scp/
+   35  sudo docker-compose build
+   36  sudo ln -s /usr/local/bin/docker-compose /usr/bin/docker-compose
+   37  sudo docker-compose build
+   38  dockerd &
+   39  sudo dockerd &
+   40  ls -lrt
+   41  sudo docker-compose build
+   42  sudo docker-compose up
+   43  df -h
+   44  pwd
+   45  df -h
+   46  exit
+   47  docker ps
+   48  sudo docker ps
+   49  docker exec -it dd2cfb7e3648 /bin/bash
+   50  sudo docker exec -it dd2cfb7e3648 /bin/bash
+   51  df -h
+   52  df -hT
+   53  lsblk
+   54  df -hT
+   55  lsblk
+   56  sudo growpart / 1
+   57  lsblk
+   58   sudo growpart /dev/xvda 1
+   59  lsblk
+   60  df -h
+   61  sudo xfs_growfs -d /
+   62  df -h
+   63  mv /media/ephemeral0/human-in-the-loop-machine-learning-tool-tornado_scp ./
+   64  sudo mv /media/ephemeral0/human-in-the-loop-machine-learning-tool-tornado_scp ./
+   65  ls
+   66  ls -lrt
+   67  ls -lrt /media/ephemeral0/
+   68  cd /media/ephemeral0/human-in-the-loop-machine-learning-tool-tornado_scp/
+   69  ls -lrt
+   70  cd
+   71  ls -lrt
+   72  cd human-in-the-loop-machine-learning-tool-tornado_scp/
+   73  ls
+   74  ls -lrt
+   75  sudo docker-compose up
+   76  sysctl -w vm.max_map_count=262144
+   77  sudo sysctl -w vm.max_map_count=262144
+   78  sudo docker-compose up
+   79  ls -lrt
+   80  cd human-in-the-loop-machine-learning-tool-tornado_scp/
+   81  sudo docker-compose up
+   82  sudo dockerd &
+   83  sudo docker-compose up
+   84  sudo sysctl -w vm.max_map_count=262144
+   85  sudo docker-compose up
+   86  sudo docker ps
+   87  docker exec -it dd2cfb7e3648 /bin/bash
+   88  sudo docker exec -it dd2cfb7e3648 /bin/bash
+   89  cd tm
+   90  cd -
+   91  ls -lrt
+   92  sudo docker exec -it dd2cfb7e3648 /bin/bash
+   93  ls -lrt
+   94  cd human-in-the-loop-machine-learning-tool-tornado_scp/
+   95  sudo docker-compose up
+   96  sudo dockerd &
+   97  sudo rm /var/run/docker.pid 
+   98  sudo dockerd &
+   99  sudo dockerd
+  100  sudo docker ps
+  101  exit
+  102  cd human-in-the-loop-machine-learning-tool-tornado_scp/
+  103  ls -lrt
+  104  sudo docker ps
+  105  sudo docker exec -it dd2cfb7e3648 /bin/bash
+  106  sudo docker ps
+  107  sudo docker exec -it 25541fe8d655 /bin/bash
+  108  cd tmp/
+  109  ls -lrt
+  110  cd 1d907373cbcf2513a4d4c8c760a06cc6/
+  111  ls -lrt
+  112  rm -f *.h5
+  113  sudo rm -f *.h5
+  114  ls -lrt
+  115  cd classes/
+  116  ls
+  117  ls -lrt
+  118  ls -lrt i | wc -l
+  119  ls -lrt ii | wc -l
+  120  ls -lrt iii | wc -l
+  121  ls -lrt iv | wc -l
+  122  ls -lrt v | wc -l
+  123  ls -lrt vi | wc -l
+  124  ls -lrt vii | wc -l
+  125  ls -lrt viii | wc -l
+  126  ls -lrt ix | wc -l
+  127  ls -lrt x | wc -l
+  128  ls -lrt xi | wc -l
+  129  ls -lrt
+  130  cd ..
+  131  ls -lrt
+  132  cd human-in-the-loop-machine-learning-tool-tornado_scp/
+  133  sudo sysctl -w vm.max_map_count=262144
+  134  sudo dockerd &
+  135  sudo docker-compose up
+  136  sudo dockerd &
+  137  sudo ps -eaf | grep docker
+  138  sudo kill -9 5857
+  139  sudo ps -eaf | grep docker
+  140  sudo kill -9 6633
+  141  sudo ps -eaf | grep docker
+  142  sudo kill -9 6634
+  143  sudo kill -9 6635
+  144  sudo ps -eaf | grep docker
+  145  sudo kill -9 6643
+  146  sudo ps -eaf | grep docker
+  147  sudo kill -9 7204
+  148  sudo ps -eaf | grep dock
+  149  sudo kill -9 7770
+  150  sudo dockerd
+  151  sudo ps -eaf | grep dock
+  152  sudo dockerd &
+  153  sudo docker-compose up
+  154  ls -lrt
+  155  cd human-in-the-loop-machine-learning-tool-tornado_scp/
+  156  cd tmp/
+  157  ls -lrt
+  158  cd 1d907373cbcf2513a4d4c8c760a06cc6
+  159  ls -lrt
+  160  cd ..
+  161  ls -lrt
+  162  cd ..
+  163  ls -lrt
+  164  cd ..
+  165  ls -lrt
+  166  history
+  167  history > install.history

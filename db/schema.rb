@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20190719214236) do
+ActiveRecord::Schema.define(version: 20210417232903) do
 
   create_table "datasets", force: :cascade do |t|
     t.string "name"
@@ -23,6 +23,28 @@ ActiveRecord::Schema.define(version: 20190719214236) do
     t.integer "user_id"
     t.integer "human_labels_count"
     t.string "status"
+    t.string "data_type"
+  end
+
+  create_table "memberships", force: :cascade do |t|
+    t.integer "dataset_id"
+    t.integer "user_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "trainings", force: :cascade do |t|
+    t.float "acc"
+    t.float "val_acc"
+    t.integer "dataset_id"
+    t.string "es_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.float "max_confidence"
+    t.float "min_confidence"
+    t.integer "seed_size"
+    t.integer "compatible_human_machine_count"
+    t.integer "humna_label_count"
   end
 
   create_table "users", force: :cascade do |t|

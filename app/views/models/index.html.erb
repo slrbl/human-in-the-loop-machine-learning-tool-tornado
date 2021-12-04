@@ -1,2 +1,44 @@
-<h1>Models#index</h1>
-<p>Find me in app/views/models/index.html.erb</p>
+<%= render "navigation" %>
+
+
+<%if @tainings.count>0%>
+
+<table class="ui sortable celled table">
+<thead>
+  <tr>
+    <th><b>Id</b></th>
+  <th><b>Date</b></th>
+  <th><b>acc #</th>
+  <th><b>val_acc</th>
+  <th><b>min_confidence</th>
+  <th><b>max_confidence</b></th>
+  <th><b>seed_size</th>
+  <th>compatible_human_machine_count</th>
+  <th>humna_label_count</th>
+</tr>
+</thead>
+<tbody>
+
+<% @tainings.each do |iteration| %>
+<tr>
+  <td><%= iteration.id %></td>
+  <td><%= iteration.created_at.to_s.sub('UTC','') %></td>
+  <td><%= (iteration.acc*100).round(2) %>%</td>
+  <td><%= (iteration.val_acc*100).round(2) %>%</td>
+  <td><%= (iteration.min_confidence*100).round(2)%>%</td>
+  <td><%= (iteration.max_confidence*100).round(2)%>%</td>
+  <td><%= iteration.seed_size %></td>
+  <td><%= iteration.compatible_human_machine_count %></td>
+  <td><%= iteration.humna_label_count %></td>
+
+
+
+</tr>
+<% end %>
+
+</tbody>
+</table>
+<% else%>
+<p>No HITL Iterations have yet been done</p>
+
+<%end %>
