@@ -7,10 +7,10 @@
 [![Alt text](https://img.youtube.com/vi/xcX-95iGKxY/0.jpg)](https://www.youtube.com/watch?v=xcX-95iGKxY)
 
 <h3>Data flow</h3>
-<div align="center"><img src="https://media-exp1.licdn.com/dms/image/C5612AQFG1h7oypt4tA/article-inline_image-shrink_1500_2232/0/1547933070158?e=1616630400&v=beta&t=2nbcmH5t9Kuki7DdWa8eYMIeMWPFedXg-ylyPPNqb48" width="70%"/></div>
+<div align="center"><img src="https://raw.githubusercontent.com/slrbl/human-in-the-loop-machine-learning-tool-tornado/master/data_flow.png" width="70%"/></div>
 
 <h3>Technology stack</h3>
-<div align="center"><img src="https://media-exp1.licdn.com/dms/image/C5612AQEUuz1BIEnDRQ/article-inline_image-shrink_1500_2232/0/1547935172637?e=1616630400&v=beta&t=R1XYiEMJ0j1PpdDW6POtd4AoLfjYlo3OYoKToSH7auo" width="70%"/></div>
+<div align="center"><img src="https://raw.githubusercontent.com/slrbl/human-in-the-loop-machine-learning-tool-tornado/master/technology_stack.png" width="70%"/></div>
 
 
 
