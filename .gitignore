@@ -7,6 +7,8 @@ tmp/cache/*
 /elasticsearch/*
 public/uploads/*
 public/datasets/*
+!public/uploads/.keep
+!public/datasets/.keep
 log/*
 dump.rdb
 .DS_Store
