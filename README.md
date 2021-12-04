@@ -3,11 +3,9 @@
 <p>Tornado is an open source Human-in-the-loop machine learning tool. It helps you label your dataset on the fly while training your model through a simple web user interface.</p>
 
 <h3>Live demo</h3>
-<center>
 
-[![Alt text](https://img.youtube.com/vi/xcX-95iGKxY/0.jpg)](https://www.youtube.com/watch?v=xcX-95iGKxY)
+[![Alt text](https://img.youtube.com/vi/xcX-95iGKxY/0.jpg)](https://www.youtube.com/watch?v=zBe6b_vxs_I)
   
-  </center>
 
 <h3>Data flow</h3>
 <div align="center"><img src="https://raw.githubusercontent.com/slrbl/human-in-the-loop-machine-learning-tool-tornado/master/data_flow.png" width="70%"/></div>
