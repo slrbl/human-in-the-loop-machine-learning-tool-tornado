@@ -7,14 +7,14 @@
 <p>In this demo https://www.youtube.com/watch?v=zBe6b_vxs_I the user collaborates with the computer to label a set of 1300 pump impeller images through 4 human in the loop machine learning iterations. 
 The goal of labelling the images is the put in place a classifier to automatize the metal casting quality process within a manufactory.</p>
 
-<div align="center"><img src="https://raw.githubusercontent.com/slrbl/human-in-the-loop-machine-learning-tool-tornado/master/demo_metal_casting.png" width="70%"/></div>
+<div align="center"><img src="https://raw.githubusercontent.com/slrbl/human-in-the-loop-machine-learning-tool-tornado/master/docs/demo_metal_casting.png" width="70%"/></div>
   
 
 <h2>Data flow</h2>
-<div align="center"><img src="https://raw.githubusercontent.com/slrbl/human-in-the-loop-machine-learning-tool-tornado/master/data_flow.png" width="70%"/></div>
+<div align="center"><img src="https://raw.githubusercontent.com/slrbl/human-in-the-loop-machine-learning-tool-tornado/master/docs/data_flow.png" width="70%"/></div>
 
 <h2>Technology stack</h2>
-<div align="center"><img src="https://raw.githubusercontent.com/slrbl/human-in-the-loop-machine-learning-tool-tornado/master/technology_stack.png" width="70%"/></div>
+<div align="center"><img src="https://raw.githubusercontent.com/slrbl/human-in-the-loop-machine-learning-tool-tornado/master/docs/technology_stack.png" width="70%"/></div>
 
 
 <h2>Usage</h2>
