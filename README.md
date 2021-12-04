@@ -1,6 +1,6 @@
 <h1>TornadoAi</h1> 
 <h3>A zero coding human in the loop machine learning plateform</h3>
-<h2>What is Tornado</h2>
+<h2>What is TornadoAi</h2>
 <p>Tornado is an open source Human-in-the-loop machine learning tool. It helps you label your dataset on the fly while training your model through a simple web user interface.</p>
 
 <h3>Live demo</h3>
