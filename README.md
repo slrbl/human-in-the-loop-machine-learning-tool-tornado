@@ -26,7 +26,7 @@ The goal of labelling the images is the put in place a classifier to automatize 
 <h3>Launch Tornado image</h3>
 <code>$ docker-compose up</code>
 <br>
-<p>Tornado will then be available at http://0.0.0.0:3000</p>
+<p>Tornado will then be available at http://localhost:3000</p>
 
 <h2>Details and how to use</h2>
 All information are available at:
