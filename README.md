@@ -11,10 +11,10 @@ The goal of labelling the images is the put in place a classifier to automatize 
   
 
 <h2>Data flow</h2>
-<div align="center"><img src="https://raw.githubusercontent.com/slrbl/human-in-the-loop-machine-learning-tool-tornado/master/docs/data_flow.png" width="70%"/></div>
+<div align="center"><img src="https://raw.githubusercontent.com/slrbl/human-in-the-loop-machine-learning-tool-tornado/master/docs/data_flow.png" width="90%"/></div>
 
 <h2>Technology stack</h2>
-<div align="center"><img src="https://raw.githubusercontent.com/slrbl/human-in-the-loop-machine-learning-tool-tornado/master/docs/technology_stack.png" width="70%"/></div>
+<div align="center"><img src="https://raw.githubusercontent.com/slrbl/human-in-the-loop-machine-learning-tool-tornado/master/docs/technology_stack.png" width="90%"/></div>
 
 
 <h2>Usage</h2>
