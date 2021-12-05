@@ -29,10 +29,10 @@
 <tbody>
 
 <% if %>
-<% @data['hits']['hits'].count > 0 %>
+<% @data != nil and @data['hits']['hits'].count > 0 %>
 <% all_auto_labelled = true %>
 <% else %>
-<i>Your data is being loadded</i>
+<center><i>Your data is being loadded</i><center/>
 <% end %>
 
 

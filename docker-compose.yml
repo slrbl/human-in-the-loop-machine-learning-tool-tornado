@@ -27,7 +27,7 @@ services:
       - '5601:5601'
   sidekiq:
     build: .
-    command: bash -c "bin/bundle install && bin/rails db:migrate && bin/bundle exec sidekiq"
+    command: bash -c "bin/bundle install && bin/bundle exec sidekiq"
     environment:
       RAILS_ENV: "development"
       REDIS_URL: "redis://redis:6379"
