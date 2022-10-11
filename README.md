@@ -1,7 +1,7 @@
 <h1>TornadoAi</h1> 
 <h3>A zero coding human in the loop (HITL) collaborative data annotation plateform</h3>
 <h2>What is TornadoAi</h2>
-<p>Tornado is an open source Human-in-the-loop machine learning tool. It helps you label your dataset on the fly while training your model through a simple web user interface.</p>
+<p>Tornado is an open source Human-in-the-loop machine learning tool. It helps you label your dataset on the fly while training your model through a simple web user interface. It supports all data types: structured, text and image.</p>
 
 <h2>Live demo</h2>
 <p>In this demo https://www.youtube.com/watch?v=zBe6b_vxs_I the user collaborates with the computer to label a set of 1300 pump impeller images through 4 human in the loop machine learning iterations. 
